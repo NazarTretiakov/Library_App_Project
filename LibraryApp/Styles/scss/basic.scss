@@ -1,0 +1,9 @@
+﻿@use "config" as *;
+
+:root {
+    font-family: $fontFamily;
+}
+
+body {
+    margin: 0;
+}

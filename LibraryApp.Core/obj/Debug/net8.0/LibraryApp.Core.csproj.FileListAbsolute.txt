@@ -1,0 +1,11 @@
+D:\Studying\Library App Project\LibraryApp\LibraryApp.Core\bin\Debug\net8.0\LibraryApp.Core.deps.json
+D:\Studying\Library App Project\LibraryApp\LibraryApp.Core\bin\Debug\net8.0\LibraryApp.Core.dll
+D:\Studying\Library App Project\LibraryApp\LibraryApp.Core\bin\Debug\net8.0\LibraryApp.Core.pdb
+D:\Studying\Library App Project\LibraryApp\LibraryApp.Core\obj\Debug\net8.0\LibraryApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Studying\Library App Project\LibraryApp\LibraryApp.Core\obj\Debug\net8.0\LibraryApp.Core.AssemblyInfoInputs.cache
+D:\Studying\Library App Project\LibraryApp\LibraryApp.Core\obj\Debug\net8.0\LibraryApp.Core.AssemblyInfo.cs
+D:\Studying\Library App Project\LibraryApp\LibraryApp.Core\obj\Debug\net8.0\LibraryApp.Core.csproj.CoreCompileInputs.cache
+D:\Studying\Library App Project\LibraryApp\LibraryApp.Core\obj\Debug\net8.0\LibraryApp.Core.dll
+D:\Studying\Library App Project\LibraryApp\LibraryApp.Core\obj\Debug\net8.0\refint\LibraryApp.Core.dll
+D:\Studying\Library App Project\LibraryApp\LibraryApp.Core\obj\Debug\net8.0\LibraryApp.Core.pdb
+D:\Studying\Library App Project\LibraryApp\LibraryApp.Core\obj\Debug\net8.0\ref\LibraryApp.Core.dll

@@ -1,0 +1,152 @@
+﻿@{
+    ViewBag.Title = "Public library";
+    ViewBag.StylesPath = "~/css/homepage.css";
+}
+
+
+<div class="container-for-header-panel">
+    <header class="header">
+        <ul class="header-items">
+            <li class="header-items-item header-items-item-logo"><a asp-controller="Home" asp-action="Index"><img class="header-items-item-logo-image" src="/Images/Logo.jpg" alt="Logo of page"></a></li>
+            <li class="header-items-links">
+                <ul class="header-items-links-list">
+                    <li class="header-items-links-list-item header-items-links-list-item-discussion"><span class="header-items-links-list-item-discussion-span"><a class="header-link" asp-controller="Forum" asp-action="Index">Forum</a></span></li>
+                    <li class="header-items-links-list-item header-items-links-list-register"><span class="header-items-links-list-item-register-span"><a class="header-link" asp-controller="Home" asp-action="Register">Register</a></span></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+
+    <section class="search-panel">
+        <form class="search-panel-form" asp-controller="Library" asp-action="Index">
+            <ul class="search-panel-form-search">
+                <li class="search-panel-form-search-icon">
+                    <div class="search-panel-form-search-icon-div"></div>
+                </li>
+                <li class="search-panel-form-search-input">
+                    <input class="search-panel-form-search-input-element" type="text" placeholder="Search">
+                </li>
+            </ul>
+            <ul class="search-panel-form-dropdown">
+                <li class="search-panel-form-dropdown-select">
+                    <select class="search-panel-form-dropdown-select-element">
+                        <option class="search-panel-form-dropdown-select-element-author" value="all">All results</option>
+                        <option class="search-panel-form-dropdown-select-element-author" value="author">Author</option>
+                        <option class="search-panel-form-dropdown-select-element-title" value="title">Title</option>
+                        <option class="search-panel-form-dropdown-select-element-genre" value="genre">Genre</option>
+                        <option class="search-panel-form-dropdown-select-element-rating" value="rating">Rating</option>
+                    </select>
+                </li>
+                <li class="search-panel-form-dropdown-arrow">
+                    <div class="search-panel-form-dropdown-arrow-div"></div>
+                </li>
+            </ul>
+            <button class="search-panel-form-button">Search</button>
+        </form>
+    </section>
+</div>
+
+
+<section class="library-information">
+    <ul class="library-information-items">
+        <li class="library-information-items-image"><img class="library-information-items-image-element" src="~/Images/Photo_of_Library.jpg" alt="Photo of library"></li>
+        <li class="library-information-items-description">
+            <ul class="library-information-items-description-items">
+                <li class="library-information-items-description-items-title"><h1 class="library-information-items-description-items-title-element">Public Library</h1></li>
+                <li class="library-information-items-description-items-paragraph"><p class="library-information-items-description-items-paragraph-element">Our Public Library is a unique space where knowledge, creativity, and discovery come together. Explore our diverse collection of books, digital resources, and learning tools, all designed to inspire curiosity and support your journey of lifelong learning..</p></li>
+                <li class="library-information-items-description-button">
+                    <a asp-controller="Home" asp-action="AboutUs"><button class="library-information-items-description-button-element">Explore our library</button></a>
+                    <div class="library-information-items-description-button-arrow"></div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+
+<section class="genre-recommendations">
+    <h1 class="genre-recommendations-title">Book genres that we recommend</h1>
+    <ul class="genre-recommendations-genres">
+        <a class="genre-recommendations-link" href="">
+        <li class="genre-recommendations-genres-science">
+            <div class="genre-recommendations-genres-science-icon"></div>
+            <span class="genre-recommendations-genres-science-span">Science</span>
+        </li>
+        </a>
+        <a class="genre-recommendations-link" href="">
+        <li class="genre-recommendations-genres-nature">
+            <div class="genre-recommendations-genres-nature-icon"></div>
+            <span class="genre-recommendations-genres-nature-span">Nature</span>
+        </li>
+        </a>
+        <a class="genre-recommendations-link" href="">
+        <li class="genre-recommendations-genres-finance">
+            <div class="genre-recommendations-genres-finance-icon"></div>
+            <span class="genre-recommendations-genres-finance-span">Finance</span>
+        </li>
+        </a>
+        <a class="genre-recommendations-link" href="">
+        <li class="genre-recommendations-genres-classic">
+            <div class="genre-recommendations-genres-classic-icon"></div>
+            <span class="genre-recommendations-genres-classic-span">Classic</span>
+        </li>
+        </a>
+        <a class="genre-recommendations-link" href="">
+        <li class="genre-recommendations-genres-history">
+            <div class="genre-recommendations-genres-history-icon"></div>
+            <span class="genre-recommendations-genres-history-span">History</span>
+        </li>
+        </a>
+    </ul>
+</section>
+
+
+<section class="forum">
+    <ul class="forum-items">
+        <li class="forum-items-description">
+            <ul class="forum-items-description-items">
+                <li class="forum-items-description-items-title"><h1 class="forum-items-description-items-title-element">Forum</h1></li>
+                <li class="forum-items-description-items-paragraph"><p class="forum-items-description-items-paragraph-element">Welcome to the Forum – a vibrant space where readers come together to share their thoughts, exchange ideas, and engage in meaningful conversations. Whether you’re discussing your favorite reads, sharing insights on beloved authors, or exploring new literary topics. Join the conversation, inspire others, and discover new perspectives on the stories that captivate us all.</p></li>
+                <li class="forum-items-description-items-button"><a asp-controller="Forum" asp-action="Index"><button class="forum-items-description-items-button-element">Explore our forum</button></a><div class="forum-items-description-items-button-arrow"></div></li>
+            </ul>
+        </li>
+        <li class="forum-items-image"><img class="forum-items-image-element" src="~/Images/Photo_of_library_2.jpg" alt="Image of library"></li>
+    </ul>
+</section>
+
+<footer class="footer">
+    <ul class="footer-items">
+        <li class="footer-items-address">
+            <ul class="footer-items-address-items">
+                <li class="footer-items-address-items-logo"><a asp-controller="Home" asp-action="Index"><img class="footer-items-address-items-logo-element" src="~/Images/Logo_gray.jpg" alt="Logo of webpage"></a></li>
+                <li class="footer-items-address-items-description">
+                    <ul class="footer-items-address-items-description-items">
+                        <li class="footer-items-address-items-description-items-1">1000 Forth Ave.</li>
+                        <li class="footer-items-address-items-description-items-2">CityName, WA 34104-1105</li>
+                        <li class="footer-items-address-items-description-items-3">206-386-4636 or <a class="footer-link" asp-controller="Home" asp-action="AskUs">Ask us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="footer-items-social-medias">
+            <ul class="footer-items-social-medias-items">
+                <li class="footer-items-social-medias-items-about-us"><a class="footer-link" asp-controller="Home" asp-action="AboutUs">About us</a></li>
+                <li class="footer-items-social-medias-items-icons">
+                    <ul class="footer-items-social-medias-items-icons-items">
+                        <li class="footer-items-social-medias-items-icons-items-description">Find us on:</li>
+                        <li class="footer-items-social-medias-items-icons-items-links">
+                            <ul class="footer-items-social-medias-items-icons-items-links-items">
+                                <li class="footer-items-social-medias-items-icons-items-links-items-facebook"><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img class="footer-items-social-medias-items-icons-items-links-items-facebook-element" src="~/Images/Icons/icons8-facebook-50.png" alt="Icon of facebook"></a></li>
+                                <li class="footer-items-social-medias-items-icons-items-links-items-linkedin"><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><img class="footer-items-social-medias-items-icons-items-links-items-linkedin-element" src="~/Images/Icons/icons8-linkedin-50.png" alt="Icon of linkedin"></a></li>
+                                <li class="footer-items-social-medias-items-icons-items-links-items-youtube"><a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><img class="footer-items-social-medias-items-icons-items-links-items-youtube-element" src="~/Images/Icons/icons8-youtube-50.png" alt="Icon of youtube"></a></li>
+                                <li class="footer-items-social-medias-items-icons-items-links-items-instagram"><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img class="footer-items-social-medias-items-icons-items-links-items-instagram-element" src="~/Images/Icons/icons8-instagram-50.png" alt="Icon of instagram"></a></li>
+                                <li class="footer-items-social-medias-items-icons-items-links-items-x"><a href="https://www.x.com" target="_blank" rel="noopener noreferrer"><img class="footer-items-social-medias-items-icons-items-links-items-x-element" src="~/Images/Icons/icons8-twitterx-50.png" alt="Icon of twitterx"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</footer>

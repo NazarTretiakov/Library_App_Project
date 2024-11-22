@@ -1,0 +1,141 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Arrow_forward.svg",
+      "PackagePath": "staticwebassets\\Images\\Icons\\Arrow_forward.svg"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Dropdown_arrow.svg",
+      "PackagePath": "staticwebassets\\Images\\Icons\\Dropdown_arrow.svg"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Search.svg",
+      "PackagePath": "staticwebassets\\Images\\Icons\\Search.svg"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\data-science.png",
+      "PackagePath": "staticwebassets\\Images\\Icons\\data-science.png"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\finance-and-business.png",
+      "PackagePath": "staticwebassets\\Images\\Icons\\finance-and-business.png"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\history-book.png",
+      "PackagePath": "staticwebassets\\Images\\Icons\\history-book.png"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\icons8-facebook-50.png",
+      "PackagePath": "staticwebassets\\Images\\Icons\\icons8-facebook-50.png"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\icons8-instagram-50.png",
+      "PackagePath": "staticwebassets\\Images\\Icons\\icons8-instagram-50.png"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\icons8-linkedin-50.png",
+      "PackagePath": "staticwebassets\\Images\\Icons\\icons8-linkedin-50.png"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\icons8-twitterx-50.png",
+      "PackagePath": "staticwebassets\\Images\\Icons\\icons8-twitterx-50.png"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\icons8-youtube-50.png",
+      "PackagePath": "staticwebassets\\Images\\Icons\\icons8-youtube-50.png"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\improve.png",
+      "PackagePath": "staticwebassets\\Images\\Icons\\improve.png"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\natural-product.png",
+      "PackagePath": "staticwebassets\\Images\\Icons\\natural-product.png"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\poetry.png",
+      "PackagePath": "staticwebassets\\Images\\Icons\\poetry.png"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Logo.jpg",
+      "PackagePath": "staticwebassets\\Images\\Logo.jpg"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Logo_gray.jpg",
+      "PackagePath": "staticwebassets\\Images\\Logo_gray.jpg"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Logo_icon.jpg",
+      "PackagePath": "staticwebassets\\Images\\Logo_icon.jpg"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Photo_of_Library.jpg",
+      "PackagePath": "staticwebassets\\Images\\Photo_of_Library.jpg"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Photo_of_library_2.jpg",
+      "PackagePath": "staticwebassets\\Images\\Photo_of_library_2.jpg"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\basic.css",
+      "PackagePath": "staticwebassets\\css\\basic.css"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\basic.css.map",
+      "PackagePath": "staticwebassets\\css\\basic.css.map"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\config.css",
+      "PackagePath": "staticwebassets\\css\\config.css"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\config.css.map",
+      "PackagePath": "staticwebassets\\css\\config.css.map"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\forum.css",
+      "PackagePath": "staticwebassets\\css\\forum.css"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\forum.css.map",
+      "PackagePath": "staticwebassets\\css\\forum.css.map"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\homepage.css",
+      "PackagePath": "staticwebassets\\css\\homepage.css"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\homepage.css.map",
+      "PackagePath": "staticwebassets\\css\\homepage.css.map"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\registration.css",
+      "PackagePath": "staticwebassets\\css\\registration.css"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\registration.css.map",
+      "PackagePath": "staticwebassets\\css\\registration.css.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LibraryApp.UI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LibraryApp.UI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.LibraryApp.UI.props",
+      "PackagePath": "build\\LibraryApp.UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.LibraryApp.UI.props",
+      "PackagePath": "buildMultiTargeting\\LibraryApp.UI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.LibraryApp.UI.props",
+      "PackagePath": "buildTransitive\\LibraryApp.UI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
