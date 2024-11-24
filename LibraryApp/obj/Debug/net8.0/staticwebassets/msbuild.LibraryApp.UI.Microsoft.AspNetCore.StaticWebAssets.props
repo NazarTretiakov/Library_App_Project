@@ -84,8 +84,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>9etxefw1fn</Fingerprint>
-      <Integrity>70K2aU/DNDmCAAYWC6h5hefa4PEswviBJXBlo5bZOj4=</Integrity>
+      <Fingerprint>bdces1msu5</Fingerprint>
+      <Integrity>4Snx05aeVpr7cITW/pCnfQaYLYqOVsCRYC1HEWBltAk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\forum.css'))</OriginalItemSpec>
@@ -102,8 +102,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>1h6gwqndtn</Fingerprint>
-      <Integrity>xfzwU8p9zf8+JIKjFHuEFtgazQbGZoqBLTN6x1AGxag=</Integrity>
+      <Fingerprint>bjs8shjgt7</Fingerprint>
+      <Integrity>d/LzGZ2lUPljKO6dzM0ZefUQHsBf60boS7NkTfLlwKg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\forum.css.map'))</OriginalItemSpec>
@@ -138,8 +138,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>qusqhyw3i9</Fingerprint>
-      <Integrity>brI8whWotNKc3/mX9wuZq/5QZAnGXKuLYsxIJJFdDY4=</Integrity>
+      <Fingerprint>8sdz2b5xvu</Fingerprint>
+      <Integrity>iA7qEnoDHago95JcBOsmaDCjDSrh9q+OdkIrmgVx5eM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\homepage.css.map'))</OriginalItemSpec>
@@ -156,8 +156,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>hdgfi3f0ve</Fingerprint>
-      <Integrity>pS7h8bBZbW14h1qBCh9ZhH4GDCiWhTLt9wJny+2iBVw=</Integrity>
+      <Fingerprint>gis0bp2a6h</Fingerprint>
+      <Integrity>qOAUNZpx/wTXafsqcaTuxgCjNthRCTrhpObYoDIEaaw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\registration.css'))</OriginalItemSpec>
@@ -174,8 +174,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>td4zvy5dzz</Fingerprint>
-      <Integrity>8dcgZf6LO6EGRcIzNfdx/ZZKaxgX6e9Zt8SenpM2dtM=</Integrity>
+      <Fingerprint>kmgyz0kh7i</Fingerprint>
+      <Integrity>rAv4vUBF2PExspfsmRs7KqVMDRW2VzA4Zjs+CfTyFQI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\registration.css.map'))</OriginalItemSpec>
@@ -251,6 +251,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Icons\finance-and-business.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Icons\google-icon.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>Images/Icons/google-icon.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>88c4l4rvh9</Fingerprint>
+      <Integrity>6EudWK+0dUEsV4gyQ0a3ps09EOu7LhJn3nwcUswInIE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Icons\google-icon.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Icons\history-book.png'))">
       <SourceType>Package</SourceType>
@@ -431,6 +449,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Icons\Search.svg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Icons\User_Profile_Photo.svg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>Images/Icons/User_Profile_Photo.svg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5rge3uhx6k</Fingerprint>
+      <Integrity>UbeS5/jIgPthoqXCmxy2BAzYgTx8oiOnPu1KlRSCgoY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Icons\User_Profile_Photo.svg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Logo.jpg'))">
       <SourceType>Package</SourceType>

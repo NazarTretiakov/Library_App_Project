@@ -1,8 +1,7 @@
 ﻿@{
-    ViewBag.Title = "Registration";
+    ViewBag.Title = "Sign in";
     ViewBag.StylesPath = "~/css/registration.css";
 }
-
 
 
 <div class="container-for-header-panel">
@@ -18,10 +17,10 @@
     <section class="registration">
         <form class="registration-form">
             <ul class="registration-form-items">
-                <li class="registration-form-items-title"><h1 class="registration-form-items-title-element">Registration</h1></li>
+                <li class="registration-form-items-title"><h1 class="registration-form-items-title-element">Welcome back</h1></li>
                 <li class="registration-form-items-input-username"><input class="registration-form-items-input-username-element" placeholder="Username" type="text"></li>
                 <li class="registration-form-items-input-password"><input class="registration-form-items-input-password-element" placeholder="Password" type="text"></li>
-                <li class="registration-form-items-button-register"><button class="registration-form-items-button-register-element">Register</button></li>
+                <li class="registration-form-items-button-register"><button class="registration-form-items-button-register-element">Sign in</button></li>
                 <li class="registration-form-items-button-google-sign-in">
                     <a href="asdfdf">
                         <button type="button" class="registration-form-items-button-google-sign-in-element">
@@ -30,7 +29,7 @@
                     </a>
                     <div class="registration-form-items-button-google-sign-in-element-icon"></div>
                 </li>
-                <li class="registration-form-items-sign-in"><span>Already have an account? <a class="footer-link" asp-controller="Home" asp-action="SignIn">Sign in</a></span></li>
+                <li class="registration-form-items-sign-in"><span>Don't have an account? <a class="footer-link" asp-controller="Home" asp-action="Register">Register</a></span></li>
             </ul>
         </form>
     </section>

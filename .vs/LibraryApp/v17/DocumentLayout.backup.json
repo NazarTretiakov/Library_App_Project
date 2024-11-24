@@ -3,44 +3,24 @@
   "WorkspaceRootPath": "D:\\Studying\\Library App Project\\LibraryApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E8329FC5-C0A1-4C47-B604-42050B538C1E}|LibraryApp\\LibraryApp.UI.csproj|d:\\studying\\library app project\\libraryapp\\libraryapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E8329FC5-C0A1-4C47-B604-42050B538C1E}|LibraryApp\\LibraryApp.UI.csproj|solutionrelative:libraryapp\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E8329FC5-C0A1-4C47-B604-42050B538C1E}|LibraryApp\\LibraryApp.UI.csproj|d:\\studying\\library app project\\libraryapp\\libraryapp\\views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8329FC5-C0A1-4C47-B604-42050B538C1E}|LibraryApp\\LibraryApp.UI.csproj|solutionrelative:libraryapp\\views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8329FC5-C0A1-4C47-B604-42050B538C1E}|LibraryApp\\LibraryApp.UI.csproj|d:\\studying\\library app project\\libraryapp\\libraryapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8329FC5-C0A1-4C47-B604-42050B538C1E}|LibraryApp\\LibraryApp.UI.csproj|solutionrelative:libraryapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E8329FC5-C0A1-4C47-B604-42050B538C1E}|LibraryApp\\LibraryApp.UI.csproj|d:\\studying\\library app project\\libraryapp\\libraryapp\\views\\home\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E8329FC5-C0A1-4C47-B604-42050B538C1E}|LibraryApp\\LibraryApp.UI.csproj|solutionrelative:libraryapp\\views\\home\\signin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E8329FC5-C0A1-4C47-B604-42050B538C1E}|LibraryApp\\LibraryApp.UI.csproj|d:\\studying\\library app project\\libraryapp\\libraryapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8329FC5-C0A1-4C47-B604-42050B538C1E}|LibraryApp\\LibraryApp.UI.csproj|solutionrelative:libraryapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8329FC5-C0A1-4C47-B604-42050B538C1E}|LibraryApp\\LibraryApp.UI.csproj|d:\\studying\\library app project\\libraryapp\\libraryapp\\controllers\\forumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8329FC5-C0A1-4C47-B604-42050B538C1E}|LibraryApp\\LibraryApp.UI.csproj|solutionrelative:libraryapp\\controllers\\forumcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8329FC5-C0A1-4C47-B604-42050B538C1E}|LibraryApp\\LibraryApp.UI.csproj|d:\\studying\\library app project\\libraryapp\\libraryapp\\controllers\\librarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8329FC5-C0A1-4C47-B604-42050B538C1E}|LibraryApp\\LibraryApp.UI.csproj|solutionrelative:libraryapp\\controllers\\librarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8329FC5-C0A1-4C47-B604-42050B538C1E}|LibraryApp\\LibraryApp.UI.csproj|d:\\studying\\library app project\\libraryapp\\libraryapp\\views\\library\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E8329FC5-C0A1-4C47-B604-42050B538C1E}|LibraryApp\\LibraryApp.UI.csproj|solutionrelative:libraryapp\\views\\library\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8329FC5-C0A1-4C47-B604-42050B538C1E}|LibraryApp\\LibraryApp.UI.csproj|d:\\studying\\library app project\\libraryapp\\libraryapp\\views\\home\\askus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E8329FC5-C0A1-4C47-B604-42050B538C1E}|LibraryApp\\LibraryApp.UI.csproj|solutionrelative:libraryapp\\views\\home\\askus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8329FC5-C0A1-4C47-B604-42050B538C1E}|LibraryApp\\LibraryApp.UI.csproj|d:\\studying\\library app project\\libraryapp\\libraryapp\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E8329FC5-C0A1-4C47-B604-42050B538C1E}|LibraryApp\\LibraryApp.UI.csproj|solutionrelative:libraryapp\\views\\home\\aboutus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E8329FC5-C0A1-4C47-B604-42050B538C1E}|LibraryApp\\LibraryApp.UI.csproj|d:\\studying\\library app project\\libraryapp\\libraryapp\\views\\forum\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E8329FC5-C0A1-4C47-B604-42050B538C1E}|LibraryApp\\LibraryApp.UI.csproj|solutionrelative:libraryapp\\views\\forum\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8329FC5-C0A1-4C47-B604-42050B538C1E}|LibraryApp\\LibraryApp.UI.csproj|d:\\studying\\library app project\\libraryapp\\libraryapp\\views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E8329FC5-C0A1-4C47-B604-42050B538C1E}|LibraryApp\\LibraryApp.UI.csproj|solutionrelative:libraryapp\\views\\home\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E8329FC5-C0A1-4C47-B604-42050B538C1E}|LibraryApp\\LibraryApp.UI.csproj|d:\\studying\\library app project\\libraryapp\\libraryapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8329FC5-C0A1-4C47-B604-42050B538C1E}|LibraryApp\\LibraryApp.UI.csproj|solutionrelative:libraryapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E8329FC5-C0A1-4C47-B604-42050B538C1E}|LibraryApp\\LibraryApp.UI.csproj|d:\\studying\\library app project\\libraryapp\\libraryapp\\startupextensions\\configureservicesextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,11 +34,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\Program.cs",
               "RelativeDocumentMoniker": "LibraryApp\\Program.cs",
@@ -67,7 +47,8 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-15T15:24:21.057Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -77,36 +58,11 @@
               "RelativeDocumentMoniker": "LibraryApp\\Controllers\\HomeController.cs",
               "ToolTip": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\Controllers\\HomeController.cs",
               "RelativeToolTip": "LibraryApp\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-15T15:33:35.524Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ForumController.cs",
-              "DocumentMoniker": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\Controllers\\ForumController.cs",
-              "RelativeDocumentMoniker": "LibraryApp\\Controllers\\ForumController.cs",
-              "ToolTip": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\Controllers\\ForumController.cs",
-              "RelativeToolTip": "LibraryApp\\Controllers\\ForumController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T10:42:35.856Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LibraryController.cs",
-              "DocumentMoniker": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\Controllers\\LibraryController.cs",
-              "RelativeDocumentMoniker": "LibraryApp\\Controllers\\LibraryController.cs",
-              "ToolTip": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\Controllers\\LibraryController.cs",
-              "RelativeToolTip": "LibraryApp\\Controllers\\LibraryController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T11:12:11.733Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -114,80 +70,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\Views\\Library\\Index.cshtml",
-              "RelativeDocumentMoniker": "LibraryApp\\Views\\Library\\Index.cshtml",
-              "ToolTip": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\Views\\Library\\Index.cshtml",
-              "RelativeToolTip": "LibraryApp\\Views\\Library\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T11:13:13.118Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AskUs.cshtml",
-              "DocumentMoniker": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\Views\\Home\\AskUs.cshtml",
-              "RelativeDocumentMoniker": "LibraryApp\\Views\\Home\\AskUs.cshtml",
-              "ToolTip": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\Views\\Home\\AskUs.cshtml",
-              "RelativeToolTip": "LibraryApp\\Views\\Home\\AskUs.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T11:02:20.145Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AboutUs.cshtml",
-              "DocumentMoniker": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\Views\\Home\\AboutUs.cshtml",
-              "RelativeDocumentMoniker": "LibraryApp\\Views\\Home\\AboutUs.cshtml",
-              "ToolTip": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\Views\\Home\\AboutUs.cshtml",
-              "RelativeToolTip": "LibraryApp\\Views\\Home\\AboutUs.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T10:55:26.469Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\Views\\Forum\\Index.cshtml",
               "RelativeDocumentMoniker": "LibraryApp\\Views\\Forum\\Index.cshtml",
               "ToolTip": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\Views\\Forum\\Index.cshtml",
               "RelativeToolTip": "LibraryApp\\Views\\Forum\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAgwJoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T10:45:57.232Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\Views\\Home\\Register.cshtml",
-              "RelativeDocumentMoniker": "LibraryApp\\Views\\Home\\Register.cshtml",
-              "ToolTip": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\Views\\Home\\Register.cshtml",
-              "RelativeToolTip": "LibraryApp\\Views\\Home\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T10:37:34.166Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "LibraryApp\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "LibraryApp\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-18T16:06:57.773Z",
+              "WhenOpened": "2024-11-19T10:45:57.232Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 1,
+              "Title": "SignIn.cshtml",
+              "DocumentMoniker": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\Views\\Home\\SignIn.cshtml",
+              "RelativeDocumentMoniker": "LibraryApp\\Views\\Home\\SignIn.cshtml",
+              "ToolTip": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\Views\\Home\\SignIn.cshtml*",
+              "RelativeToolTip": "LibraryApp\\Views\\Home\\SignIn.cshtml*",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwC8AAAB6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T11:19:10.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\Views\\Home\\Register.cshtml",
+              "RelativeDocumentMoniker": "LibraryApp\\Views\\Home\\Register.cshtml",
+              "ToolTip": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\Views\\Home\\Register.cshtml*",
+              "RelativeToolTip": "LibraryApp\\Views\\Home\\Register.cshtml*",
+              "ViewState": "AgIAABIAAAAAAAAAAAAgwCAAAACaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-19T10:37:34.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ConfigureServicesExtension.cs",
               "DocumentMoniker": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\StartupExtensions\\ConfigureServicesExtension.cs",
               "RelativeDocumentMoniker": "LibraryApp\\StartupExtensions\\ConfigureServicesExtension.cs",

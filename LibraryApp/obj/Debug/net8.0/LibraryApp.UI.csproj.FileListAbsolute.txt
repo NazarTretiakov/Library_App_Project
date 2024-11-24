@@ -32,3 +32,4 @@ D:\Studying\Library App Project\LibraryApp\LibraryApp\obj\Debug\net8.0\LibraryAp
 D:\Studying\Library App Project\LibraryApp\LibraryApp\obj\Debug\net8.0\ref\LibraryApp.UI.dll
 D:\Studying\Library App Project\LibraryApp\LibraryApp\bin\Debug\net8.0\package-lock.json
 D:\Studying\Library App Project\LibraryApp\LibraryApp\bin\Debug\net8.0\package.json
+D:\Studying\Library App Project\LibraryApp\LibraryApp\obj\Debug\net8.0\LibraryApp.UI.sourcelink.json

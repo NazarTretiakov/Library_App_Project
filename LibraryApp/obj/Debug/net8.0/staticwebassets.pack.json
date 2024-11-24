@@ -13,12 +13,20 @@
       "PackagePath": "staticwebassets\\Images\\Icons\\Search.svg"
     },
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\User_Profile_Photo.svg",
+      "PackagePath": "staticwebassets\\Images\\Icons\\User_Profile_Photo.svg"
+    },
+    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\data-science.png",
       "PackagePath": "staticwebassets\\Images\\Icons\\data-science.png"
     },
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\finance-and-business.png",
       "PackagePath": "staticwebassets\\Images\\Icons\\finance-and-business.png"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\google-icon.png",
+      "PackagePath": "staticwebassets\\Images\\Icons\\google-icon.png"
     },
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\history-book.png",

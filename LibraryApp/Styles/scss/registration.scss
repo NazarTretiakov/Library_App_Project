@@ -1,3 +1,297 @@
-﻿.registration {
-    height: 1200px;
+﻿@use "config" as *;
+
+.container-for-header-panel {
+    position: sticky;
+    top: 0;
+}
+
+
+.header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 100px 0 100px;
+    background-color: white;
+
+    &-items {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        justify-content: space-between;
+
+        &-item {
+
+            &-logo {
+
+                &-image {
+                    width: 120px;
+                }
+            }
+        }
+    }
+
+    &-link {
+        color: black;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+.container-for-registration-form {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 0 0;
+}
+
+.registration {
+    padding: 70px 70px 70px 70px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+
+    &-form {
+
+        &-items {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            &-title {
+
+                &-element {
+                    font-size: 24px;
+                    margin: 0 0 80px 0;
+                }
+            }
+
+            &-input-username {
+
+                &-element {
+                    height: 40px;
+                    width: 300px;
+                    padding: 0 15px;
+                    margin: 0 0 30px 0;
+                    border: 2px $grayBackgroundColor solid;
+                    border-radius: 10px;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+            &-input-password {
+
+                &-element {
+                    height: 40px;
+                    width: 300px;
+                    padding: 0 15px;
+                    margin: 0 0 80px 0;
+                    border: 2px $grayBackgroundColor solid;
+                    border-radius: 10px;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+            &-button-register {
+
+                &-element {
+                    height: 40px;
+                    width: 330px;
+                    background-color: $buttonColor;
+                    border: none;
+                    color: white;
+                    border-radius: 10px;
+                    transition: background-color 0.3s ease;
+                    margin: 0 0 30px 0;
+
+                    &:hover {
+                        cursor: pointer;
+                        background-color: $buttonColorHover;
+                    }
+                }
+            }
+
+            &-button-google-sign-in {
+                display: flex;
+                align-items: center;
+                margin: 0 0 12px 0;
+
+                &-element {
+                    height: 40px;
+                    width: 330px;
+                    border-radius: 10px;
+                    border: 2px $grayBackgroundColor solid;
+                    background-color: white;
+                    padding: 0 0 0 20px;
+                    transition: background-color 0.3s ease;
+
+                    &-icon {
+                        width: 30px;
+                        height: 30px;
+                        display: inline;
+                        background-size: contain;
+                        background-image: url("/Images/Icons/google-icon.png");
+                        margin: 0 0 0 -246px;
+                        pointer-events: none;
+                    }
+
+                    &:hover {
+                        background-color: $buttonColorWhiteHover;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            &-sign-in {
+                display: flex;
+                justify-content: center;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+.footer {
+    padding: 60px 100px 40px 100px;
+    margin: 100px 0 0 0;
+    background-color: $grayBackgroundColor;
+
+    &-items {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+
+        &-address {
+
+            &-items {
+                list-style: none;
+                padding: 0;
+                display: flex;
+
+                &-logo {
+
+                    &-element {
+                        width: 100px;
+                    }
+                }
+
+                &-description {
+                    font-size: 14px;
+                    line-height: 1.6;
+
+                    &-items {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0 0 0 20px;
+
+                        &-1 {
+                            margin: 8px 0 0 0;
+                        }
+
+                        &-2 {
+                        }
+
+                        &-3 {
+                        }
+                    }
+                }
+            }
+        }
+
+        &-social-medias {
+
+            &-items {
+                list-style: none;
+                padding: 0;
+
+                &-about-us {
+                    font-size: 14px;
+                    margin: 0 0 40px 0;
+                }
+
+                &-icons {
+
+                    &-items {
+                        list-style: none;
+                        padding: 0;
+
+                        &-description {
+                            font-size: 14px;
+                            margin: 0 0 14px 0;
+                        }
+
+                        &-links {
+
+                            &-items {
+                                list-style: none;
+                                padding: 0;
+                                display: flex;
+
+                                &-facebook {
+                                    margin: 0 10px 0 0;
+
+                                    &-element {
+                                        width: 32px;
+                                    }
+                                }
+
+                                &-linkedin {
+                                    margin: 0 10px 0 0;
+
+                                    &-element {
+                                        width: 32px;
+                                    }
+                                }
+
+                                &-youtube {
+                                    margin: 0 10px 0 0;
+
+                                    &-element {
+                                        width: 32px;
+                                    }
+                                }
+
+                                &-instagram {
+                                    margin: 0 10px 0 0;
+
+                                    &-element {
+                                        width: 32px;
+                                    }
+                                }
+
+                                &-x {
+
+                                    &-element {
+                                        width: 32px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-link {
+        text-decoration: none;
+        color: $footerLinkColor;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }

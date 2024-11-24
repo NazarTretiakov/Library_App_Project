@@ -17,6 +17,12 @@ namespace LibraryApp.UI.Controllers
             return View();
         }
 
+        [Route("/home/sign-in")]
+        public IActionResult SignIn()
+        {
+            return View();
+        }
+
         [Route("/home/about-us")]
         public IActionResult AboutUs()
         {

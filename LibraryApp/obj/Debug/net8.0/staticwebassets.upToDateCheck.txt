@@ -12,6 +12,7 @@ wwwroot\Images\Icons\Arrow_forward.svg
 wwwroot\Images\Icons\data-science.png
 wwwroot\Images\Icons\Dropdown_arrow.svg
 wwwroot\Images\Icons\finance-and-business.png
+wwwroot\Images\Icons\google-icon.png
 wwwroot\Images\Icons\history-book.png
 wwwroot\Images\Icons\icons8-facebook-50.png
 wwwroot\Images\Icons\icons8-instagram-50.png
@@ -22,6 +23,7 @@ wwwroot\Images\Icons\improve.png
 wwwroot\Images\Icons\natural-product.png
 wwwroot\Images\Icons\poetry.png
 wwwroot\Images\Icons\Search.svg
+wwwroot\Images\Icons\User_Profile_Photo.svg
 wwwroot\Images\Logo.jpg
 wwwroot\Images\Logo_gray.jpg
 wwwroot\Images\Logo_icon.jpg
