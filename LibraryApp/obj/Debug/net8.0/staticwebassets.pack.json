@@ -1,12 +1,28 @@
 {
   "Files": [
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Add_icon.svg",
+      "PackagePath": "staticwebassets\\Images\\Icons\\Add_icon.svg"
+    },
+    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Arrow_forward.svg",
       "PackagePath": "staticwebassets\\Images\\Icons\\Arrow_forward.svg"
     },
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Create_comment.svg",
+      "PackagePath": "staticwebassets\\Images\\Icons\\Create_comment.svg"
+    },
+    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Dropdown_arrow.svg",
       "PackagePath": "staticwebassets\\Images\\Icons\\Dropdown_arrow.svg"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Like.svg",
+      "PackagePath": "staticwebassets\\Images\\Icons\\Like.svg"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Save.svg",
+      "PackagePath": "staticwebassets\\Images\\Icons\\Save.svg"
     },
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Search.svg",
@@ -115,6 +131,14 @@
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\homepage.css.map",
       "PackagePath": "staticwebassets\\css\\homepage.css.map"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\post.css",
+      "PackagePath": "staticwebassets\\css\\post.css"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\post.css.map",
+      "PackagePath": "staticwebassets\\css\\post.css.map"
     },
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\registration.css",

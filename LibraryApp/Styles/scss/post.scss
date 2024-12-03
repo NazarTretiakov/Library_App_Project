@@ -82,158 +82,10 @@
     }
 }
 
-
-.search-panel {
-    background-color: $grayBackgroundColor;
-    padding: 0 200px 0 200px;
-    margin: 0 0 50px 0;
-    height: 80px;
-    align-items: center;
-    display: flex;
-
-    &-form {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        width: 100%;
-
-        &-search {
-            list-style: none;
-            display: flex;
-            padding: 0;
-            margin: 0;
-
-            &-icon {
-
-                &-div {
-                    height: 20px;
-                    width: 20px;
-                    position: absolute;
-                    margin: 4px 0 0 10px;
-                    background-image: url('/Images/Icons/Search.svg');
-                    background-size: 100%;
-                }
-            }
-
-            &-input {
-
-                &-element {
-                    height: 30px;
-                    width: 500px;
-                    border-radius: 6px;
-                    border: none;
-                    padding: 0 15px 0 45px;
-
-                    &:focus {
-                        outline: none;
-                    }
-                }
-            }
-        }
-
-        &-dropdown {
-            list-style: none;
-            display: flex;
-            padding: 0;
-            margin: 0;
-
-            &-select {
-
-                &-element {
-                    appearance: none;
-                    height: 30px;
-                    width: 200px;
-                    padding: 0 0 0 15px;
-                    border-radius: 6px;
-                    border: none;
-
-                    &:focus {
-                        outline: none;
-                    }
-
-                    &:hover {
-                        cursor: pointer;
-                    }
-                }
-            }
-
-            &-arrow {
-
-                &-div {
-                    height: 16px;
-                    width: 16px;
-                    position: absolute;
-                    margin: 8px 0 0 -30px;
-                    background-image: url('/Images/Icons/Dropdown_arrow.svg');
-                    background-size: 100%;
-                    transform: rotate(90deg);
-                    pointer-events: none;
-
-                    &:hover {
-                        cursor: pointer;
-                    }
-                }
-            }
-        }
-
-        &-button {
-            height: 30px;
-            width: 200px;
-            border-radius: 6px;
-            border: none;
-            background-color: $buttonColor;
-            color: white;
-            transition: background-color 0.3s ease;
-
-            &:hover {
-                cursor: pointer;
-                background-color: $buttonColorHover;
-            }
-        }
-    }
-}
-
-
-.create-post {
-    width: 640px;
-    padding: 6px 50px 6px 50px;
-    margin: 0 0 50px 0;
-    border-radius: 20px;
-    font-size: 18px;
-    background-color: #eefaff;
-    transition: background-color 0.3s ease;
-
-    &:hover {
-        background-color: #CCE7F2;
-    }
-
-    &-items {
-        padding: 0;
-        display: flex;
-        list-style: none;
-        justify-content: center;
-        align-items: center;
-
-        &-icon {
-            display: flex;
-            margin: 0 10px 0 0;
-
-            &-element {
-                width: 36px;
-            }
-        }
-
-        &-inscription {
-            color: $buttonColor;
-        }
-    }
-}
-
-
 .post {
     width: 640px;
     padding: 50px;
-    margin: 0;
+    margin: 50px 0 0 0;
     border: 3px $grayBackgroundColor solid;
     border-radius: 20px;
     font-size: 14px;
@@ -299,18 +151,179 @@
                 margin: 0;
             }
         }
+
+
+        &-create-comment {
+            margin: 40px 0 0 0;
+
+            &-items {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &-creation {
+
+                    &-items {
+                        list-style: none;
+                        padding: 0;
+                        display: flex;
+
+                        &-input {
+
+                            &-element {
+                                width: 400px;
+                                padding: 8px 0 8px 16px;
+                                border: 2px $grayBackgroundColor solid;
+                                border-radius: 10px;
+
+                                &:focus {
+                                    outline: none;
+                                }
+                            }
+                        }
+
+                        &-button {
+                            display: flex;
+                            align-items: center;
+                            margin: 2px 0 0 -44px;
+
+                            &-element {
+                                border: none;
+                                background-color: white;
+
+                                &:hover {
+                                    cursor: pointer;
+                                }
+
+                                &:focus {
+                                    outline: none;
+                                }
+
+                                &-image {
+                                    pointer-events: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &-interaction {
+
+                    &-items {
+                        list-style: none;
+                        padding: 0;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 108px;
+
+                        &-like {
+                            display: flex;
+                            align-items: center;
+
+                            &-element {
+                                width: 30px;
+
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                            }
+
+                            &-amount {
+                                font-size: 14px;
+                                margin: 0 0 0 4px;
+                            }
+                        }
+
+                        &-save {
+                            display: flex;
+                            align-items: center;
+                            margin: -2px 0 0 0;
+
+                            &-element {
+                                width: 30px;
+
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &-comments {
+            margin: 80px 0 50px 0;
+
+            &-title {
+                margin: 0;
+                font-size: 20px;
+            }
+        }
+
+        &-comment {
+            padding: 0 0 0 0;
+
+            &-items {
+                list-style: none;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+
+                &-header {
+
+                    &-items {
+                        list-style: none;
+                        padding: 0;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        &-user {
+                            display: flex;
+                            align-items: center;
+
+                            &-picture {
+                                width: 30px;
+                            }
+
+                            &-username {
+                                margin: 0 0 0 10px;
+                            }
+                        }
+
+                        &-time-of-publication {
+
+                            &-element {
+                                color: $grayBackgroundColor;
+                            }
+                        }
+                    }
+                }
+
+                &-content {
+
+                    &-element {
+                        margin: 26px 0 0 0;
+                    }
+
+                    &-div-for-space-between-commentaries {
+                        height: 60px;
+                        border-bottom: 3px $grayBackgroundColor solid;
+                        margin: 0 0 60px 0;
+                    }
+                }
+            }
+        }
     }
 
     &-link {
         color: black;
         text-decoration: none;
     }
-}
-
-
-.container-for-space-between-posts {
-    height: 50px;
-    width: 100%;
 }
 
 

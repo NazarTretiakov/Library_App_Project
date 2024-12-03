@@ -9,5 +9,11 @@ namespace LibraryApp.UI.Controllers
         {
             return View();
         }
+
+        [Route("/forum/post")]
+        public IActionResult Post()
+        {
+            return View();
+        }
     }
 }

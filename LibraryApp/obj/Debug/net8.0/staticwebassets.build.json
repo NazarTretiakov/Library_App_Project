@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UDHjrnSqQQegUNgBh+7MkU/HlMAu/MYJynTFYAEo+Po=",
+  "Hash": "y0m6B/XLgtqm2Q11vtctLskimPFnD5QDXll7lJLKJ+o=",
   "Source": "LibraryApp.UI",
   "BasePath": "_content/LibraryApp.UI",
   "Mode": "Default",
@@ -115,8 +115,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "bdces1msu5",
-      "Integrity": "4Snx05aeVpr7cITW/pCnfQaYLYqOVsCRYC1HEWBltAk=",
+      "Fingerprint": "8104p42l1m",
+      "Integrity": "LIJAY1Wcf88INdzmbCz+FZpjkZN/cKKAuAG0vUc64Rw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\forum.css"
@@ -136,8 +136,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "bjs8shjgt7",
-      "Integrity": "d/LzGZ2lUPljKO6dzM0ZefUQHsBf60boS7NkTfLlwKg=",
+      "Fingerprint": "fyu43bftak",
+      "Integrity": "t5Su1MJucGIgXk48hZeKHJgVjkVy2QmFXUm5qVLXAfI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\forum.css.map"
@@ -185,6 +185,48 @@
       "OriginalItemSpec": "wwwroot\\css\\homepage.css.map"
     },
     {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\post.css",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "css/post#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vp3756g487",
+      "Integrity": "bfSMmTaEi9CEzBhTlMo9usLyvkGqaXK+3o9PFZw9Ndc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\post.css"
+    },
+    {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\post.css.map",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "css/post.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "51szkj0wx1",
+      "Integrity": "qTiRVixWSOVLkBE0avBev3m6W4FyjR4zxAkKwjMNVUo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\post.css.map"
+    },
+    {
       "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\registration.css",
       "SourceId": "LibraryApp.UI",
       "SourceType": "Discovered",
@@ -199,8 +241,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "gis0bp2a6h",
-      "Integrity": "qOAUNZpx/wTXafsqcaTuxgCjNthRCTrhpObYoDIEaaw=",
+      "Fingerprint": "o4karpxrdw",
+      "Integrity": "aFNE1APHgswLKknTenBWc63tFnfAk9M4XaHOdyGRwRM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\registration.css"
@@ -227,6 +269,27 @@
       "OriginalItemSpec": "wwwroot\\css\\registration.css.map"
     },
     {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Add_icon.svg",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "Images/Icons/Add_icon#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4cvqshaw56",
+      "Integrity": "3L6uE0OCDnWeVVNbhp9quTMEgFLEW38lkh4K+OBG+cc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Icons\\Add_icon.svg"
+    },
+    {
       "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Arrow_forward.svg",
       "SourceId": "LibraryApp.UI",
       "SourceType": "Discovered",
@@ -246,6 +309,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Icons\\Arrow_forward.svg"
+    },
+    {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Create_comment.svg",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "Images/Icons/Create_comment#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m1p8pozdp8",
+      "Integrity": "NkY49wrpAVW08KeyPtODtWItltx9lo34LEP9ojFlbxI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Icons\\Create_comment.svg"
     },
     {
       "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\data-science.png",
@@ -479,6 +563,27 @@
       "OriginalItemSpec": "wwwroot\\Images\\Icons\\improve.png"
     },
     {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Like.svg",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "Images/Icons/Like#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2sqi2xlywg",
+      "Integrity": "7nGfei3AqaygRa0aSmN4V5rRHy//SV/clol1kZpVxh4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Icons\\Like.svg"
+    },
+    {
       "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\natural-product.png",
       "SourceId": "LibraryApp.UI",
       "SourceType": "Discovered",
@@ -519,6 +624,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Icons\\poetry.png"
+    },
+    {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Save.svg",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "Images/Icons/Save#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3exhn9nq9n",
+      "Integrity": "tRFEfcPwxMuQzXrAiWTn/Vd/3ORLHlj9FIq6SGbQOV4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Icons\\Save.svg"
     },
     {
       "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Search.svg",
@@ -692,7 +818,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 24 Nov 2024 11:26:53 GMT"
+          "Value": "Sun, 01 Dec 2024 10:47:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -737,7 +863,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 24 Nov 2024 11:26:53 GMT"
+          "Value": "Sun, 01 Dec 2024 10:47:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -774,7 +900,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 24 Nov 2024 11:26:53 GMT"
+          "Value": "Sun, 01 Dec 2024 10:47:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -819,7 +945,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 24 Nov 2024 11:26:53 GMT"
+          "Value": "Sun, 01 Dec 2024 10:47:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -856,7 +982,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 24 Nov 2024 11:26:53 GMT"
+          "Value": "Sun, 01 Dec 2024 10:47:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -893,7 +1019,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 24 Nov 2024 11:26:53 GMT"
+          "Value": "Sun, 01 Dec 2024 10:47:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -938,7 +1064,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 24 Nov 2024 11:26:53 GMT"
+          "Value": "Sun, 01 Dec 2024 10:47:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -975,7 +1101,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 24 Nov 2024 11:26:53 GMT"
+          "Value": "Sun, 01 Dec 2024 10:47:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -998,7 +1124,7 @@
       ]
     },
     {
-      "Route": "css/forum.bdces1msu5.css",
+      "Route": "css/forum.8104p42l1m.css",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\forum.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1008,7 +1134,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5872"
+          "Value": "6417"
         },
         {
           "Name": "Content-Type",
@@ -1016,11 +1142,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4Snx05aeVpr7cITW/pCnfQaYLYqOVsCRYC1HEWBltAk=\""
+          "Value": "\"LIJAY1Wcf88INdzmbCz+FZpjkZN/cKKAuAG0vUc64Rw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 24 Nov 2024 11:26:53 GMT"
+          "Value": "Sun, 01 Dec 2024 11:07:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1030,7 +1156,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "bdces1msu5"
+          "Value": "8104p42l1m"
         },
         {
           "Name": "label",
@@ -1038,7 +1164,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-4Snx05aeVpr7cITW/pCnfQaYLYqOVsCRYC1HEWBltAk="
+          "Value": "sha256-LIJAY1Wcf88INdzmbCz+FZpjkZN/cKKAuAG0vUc64Rw="
         }
       ]
     },
@@ -1053,7 +1179,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5872"
+          "Value": "6417"
         },
         {
           "Name": "Content-Type",
@@ -1061,11 +1187,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4Snx05aeVpr7cITW/pCnfQaYLYqOVsCRYC1HEWBltAk=\""
+          "Value": "\"LIJAY1Wcf88INdzmbCz+FZpjkZN/cKKAuAG0vUc64Rw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 24 Nov 2024 11:26:53 GMT"
+          "Value": "Sun, 01 Dec 2024 11:07:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1075,12 +1201,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-4Snx05aeVpr7cITW/pCnfQaYLYqOVsCRYC1HEWBltAk="
+          "Value": "sha256-LIJAY1Wcf88INdzmbCz+FZpjkZN/cKKAuAG0vUc64Rw="
         }
       ]
     },
     {
-      "Route": "css/forum.css.bjs8shjgt7.map",
+      "Route": "css/forum.css.fyu43bftak.map",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\forum.css.map",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1090,7 +1216,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1405"
+          "Value": "1534"
         },
         {
           "Name": "Content-Type",
@@ -1098,11 +1224,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"d/LzGZ2lUPljKO6dzM0ZefUQHsBf60boS7NkTfLlwKg=\""
+          "Value": "\"t5Su1MJucGIgXk48hZeKHJgVjkVy2QmFXUm5qVLXAfI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 24 Nov 2024 11:26:53 GMT"
+          "Value": "Sun, 01 Dec 2024 11:07:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1112,7 +1238,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "bjs8shjgt7"
+          "Value": "fyu43bftak"
         },
         {
           "Name": "label",
@@ -1120,7 +1246,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-d/LzGZ2lUPljKO6dzM0ZefUQHsBf60boS7NkTfLlwKg="
+          "Value": "sha256-t5Su1MJucGIgXk48hZeKHJgVjkVy2QmFXUm5qVLXAfI="
         }
       ]
     },
@@ -1135,7 +1261,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1405"
+          "Value": "1534"
         },
         {
           "Name": "Content-Type",
@@ -1143,11 +1269,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"d/LzGZ2lUPljKO6dzM0ZefUQHsBf60boS7NkTfLlwKg=\""
+          "Value": "\"t5Su1MJucGIgXk48hZeKHJgVjkVy2QmFXUm5qVLXAfI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 24 Nov 2024 11:26:53 GMT"
+          "Value": "Sun, 01 Dec 2024 11:07:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1157,7 +1283,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-d/LzGZ2lUPljKO6dzM0ZefUQHsBf60boS7NkTfLlwKg="
+          "Value": "sha256-t5Su1MJucGIgXk48hZeKHJgVjkVy2QmFXUm5qVLXAfI="
         }
       ]
     },
@@ -1184,7 +1310,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 24 Nov 2024 11:26:53 GMT"
+          "Value": "Sun, 01 Dec 2024 10:47:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1221,7 +1347,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 24 Nov 2024 11:26:53 GMT"
+          "Value": "Sun, 01 Dec 2024 10:47:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1266,7 +1392,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 24 Nov 2024 11:26:53 GMT"
+          "Value": "Sun, 01 Dec 2024 10:47:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1303,7 +1429,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 24 Nov 2024 11:26:53 GMT"
+          "Value": "Sun, 01 Dec 2024 10:47:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1326,6 +1452,170 @@
       ]
     },
     {
+      "Route": "css/post.css",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\post.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6938"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bfSMmTaEi9CEzBhTlMo9usLyvkGqaXK+3o9PFZw9Ndc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Dec 2024 11:18:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bfSMmTaEi9CEzBhTlMo9usLyvkGqaXK+3o9PFZw9Ndc="
+        }
+      ]
+    },
+    {
+      "Route": "css/post.css.51szkj0wx1.map",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\post.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1481"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qTiRVixWSOVLkBE0avBev3m6W4FyjR4zxAkKwjMNVUo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Dec 2024 11:18:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "51szkj0wx1"
+        },
+        {
+          "Name": "label",
+          "Value": "css/post.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qTiRVixWSOVLkBE0avBev3m6W4FyjR4zxAkKwjMNVUo="
+        }
+      ]
+    },
+    {
+      "Route": "css/post.css.map",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\post.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1481"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qTiRVixWSOVLkBE0avBev3m6W4FyjR4zxAkKwjMNVUo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Dec 2024 11:18:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qTiRVixWSOVLkBE0avBev3m6W4FyjR4zxAkKwjMNVUo="
+        }
+      ]
+    },
+    {
+      "Route": "css/post.vp3756g487.css",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\post.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6938"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bfSMmTaEi9CEzBhTlMo9usLyvkGqaXK+3o9PFZw9Ndc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Dec 2024 11:18:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vp3756g487"
+        },
+        {
+          "Name": "label",
+          "Value": "css/post.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bfSMmTaEi9CEzBhTlMo9usLyvkGqaXK+3o9PFZw9Ndc="
+        }
+      ]
+    },
+    {
       "Route": "css/registration.css",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\registration.css",
       "Selectors": [],
@@ -1336,7 +1626,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4631"
+          "Value": "4841"
         },
         {
           "Name": "Content-Type",
@@ -1344,11 +1634,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qOAUNZpx/wTXafsqcaTuxgCjNthRCTrhpObYoDIEaaw=\""
+          "Value": "\"aFNE1APHgswLKknTenBWc63tFnfAk9M4XaHOdyGRwRM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 24 Nov 2024 11:30:08 GMT"
+          "Value": "Sun, 24 Nov 2024 15:40:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1358,7 +1648,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-qOAUNZpx/wTXafsqcaTuxgCjNthRCTrhpObYoDIEaaw="
+          "Value": "sha256-aFNE1APHgswLKknTenBWc63tFnfAk9M4XaHOdyGRwRM="
         }
       ]
     },
@@ -1385,7 +1675,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 24 Nov 2024 11:30:08 GMT"
+          "Value": "Sun, 24 Nov 2024 15:40:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1430,7 +1720,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 24 Nov 2024 11:30:08 GMT"
+          "Value": "Sun, 24 Nov 2024 15:40:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1445,7 +1735,7 @@
       ]
     },
     {
-      "Route": "css/registration.gis0bp2a6h.css",
+      "Route": "css/registration.o4karpxrdw.css",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\registration.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1455,7 +1745,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4631"
+          "Value": "4841"
         },
         {
           "Name": "Content-Type",
@@ -1463,11 +1753,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qOAUNZpx/wTXafsqcaTuxgCjNthRCTrhpObYoDIEaaw=\""
+          "Value": "\"aFNE1APHgswLKknTenBWc63tFnfAk9M4XaHOdyGRwRM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 24 Nov 2024 11:30:08 GMT"
+          "Value": "Sun, 24 Nov 2024 15:40:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1477,7 +1767,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "gis0bp2a6h"
+          "Value": "o4karpxrdw"
         },
         {
           "Name": "label",
@@ -1485,7 +1775,89 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-qOAUNZpx/wTXafsqcaTuxgCjNthRCTrhpObYoDIEaaw="
+          "Value": "sha256-aFNE1APHgswLKknTenBWc63tFnfAk9M4XaHOdyGRwRM="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Icons/Add_icon.4cvqshaw56.svg",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Add_icon.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "182"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3L6uE0OCDnWeVVNbhp9quTMEgFLEW38lkh4K+OBG+cc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Dec 2024 09:57:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4cvqshaw56"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Icons/Add_icon.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3L6uE0OCDnWeVVNbhp9quTMEgFLEW38lkh4K+OBG+cc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Icons/Add_icon.svg",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Add_icon.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "182"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3L6uE0OCDnWeVVNbhp9quTMEgFLEW38lkh4K+OBG+cc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Dec 2024 09:57:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3L6uE0OCDnWeVVNbhp9quTMEgFLEW38lkh4K+OBG+cc="
         }
       ]
     },
@@ -1568,6 +1940,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-2WyqPhv0g/81/ontLytMVryzq7EGP+I0SYUzCL9m1x0="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Icons/Create_comment.m1p8pozdp8.svg",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Create_comment.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "215"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NkY49wrpAVW08KeyPtODtWItltx9lo34LEP9ojFlbxI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Dec 2024 10:17:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m1p8pozdp8"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Icons/Create_comment.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NkY49wrpAVW08KeyPtODtWItltx9lo34LEP9ojFlbxI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Icons/Create_comment.svg",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Create_comment.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "215"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NkY49wrpAVW08KeyPtODtWItltx9lo34LEP9ojFlbxI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Dec 2024 10:17:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NkY49wrpAVW08KeyPtODtWItltx9lo34LEP9ojFlbxI="
         }
       ]
     },
@@ -1840,7 +2294,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 24 Nov 2024 09:13:55 GMT"
+          "Value": "Sun, 24 Nov 2024 15:40:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1885,7 +2339,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 24 Nov 2024 09:13:55 GMT"
+          "Value": "Sun, 24 Nov 2024 15:40:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2474,6 +2928,88 @@
       ]
     },
     {
+      "Route": "Images/Icons/Like.2sqi2xlywg.svg",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Like.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "507"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7nGfei3AqaygRa0aSmN4V5rRHy//SV/clol1kZpVxh4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Dec 2024 10:05:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2sqi2xlywg"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Icons/Like.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7nGfei3AqaygRa0aSmN4V5rRHy//SV/clol1kZpVxh4="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Icons/Like.svg",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Like.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "507"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7nGfei3AqaygRa0aSmN4V5rRHy//SV/clol1kZpVxh4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Dec 2024 10:05:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7nGfei3AqaygRa0aSmN4V5rRHy//SV/clol1kZpVxh4="
+        }
+      ]
+    },
+    {
       "Route": "Images/Icons/natural-product.png",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\natural-product.png",
       "Selectors": [],
@@ -2638,6 +3174,88 @@
       ]
     },
     {
+      "Route": "Images/Icons/Save.3exhn9nq9n.svg",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Save.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "258"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tRFEfcPwxMuQzXrAiWTn/Vd/3ORLHlj9FIq6SGbQOV4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Dec 2024 10:05:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3exhn9nq9n"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Icons/Save.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tRFEfcPwxMuQzXrAiWTn/Vd/3ORLHlj9FIq6SGbQOV4="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Icons/Save.svg",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Save.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "258"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tRFEfcPwxMuQzXrAiWTn/Vd/3ORLHlj9FIq6SGbQOV4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Dec 2024 10:05:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tRFEfcPwxMuQzXrAiWTn/Vd/3ORLHlj9FIq6SGbQOV4="
+        }
+      ]
+    },
+    {
       "Route": "Images/Icons/Search.g28kcmsmgo.svg",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Search.svg",
       "Selectors": [],
@@ -2742,7 +3360,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 23 Nov 2024 08:40:14 GMT"
+          "Value": "Sun, 24 Nov 2024 15:40:27 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2787,7 +3405,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 23 Nov 2024 08:40:14 GMT"
+          "Value": "Sun, 24 Nov 2024 15:40:27 GMT"
         },
         {
           "Name": "Cache-Control",
