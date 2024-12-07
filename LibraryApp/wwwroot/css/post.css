@@ -107,6 +107,7 @@
 }
 .post-items-paragraph-element {
   margin: 0;
+  line-height: 1.4;
 }
 .post-items-create-comment {
   margin: 40px 0 0 0;
@@ -124,8 +125,8 @@
   display: flex;
 }
 .post-items-create-comment-items-creation-items-input-element {
-  width: 400px;
-  padding: 8px 0 8px 16px;
+  width: 340px;
+  padding: 8px 50px 8px 16px;
   border: 2px #D9D9D9 solid;
   border-radius: 10px;
 }
@@ -221,6 +222,7 @@
 }
 .post-items-comment-items-content-element {
   margin: 26px 0 0 0;
+  line-height: 1.4;
 }
 .post-items-comment-items-content-div-for-space-between-commentaries {
   height: 60px;

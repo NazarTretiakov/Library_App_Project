@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "y0m6B/XLgtqm2Q11vtctLskimPFnD5QDXll7lJLKJ+o=",
+  "Hash": "dP5Emdo9eE7veWAp3sp/CCHf4K8x1zZdVQs07WFdVXE=",
   "Source": "LibraryApp.UI",
   "BasePath": "_content/LibraryApp.UI",
   "Mode": "Default",
@@ -101,6 +101,48 @@
       "OriginalItemSpec": "wwwroot\\css\\config.css.map"
     },
     {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\create-post.css",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "css/create-post#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2mr2x2cd4y",
+      "Integrity": "SgGvqZ2nXqBYiNmVpKGyrB6pae76maHcyNv3p2lyGek=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\create-post.css"
+    },
+    {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\create-post.css.map",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "css/create-post.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qcyso1v9v9",
+      "Integrity": "Fndz4gMJAFn6Un7d0wum+TRvq5z2CSUjPofx8zwV6TY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\create-post.css.map"
+    },
+    {
       "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\forum.css",
       "SourceId": "LibraryApp.UI",
       "SourceType": "Discovered",
@@ -115,8 +157,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "8104p42l1m",
-      "Integrity": "LIJAY1Wcf88INdzmbCz+FZpjkZN/cKKAuAG0vUc64Rw=",
+      "Fingerprint": "pft3dfrp7l",
+      "Integrity": "O486SZPTvDuFWQI8ZJrc1qJDB1E1UThWJtucyTl9iuE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\forum.css"
@@ -136,8 +178,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "fyu43bftak",
-      "Integrity": "t5Su1MJucGIgXk48hZeKHJgVjkVy2QmFXUm5qVLXAfI=",
+      "Fingerprint": "k7x78w33ds",
+      "Integrity": "4Bv8qGE83nB8ZnaJQk/DWke+erPaXioifiKZKHjs/cc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\forum.css.map"
@@ -199,8 +241,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vp3756g487",
-      "Integrity": "bfSMmTaEi9CEzBhTlMo9usLyvkGqaXK+3o9PFZw9Ndc=",
+      "Fingerprint": "qhb6xjg4x4",
+      "Integrity": "rmznEvbMP11BM0PyTnHPr9P3f00EMP+HF+HUraR+r+M=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\post.css"
@@ -220,8 +262,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "51szkj0wx1",
-      "Integrity": "qTiRVixWSOVLkBE0avBev3m6W4FyjR4zxAkKwjMNVUo=",
+      "Fingerprint": "m7d91prwdt",
+      "Integrity": "3v8lWOTno4bEHQuAdvhK+v88H4/MFGQXxl4ksGEw8Lg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\post.css.map"
@@ -241,8 +283,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "o4karpxrdw",
-      "Integrity": "aFNE1APHgswLKknTenBWc63tFnfAk9M4XaHOdyGRwRM=",
+      "Fingerprint": "s9kx8gwd4q",
+      "Integrity": "IJOpP9G06N7A90NFgJIGZR2ukOTcD2Wh2bubLcoJzXc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\registration.css"
@@ -262,8 +304,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "kmgyz0kh7i",
-      "Integrity": "rAv4vUBF2PExspfsmRs7KqVMDRW2VzA4Zjs+CfTyFQI=",
+      "Fingerprint": "nw9zz005ps",
+      "Integrity": "518q5Bjf/ygraj/+hZ5MSpqKJB8PDQU6EOyyBe/QjVk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\registration.css.map"
@@ -792,6 +834,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Photo_of_library_2.jpg"
+    },
+    {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\create-post.js",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "js/create-post#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qc10ecpvq1",
+      "Integrity": "2tQWPU4s0RhAIqhpFKw49nScgg7xxbUdhLxRXVvf39U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\create-post.js"
     }
   ],
   "Endpoints": [
@@ -1124,8 +1187,8 @@
       ]
     },
     {
-      "Route": "css/forum.8104p42l1m.css",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\forum.css",
+      "Route": "css/create-post.2mr2x2cd4y.css",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\create-post.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1134,7 +1197,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6417"
+          "Value": "4481"
         },
         {
           "Name": "Content-Type",
@@ -1142,11 +1205,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LIJAY1Wcf88INdzmbCz+FZpjkZN/cKKAuAG0vUc64Rw=\""
+          "Value": "\"SgGvqZ2nXqBYiNmVpKGyrB6pae76maHcyNv3p2lyGek=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 01 Dec 2024 11:07:14 GMT"
+          "Value": "Sat, 07 Dec 2024 11:39:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1156,15 +1219,134 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "8104p42l1m"
+          "Value": "2mr2x2cd4y"
         },
         {
           "Name": "label",
-          "Value": "css/forum.css"
+          "Value": "css/create-post.css"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-LIJAY1Wcf88INdzmbCz+FZpjkZN/cKKAuAG0vUc64Rw="
+          "Value": "sha256-SgGvqZ2nXqBYiNmVpKGyrB6pae76maHcyNv3p2lyGek="
+        }
+      ]
+    },
+    {
+      "Route": "css/create-post.css",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\create-post.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4481"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SgGvqZ2nXqBYiNmVpKGyrB6pae76maHcyNv3p2lyGek=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Dec 2024 11:39:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SgGvqZ2nXqBYiNmVpKGyrB6pae76maHcyNv3p2lyGek="
+        }
+      ]
+    },
+    {
+      "Route": "css/create-post.css.map",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\create-post.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1040"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fndz4gMJAFn6Un7d0wum+TRvq5z2CSUjPofx8zwV6TY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Dec 2024 11:39:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fndz4gMJAFn6Un7d0wum+TRvq5z2CSUjPofx8zwV6TY="
+        }
+      ]
+    },
+    {
+      "Route": "css/create-post.css.qcyso1v9v9.map",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\create-post.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1040"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fndz4gMJAFn6Un7d0wum+TRvq5z2CSUjPofx8zwV6TY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Dec 2024 11:39:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qcyso1v9v9"
+        },
+        {
+          "Name": "label",
+          "Value": "css/create-post.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fndz4gMJAFn6Un7d0wum+TRvq5z2CSUjPofx8zwV6TY="
         }
       ]
     },
@@ -1179,7 +1361,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6417"
+          "Value": "6451"
         },
         {
           "Name": "Content-Type",
@@ -1187,11 +1369,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LIJAY1Wcf88INdzmbCz+FZpjkZN/cKKAuAG0vUc64Rw=\""
+          "Value": "\"O486SZPTvDuFWQI8ZJrc1qJDB1E1UThWJtucyTl9iuE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 01 Dec 2024 11:07:14 GMT"
+          "Value": "Sat, 07 Dec 2024 11:05:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1201,12 +1383,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-LIJAY1Wcf88INdzmbCz+FZpjkZN/cKKAuAG0vUc64Rw="
+          "Value": "sha256-O486SZPTvDuFWQI8ZJrc1qJDB1E1UThWJtucyTl9iuE="
         }
       ]
     },
     {
-      "Route": "css/forum.css.fyu43bftak.map",
+      "Route": "css/forum.css.k7x78w33ds.map",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\forum.css.map",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1216,7 +1398,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1534"
+          "Value": "1539"
         },
         {
           "Name": "Content-Type",
@@ -1224,11 +1406,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"t5Su1MJucGIgXk48hZeKHJgVjkVy2QmFXUm5qVLXAfI=\""
+          "Value": "\"4Bv8qGE83nB8ZnaJQk/DWke+erPaXioifiKZKHjs/cc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 01 Dec 2024 11:07:14 GMT"
+          "Value": "Sat, 07 Dec 2024 11:05:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1238,7 +1420,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fyu43bftak"
+          "Value": "k7x78w33ds"
         },
         {
           "Name": "label",
@@ -1246,7 +1428,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-t5Su1MJucGIgXk48hZeKHJgVjkVy2QmFXUm5qVLXAfI="
+          "Value": "sha256-4Bv8qGE83nB8ZnaJQk/DWke+erPaXioifiKZKHjs/cc="
         }
       ]
     },
@@ -1261,7 +1443,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1534"
+          "Value": "1539"
         },
         {
           "Name": "Content-Type",
@@ -1269,11 +1451,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"t5Su1MJucGIgXk48hZeKHJgVjkVy2QmFXUm5qVLXAfI=\""
+          "Value": "\"4Bv8qGE83nB8ZnaJQk/DWke+erPaXioifiKZKHjs/cc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 01 Dec 2024 11:07:14 GMT"
+          "Value": "Sat, 07 Dec 2024 11:05:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1283,7 +1465,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-t5Su1MJucGIgXk48hZeKHJgVjkVy2QmFXUm5qVLXAfI="
+          "Value": "sha256-4Bv8qGE83nB8ZnaJQk/DWke+erPaXioifiKZKHjs/cc="
+        }
+      ]
+    },
+    {
+      "Route": "css/forum.pft3dfrp7l.css",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\forum.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6451"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"O486SZPTvDuFWQI8ZJrc1qJDB1E1UThWJtucyTl9iuE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Dec 2024 11:05:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pft3dfrp7l"
+        },
+        {
+          "Name": "label",
+          "Value": "css/forum.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-O486SZPTvDuFWQI8ZJrc1qJDB1E1UThWJtucyTl9iuE="
         }
       ]
     },
@@ -1462,7 +1689,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6938"
+          "Value": "6981"
         },
         {
           "Name": "Content-Type",
@@ -1470,11 +1697,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bfSMmTaEi9CEzBhTlMo9usLyvkGqaXK+3o9PFZw9Ndc=\""
+          "Value": "\"rmznEvbMP11BM0PyTnHPr9P3f00EMP+HF+HUraR+r+M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 03 Dec 2024 11:18:44 GMT"
+          "Value": "Sat, 07 Dec 2024 11:05:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1484,12 +1711,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-bfSMmTaEi9CEzBhTlMo9usLyvkGqaXK+3o9PFZw9Ndc="
+          "Value": "sha256-rmznEvbMP11BM0PyTnHPr9P3f00EMP+HF+HUraR+r+M="
         }
       ]
     },
     {
-      "Route": "css/post.css.51szkj0wx1.map",
+      "Route": "css/post.css.m7d91prwdt.map",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\post.css.map",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1499,7 +1726,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1481"
+          "Value": "1491"
         },
         {
           "Name": "Content-Type",
@@ -1507,11 +1734,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qTiRVixWSOVLkBE0avBev3m6W4FyjR4zxAkKwjMNVUo=\""
+          "Value": "\"3v8lWOTno4bEHQuAdvhK+v88H4/MFGQXxl4ksGEw8Lg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 03 Dec 2024 11:18:44 GMT"
+          "Value": "Sat, 07 Dec 2024 11:05:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1521,7 +1748,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "51szkj0wx1"
+          "Value": "m7d91prwdt"
         },
         {
           "Name": "label",
@@ -1529,7 +1756,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-qTiRVixWSOVLkBE0avBev3m6W4FyjR4zxAkKwjMNVUo="
+          "Value": "sha256-3v8lWOTno4bEHQuAdvhK+v88H4/MFGQXxl4ksGEw8Lg="
         }
       ]
     },
@@ -1544,7 +1771,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1481"
+          "Value": "1491"
         },
         {
           "Name": "Content-Type",
@@ -1552,11 +1779,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qTiRVixWSOVLkBE0avBev3m6W4FyjR4zxAkKwjMNVUo=\""
+          "Value": "\"3v8lWOTno4bEHQuAdvhK+v88H4/MFGQXxl4ksGEw8Lg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 03 Dec 2024 11:18:44 GMT"
+          "Value": "Sat, 07 Dec 2024 11:05:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1566,12 +1793,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-qTiRVixWSOVLkBE0avBev3m6W4FyjR4zxAkKwjMNVUo="
+          "Value": "sha256-3v8lWOTno4bEHQuAdvhK+v88H4/MFGQXxl4ksGEw8Lg="
         }
       ]
     },
     {
-      "Route": "css/post.vp3756g487.css",
+      "Route": "css/post.qhb6xjg4x4.css",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\post.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1581,7 +1808,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6938"
+          "Value": "6981"
         },
         {
           "Name": "Content-Type",
@@ -1589,11 +1816,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bfSMmTaEi9CEzBhTlMo9usLyvkGqaXK+3o9PFZw9Ndc=\""
+          "Value": "\"rmznEvbMP11BM0PyTnHPr9P3f00EMP+HF+HUraR+r+M=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 03 Dec 2024 11:18:44 GMT"
+          "Value": "Sat, 07 Dec 2024 11:05:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1603,7 +1830,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "vp3756g487"
+          "Value": "qhb6xjg4x4"
         },
         {
           "Name": "label",
@@ -1611,7 +1838,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-bfSMmTaEi9CEzBhTlMo9usLyvkGqaXK+3o9PFZw9Ndc="
+          "Value": "sha256-rmznEvbMP11BM0PyTnHPr9P3f00EMP+HF+HUraR+r+M="
         }
       ]
     },
@@ -1626,7 +1853,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4841"
+          "Value": "3922"
         },
         {
           "Name": "Content-Type",
@@ -1634,11 +1861,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"aFNE1APHgswLKknTenBWc63tFnfAk9M4XaHOdyGRwRM=\""
+          "Value": "\"IJOpP9G06N7A90NFgJIGZR2ukOTcD2Wh2bubLcoJzXc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 24 Nov 2024 15:40:27 GMT"
+          "Value": "Sat, 07 Dec 2024 11:03:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1648,52 +1875,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-aFNE1APHgswLKknTenBWc63tFnfAk9M4XaHOdyGRwRM="
-        }
-      ]
-    },
-    {
-      "Route": "css/registration.css.kmgyz0kh7i.map",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\registration.css.map",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1053"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/plain"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"rAv4vUBF2PExspfsmRs7KqVMDRW2VzA4Zjs+CfTyFQI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 24 Nov 2024 15:40:27 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "kmgyz0kh7i"
-        },
-        {
-          "Name": "label",
-          "Value": "css/registration.css.map"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-rAv4vUBF2PExspfsmRs7KqVMDRW2VzA4Zjs+CfTyFQI="
+          "Value": "sha256-IJOpP9G06N7A90NFgJIGZR2ukOTcD2Wh2bubLcoJzXc="
         }
       ]
     },
@@ -1708,7 +1890,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1053"
+          "Value": "926"
         },
         {
           "Name": "Content-Type",
@@ -1716,11 +1898,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"rAv4vUBF2PExspfsmRs7KqVMDRW2VzA4Zjs+CfTyFQI=\""
+          "Value": "\"518q5Bjf/ygraj/+hZ5MSpqKJB8PDQU6EOyyBe/QjVk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 24 Nov 2024 15:40:27 GMT"
+          "Value": "Sat, 07 Dec 2024 11:03:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1730,13 +1912,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-rAv4vUBF2PExspfsmRs7KqVMDRW2VzA4Zjs+CfTyFQI="
+          "Value": "sha256-518q5Bjf/ygraj/+hZ5MSpqKJB8PDQU6EOyyBe/QjVk="
         }
       ]
     },
     {
-      "Route": "css/registration.o4karpxrdw.css",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\registration.css",
+      "Route": "css/registration.css.nw9zz005ps.map",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\registration.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1745,19 +1927,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4841"
+          "Value": "926"
         },
         {
           "Name": "Content-Type",
-          "Value": "text/css"
+          "Value": "text/plain"
         },
         {
           "Name": "ETag",
-          "Value": "\"aFNE1APHgswLKknTenBWc63tFnfAk9M4XaHOdyGRwRM=\""
+          "Value": "\"518q5Bjf/ygraj/+hZ5MSpqKJB8PDQU6EOyyBe/QjVk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 24 Nov 2024 15:40:27 GMT"
+          "Value": "Sat, 07 Dec 2024 11:03:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1767,7 +1949,52 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "o4karpxrdw"
+          "Value": "nw9zz005ps"
+        },
+        {
+          "Name": "label",
+          "Value": "css/registration.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-518q5Bjf/ygraj/+hZ5MSpqKJB8PDQU6EOyyBe/QjVk="
+        }
+      ]
+    },
+    {
+      "Route": "css/registration.s9kx8gwd4q.css",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\registration.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3922"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IJOpP9G06N7A90NFgJIGZR2ukOTcD2Wh2bubLcoJzXc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Dec 2024 11:03:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "s9kx8gwd4q"
         },
         {
           "Name": "label",
@@ -1775,7 +2002,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-aFNE1APHgswLKknTenBWc63tFnfAk9M4XaHOdyGRwRM="
+          "Value": "sha256-IJOpP9G06N7A90NFgJIGZR2ukOTcD2Wh2bubLcoJzXc="
         }
       ]
     },
@@ -3826,6 +4053,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-9yP23M7CZh6s4eiUNV6tCbt9uA1dnpcOwhmaBOreNuo="
+        }
+      ]
+    },
+    {
+      "Route": "js/create-post.js",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\create-post.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "643"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2tQWPU4s0RhAIqhpFKw49nScgg7xxbUdhLxRXVvf39U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Dec 2024 11:16:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2tQWPU4s0RhAIqhpFKw49nScgg7xxbUdhLxRXVvf39U="
+        }
+      ]
+    },
+    {
+      "Route": "js/create-post.qc10ecpvq1.js",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\create-post.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "643"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2tQWPU4s0RhAIqhpFKw49nScgg7xxbUdhLxRXVvf39U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Dec 2024 11:16:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qc10ecpvq1"
+        },
+        {
+          "Name": "label",
+          "Value": "js/create-post.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2tQWPU4s0RhAIqhpFKw49nScgg7xxbUdhLxRXVvf39U="
         }
       ]
     }

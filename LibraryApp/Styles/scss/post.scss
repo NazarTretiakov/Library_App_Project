@@ -149,6 +149,7 @@
 
             &-element {
                 margin: 0;
+                line-height: 1.4;
             }
         }
 
@@ -173,8 +174,8 @@
                         &-input {
 
                             &-element {
-                                width: 400px;
-                                padding: 8px 0 8px 16px;
+                                width: 340px;
+                                padding: 8px 50px 8px 16px;
                                 border: 2px $grayBackgroundColor solid;
                                 border-radius: 10px;
 
@@ -308,6 +309,7 @@
 
                     &-element {
                         margin: 26px 0 0 0;
+                        line-height: 1.4;
                     }
 
                     &-div-for-space-between-commentaries {

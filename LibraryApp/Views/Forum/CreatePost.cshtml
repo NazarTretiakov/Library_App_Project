@@ -1,32 +1,33 @@
 ﻿@{
-    ViewBag.Title = "Sign in";
-    ViewBag.StylesPath = "~/css/registration.css";
+    ViewBag.Title = "Create post";
+    ViewBag.StylesPath = "~/css/create-post.css";
+    ViewBag.ScriptPath = "~/js/create-post.js";
 }
 
 
 <div class="container-for-header-panel">
     <header class="header">
         <ul class="header-items">
-            <li class="header-items-item header-items-item-logo"><a href="/home"><img class="header-items-item-logo-image" src="/Images/Logo.jpg" alt="Logo of page"></a></li>
+            <li class="header-items-item header-items-item-logo">
+                <a asp-controller="Home" asp-action="Index"><img class="header-items-item-logo-image" src="/Images/Logo.jpg" alt="Logo of page"></a>
+            </li>
         </ul>
     </header>
 </div>
 
-
-<div class="container-for-registration-form">
-    <section class="registration">
-        <form class="registration-form">
-            <ul class="registration-form-items">
-                <li class="registration-form-items-title"><h1 class="registration-form-items-title-element">Welcome back</h1></li>
-                <li class="registration-form-items-input-username"><input class="registration-form-items-input-username-element" placeholder="Username" type="text"></li>
-                <li class="registration-form-items-input-password"><input class="registration-form-items-input-password-element" placeholder="Password" type="text"></li>
-                <li class="registration-form-items-button-register"><button class="registration-form-items-button-register-element">Sign in</button></li>
-                <li class="registration-form-items-sign-in"><span>Don't have an account? <a class="footer-link" asp-controller="Home" asp-action="Register">Register</a></span></li>
+<div class="container-for_create-post">
+    <section class="create-post">
+        <form class="create-post_form">
+            <ul class="create-post_form-items">
+                <li class="create-post_form-items-header"><h1 class="create-post_form-items-header-element">Create post</h1></li>
+                <li class="create-post_form-items-input-title"><input class="create-post_form-items-input-title-element" type="text" placeholder="Title"></li>
+                <li class="create-post_form-items-input-topics"><input class="create-post_form-items-input-topics-element" type="text" placeholder="Topics"></li>
+                <li class="create-post_form-items-input-content"><textarea class="create-post_form-items-input-content-element" placeholder="Content"></textarea><span class="create-post_form-items-input-content-element-number-of-signs"><span class="create-post_form-items-input-content-element-number-of-signs-entered">0</span><span class="create-post_form-items-input-content-element-number-of-signs-max">/1700</span></span></li>
+                <li class="create-post_form-items-button"><button class="create-post_form-items-button-element" type="submit">Create</button></li>
             </ul>
         </form>
     </section>
 </div>
-
 
 <footer class="footer">
     <ul class="footer-items">

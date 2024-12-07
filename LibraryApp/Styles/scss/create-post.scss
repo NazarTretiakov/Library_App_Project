@@ -1,4 +1,4 @@
-﻿@use "config" as *;
+@use "config" as *;
 
 .container-for-header-panel {
     position: sticky;
@@ -43,27 +43,27 @@
 }
 
 
-.container-for-registration-form {
+.container-for_create-post {
     display: flex;
     justify-content: center;
     margin: 50px 0 0 0;
 }
 
-.registration {
+.create-post {
     padding: 70px 70px 70px 70px;
     display: flex;
     justify-content: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
 
-    &-form {
+    &_form {
 
         &-items {
             list-style: none;
             padding: 0;
             margin: 0;
 
-            &-title {
+            &-header {
 
                 &-element {
                     font-size: 24px;
@@ -71,7 +71,7 @@
                 }
             }
 
-            &-input-username {
+            &-input-title {
 
                 &-element {
                     height: 40px;
@@ -87,15 +87,16 @@
                 }
             }
 
-            &-input-password {
+            &-input-topics {
 
                 &-element {
                     height: 40px;
                     width: 300px;
                     padding: 0 15px;
-                    margin: 0 0 80px 0;
+                    margin: 0 0 30px 0;
                     border: 2px $grayBackgroundColor solid;
                     border-radius: 10px;
+                    color: $footerLinkColor;
 
                     &:focus {
                         outline: none;
@@ -103,7 +104,46 @@
                 }
             }
 
-            &-button-register {
+            &-input-content {
+                margin: 0 0 80px 0;
+
+                &-element {
+                    height: 120px;
+                    width: 300px;
+                    padding: 15px 15px 40px 15px;
+                    border: 2px $grayBackgroundColor solid;
+                    border-radius: 10px;
+                    resize: none;
+
+                    &-number-of-signs {
+                        color: $grayBackgroundColor;
+                        font-size: 14px;
+                        display: block;
+                        justify-self: end;
+                        margin: 0 16px 0 0;
+
+                        &-entered {
+
+                            &-overflow {
+                                color: #ff6452;
+                            }
+
+                            &-normal {
+                                color: $grayBackgroundColor;
+                            }
+                        }
+
+                        &-max {
+                        }
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+            &-button {
 
                 &-element {
                     height: 40px;
@@ -113,19 +153,13 @@
                     color: white;
                     border-radius: 10px;
                     transition: background-color 0.3s ease;
-                    margin: 0 0 30px 0;
+                    margin: 0 0 12px 0;
 
                     &:hover {
                         cursor: pointer;
                         background-color: $buttonColorHover;
                     }
                 }
-            }
-
-            &-sign-in {
-                display: flex;
-                justify-content: center;
-                font-size: 14px;
             }
         }
     }

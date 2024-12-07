@@ -8,7 +8,7 @@
     <header class="header">
         <ul class="header-items">
             <li class="header-items-item header-items-item-logo">
-                <a href="/home"><img class="header-items-item-logo-image" src="/Images/Logo.jpg" alt="Logo of page"></a>
+                <a asp-controller="Home" asp-action="Index"><img class="header-items-item-logo-image" src="/Images/Logo.jpg" alt="Logo of page"></a>
                 <a class="header-link-title" asp-controller="Forum" asp-action="Index"><h1 class="header-items-item-logo-title">Forum</h1></a>
             </li>
             <li class="header-items-links">
@@ -49,7 +49,7 @@
 </div>
 
 <div class="post-container">
-    <a class="post-link" href="">
+    <a class="post-link" asp-controller="Forum" asp-action="CreatePost">
         <section class="create-post">
             <ul class="create-post-items">
                 <li class="create-post-items-icon"><img class="create-post-items-icon-element" src="~/Images/Icons/Add_icon.svg" alt="Icon of add a post"></li>

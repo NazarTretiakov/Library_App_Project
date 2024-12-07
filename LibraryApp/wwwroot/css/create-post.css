@@ -29,29 +29,29 @@
   text-decoration: underline;
 }
 
-.container-for-registration-form {
+.container-for_create-post {
   display: flex;
   justify-content: center;
   margin: 50px 0 0 0;
 }
 
-.registration {
+.create-post {
   padding: 70px 70px 70px 70px;
   display: flex;
   justify-content: center;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
 }
-.registration-form-items {
+.create-post_form-items {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.registration-form-items-title-element {
+.create-post_form-items-header-element {
   font-size: 24px;
   margin: 0 0 80px 0;
 }
-.registration-form-items-input-username-element {
+.create-post_form-items-input-title-element {
   height: 40px;
   width: 300px;
   padding: 0 15px;
@@ -59,21 +59,49 @@
   border: 2px #D9D9D9 solid;
   border-radius: 10px;
 }
-.registration-form-items-input-username-element:focus {
+.create-post_form-items-input-title-element:focus {
   outline: none;
 }
-.registration-form-items-input-password-element {
+.create-post_form-items-input-topics-element {
   height: 40px;
   width: 300px;
   padding: 0 15px;
-  margin: 0 0 80px 0;
+  margin: 0 0 30px 0;
   border: 2px #D9D9D9 solid;
   border-radius: 10px;
+  color: #0066CC;
 }
-.registration-form-items-input-password-element:focus {
+.create-post_form-items-input-topics-element:focus {
   outline: none;
 }
-.registration-form-items-button-register-element {
+.create-post_form-items-input-content {
+  margin: 0 0 80px 0;
+}
+.create-post_form-items-input-content-element {
+  height: 120px;
+  width: 300px;
+  padding: 15px 15px 40px 15px;
+  border: 2px #D9D9D9 solid;
+  border-radius: 10px;
+  resize: none;
+}
+.create-post_form-items-input-content-element-number-of-signs {
+  color: #D9D9D9;
+  font-size: 14px;
+  display: block;
+  justify-self: end;
+  margin: 0 16px 0 0;
+}
+.create-post_form-items-input-content-element-number-of-signs-entered-overflow {
+  color: #ff6452;
+}
+.create-post_form-items-input-content-element-number-of-signs-entered-normal {
+  color: #D9D9D9;
+}
+.create-post_form-items-input-content-element:focus {
+  outline: none;
+}
+.create-post_form-items-button-element {
   height: 40px;
   width: 330px;
   background-color: #14A2DE;
@@ -81,16 +109,11 @@
   color: white;
   border-radius: 10px;
   transition: background-color 0.3s ease;
-  margin: 0 0 30px 0;
+  margin: 0 0 12px 0;
 }
-.registration-form-items-button-register-element:hover {
+.create-post_form-items-button-element:hover {
   cursor: pointer;
   background-color: #138dc1;
-}
-.registration-form-items-sign-in {
-  display: flex;
-  justify-content: center;
-  font-size: 14px;
 }
 
 .footer {
@@ -180,4 +203,4 @@
   text-decoration: underline;
 }
 
-/*# sourceMappingURL=registration.css.map */
+/*# sourceMappingURL=create-post.css.map */

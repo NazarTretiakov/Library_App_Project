@@ -15,5 +15,11 @@ namespace LibraryApp.UI.Controllers
         {
             return View();
         }
+
+        [Route("/forum/create-post")]
+        public IActionResult CreatePost()
+        {
+            return View();
+        }
     }
 }

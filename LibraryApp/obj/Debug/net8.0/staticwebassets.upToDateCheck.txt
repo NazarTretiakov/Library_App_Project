@@ -2,6 +2,8 @@ wwwroot\css\basic.css
 wwwroot\css\basic.css.map
 wwwroot\css\config.css
 wwwroot\css\config.css.map
+wwwroot\css\create-post.css
+wwwroot\css\create-post.css.map
 wwwroot\css\forum.css
 wwwroot\css\forum.css.map
 wwwroot\css\homepage.css
@@ -35,3 +37,4 @@ wwwroot\Images\Logo_gray.jpg
 wwwroot\Images\Logo_icon.jpg
 wwwroot\Images\Photo_of_Library.jpg
 wwwroot\Images\Photo_of_library_2.jpg
+wwwroot\js\create-post.js

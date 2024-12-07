@@ -82,7 +82,7 @@
   width: 20px;
   position: absolute;
   margin: 4px 0 0 10px;
-  background-image: url("/Images/Icons/Search.svg");
+  background-image: url("/public/Images/Icons/Search.svg");
   background-size: 100%;
 }
 .search-panel-form-search-input-element {
@@ -120,7 +120,7 @@
   width: 16px;
   position: absolute;
   margin: 8px 0 0 -30px;
-  background-image: url("/Images/Icons/Dropdown_arrow.svg");
+  background-image: url("/public/Images/Icons/Dropdown_arrow.svg");
   background-size: 100%;
   transform: rotate(90deg);
   pointer-events: none;
@@ -222,6 +222,7 @@
 }
 .post-items-paragraph-element {
   margin: 0;
+  line-height: 1.4;
 }
 .post-link {
   color: black;

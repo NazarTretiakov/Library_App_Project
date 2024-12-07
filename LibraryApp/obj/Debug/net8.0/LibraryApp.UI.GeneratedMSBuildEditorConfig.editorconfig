@@ -20,6 +20,10 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
+[D:/Studying/Library App Project/LibraryApp/LibraryApp/Views/Forum/CreatePost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ydW1cQ3JlYXRlUG9zdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Studying/Library App Project/LibraryApp/LibraryApp/Views/Forum/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ydW1cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

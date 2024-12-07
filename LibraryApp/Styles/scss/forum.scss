@@ -110,7 +110,7 @@
                     width: 20px;
                     position: absolute;
                     margin: 4px 0 0 10px;
-                    background-image: url('/Images/Icons/Search.svg');
+                    background-image: url('/public/Images/Icons/Search.svg');
                     background-size: 100%;
                 }
             }
@@ -164,7 +164,7 @@
                     width: 16px;
                     position: absolute;
                     margin: 8px 0 0 -30px;
-                    background-image: url('/Images/Icons/Dropdown_arrow.svg');
+                    background-image: url('/public/Images/Icons/Dropdown_arrow.svg');
                     background-size: 100%;
                     transform: rotate(90deg);
                     pointer-events: none;
@@ -297,6 +297,7 @@
 
             &-element {
                 margin: 0;
+                line-height: 1.4;
             }
         }
     }
