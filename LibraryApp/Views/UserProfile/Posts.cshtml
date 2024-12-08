@@ -1,0 +1,178 @@
+﻿@{
+    ViewBag.Title = "NameOfUser profile";
+    ViewBag.StylesPath = "~/css/user-profile-posts.css";
+}
+
+<div class="container-for-header-panel">
+    <header class="header">
+        <ul class="header-items">
+            <li class="header-items-item header-items-item-logo">
+                <a asp-controller="Home" asp-action="Index"><img class="header-items-item-logo-image" src="/Images/Logo.jpg" alt="Logo of page"></a>
+                <a class="header-link-title" asp-controller="Forum" asp-action="Index"><h1 class="header-items-item-logo-title">Forum</h1></a>
+            </li>
+            <li class="header-items-links">
+                <ul class="header-items-links-list">
+                    <li class="header-items-links-list-item header-items-links-list-register"><span class="header-items-links-list-item-register-span"><a class="header-link" asp-controller="Home" asp-action="SignIn">Sign in</a></span></li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+
+
+    <section class="search-panel">
+        <form class="search-panel-form">
+            <ul class="search-panel-form-search">
+                <li class="search-panel-form-search-icon">
+                    <div class="search-panel-form-search-icon-div"></div>
+                </li>
+                <li class="search-panel-form-search-input">
+                    <input class="search-panel-form-search-input-element" type="text" placeholder="Search">
+                </li>
+            </ul>
+            <ul class="search-panel-form-dropdown">
+                <li class="search-panel-form-dropdown-select">
+                    <select class="search-panel-form-dropdown-select-element">
+                        <option class="search-panel-form-dropdown-select-element-author" value="all">All results</option>
+                        <option class="search-panel-form-dropdown-select-element-author" value="author">Username</option>
+                        <option class="search-panel-form-dropdown-select-element-title" value="title">Title</option>
+                        <option class="search-panel-form-dropdown-select-element-genre" value="genre">Topic</option>
+                    </select>
+                </li>
+                <li class="search-panel-form-dropdown-arrow">
+                    <div class="search-panel-form-dropdown-arrow-div"></div>
+                </li>
+            </ul>
+            <button class="search-panel-form-button">Search</button>
+        </form>
+    </section>
+</div>
+
+
+<div class="profile-container">
+    <section class="profile">
+        <ul class="profile-items">
+            <li class="profile-items_user-information">
+                <ul class="profile-items_user-information-items">
+                    <li class="profile-items_user-information-items_full-name"><h1 class="profile-items_user-information-items_full-name-element">Firstname Lastname</h1></li>
+                    <li class="profile-items_user-information-items_username"><span class="profile-items_user-information-items_username-element">username421__</span></li>
+                    <li class="profile-items_user-information-items_description"><p class="profile-items_user-information-items_description-element">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p></li>
+                    <li class="profile-items_user-information-items_subs-info">
+                        <ul class="profile-items_user-information-items_subs-info-items">
+                            <li class="profile-items_user-information-items_subs-info-items_subscribers"><a class="profile-items_user-information-items_subs-info-items_subscribers-link" href=""><span class="profile-items_user-information-items_subs-info-items_subscribers-number">5321 </span>subscribers</a></li>
+                            <li class="profile-items_user-information-items_subs-info-items_subscriptions"><a class="profile-items_user-information-items_subs-info-items_subscriptions-link" href=""><span class="profile-items_user-information-items_subs-info-items_subscriptions-number">857 </span>subscriptions</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="profile-items_photo">
+                <img class="profile-items_photo-element" src="~/Images/Icons/User_Profile_Photo.svg" alt="User profile photo">
+            </li>
+        </ul>
+        <ul class="profile-publication-titles">
+            <li class="profile-publication-titles_posts"><span class="profile-publication-titles_posts-element"><a class="profile-publication-titles-link" href="">Posts</a></span></li>
+            <li class="profile-publication-titles_replies"><span class="profile-publication-titles_replies-element"><a class="profile-publication-titles-link" href="">Replies</a></span></li>
+            <li class="profile-publication-titles_reviews"><span class="profile-publication-titles_reviews-element"><a class="profile-publication-titles-link" href="">Reviews</a></span></li>
+        </ul>
+        <ul class="profile-posts">
+            <li>
+                <a class="profile-posts-post-link" asp-controller="Forum" asp-action="Post">
+                    <section class="profile-posts-post">
+                        <ul class="profile-posts-post-items">
+                            <li class="profile-posts-post-items-header">
+                                <ul class="profile-posts-post-items-header-items">
+                                    <li class="profile-posts-post-items-header-items-user-information">
+                                        <img class="profile-posts-post-items-header-items-user-information-profile-photo" src="~/Images/Icons/User_Profile_Photo.svg" alt="User profile photo">
+                                        <span class="profile-posts-post-items-header-items-user-information-username">SomeUser1236123</span>
+                                    </li>
+                                    <li class="profile-posts-post-items-header-items-time"><span class="profile-posts-post-items-header-items-time-element">1 day ago</span></li>
+                                </ul>
+                            </li>
+                            <li class="profile-posts-post-items-title"><h1 class="profile-posts-post-items-title-element">What is Lorem Ipsum?</h1></li>
+                            <li class="profile-posts-post-items-topics"><span class="profile-posts-post-items-topics-topic">#NameOfTopic</span><span> </span><span class="profile-posts-post-items-topics-topic">#NameOfTopic2</span></li>
+                            <li class="profile-posts-post-items-paragraph"><p class="profile-posts-post-items-paragraph-element">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum...</p></li>
+                        </ul>
+                    </section>
+                </a>
+                <div class="profile-posts-div-for-space-between-posts"></div>
+            </li>
+            <li>
+                <a class="profile-posts-post-link" asp-controller="Forum" asp-action="Post">
+                    <section class="profile-posts-post">
+                        <ul class="profile-posts-post-items">
+                            <li class="profile-posts-post-items-header">
+                                <ul class="profile-posts-post-items-header-items">
+                                    <li class="profile-posts-post-items-header-items-user-information">
+                                        <img class="profile-posts-post-items-header-items-user-information-profile-photo" src="~/Images/Icons/User_Profile_Photo.svg" alt="User profile photo">
+                                        <span class="profile-posts-post-items-header-items-user-information-username">SomeUser1236123</span>
+                                    </li>
+                                    <li class="profile-posts-post-items-header-items-time"><span class="profile-posts-post-items-header-items-time-element">1 day ago</span></li>
+                                </ul>
+                            </li>
+                            <li class="profile-posts-post-items-title"><h1 class="profile-posts-post-items-title-element">What is Lorem Ipsum?</h1></li>
+                            <li class="profile-posts-post-items-topics"><span class="profile-posts-post-items-topics-topic">#NameOfTopic</span><span> </span><span class="profile-posts-post-items-topics-topic">#NameOfTopic2</span></li>
+                            <li class="profile-posts-post-items-paragraph"><p class="profile-posts-post-items-paragraph-element">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum...</p></li>
+                        </ul>
+                    </section>
+                </a>
+                <div class="profile-posts-div-for-space-between-posts"></div>
+            </li>
+            <li>
+                <a class="profile-posts-post-link" asp-controller="Forum" asp-action="Post">
+                    <section class="profile-posts-post">
+                        <ul class="profile-posts-post-items">
+                            <li class="profile-posts-post-items-header">
+                                <ul class="profile-posts-post-items-header-items">
+                                    <li class="profile-posts-post-items-header-items-user-information">
+                                        <img class="profile-posts-post-items-header-items-user-information-profile-photo" src="~/Images/Icons/User_Profile_Photo.svg" alt="User profile photo">
+                                        <span class="profile-posts-post-items-header-items-user-information-username">SomeUser1236123</span>
+                                    </li>
+                                    <li class="profile-posts-post-items-header-items-time"><span class="profile-posts-post-items-header-items-time-element">1 day ago</span></li>
+                                </ul>
+                            </li>
+                            <li class="profile-posts-post-items-title"><h1 class="profile-posts-post-items-title-element">What is Lorem Ipsum?</h1></li>
+                            <li class="profile-posts-post-items-topics"><span class="profile-posts-post-items-topics-topic">#NameOfTopic</span><span> </span><span class="profile-posts-post-items-topics-topic">#NameOfTopic2</span></li>
+                            <li class="profile-posts-post-items-paragraph"><p class="profile-posts-post-items-paragraph-element">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum...</p></li>
+                        </ul>
+                    </section>
+                </a>
+            </li>
+        </ul>
+    </section>
+</div>
+
+
+<footer class="footer">
+    <ul class="footer-items">
+        <li class="footer-items-address">
+            <ul class="footer-items-address-items">
+                <li class="footer-items-address-items-logo"><a asp-controller="Home" asp-action="Index"><img class="footer-items-address-items-logo-element" src="~/Images/Logo_gray.jpg" alt="Logo of webpage"></a></li>
+                <li class="footer-items-address-items-description">
+                    <ul class="footer-items-address-items-description-items">
+                        <li class="footer-items-address-items-description-items-1">1000 Forth Ave.</li>
+                        <li class="footer-items-address-items-description-items-2">CityName, WA 34104-1105</li>
+                        <li class="footer-items-address-items-description-items-3">206-386-4636 or <a class="footer-link" asp-controller="Home" asp-action="AskUs">Ask us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="footer-items-social-medias">
+            <ul class="footer-items-social-medias-items">
+                <li class="footer-items-social-medias-items-about-us"><a class="footer-link" asp-controller="Home" asp-action="AboutUs">About us</a></li>
+                <li class="footer-items-social-medias-items-icons">
+                    <ul class="footer-items-social-medias-items-icons-items">
+                        <li class="footer-items-social-medias-items-icons-items-description">Find us on:</li>
+                        <li class="footer-items-social-medias-items-icons-items-links">
+                            <ul class="footer-items-social-medias-items-icons-items-links-items">
+                                <li class="footer-items-social-medias-items-icons-items-links-items-facebook"><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img class="footer-items-social-medias-items-icons-items-links-items-facebook-element" src="~/Images/Icons/icons8-facebook-50.png" alt="Icon of facebook"></a></li>
+                                <li class="footer-items-social-medias-items-icons-items-links-items-linkedin"><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><img class="footer-items-social-medias-items-icons-items-links-items-linkedin-element" src="~/Images/Icons/icons8-linkedin-50.png" alt="Icon of linkedin"></a></li>
+                                <li class="footer-items-social-medias-items-icons-items-links-items-youtube"><a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><img class="footer-items-social-medias-items-icons-items-links-items-youtube-element" src="~/Images/Icons/icons8-youtube-50.png" alt="Icon of youtube"></a></li>
+                                <li class="footer-items-social-medias-items-icons-items-links-items-instagram"><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img class="footer-items-social-medias-items-icons-items-links-items-instagram-element" src="~/Images/Icons/icons8-instagram-50.png" alt="Icon of instagram"></a></li>
+                                <li class="footer-items-social-medias-items-icons-items-links-items-x"><a href="https://www.x.com" target="_blank" rel="noopener noreferrer"><img class="footer-items-social-medias-items-icons-items-links-items-x-element" src="~/Images/Icons/icons8-twitterx-50.png" alt="Icon of twitterx"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</footer>

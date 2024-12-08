@@ -1,4 +1,4 @@
-﻿@use "config" as *;
+@use "config" as *;
 
 .container-for-header-panel {
     position: sticky;
@@ -110,7 +110,7 @@
                     width: 20px;
                     position: absolute;
                     margin: 4px 0 0 10px;
-                    background-image: url('/Images/Icons/Search.svg');
+                    background-image: url('/public/Images/Icons/Search.svg');
                     background-size: 100%;
                 }
             }
@@ -164,7 +164,7 @@
                     width: 16px;
                     position: absolute;
                     margin: 8px 0 0 -30px;
-                    background-image: url('/Images/Icons/Dropdown_arrow.svg');
+                    background-image: url('/public/Images/Icons/Dropdown_arrow.svg');
                     background-size: 100%;
                     transform: rotate(90deg);
                     pointer-events: none;
@@ -194,124 +194,236 @@
 }
 
 
-.create-post {
-    width: 640px;
-    padding: 6px 50px 6px 50px;
-    margin: 0 0 50px 0;
-    border-radius: 20px;
-    font-size: 18px;
-    background-color: #eefaff;
-    transition: background-color 0.3s ease;
-
-    &:hover {
-        background-color: #CCE7F2;
-    }
-
-    &-items {
-        padding: 0;
-        display: flex;
-        list-style: none;
-        justify-content: center;
-        align-items: center;
-
-        &-icon {
-            display: flex;
-            margin: 0 10px 0 0;
-
-            &-element {
-                width: 36px;
-            }
-        }
-
-        &-inscription {
-            color: $buttonColor;
-        }
-    }
+.profile-container {
+    display: flex;
+    justify-content: center;
 }
 
-
-.post {
+.profile {
     width: 640px;
     padding: 50px;
-    margin: 0;
     border: 3px $grayBackgroundColor solid;
     border-radius: 20px;
     font-size: 14px;
 
-    &-container {
-        display: flex;
-        justify-content: center;
-    }
-
     &-items {
         list-style: none;
         padding: 0;
-        margin: 0;
+        margin: 0 0 100px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
 
-        &-header {
+        &_user-information {
 
             &-items {
                 list-style: none;
                 padding: 0;
+                margin: 0;
+                width: 400px;
+
+                &_full-name {
+
+                    &-element {
+                        font-size: 24px;
+                        margin: 0 0 10px 0;
+                    }
+                }
+
+                &_username {
+
+                    &-element {
+                        margin: 0 0 40px 0;
+                        display: block;
+                    }
+                }
+
+                &_description {
+
+                    &-element {
+                        line-height: 1.4;
+                        margin: 0 0 40px 0;
+                    }
+                }
+
+                &_subs-info {
+
+                    &-items {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        display: flex;
+                        justify-content: space-between;
+
+                        &_subscribers {
+
+                            &-number {
+                            }
+
+                            &:hover {
+                                text-decoration: underline;
+                                text-decoration-color: $grayBackgroundColor;
+                            }
+
+                            &-link {
+                                color: $grayBackgroundColor;
+                                text-decoration: none;
+                            }
+                        }
+
+                        &_subscriptions {
+
+                            &-number {
+                            }
+
+                            &:hover {
+                                text-decoration: underline;
+                                text-decoration-color: $grayBackgroundColor;
+                            }
+
+                            &-link {
+                                color: $grayBackgroundColor;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &_photo {
+
+            &-element {
+                width: 70px;
+            }
+        }
+    }
+
+    &-publication-titles {
+        list-style: none;
+        padding: 0 40px 0 40px;
+        margin: 0;
+        font-size: 16px;
+        display: flex;
+        justify-content: space-between;
+
+        &_posts {
+
+            &-element {
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        }
+
+        &_replies {
+
+            &-element {
+            }
+        }
+
+        &_reviews {
+
+            &-element {
+            }
+        }
+
+        &-link {
+            color: black;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &-posts {
+        padding: 0;
+        list-style: none;
+        margin: 100px 0 0 0;
+
+        &-post {
+            width: 640px;
+            margin: 0;
+            border-radius: 20px;
+            font-size: 14px;
+
+            &-container {
                 display: flex;
-                justify-content: space-between;
-                align-items: center;
+                justify-content: center;
+            }
 
-                &-user-information {
-                    display: flex;
-                    align-items: center;
+            &-items {
+                list-style: none;
+                padding: 0;
+                margin: 0;
 
-                    &-profile-photo {
-                        width: 40px;
-                    }
+                &-header {
 
-                    &-username {
-                        margin: 0 0 0 12px;
+                    &-items {
+                        list-style: none;
+                        padding: 0;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        &-user-information {
+                            display: flex;
+                            align-items: center;
+
+                            &-profile-photo {
+                                width: 40px;
+                            }
+
+                            &-username {
+                                margin: 0 0 0 12px;
+                            }
+                        }
+
+                        &-time {
+                            color: $grayBackgroundColor;
+                        }
                     }
                 }
 
-                &-time {
-                    color: $grayBackgroundColor;
+                &-title {
+                    margin: 30px 0 20px 0;
+
+                    &-element {
+                        margin: 0;
+                        font-size: 24px;
+                    }
+                }
+
+                &-topics {
+                    color: $footerLinkColor;
+                    margin: 0 0 40px 0;
+
+                    &-topic {
+                    }
+                }
+
+                &-paragraph {
+
+                    &-element {
+                        margin: 0;
+                        line-height: 1.4;
+                    }
                 }
             }
-        }
 
-        &-title {
-            margin: 30px 0 20px 0;
-
-            &-element {
-                margin: 0;
-                font-size: 24px;
+            &-link {
+                color: black;
+                text-decoration: none;
             }
         }
 
-        &-topics {
-            color: $footerLinkColor;
-            margin: 0 0 40px 0;
-
-            &-topic {
-            }
-        }
-
-        &-paragraph {
-
-            &-element {
-                margin: 0;
-                line-height: 1.4;
-            }
+        &-div-for-space-between-posts {
+            height: 60px;
+            border-bottom: 3px $grayBackgroundColor solid;
+            margin: 0 0 60px 0;
         }
     }
-
-    &-link {
-        color: black;
-        text-decoration: none;
-    }
-}
-
-
-.container-for-space-between-posts {
-    height: 50px;
-    width: 100%;
 }
 
 

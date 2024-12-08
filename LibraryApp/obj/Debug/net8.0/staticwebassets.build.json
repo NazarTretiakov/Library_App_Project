@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dP5Emdo9eE7veWAp3sp/CCHf4K8x1zZdVQs07WFdVXE=",
+  "Hash": "mP5i7QE6j58fD/NPkn33ZNwihzbnpSq5GPMv/MskbtU=",
   "Source": "LibraryApp.UI",
   "BasePath": "_content/LibraryApp.UI",
   "Mode": "Default",
@@ -157,8 +157,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "pft3dfrp7l",
-      "Integrity": "O486SZPTvDuFWQI8ZJrc1qJDB1E1UThWJtucyTl9iuE=",
+      "Fingerprint": "8kb6pgmioz",
+      "Integrity": "+KZQxwUCoH7YF4qa6gr615VEXz+5FljhD1ZWiZaQEQo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\forum.css"
@@ -309,6 +309,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\registration.css.map"
+    },
+    {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-posts.css",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "css/user-profile-posts#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "67f9wuga47",
+      "Integrity": "znJGLd8Ny5SVH3NQHIbi2P65HulttvUARXsEO0vyoUA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\user-profile-posts.css"
+    },
+    {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-posts.css.map",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "css/user-profile-posts.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "iop1vv2b2w",
+      "Integrity": "QnPCKCzOan9ZaOaIAKanyEE3j912meszvorqtlm9q4Q=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\user-profile-posts.css.map"
     },
     {
       "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Add_icon.svg",
@@ -1351,6 +1393,51 @@
       ]
     },
     {
+      "Route": "css/forum.8kb6pgmioz.css",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\forum.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6437"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+KZQxwUCoH7YF4qa6gr615VEXz+5FljhD1ZWiZaQEQo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 07 Dec 2024 11:52:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8kb6pgmioz"
+        },
+        {
+          "Name": "label",
+          "Value": "css/forum.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+KZQxwUCoH7YF4qa6gr615VEXz+5FljhD1ZWiZaQEQo="
+        }
+      ]
+    },
+    {
       "Route": "css/forum.css",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\forum.css",
       "Selectors": [],
@@ -1361,7 +1448,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6451"
+          "Value": "6437"
         },
         {
           "Name": "Content-Type",
@@ -1369,11 +1456,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"O486SZPTvDuFWQI8ZJrc1qJDB1E1UThWJtucyTl9iuE=\""
+          "Value": "\"+KZQxwUCoH7YF4qa6gr615VEXz+5FljhD1ZWiZaQEQo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 07 Dec 2024 11:05:36 GMT"
+          "Value": "Sat, 07 Dec 2024 11:52:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1383,7 +1470,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-O486SZPTvDuFWQI8ZJrc1qJDB1E1UThWJtucyTl9iuE="
+          "Value": "sha256-+KZQxwUCoH7YF4qa6gr615VEXz+5FljhD1ZWiZaQEQo="
         }
       ]
     },
@@ -1410,7 +1497,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 07 Dec 2024 11:05:36 GMT"
+          "Value": "Sat, 07 Dec 2024 11:52:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1455,7 +1542,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 07 Dec 2024 11:05:36 GMT"
+          "Value": "Sat, 07 Dec 2024 11:52:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1466,51 +1553,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-4Bv8qGE83nB8ZnaJQk/DWke+erPaXioifiKZKHjs/cc="
-        }
-      ]
-    },
-    {
-      "Route": "css/forum.pft3dfrp7l.css",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\forum.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6451"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"O486SZPTvDuFWQI8ZJrc1qJDB1E1UThWJtucyTl9iuE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 07 Dec 2024 11:05:36 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "pft3dfrp7l"
-        },
-        {
-          "Name": "label",
-          "Value": "css/forum.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-O486SZPTvDuFWQI8ZJrc1qJDB1E1UThWJtucyTl9iuE="
         }
       ]
     },
@@ -2003,6 +2045,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-IJOpP9G06N7A90NFgJIGZR2ukOTcD2Wh2bubLcoJzXc="
+        }
+      ]
+    },
+    {
+      "Route": "css/user-profile-posts.67f9wuga47.css",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-posts.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8057"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"znJGLd8Ny5SVH3NQHIbi2P65HulttvUARXsEO0vyoUA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Dec 2024 10:16:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "67f9wuga47"
+        },
+        {
+          "Name": "label",
+          "Value": "css/user-profile-posts.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-znJGLd8Ny5SVH3NQHIbi2P65HulttvUARXsEO0vyoUA="
+        }
+      ]
+    },
+    {
+      "Route": "css/user-profile-posts.css",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-posts.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8057"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"znJGLd8Ny5SVH3NQHIbi2P65HulttvUARXsEO0vyoUA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Dec 2024 10:16:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-znJGLd8Ny5SVH3NQHIbi2P65HulttvUARXsEO0vyoUA="
+        }
+      ]
+    },
+    {
+      "Route": "css/user-profile-posts.css.iop1vv2b2w.map",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-posts.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1828"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QnPCKCzOan9ZaOaIAKanyEE3j912meszvorqtlm9q4Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Dec 2024 10:16:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iop1vv2b2w"
+        },
+        {
+          "Name": "label",
+          "Value": "css/user-profile-posts.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QnPCKCzOan9ZaOaIAKanyEE3j912meszvorqtlm9q4Q="
+        }
+      ]
+    },
+    {
+      "Route": "css/user-profile-posts.css.map",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-posts.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1828"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QnPCKCzOan9ZaOaIAKanyEE3j912meszvorqtlm9q4Q=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 08 Dec 2024 10:16:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QnPCKCzOan9ZaOaIAKanyEE3j912meszvorqtlm9q4Q="
         }
       ]
     },

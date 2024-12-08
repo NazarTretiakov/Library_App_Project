@@ -157,6 +157,14 @@
       "PackagePath": "staticwebassets\\css\\registration.css.map"
     },
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-posts.css",
+      "PackagePath": "staticwebassets\\css\\user-profile-posts.css"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-posts.css.map",
+      "PackagePath": "staticwebassets\\css\\user-profile-posts.css.map"
+    },
+    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\create-post.js",
       "PackagePath": "staticwebassets\\js\\create-post.js"
     },
