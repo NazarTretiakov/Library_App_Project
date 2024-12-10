@@ -15,5 +15,17 @@ namespace LibraryApp.UI.Controllers
         {
             return View();
         }
+
+        [Route("/user-profile/subscribers")]
+        public IActionResult Subscribers()
+        {
+            return View();
+        }
+
+        [Route("/user-profile/subscriptions")]
+        public IActionResult Subscriptions()
+        {
+            return View();
+        }
     }
 }

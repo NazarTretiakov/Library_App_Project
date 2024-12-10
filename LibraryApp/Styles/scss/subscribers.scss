@@ -1,4 +1,4 @@
-@use "config" as *;
+﻿@use "config" as *;
 
 .container-for-header-panel {
     position: sticky;
@@ -194,14 +194,15 @@
 }
 
 
-.profile-container {
+.subs-container {
     display: flex;
     justify-content: center;
 }
 
-.profile {
+.subs {
     width: 640px;
     padding: 50px;
+    margin: 0;
     border: 3px $grayBackgroundColor solid;
     border-radius: 20px;
     font-size: 14px;
@@ -209,238 +210,155 @@
     &-items {
         list-style: none;
         padding: 0;
-        margin: 0 0 100px 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
 
-        &_user-information {
+        &_title {
+
+            &-element {
+                font-weight: normal;
+                font-size: 24px;
+                margin: 0 0 16px 0;
+
+                &-username {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        &_amount {
+
+            &-element {
+                color: $grayBackgroundColor;
+                display: block;
+                margin: 0 0 40px 0;
+            }
+        }
+
+        &_subs-columns {
+            padding: 0 30px 0 30px;
 
             &-items {
                 list-style: none;
                 padding: 0;
-                margin: 0;
-                width: 400px;
-
-                &_full-name {
-
-                    &-element {
-                        font-size: 24px;
-                        margin: 0 0 10px 0;
-                    }
-                }
-
-                &_username {
-
-                    &-element {
-                        margin: 0 0 40px 0;
-                        display: block;
-                    }
-                }
-
-                &_description {
-
-                    &-element {
-                        line-height: 1.4;
-                        margin: 0 0 40px 0;
-                    }
-                }
-
-                &_subscribe-button {
-
-                    &-element {
-                        margin: 0 0 40px 0;
-                        height: 30px;
-                        width: 200px;
-                        border-radius: 6px;
-                        border: none;
-                        background-color: $buttonColor;
-                        color: white;
-                        transition: background-color 0.3s ease;
-
-                        &:hover {
-                            cursor: pointer;
-                            background-color: $buttonColorHover;
-                        }
-                    }
-                }
-
-                &_subs-info {
-
-                    &-items {
-                        list-style: none;
-                        padding: 0;
-                        margin: 0;
-                        display: flex;
-                        justify-content: space-between;
-
-                        &_subscribers {
-
-                            &-number {
-                            }
-
-                            &:hover {
-                                text-decoration: underline;
-                                text-decoration-color: $grayBackgroundColor;
-                            }
-
-                            &-link {
-                                color: $grayBackgroundColor;
-                                text-decoration: none;
-                            }
-                        }
-
-                        &_subscriptions {
-
-                            &-number {
-                            }
-
-                            &:hover {
-                                text-decoration: underline;
-                                text-decoration-color: $grayBackgroundColor;
-                            }
-
-                            &-link {
-                                color: $grayBackgroundColor;
-                                text-decoration: none;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        &_photo {
-
-            &-element {
-                width: 70px;
-            }
-        }
-    }
-
-    &-publication-titles {
-        list-style: none;
-        padding: 0 40px 0 40px;
-        margin: 0;
-        font-size: 16px;
-        display: flex;
-        justify-content: space-between;
-
-        &_posts {
-
-            &-element {
-                font-weight: bold;
-                text-decoration: underline;
-            }
-        }
-
-        &_replies {
-
-            &-element {
-            }
-        }
-
-        &_reviews {
-
-            &-element {
-            }
-        }
-
-        &-link {
-            color: black;
-            text-decoration: none;
-
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
-
-    &-posts {
-        padding: 0;
-        list-style: none;
-        margin: 100px 0 0 0;
-
-        &-post {
-            width: 640px;
-            margin: 0;
-            border-radius: 20px;
-            font-size: 14px;
-
-            &-container {
                 display: flex;
-                justify-content: center;
-            }
+                flex-direction: row;
+                justify-content: space-between;
 
-            &-items {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-
-                &-header {
+                &_first-column {
 
                     &-items {
                         list-style: none;
                         padding: 0;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
 
-                        &-user-information {
-                            display: flex;
-                            align-items: center;
+                        &_subscriber {
+                            margin: 0 0 20px 0;
 
-                            &-profile-photo {
-                                width: 40px;
+                            &-link {
+                                text-decoration: none;
+                                color: black;
                             }
 
-                            &-username {
-                                margin: 0 0 0 12px;
+                            &-items {
+                                list-style: none;
+                                padding: 0;
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+
+                                &_image {
+
+                                    &-element {
+                                        width: 50px;
+                                        margin: 0 10px 0 0;
+                                    }
+                                }
+
+                                &_info {
+
+                                    &-items {
+                                        list-style: none;
+                                        padding: 0;
+
+                                        &_username {
+
+                                            &-element {
+                                                margin: 0 0 6px 0;
+                                                display: block;
+                                            }
+                                        }
+
+                                        &_full-name {
+
+                                            &-element {
+                                                color: $grayBackgroundColor;
+                                                margin: 0 0 6px 0;
+                                                display: block;
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
+                    }
+                }
 
-                        &-time {
-                            color: $grayBackgroundColor;
+                &_second-column {
+
+                    &-items {
+                        list-style: none;
+                        padding: 0;
+
+                        &_subscriber {
+                            margin: 0 0 20px 0;
+
+                            &-link {
+                                text-decoration: none;
+                                color: black;
+                            }
+
+                            &-items {
+                                list-style: none;
+                                padding: 0;
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+
+                                &_image {
+
+                                    &-element {
+                                        width: 50px;
+                                        margin: 0 10px 0 0;
+                                    }
+                                }
+
+                                &_info {
+
+                                    &-items {
+                                        list-style: none;
+                                        padding: 0;
+
+                                        &_username {
+
+                                            &-element {
+                                                margin: 0 0 6px 0;
+                                                display: block;
+                                            }
+                                        }
+
+                                        &_full-name {
+
+                                            &-element {
+                                                color: $grayBackgroundColor;
+                                                margin: 0 0 6px 0;
+                                                display: block;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
-                    }
-                }
-
-                &-title {
-                    margin: 30px 0 20px 0;
-
-                    &-element {
-                        margin: 0;
-                        font-size: 24px;
-                    }
-                }
-
-                &-topics {
-                    color: $footerLinkColor;
-                    margin: 0 0 40px 0;
-
-                    &-topic {
-                    }
-                }
-
-                &-paragraph {
-
-                    &-element {
-                        margin: 0;
-                        line-height: 1.4;
                     }
                 }
             }
-
-            &-link {
-                color: black;
-                text-decoration: none;
-            }
-        }
-
-        &-div-for-space-between-posts {
-            height: 60px;
-            border-bottom: 3px $grayBackgroundColor solid;
-            margin: 0 0 60px 0;
         }
     }
 }

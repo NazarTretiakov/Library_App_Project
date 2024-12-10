@@ -12,6 +12,8 @@ wwwroot\css\post.css
 wwwroot\css\post.css.map
 wwwroot\css\registration.css
 wwwroot\css\registration.css.map
+wwwroot\css\subscribers.css
+wwwroot\css\subscribers.css.map
 wwwroot\css\user-profile-posts.css
 wwwroot\css\user-profile-posts.css.map
 wwwroot\Images\Icons\Add_icon.svg

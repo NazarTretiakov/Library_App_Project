@@ -142,166 +142,115 @@
   background-color: #138dc1;
 }
 
-.profile-container {
+.subs-container {
   display: flex;
   justify-content: center;
 }
 
-.profile {
+.subs {
   width: 640px;
   padding: 50px;
+  margin: 0;
   border: 3px #D9D9D9 solid;
   border-radius: 20px;
   font-size: 14px;
 }
-.profile-items {
+.subs-items {
   list-style: none;
   padding: 0;
-  margin: 0 0 100px 0;
+}
+.subs-items_title-element {
+  font-weight: normal;
+  font-size: 24px;
+  margin: 0 0 16px 0;
+}
+.subs-items_title-element-username {
+  font-weight: bold;
+}
+.subs-items_amount-element {
+  color: #D9D9D9;
+  display: block;
+  margin: 0 0 40px 0;
+}
+.subs-items_subs-columns {
+  padding: 0 30px 0 30px;
+}
+.subs-items_subs-columns-items {
+  list-style: none;
+  padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.profile-items_user-information-items {
+.subs-items_subs-columns-items_first-column-items {
   list-style: none;
   padding: 0;
-  margin: 0;
-  width: 400px;
 }
-.profile-items_user-information-items_full-name-element {
-  font-size: 24px;
-  margin: 0 0 10px 0;
+.subs-items_subs-columns-items_first-column-items_subscriber {
+  margin: 0 0 20px 0;
 }
-.profile-items_user-information-items_username-element {
-  margin: 0 0 40px 0;
+.subs-items_subs-columns-items_first-column-items_subscriber-link {
+  text-decoration: none;
+  color: black;
+}
+.subs-items_subs-columns-items_first-column-items_subscriber-items {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.subs-items_subs-columns-items_first-column-items_subscriber-items_image-element {
+  width: 50px;
+  margin: 0 10px 0 0;
+}
+.subs-items_subs-columns-items_first-column-items_subscriber-items_info-items {
+  list-style: none;
+  padding: 0;
+}
+.subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_username-element {
+  margin: 0 0 6px 0;
   display: block;
 }
-.profile-items_user-information-items_description-element {
-  line-height: 1.4;
-  margin: 0 0 40px 0;
+.subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_full-name-element {
+  color: #D9D9D9;
+  margin: 0 0 6px 0;
+  display: block;
 }
-.profile-items_user-information-items_subscribe-button-element {
-  margin: 0 0 40px 0;
-  height: 30px;
-  width: 200px;
-  border-radius: 6px;
-  border: none;
-  background-color: #14A2DE;
-  color: white;
-  transition: background-color 0.3s ease;
-}
-.profile-items_user-information-items_subscribe-button-element:hover {
-  cursor: pointer;
-  background-color: #138dc1;
-}
-.profile-items_user-information-items_subs-info-items {
+.subs-items_subs-columns-items_second-column-items {
   list-style: none;
   padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
 }
-.profile-items_user-information-items_subs-info-items_subscribers:hover {
-  text-decoration: underline;
-  text-decoration-color: #D9D9D9;
+.subs-items_subs-columns-items_second-column-items_subscriber {
+  margin: 0 0 20px 0;
 }
-.profile-items_user-information-items_subs-info-items_subscribers-link {
-  color: #D9D9D9;
+.subs-items_subs-columns-items_second-column-items_subscriber-link {
   text-decoration: none;
-}
-.profile-items_user-information-items_subs-info-items_subscriptions:hover {
-  text-decoration: underline;
-  text-decoration-color: #D9D9D9;
-}
-.profile-items_user-information-items_subs-info-items_subscriptions-link {
-  color: #D9D9D9;
-  text-decoration: none;
-}
-.profile-items_photo-element {
-  width: 70px;
-}
-.profile-publication-titles {
-  list-style: none;
-  padding: 0 40px 0 40px;
-  margin: 0;
-  font-size: 16px;
-  display: flex;
-  justify-content: space-between;
-}
-.profile-publication-titles_posts-element {
-  font-weight: bold;
-  text-decoration: underline;
-}
-.profile-publication-titles-link {
   color: black;
-  text-decoration: none;
 }
-.profile-publication-titles-link:hover {
-  text-decoration: underline;
-}
-.profile-posts {
-  padding: 0;
-  list-style: none;
-  margin: 100px 0 0 0;
-}
-.profile-posts-post {
-  width: 640px;
-  margin: 0;
-  border-radius: 20px;
-  font-size: 14px;
-}
-.profile-posts-post-container {
-  display: flex;
-  justify-content: center;
-}
-.profile-posts-post-items {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.profile-posts-post-items-header-items {
+.subs-items_subs-columns-items_second-column-items_subscriber-items {
   list-style: none;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
 }
-.profile-posts-post-items-header-items-user-information {
-  display: flex;
-  align-items: center;
+.subs-items_subs-columns-items_second-column-items_subscriber-items_image-element {
+  width: 50px;
+  margin: 0 10px 0 0;
 }
-.profile-posts-post-items-header-items-user-information-profile-photo {
-  width: 40px;
+.subs-items_subs-columns-items_second-column-items_subscriber-items_info-items {
+  list-style: none;
+  padding: 0;
 }
-.profile-posts-post-items-header-items-user-information-username {
-  margin: 0 0 0 12px;
+.subs-items_subs-columns-items_second-column-items_subscriber-items_info-items_username-element {
+  margin: 0 0 6px 0;
+  display: block;
 }
-.profile-posts-post-items-header-items-time {
+.subs-items_subs-columns-items_second-column-items_subscriber-items_info-items_full-name-element {
   color: #D9D9D9;
-}
-.profile-posts-post-items-title {
-  margin: 30px 0 20px 0;
-}
-.profile-posts-post-items-title-element {
-  margin: 0;
-  font-size: 24px;
-}
-.profile-posts-post-items-topics {
-  color: #0066CC;
-  margin: 0 0 40px 0;
-}
-.profile-posts-post-items-paragraph-element {
-  margin: 0;
-  line-height: 1.4;
-}
-.profile-posts-post-link {
-  color: black;
-  text-decoration: none;
-}
-.profile-posts-div-for-space-between-posts {
-  height: 60px;
-  border-bottom: 3px #D9D9D9 solid;
-  margin: 0 0 60px 0;
+  margin: 0 0 6px 0;
+  display: block;
 }
 
 .footer {
@@ -391,4 +340,4 @@
   text-decoration: underline;
 }
 
-/*# sourceMappingURL=user-profile-posts.css.map */
+/*# sourceMappingURL=subscribers.css.map */

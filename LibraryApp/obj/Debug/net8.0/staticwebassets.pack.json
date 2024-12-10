@@ -157,6 +157,14 @@
       "PackagePath": "staticwebassets\\css\\registration.css.map"
     },
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\subscribers.css",
+      "PackagePath": "staticwebassets\\css\\subscribers.css"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\subscribers.css.map",
+      "PackagePath": "staticwebassets\\css\\subscribers.css.map"
+    },
+    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-posts.css",
       "PackagePath": "staticwebassets\\css\\user-profile-posts.css"
     },
