@@ -9,3 +9,10 @@ D:\Studying\Library App Project\LibraryApp\LibraryApp.Infrastructure\obj\Debug\n
 D:\Studying\Library App Project\LibraryApp\LibraryApp.Infrastructure\obj\Debug\net8.0\refint\LibraryApp.Infrastructure.dll
 D:\Studying\Library App Project\LibraryApp\LibraryApp.Infrastructure\obj\Debug\net8.0\LibraryApp.Infrastructure.pdb
 D:\Studying\Library App Project\LibraryApp\LibraryApp.Infrastructure\obj\Debug\net8.0\ref\LibraryApp.Infrastructure.dll
+D:\Studying\Library App Project\LibraryApp\LibraryApp.Infrastructure\bin\Debug\net8.0\LibraryApp.Infrastructure.runtimeconfig.json
+D:\Studying\Library App Project\LibraryApp\LibraryApp.Infrastructure\bin\Debug\net8.0\LibraryApp.Core.dll
+D:\Studying\Library App Project\LibraryApp\LibraryApp.Infrastructure\bin\Debug\net8.0\LibraryApp.Core.pdb
+D:\Studying\Library App Project\LibraryApp\LibraryApp.Infrastructure\obj\Debug\net8.0\LibraryApp.Infrastructure.csproj.AssemblyReference.cache
+D:\Studying\Library App Project\LibraryApp\LibraryApp.Infrastructure\obj\Debug\net8.0\LibraryApp.Infrastructure.sourcelink.json
+D:\Studying\Library App Project\LibraryApp\LibraryApp.Infrastructure\obj\Debug\net8.0\LibraryA.5EA4A9E6.Up2Date
+D:\Studying\Library App Project\LibraryApp\LibraryApp.Infrastructure\obj\Debug\net8.0\LibraryApp.Infrastructure.genruntimeconfig.cache

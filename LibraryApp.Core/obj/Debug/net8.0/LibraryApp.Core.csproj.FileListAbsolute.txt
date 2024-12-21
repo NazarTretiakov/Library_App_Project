@@ -9,3 +9,5 @@ D:\Studying\Library App Project\LibraryApp\LibraryApp.Core\obj\Debug\net8.0\Libr
 D:\Studying\Library App Project\LibraryApp\LibraryApp.Core\obj\Debug\net8.0\refint\LibraryApp.Core.dll
 D:\Studying\Library App Project\LibraryApp\LibraryApp.Core\obj\Debug\net8.0\LibraryApp.Core.pdb
 D:\Studying\Library App Project\LibraryApp\LibraryApp.Core\obj\Debug\net8.0\ref\LibraryApp.Core.dll
+D:\Studying\Library App Project\LibraryApp\LibraryApp.Core\obj\Debug\net8.0\LibraryApp.Core.csproj.AssemblyReference.cache
+D:\Studying\Library App Project\LibraryApp\LibraryApp.Core\obj\Debug\net8.0\LibraryApp.Core.sourcelink.json

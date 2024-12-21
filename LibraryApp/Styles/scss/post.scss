@@ -62,6 +62,44 @@
                             font-size: $headerFontSize;
                         }
                     }
+
+                    &-profile {
+                        list-style: none;
+                        padding: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        &-link {
+                            text-decoration: none;
+                            color: black;
+                        }
+
+                        &-image {
+                            margin: 0 6px 0 0;
+
+                            &-element {
+                                width: 46px;
+                            }
+                        }
+
+                        &-inscription {
+                            font-size: 12px;
+
+                            &-items {
+                                list-style: none;
+                                padding: 0;
+
+                                &-logged-as {
+                                    color: $grayBackgroundColor;
+                                }
+
+                                &-username {
+                                    margin: 0 0 4px 0;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

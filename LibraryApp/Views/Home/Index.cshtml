@@ -11,7 +11,26 @@
             <li class="header-items-links">
                 <ul class="header-items-links-list">
                     <li class="header-items-links-list-item header-items-links-list-item-discussion"><span class="header-items-links-list-item-discussion-span"><a class="header-link" asp-controller="Forum" asp-action="Index">Forum</a></span></li>
-                    <li class="header-items-links-list-item header-items-links-list-register"><span class="header-items-links-list-item-register-span"><a class="header-link" asp-controller="Home" asp-action="SignIn">Sign in</a></span></li>
+                    @if (!User.Identity.IsAuthenticated)
+                    {
+                        <li class="header-items-links-list-item header-items-links-list-register"><span class="header-items-links-list-item-register-span"><a class="header-link" asp-controller="Account" asp-action="SignIn">Sign in</a></span></li>
+                    }
+                    else 
+                    {
+                        <li class="header-items-links-list-item header-items-links-list-register">
+                            <a class="header-items-links-list-item-profile-link" asp-controller="" asp-action="">
+                                <ul class="header-items-links-list-item-profile">
+                                    <li class="header-items-links-list-item-profile-image"><img class="header-items-links-list-item-profile-image-element" src="~/Images/Icons/User_Profile_Photo.svg" alt="Profile picture of user"></li>
+                                    <li class="header-items-links-list-item-profile-inscription">
+                                        <ul class="header-items-links-list-item-profile-inscription-items">
+                                            <li class="header-items-links-list-item-profile-inscription-items-logged-as">Logged as</li>
+                                            <li class="header-items-links-list-item-profile-inscription-items-username">@User.Identity.Name</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                    }
                 </ul>
             </li>
         </ul>
