@@ -21,12 +21,32 @@
       "PackagePath": "staticwebassets\\Images\\Icons\\Like.svg"
     },
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Logout_icon.svg",
+      "PackagePath": "staticwebassets\\Images\\Icons\\Logout_icon.svg"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Notifications_icon.svg",
+      "PackagePath": "staticwebassets\\Images\\Icons\\Notifications_icon.svg"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Order_history.svg",
+      "PackagePath": "staticwebassets\\Images\\Icons\\Order_history.svg"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Orders_icon.svg",
+      "PackagePath": "staticwebassets\\Images\\Icons\\Orders_icon.svg"
+    },
+    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Save.svg",
       "PackagePath": "staticwebassets\\Images\\Icons\\Save.svg"
     },
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Search.svg",
       "PackagePath": "staticwebassets\\Images\\Icons\\Search.svg"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Settings_icon.svg",
+      "PackagePath": "staticwebassets\\Images\\Icons\\Settings_icon.svg"
     },
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\User_Profile_Photo.svg",
@@ -139,6 +159,14 @@
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\homepage.css.map",
       "PackagePath": "staticwebassets\\css\\homepage.css.map"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\my-account.css",
+      "PackagePath": "staticwebassets\\css\\my-account.css"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\my-account.css.map",
+      "PackagePath": "staticwebassets\\css\\my-account.css.map"
     },
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\post.css",

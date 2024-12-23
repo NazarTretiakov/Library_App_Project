@@ -107,7 +107,6 @@ namespace LibraryApp.UI.Controllers
         }
 
         [Route("/logout")]
-        [Authorize]
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();

@@ -8,6 +8,8 @@ wwwroot\css\forum.css
 wwwroot\css\forum.css.map
 wwwroot\css\homepage.css
 wwwroot\css\homepage.css.map
+wwwroot\css\my-account.css
+wwwroot\css\my-account.css.map
 wwwroot\css\post.css
 wwwroot\css\post.css.map
 wwwroot\css\registration.css
@@ -31,10 +33,15 @@ wwwroot\Images\Icons\icons8-twitterx-50.png
 wwwroot\Images\Icons\icons8-youtube-50.png
 wwwroot\Images\Icons\improve.png
 wwwroot\Images\Icons\Like.svg
+wwwroot\Images\Icons\Logout_icon.svg
 wwwroot\Images\Icons\natural-product.png
+wwwroot\Images\Icons\Notifications_icon.svg
+wwwroot\Images\Icons\Order_history.svg
+wwwroot\Images\Icons\Orders_icon.svg
 wwwroot\Images\Icons\poetry.png
 wwwroot\Images\Icons\Save.svg
 wwwroot\Images\Icons\Search.svg
+wwwroot\Images\Icons\Settings_icon.svg
 wwwroot\Images\Icons\User_Profile_Photo.svg
 wwwroot\Images\Logo.jpg
 wwwroot\Images\Logo_gray.jpg
