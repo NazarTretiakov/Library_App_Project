@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qFdBmm+103fftswjA5X9ZJnJi2MaAU0lpDyaUHKz5wo=",
+  "Hash": "J0zzXBYocfGZVOSk3TLRu58DPqgJrOwp0yujxNgB+T8=",
   "Source": "LibraryApp.UI",
   "BasePath": "_content/LibraryApp.UI",
   "Mode": "Default",
@@ -309,6 +309,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\post.css.map"
+    },
+    {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\profile-settings.css",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "css/profile-settings#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kyz9aelpjt",
+      "Integrity": "tA98upWsDAfVf1QcSpp/yvaMEcSwg1Ju6dEfWxYah+8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\profile-settings.css"
+    },
+    {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\profile-settings.css.map",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "css/profile-settings.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1x21w5rydr",
+      "Integrity": "+7ZxEBqcC13BqsKBdGq/qLCpdesl/VPE3UuVyu4oE7c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\profile-settings.css.map"
     },
     {
       "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\registration.css",
@@ -1081,11 +1123,32 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "qc10ecpvq1",
-      "Integrity": "2tQWPU4s0RhAIqhpFKw49nScgg7xxbUdhLxRXVvf39U=",
+      "Fingerprint": "m5mnx6789z",
+      "Integrity": "6tiOmmQsEgl0cmrra2Ub70NC64Hca9eiLY3V/fFkB6c=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\create-post.js"
+    },
+    {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\profile-settings.js",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "js/profile-settings#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vzc974khxl",
+      "Integrity": "CyFpq5odDXgWgRZNL5NkwMvGGLdVgufRV4GVcw7L2DM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\profile-settings.js"
     }
   ],
   "Endpoints": [
@@ -2234,6 +2297,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-NFKpDLFs5vGYF5tc746kS4LW4f1Bf7d/WkERi8TbbHc="
+        }
+      ]
+    },
+    {
+      "Route": "css/profile-settings.css",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\profile-settings.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7189"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tA98upWsDAfVf1QcSpp/yvaMEcSwg1Ju6dEfWxYah+8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 02 Jan 2025 16:38:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tA98upWsDAfVf1QcSpp/yvaMEcSwg1Ju6dEfWxYah+8="
+        }
+      ]
+    },
+    {
+      "Route": "css/profile-settings.css.1x21w5rydr.map",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\profile-settings.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1522"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+7ZxEBqcC13BqsKBdGq/qLCpdesl/VPE3UuVyu4oE7c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 02 Jan 2025 16:38:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1x21w5rydr"
+        },
+        {
+          "Name": "label",
+          "Value": "css/profile-settings.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+7ZxEBqcC13BqsKBdGq/qLCpdesl/VPE3UuVyu4oE7c="
+        }
+      ]
+    },
+    {
+      "Route": "css/profile-settings.css.map",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\profile-settings.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1522"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+7ZxEBqcC13BqsKBdGq/qLCpdesl/VPE3UuVyu4oE7c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 02 Jan 2025 16:38:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+7ZxEBqcC13BqsKBdGq/qLCpdesl/VPE3UuVyu4oE7c="
+        }
+      ]
+    },
+    {
+      "Route": "css/profile-settings.kyz9aelpjt.css",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\profile-settings.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7189"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tA98upWsDAfVf1QcSpp/yvaMEcSwg1Ju6dEfWxYah+8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 02 Jan 2025 16:38:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kyz9aelpjt"
+        },
+        {
+          "Name": "label",
+          "Value": "css/profile-settings.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tA98upWsDAfVf1QcSpp/yvaMEcSwg1Ju6dEfWxYah+8="
         }
       ]
     },
@@ -5200,7 +5427,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "643"
+          "Value": "687"
         },
         {
           "Name": "Content-Type",
@@ -5208,11 +5435,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2tQWPU4s0RhAIqhpFKw49nScgg7xxbUdhLxRXVvf39U=\""
+          "Value": "\"6tiOmmQsEgl0cmrra2Ub70NC64Hca9eiLY3V/fFkB6c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 07 Dec 2024 11:16:56 GMT"
+          "Value": "Thu, 02 Jan 2025 16:30:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5222,12 +5449,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-2tQWPU4s0RhAIqhpFKw49nScgg7xxbUdhLxRXVvf39U="
+          "Value": "sha256-6tiOmmQsEgl0cmrra2Ub70NC64Hca9eiLY3V/fFkB6c="
         }
       ]
     },
     {
-      "Route": "js/create-post.qc10ecpvq1.js",
+      "Route": "js/create-post.m5mnx6789z.js",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\create-post.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5237,7 +5464,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "643"
+          "Value": "687"
         },
         {
           "Name": "Content-Type",
@@ -5245,11 +5472,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2tQWPU4s0RhAIqhpFKw49nScgg7xxbUdhLxRXVvf39U=\""
+          "Value": "\"6tiOmmQsEgl0cmrra2Ub70NC64Hca9eiLY3V/fFkB6c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 07 Dec 2024 11:16:56 GMT"
+          "Value": "Thu, 02 Jan 2025 16:30:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5259,7 +5486,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qc10ecpvq1"
+          "Value": "m5mnx6789z"
         },
         {
           "Name": "label",
@@ -5267,7 +5494,89 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-2tQWPU4s0RhAIqhpFKw49nScgg7xxbUdhLxRXVvf39U="
+          "Value": "sha256-6tiOmmQsEgl0cmrra2Ub70NC64Hca9eiLY3V/fFkB6c="
+        }
+      ]
+    },
+    {
+      "Route": "js/profile-settings.js",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\profile-settings.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "786"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CyFpq5odDXgWgRZNL5NkwMvGGLdVgufRV4GVcw7L2DM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 02 Jan 2025 16:30:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CyFpq5odDXgWgRZNL5NkwMvGGLdVgufRV4GVcw7L2DM="
+        }
+      ]
+    },
+    {
+      "Route": "js/profile-settings.vzc974khxl.js",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\profile-settings.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "786"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CyFpq5odDXgWgRZNL5NkwMvGGLdVgufRV4GVcw7L2DM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 02 Jan 2025 16:30:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vzc974khxl"
+        },
+        {
+          "Name": "label",
+          "Value": "js/profile-settings.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CyFpq5odDXgWgRZNL5NkwMvGGLdVgufRV4GVcw7L2DM="
         }
       ]
     }

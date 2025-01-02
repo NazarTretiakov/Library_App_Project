@@ -168,6 +168,30 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wnfimqxsx0"},{"Name":"integrity","Value":"sha256-NFKpDLFs5vGYF5tc746kS4LW4f1Bf7d/WkERi8TbbHc="},{"Name":"label","Value":"_content/LibraryApp.UI/css/post.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7697"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022NFKpDLFs5vGYF5tc746kS4LW4f1Bf7d/WkERi8TbbHc=\u0022"},{"Name":"Last-Modified","Value":"Sat, 21 Dec 2024 08:16:27 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/LibraryApp.UI/css/profile-settings.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\profile-settings.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-tA98upWsDAfVf1QcSpp/yvaMEcSwg1Ju6dEfWxYah\u002B8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"7189"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022tA98upWsDAfVf1QcSpp/yvaMEcSwg1Ju6dEfWxYah\u002B8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 02 Jan 2025 16:38:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/LibraryApp.UI/css/profile-settings.css.1x21w5rydr.map">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\profile-settings.css.map'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"1x21w5rydr"},{"Name":"integrity","Value":"sha256-\u002B7ZxEBqcC13BqsKBdGq/qLCpdesl/VPE3UuVyu4oE7c="},{"Name":"label","Value":"_content/LibraryApp.UI/css/profile-settings.css.map"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1522"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022\u002B7ZxEBqcC13BqsKBdGq/qLCpdesl/VPE3UuVyu4oE7c=\u0022"},{"Name":"Last-Modified","Value":"Thu, 02 Jan 2025 16:38:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/LibraryApp.UI/css/profile-settings.css.map">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\profile-settings.css.map'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-\u002B7ZxEBqcC13BqsKBdGq/qLCpdesl/VPE3UuVyu4oE7c="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1522"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022\u002B7ZxEBqcC13BqsKBdGq/qLCpdesl/VPE3UuVyu4oE7c=\u0022"},{"Name":"Last-Modified","Value":"Thu, 02 Jan 2025 16:38:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/LibraryApp.UI/css/profile-settings.kyz9aelpjt.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\profile-settings.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kyz9aelpjt"},{"Name":"integrity","Value":"sha256-tA98upWsDAfVf1QcSpp/yvaMEcSwg1Ju6dEfWxYah\u002B8="},{"Name":"label","Value":"_content/LibraryApp.UI/css/profile-settings.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7189"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022tA98upWsDAfVf1QcSpp/yvaMEcSwg1Ju6dEfWxYah\u002B8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 02 Jan 2025 16:38:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/LibraryApp.UI/css/registration.1sqm15f3h4.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\registration.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -603,14 +627,26 @@
     <StaticWebAssetEndpoint Include="_content/LibraryApp.UI/js/create-post.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\create-post.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-2tQWPU4s0RhAIqhpFKw49nScgg7xxbUdhLxRXVvf39U="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"643"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00222tQWPU4s0RhAIqhpFKw49nScgg7xxbUdhLxRXVvf39U=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Dec 2024 11:16:56 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-6tiOmmQsEgl0cmrra2Ub70NC64Hca9eiLY3V/fFkB6c="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"687"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00226tiOmmQsEgl0cmrra2Ub70NC64Hca9eiLY3V/fFkB6c=\u0022"},{"Name":"Last-Modified","Value":"Thu, 02 Jan 2025 16:30:16 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/LibraryApp.UI/js/create-post.qc10ecpvq1.js">
+    <StaticWebAssetEndpoint Include="_content/LibraryApp.UI/js/create-post.m5mnx6789z.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\create-post.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qc10ecpvq1"},{"Name":"integrity","Value":"sha256-2tQWPU4s0RhAIqhpFKw49nScgg7xxbUdhLxRXVvf39U="},{"Name":"label","Value":"_content/LibraryApp.UI/js/create-post.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"643"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00222tQWPU4s0RhAIqhpFKw49nScgg7xxbUdhLxRXVvf39U=\u0022"},{"Name":"Last-Modified","Value":"Sat, 07 Dec 2024 11:16:56 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"m5mnx6789z"},{"Name":"integrity","Value":"sha256-6tiOmmQsEgl0cmrra2Ub70NC64Hca9eiLY3V/fFkB6c="},{"Name":"label","Value":"_content/LibraryApp.UI/js/create-post.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"687"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00226tiOmmQsEgl0cmrra2Ub70NC64Hca9eiLY3V/fFkB6c=\u0022"},{"Name":"Last-Modified","Value":"Thu, 02 Jan 2025 16:30:16 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/LibraryApp.UI/js/profile-settings.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\profile-settings.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-CyFpq5odDXgWgRZNL5NkwMvGGLdVgufRV4GVcw7L2DM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"786"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022CyFpq5odDXgWgRZNL5NkwMvGGLdVgufRV4GVcw7L2DM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 02 Jan 2025 16:30:03 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/LibraryApp.UI/js/profile-settings.vzc974khxl.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\profile-settings.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vzc974khxl"},{"Name":"integrity","Value":"sha256-CyFpq5odDXgWgRZNL5NkwMvGGLdVgufRV4GVcw7L2DM="},{"Name":"label","Value":"_content/LibraryApp.UI/js/profile-settings.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"786"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022CyFpq5odDXgWgRZNL5NkwMvGGLdVgufRV4GVcw7L2DM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 02 Jan 2025 16:30:03 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

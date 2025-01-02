@@ -9,5 +9,17 @@ namespace LibraryApp.UI.Controllers
         {
             return View();
         }
+
+        [Route("/my-account/settings")]
+        public IActionResult Settings()
+        {
+            return RedirectToAction(nameof(MyAccountController.ProfileInformationSettings), "MyAccount");
+        }
+
+        [Route("/my-account/settings/profile")]
+        public IActionResult ProfileInformationSettings()
+        {
+            return View();
+        }
     }
 }

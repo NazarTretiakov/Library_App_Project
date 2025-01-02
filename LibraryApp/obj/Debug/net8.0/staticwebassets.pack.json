@@ -177,6 +177,14 @@
       "PackagePath": "staticwebassets\\css\\post.css.map"
     },
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\profile-settings.css",
+      "PackagePath": "staticwebassets\\css\\profile-settings.css"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\profile-settings.css.map",
+      "PackagePath": "staticwebassets\\css\\profile-settings.css.map"
+    },
+    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\registration.css",
       "PackagePath": "staticwebassets\\css\\registration.css"
     },
@@ -203,6 +211,10 @@
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\create-post.js",
       "PackagePath": "staticwebassets\\js\\create-post.js"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\profile-settings.js",
+      "PackagePath": "staticwebassets\\js\\profile-settings.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LibraryApp.UI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

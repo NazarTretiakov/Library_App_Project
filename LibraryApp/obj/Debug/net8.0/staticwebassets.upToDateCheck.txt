@@ -12,6 +12,8 @@ wwwroot\css\my-account.css
 wwwroot\css\my-account.css.map
 wwwroot\css\post.css
 wwwroot\css\post.css.map
+wwwroot\css\profile-settings.css
+wwwroot\css\profile-settings.css.map
 wwwroot\css\registration.css
 wwwroot\css\registration.css.map
 wwwroot\css\subscribers.css
@@ -49,3 +51,4 @@ wwwroot\Images\Logo_icon.jpg
 wwwroot\Images\Photo_of_Library.jpg
 wwwroot\Images\Photo_of_library_2.jpg
 wwwroot\js\create-post.js
+wwwroot\js\profile-settings.js

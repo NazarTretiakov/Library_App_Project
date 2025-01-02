@@ -252,6 +252,42 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\post.css.map'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\profile-settings.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>css/profile-settings.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>kyz9aelpjt</Fingerprint>
+      <Integrity>tA98upWsDAfVf1QcSpp/yvaMEcSwg1Ju6dEfWxYah+8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\profile-settings.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\profile-settings.css.map'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>css/profile-settings.css.map</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>1x21w5rydr</Fingerprint>
+      <Integrity>+7ZxEBqcC13BqsKBdGq/qLCpdesl/VPE3UuVyu4oE7c=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\profile-settings.css.map'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\registration.css'))">
       <SourceType>Package</SourceType>
       <SourceId>LibraryApp.UI</SourceId>
@@ -912,11 +948,29 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>qc10ecpvq1</Fingerprint>
-      <Integrity>2tQWPU4s0RhAIqhpFKw49nScgg7xxbUdhLxRXVvf39U=</Integrity>
+      <Fingerprint>m5mnx6789z</Fingerprint>
+      <Integrity>6tiOmmQsEgl0cmrra2Ub70NC64Hca9eiLY3V/fFkB6c=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\create-post.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\profile-settings.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>js/profile-settings.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>vzc974khxl</Fingerprint>
+      <Integrity>CyFpq5odDXgWgRZNL5NkwMvGGLdVgufRV4GVcw7L2DM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\profile-settings.js'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>
