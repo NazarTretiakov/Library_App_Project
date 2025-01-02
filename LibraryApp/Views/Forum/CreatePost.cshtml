@@ -1,4 +1,6 @@
-﻿@{
+﻿@model PostDTO
+
+@{
     ViewBag.Title = "Create post";
     ViewBag.StylesPath = "~/css/create-post.css";
     ViewBag.ScriptPath = "~/js/create-post.js";
@@ -17,12 +19,15 @@
 
 <div class="container-for_create-post">
     <section class="create-post">
-        <form class="create-post_form">
+        <form class="create-post_form" asp-controller="Forum" asp-action="CreatePost" method="post">
             <ul class="create-post_form-items">
                 <li class="create-post_form-items-header"><h1 class="create-post_form-items-header-element">Create post</h1></li>
-                <li class="create-post_form-items-input-title"><input class="create-post_form-items-input-title-element" type="text" placeholder="Title"></li>
-                <li class="create-post_form-items-input-topics"><input class="create-post_form-items-input-topics-element" type="text" placeholder="Topics"></li>
-                <li class="create-post_form-items-input-content"><textarea class="create-post_form-items-input-content-element" placeholder="Content"></textarea><span class="create-post_form-items-input-content-element-number-of-signs"><span class="create-post_form-items-input-content-element-number-of-signs-entered">0</span><span class="create-post_form-items-input-content-element-number-of-signs-max">/1700</span></span></li>
+                <li class="create-post_form-items-input-title"><input class="create-post_form-items-input-title-element" asp-for="Title" placeholder="Title"></li>
+                <li class="create-post_form-items-input-topics"><input class="create-post_form-items-input-topics-element" asp-for="Topics" placeholder="Topics"></li>
+                <li class="create-post_form-items-input-content"><textarea class="create-post_form-items-input-content-element" asp-for=Content placeholder="Content"></textarea><span class="create-post_form-items-input-content-element-number-of-signs"><span class="create-post_form-items-input-content-element-number-of-signs-entered">0</span><span class="create-post_form-items-input-content-element-number-of-signs-max">/1700</span></span></li>
+                <li>
+                    <div class="create-post_form-items-input-validation-result" asp-validation-summary="All"></div>
+                </li>
                 <li class="create-post_form-items-button"><button class="create-post_form-items-button-element" type="submit">Create</button></li>
             </ul>
         </form>

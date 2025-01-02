@@ -1,5 +1,9 @@
 ﻿using LibraryApp.Core.Domain.IdentityEntities;
+using LibraryApp.Core.Domain.RepositoryContracts;
+using LibraryApp.Core.ServiceContracts;
+using LibraryApp.Core.Services;
 using LibraryApp.Infrastructure.DbContext;
+using LibraryApp.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -12,6 +16,16 @@ namespace LibraryApp.UI.StartupExtensions
         public static IServiceCollection ConfigureServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddControllersWithViews();
+
+
+            services.AddScoped<IUsersRepository, UsersRepository>();
+            services.AddScoped<IPostsRepository, PostsRepository>();
+            services.AddScoped<ITopicsRepository, TopicsRepository>();
+
+            services.AddScoped<IUsersGetterService, UsersGetterService>();
+            services.AddScoped<IPostsCreatorService, PostsCreatorService>();
+            services.AddScoped<IPostsGetterService, PostsGetterService>();
+
 
             services.AddDbContext<LibraryDbContext>(options => 
             {

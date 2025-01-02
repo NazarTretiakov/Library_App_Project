@@ -105,7 +105,7 @@
             }
 
             &-input-content {
-                margin: 0 0 80px 0;
+                margin: 0;
 
                 &-element {
                     height: 120px;
@@ -125,7 +125,7 @@
                         &-entered {
 
                             &-overflow {
-                                color: #ff6452;
+                                color: $errorTextColor;
                             }
 
                             &-normal {
@@ -143,6 +143,22 @@
                 }
             }
 
+            &-input-validation-result {
+                color: $errorTextColor;
+                margin: 10px 0 0 16px;
+                width: 300px;
+                font-size: 14px;
+
+                & > ul {
+                    padding: 0;
+                    list-style: none;
+
+                    & > li {
+                        margin: 0 0 10px 0;
+                    }
+                }
+            }
+
             &-button {
 
                 &-element {
@@ -153,7 +169,7 @@
                     color: white;
                     border-radius: 10px;
                     transition: background-color 0.3s ease;
-                    margin: 0 0 12px 0;
+                    margin: 50px 0 12px 0;
 
                     &:hover {
                         cursor: pointer;

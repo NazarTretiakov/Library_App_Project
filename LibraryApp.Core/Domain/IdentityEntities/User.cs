@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using LibraryApp.Core.Domain.Entities;
+using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations;
 
 namespace LibraryApp.Core.Domain.IdentityEntities
@@ -20,5 +21,7 @@ namespace LibraryApp.Core.Domain.IdentityEntities
         public DateTime DateOfRegistration { get; set; }
 
         public bool IsBlocked { get; set; }
+
+        public List<Post>? Posts { get; set; }
     }
 }

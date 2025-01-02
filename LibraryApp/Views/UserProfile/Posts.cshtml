@@ -1,5 +1,7 @@
-﻿@{
-    ViewBag.Title = "NameOfUser profile";
+﻿@model LibraryApp.Core.Domain.IdentityEntities.User
+
+@{
+    ViewBag.Title = @Model.UserName;
     ViewBag.StylesPath = "~/css/user-profile-posts.css";
 }
 
@@ -65,9 +67,19 @@
         <ul class="profile-items">
             <li class="profile-items_user-information">
                 <ul class="profile-items_user-information-items">
-                    <li class="profile-items_user-information-items_full-name"><h1 class="profile-items_user-information-items_full-name-element">Firstname Lastname</h1></li>
-                    <li class="profile-items_user-information-items_username"><span class="profile-items_user-information-items_username-element">username421__</span></li>
-                    <li class="profile-items_user-information-items_description"><p class="profile-items_user-information-items_description-element">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p></li>
+                    <li class="profile-items_user-information-items_full-name">
+                        <h1 class="profile-items_user-information-items_full-name-element">
+                            @(string.IsNullOrEmpty(Model.Firstname) || string.IsNullOrEmpty(Model.Lastname)
+                                    ? "Name isn't mentioned"
+                                    : $"{Model.Firstname} {Model.Lastname}")
+                        </h1>
+                    </li>
+                    <li class="profile-items_user-information-items_username"><span class="profile-items_user-information-items_username-element">@Model.UserName</span></li>
+                    <li class="profile-items_user-information-items_description">
+                        <p class="profile-items_user-information-items_description-element">
+                            @(string.IsNullOrEmpty(Model.Firstname) ? "" : Model.Description)
+                        </p>
+                    </li>
                     <li class="profile-items_user-information-items_subscribe-button"><button class="profile-items_user-information-items_subscribe-button-element">Subscribe</button></li>
                     <li class="profile-items_user-information-items_subs-info">
                         <ul class="profile-items_user-information-items_subs-info-items">
@@ -87,68 +99,79 @@
             <li class="profile-publication-titles_reviews"><span class="profile-publication-titles_reviews-element"><a class="profile-publication-titles-link" href="">Reviews</a></span></li>
         </ul>
         <ul class="profile-posts">
-            <li>
-                <a class="profile-posts-post-link" asp-controller="Forum" asp-action="Post">
-                    <section class="profile-posts-post">
-                        <ul class="profile-posts-post-items">
-                            <li class="profile-posts-post-items-header">
-                                <ul class="profile-posts-post-items-header-items">
-                                    <li class="profile-posts-post-items-header-items-user-information">
-                                        <img class="profile-posts-post-items-header-items-user-information-profile-photo" src="~/Images/Icons/User_Profile_Photo.svg" alt="User profile photo">
-                                        <span class="profile-posts-post-items-header-items-user-information-username">SomeUser1236123</span>
-                                    </li>
-                                    <li class="profile-posts-post-items-header-items-time"><span class="profile-posts-post-items-header-items-time-element">1 day ago</span></li>
-                                </ul>
-                            </li>
-                            <li class="profile-posts-post-items-title"><h1 class="profile-posts-post-items-title-element">What is Lorem Ipsum?</h1></li>
-                            <li class="profile-posts-post-items-topics"><span class="profile-posts-post-items-topics-topic">#NameOfTopic</span><span> </span><span class="profile-posts-post-items-topics-topic">#NameOfTopic2</span></li>
-                            <li class="profile-posts-post-items-paragraph"><p class="profile-posts-post-items-paragraph-element">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum...</p></li>
-                        </ul>
-                    </section>
-                </a>
-                <div class="profile-posts-div-for-space-between-posts"></div>
-            </li>
-            <li>
-                <a class="profile-posts-post-link" asp-controller="Forum" asp-action="Post">
-                    <section class="profile-posts-post">
-                        <ul class="profile-posts-post-items">
-                            <li class="profile-posts-post-items-header">
-                                <ul class="profile-posts-post-items-header-items">
-                                    <li class="profile-posts-post-items-header-items-user-information">
-                                        <img class="profile-posts-post-items-header-items-user-information-profile-photo" src="~/Images/Icons/User_Profile_Photo.svg" alt="User profile photo">
-                                        <span class="profile-posts-post-items-header-items-user-information-username">SomeUser1236123</span>
-                                    </li>
-                                    <li class="profile-posts-post-items-header-items-time"><span class="profile-posts-post-items-header-items-time-element">1 day ago</span></li>
-                                </ul>
-                            </li>
-                            <li class="profile-posts-post-items-title"><h1 class="profile-posts-post-items-title-element">What is Lorem Ipsum?</h1></li>
-                            <li class="profile-posts-post-items-topics"><span class="profile-posts-post-items-topics-topic">#NameOfTopic</span><span> </span><span class="profile-posts-post-items-topics-topic">#NameOfTopic2</span></li>
-                            <li class="profile-posts-post-items-paragraph"><p class="profile-posts-post-items-paragraph-element">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum...</p></li>
-                        </ul>
-                    </section>
-                </a>
-                <div class="profile-posts-div-for-space-between-posts"></div>
-            </li>
-            <li>
-                <a class="profile-posts-post-link" asp-controller="Forum" asp-action="Post">
-                    <section class="profile-posts-post">
-                        <ul class="profile-posts-post-items">
-                            <li class="profile-posts-post-items-header">
-                                <ul class="profile-posts-post-items-header-items">
-                                    <li class="profile-posts-post-items-header-items-user-information">
-                                        <img class="profile-posts-post-items-header-items-user-information-profile-photo" src="~/Images/Icons/User_Profile_Photo.svg" alt="User profile photo">
-                                        <span class="profile-posts-post-items-header-items-user-information-username">SomeUser1236123</span>
-                                    </li>
-                                    <li class="profile-posts-post-items-header-items-time"><span class="profile-posts-post-items-header-items-time-element">1 day ago</span></li>
-                                </ul>
-                            </li>
-                            <li class="profile-posts-post-items-title"><h1 class="profile-posts-post-items-title-element">What is Lorem Ipsum?</h1></li>
-                            <li class="profile-posts-post-items-topics"><span class="profile-posts-post-items-topics-topic">#NameOfTopic</span><span> </span><span class="profile-posts-post-items-topics-topic">#NameOfTopic2</span></li>
-                            <li class="profile-posts-post-items-paragraph"><p class="profile-posts-post-items-paragraph-element">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum...</p></li>
-                        </ul>
-                    </section>
-                </a>
-            </li>
+            @foreach (Post post in Model.Posts)
+            {
+                TimeSpan timeSincePostPublished = DateTime.Now - post.DateOfPublication;
+
+                <li>
+                    <a class="profile-posts-post-link" asp-controller="Forum" asp-action="Post" asp-route-postId="@post.PostId">
+                        <section class="profile-posts-post">
+                            <ul class="profile-posts-post-items">
+                                <li class="profile-posts-post-items-header">
+                                    <ul class="profile-posts-post-items-header-items">
+                                        <li class="profile-posts-post-items-header-items-user-information">
+                                            <img class="profile-posts-post-items-header-items-user-information-profile-photo" src="~/Images/Icons/User_Profile_Photo.svg" alt="User profile photo">
+                                            <span class="profile-posts-post-items-header-items-user-information-username">@post.User.UserName</span>
+                                        </li>
+                                        <li class="profile-posts-post-items-header-items-time">
+                                            @if (timeSincePostPublished.TotalMinutes < 1)
+                                            {
+                                                <span class="post-items-header-items-time-element">Just now</span>
+                                            }
+                                            else if (timeSincePostPublished.TotalHours < 1)
+                                            {
+                                                if (@timeSincePostPublished.Minutes == 1)
+                                                {
+                                                    <span class="post-items-header-items-time-element">@timeSincePostPublished.Minutes minute ago</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="post-items-header-items-time-element">@timeSincePostPublished.Minutes minutes ago</span>
+                                                }
+                                            }
+                                            else if (timeSincePostPublished.TotalDays < 1)
+                                            {
+                                                if (@timeSincePostPublished.Hours == 1)
+                                                {
+                                                    <span class="post-items-header-items-time-element">@timeSincePostPublished.Hours hour ago</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="post-items-header-items-time-element">@timeSincePostPublished.Hours hours ago</span>
+                                                }
+                                            }
+                                            else
+                                            {
+                                                if (@timeSincePostPublished.Days == 1)
+                                                {
+                                                    <span class="post-items-header-items-time-element">@timeSincePostPublished.Days day ago</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="post-items-header-items-time-element">@timeSincePostPublished.Days days ago</span>
+                                                }
+                                            }
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="profile-posts-post-items-title"><h1 class="profile-posts-post-items-title-element">@post.Title</h1></li>
+                                <li class="profile-posts-post-items-topics">
+                                    @foreach (PostTopic postTopic in post.Topics)
+                                    {
+                                        <span class="post-items-topics-topic">#@postTopic.Topic.Name</span>
+                                        <span> </span>
+                                    }
+                                </li>
+                                <li class="profile-posts-post-items-paragraph"><p class="profile-posts-post-items-paragraph-element">@(post.Content.Length > 570 ? post.Content.Substring(0, 570) + "..." : post.Content)</p></li>
+                            </ul>
+                        </section>
+                    </a>
+                    @if (post != Model.Posts.LastOrDefault()) 
+                    {
+                        <div class="profile-posts-div-for-space-between-posts"></div>
+                    }
+                </li>
+            }
         </ul>
     </section>
 </div>

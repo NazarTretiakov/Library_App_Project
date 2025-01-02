@@ -257,6 +257,7 @@
 .post-link {
   color: black;
   text-decoration: none;
+  display: block;
 }
 
 .container-for-space-between-posts {

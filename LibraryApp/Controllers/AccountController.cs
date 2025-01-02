@@ -42,9 +42,10 @@ namespace LibraryApp.UI.Controllers
             User user = new User()
             {
                 UserName = registerDTO.UserName,
+                DateOfRegistration = DateTime.Now
             };
             IdentityResult result = await _userManager.CreateAsync(user, registerDTO.Password);
-
+            
             if (result.Succeeded)
             {
                 await _userManager.AddToRoleAsync(user, UserRoleOptions.User.ToString());

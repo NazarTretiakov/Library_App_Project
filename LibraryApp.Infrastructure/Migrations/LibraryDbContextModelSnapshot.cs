@@ -22,6 +22,130 @@ namespace LibraryApp.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Comment", b =>
+                {
+                    b.Property<Guid>("CommentId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("PostId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("CommentId");
+
+                    b.HasIndex("PostId");
+
+                    b.ToTable("Comment");
+                });
+
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Like", b =>
+                {
+                    b.Property<Guid>("LikeId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("PostId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("LikeId");
+
+                    b.HasIndex("PostId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Likes", (string)null);
+                });
+
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Post", b =>
+                {
+                    b.Property<Guid>("PostId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasMaxLength(1700)
+                        .HasColumnType("nvarchar(1700)");
+
+                    b.Property<DateTime>("DateOfPublication")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(40)
+                        .HasColumnType("nvarchar(40)");
+
+                    b.Property<Guid?>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("PostId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Posts", (string)null);
+                });
+
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.PostTopic", b =>
+                {
+                    b.Property<Guid>("PostTopicId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("PostId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("TopicId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("PostTopicId");
+
+                    b.HasIndex("PostId");
+
+                    b.HasIndex("TopicId");
+
+                    b.ToTable("PostTopic", (string)null);
+                });
+
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Save", b =>
+                {
+                    b.Property<Guid>("SaveId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("PostId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("SaveId");
+
+                    b.HasIndex("PostId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Saves", (string)null);
+                });
+
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Topic", b =>
+                {
+                    b.Property<Guid>("TopicId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(40)
+                        .HasColumnType("nvarchar(40)");
+
+                    b.HasKey("TopicId");
+
+                    b.ToTable("Topics", (string)null);
+                });
+
             modelBuilder.Entity("LibraryApp.Core.Domain.IdentityEntities.Role", b =>
                 {
                     b.Property<Guid>("Id")
@@ -241,6 +365,75 @@ namespace LibraryApp.Infrastructure.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Comment", b =>
+                {
+                    b.HasOne("LibraryApp.Core.Domain.Entities.Post", null)
+                        .WithMany("Comments")
+                        .HasForeignKey("PostId");
+                });
+
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Like", b =>
+                {
+                    b.HasOne("LibraryApp.Core.Domain.Entities.Post", "Post")
+                        .WithMany("Likes")
+                        .HasForeignKey("PostId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("LibraryApp.Core.Domain.IdentityEntities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.Navigation("Post");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Post", b =>
+                {
+                    b.HasOne("LibraryApp.Core.Domain.IdentityEntities.User", "User")
+                        .WithMany("Posts")
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.PostTopic", b =>
+                {
+                    b.HasOne("LibraryApp.Core.Domain.Entities.Post", "Post")
+                        .WithMany("Topics")
+                        .HasForeignKey("PostId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("LibraryApp.Core.Domain.Entities.Topic", "Topic")
+                        .WithMany("Posts")
+                        .HasForeignKey("TopicId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Post");
+
+                    b.Navigation("Topic");
+                });
+
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Save", b =>
+                {
+                    b.HasOne("LibraryApp.Core.Domain.Entities.Post", "Post")
+                        .WithMany("Saves")
+                        .HasForeignKey("PostId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("LibraryApp.Core.Domain.IdentityEntities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.Navigation("Post");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<System.Guid>", b =>
                 {
                     b.HasOne("LibraryApp.Core.Domain.IdentityEntities.Role", null)
@@ -290,6 +483,27 @@ namespace LibraryApp.Infrastructure.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Post", b =>
+                {
+                    b.Navigation("Comments");
+
+                    b.Navigation("Likes");
+
+                    b.Navigation("Saves");
+
+                    b.Navigation("Topics");
+                });
+
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Topic", b =>
+                {
+                    b.Navigation("Posts");
+                });
+
+            modelBuilder.Entity("LibraryApp.Core.Domain.IdentityEntities.User", b =>
+                {
+                    b.Navigation("Posts");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,9 +1,18 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using LibraryApp.Core.Domain.IdentityEntities;
+using LibraryApp.Core.ServiceContracts;
+using Microsoft.AspNetCore.Mvc;
 
 namespace LibraryApp.UI.Controllers
 {
     public class UserProfileController : Controller
     {
+        private readonly IUsersGetterService _usersGetterService;
+
+        public UserProfileController(IUsersGetterService usersGetterService)
+        {
+            _usersGetterService = usersGetterService;
+        }
+
         [Route("/user-profile")]
         public IActionResult Index()
         {
@@ -11,9 +20,11 @@ namespace LibraryApp.UI.Controllers
         }
 
         [Route("/user-profile/posts")]
-        public IActionResult Posts()
+        public async Task<IActionResult> Posts(string userId)
         {
-            return View();
+            User user = await _usersGetterService.GetUserByUserId(userId);
+
+            return View(user);
         }
 
         [Route("/user-profile/subscribers")]

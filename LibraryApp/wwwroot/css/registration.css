@@ -87,6 +87,9 @@
   padding: 0;
   list-style: none;
 }
+.registration-form-items-validation > div > ul > li {
+  margin: 10px 0 0 0;
+}
 .registration-form-items-button-register-element {
   height: 40px;
   width: 330px;
