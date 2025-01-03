@@ -1,5 +1,6 @@
 ﻿using LibraryApp.Core.Domain.Entities;
 using LibraryApp.Core.Domain.IdentityEntities;
+using System.Linq.Expressions;
 
 namespace LibraryApp.Core.Domain.RepositoryContracts
 {

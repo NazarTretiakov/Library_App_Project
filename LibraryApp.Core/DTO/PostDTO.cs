@@ -12,7 +12,7 @@ namespace LibraryApp.Core.DTO
         [Length(2, 44, ErrorMessage = "Added to many topics.")]
         public string Topics { get; set; }
 
-        [DataType(DataType.Text)]
+        [DataType(DataType.MultilineText)]
         [Length(140, 1700, ErrorMessage = "Content of the post should have a length between 140 and 1700 characters.")]
         public string Content { get; set; }
     }

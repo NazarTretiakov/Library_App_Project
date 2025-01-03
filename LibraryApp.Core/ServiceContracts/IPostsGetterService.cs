@@ -1,4 +1,5 @@
 ﻿using LibraryApp.Core.Domain.Entities;
+using LibraryApp.Core.Domain.IdentityEntities;
 
 namespace LibraryApp.Core.ServiceContracts
 {
@@ -19,5 +20,13 @@ namespace LibraryApp.Core.ServiceContracts
         /// <param name="postId">The id of post that will be retrieved.</param>
         /// <returns>Post object or null.</returns>
         Task<Post> GetPostByPostId(string postId);
+
+        /// <summary>
+        /// Retrieves filtered posts from the system.
+        /// </summary>
+        /// <param name="searchString">The phrase to be searched for.</param>
+        /// <param name="searchFilter">The name of the filter that will be used to search.</param>
+        /// <returns>The list of Post objects or null.</returns>
+        Task<List<Post>> GetFilteredPosts(string searchFilter, string searchString);
     }
 }

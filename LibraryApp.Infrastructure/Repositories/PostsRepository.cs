@@ -1,7 +1,9 @@
 ﻿using LibraryApp.Core.Domain.Entities;
+using LibraryApp.Core.Domain.IdentityEntities;
 using LibraryApp.Core.Domain.RepositoryContracts;
 using LibraryApp.Infrastructure.DbContext;
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace LibraryApp.Infrastructure.Repositories
 {
@@ -43,6 +45,18 @@ namespace LibraryApp.Infrastructure.Repositories
             var entitiesAddedToDb = await _db.SaveChangesAsync();
 
             return entitiesAddedToDb > 0;
+        }
+
+        public async Task<List<Post>> GetFilteredPosts(Expression<Func<Post, bool>> predicate)
+        {
+            return await _db.Posts.Include(p => p.User)
+                                  .Include(p => p.Topics)
+                                    .ThenInclude(pt => pt.Topic)
+                                  .Include(p => p.Likes)
+                                  .Include(p => p.Saves)
+                                  .Include(p => p.Comments)
+                                  .Where(predicate)
+                                  .ToListAsync();
         }
     }
 }

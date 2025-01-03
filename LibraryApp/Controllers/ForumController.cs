@@ -17,11 +17,26 @@ namespace LibraryApp.UI.Controllers
         }
 
         [Route("/forum")]
-        public async Task<IActionResult> Index()
+        [HttpGet]
+        public async Task<IActionResult> Index(string searchString, string searchFilter = "all")
         {
-            List<Post> posts = await _postsGetterService.GetAllPosts();
+            ViewBag.SearchString = searchString;
+            ViewBag.SearchFilter = searchFilter;
 
-            return View(posts);
+            List<Post> posts;
+
+            if (searchString == null)
+            {
+                posts = await _postsGetterService.GetAllPosts();
+            }
+            else
+            {
+                posts = await _postsGetterService.GetFilteredPosts(searchFilter, searchString);
+            }
+
+            posts = posts.OrderByDescending(p => p.DateOfPublication).ToList();  //TODO: find out why I can't use here async version of query methods
+
+            return View(posts);  //TODO: create empty state of the page, for situation when posts with mentioned "searchString" weren't found
         }
 
         [Route("/forum/post")]

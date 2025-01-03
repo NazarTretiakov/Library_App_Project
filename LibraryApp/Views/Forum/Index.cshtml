@@ -35,22 +35,46 @@
 
 
     <section class="search-panel">
-        <form class="search-panel-form">
+        <form class="search-panel-form" asp-controller="Forum" asp-action="Index" method="get">
             <ul class="search-panel-form-search">
                 <li class="search-panel-form-search-icon">
                     <div class="search-panel-form-search-icon-div"></div>
                 </li>
                 <li class="search-panel-form-search-input">
-                    <input class="search-panel-form-search-input-element" type="text" placeholder="Search">
+                    <input class="search-panel-form-search-input-element" name="searchString" type="text" placeholder="Search" value="@ViewBag.SearchString">
                 </li>
             </ul>
             <ul class="search-panel-form-dropdown">
                 <li class="search-panel-form-dropdown-select">
-                    <select class="search-panel-form-dropdown-select-element">
-                        <option class="search-panel-form-dropdown-select-element-author" value="all">All results</option>
-                        <option class="search-panel-form-dropdown-select-element-author" value="author">Username</option>
-                        <option class="search-panel-form-dropdown-select-element-title" value="title">Title</option>
-                        <option class="search-panel-form-dropdown-select-element-genre" value="genre">Topic</option>
+                    <select class="search-panel-form-dropdown-select-element" name="searchFilter">
+                        @if (ViewBag.SearchFilter == "all")
+                        {
+                            <option class="search-panel-form-dropdown-select-element-author" value="all" selected>All results</option>
+                            <option class="search-panel-form-dropdown-select-element-author" value="username">Username</option>
+                            <option class="search-panel-form-dropdown-select-element-title" value="title">Title</option>
+                            <option class="search-panel-form-dropdown-select-element-genre" value="topic">Topic</option>
+                        }
+                        else if (ViewBag.SearchFilter == "username")
+                        {
+                            <option class="search-panel-form-dropdown-select-element-author" value="all">All results</option>
+                            <option class="search-panel-form-dropdown-select-element-author" value="username" selected>Username</option>
+                            <option class="search-panel-form-dropdown-select-element-title" value="title">Title</option>
+                            <option class="search-panel-form-dropdown-select-element-genre" value="topic">Topic</option>
+                        }
+                        else if (ViewBag.SearchFilter == "title")
+                        {
+                            <option class="search-panel-form-dropdown-select-element-author" value="all">All results</option>
+                            <option class="search-panel-form-dropdown-select-element-author" value="username">Username</option>
+                            <option class="search-panel-form-dropdown-select-element-title" value="title" selected>Title</option>
+                            <option class="search-panel-form-dropdown-select-element-genre" value="topic">Topic</option>
+                        }
+                        else if (ViewBag.SearchFilter == "topic")
+                        {
+                            <option class="search-panel-form-dropdown-select-element-author" value="all">All results</option>
+                            <option class="search-panel-form-dropdown-select-element-author" value="username">Username</option>
+                            <option class="search-panel-form-dropdown-select-element-title" value="title">Title</option>
+                            <option class="search-panel-form-dropdown-select-element-genre" value="topic" selected>Topic</option>
+                        }
                     </select>
                 </li>
                 <li class="search-panel-form-dropdown-arrow">
