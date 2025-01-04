@@ -3,6 +3,7 @@
 @{
     ViewBag.Title = Model.Title;
     ViewBag.StylesPath = "~/css/post.css";
+    ViewBag.ScriptPath = "~/js/toggle-like.js";
 
     TimeSpan timeSincePostPublished = DateTime.Now - Model.DateOfPublication;
 }
@@ -105,7 +106,7 @@
                     </li>
                     <li class="post-items-create-comment-items-interaction">
                         <ul class="post-items-create-comment-items-interaction-items">
-                            <li class="post-items-create-comment-items-interaction-items-like"><img class="post-items-create-comment-items-interaction-items-like-element" src="~/Images/Icons/Like.svg" alt="Icon of like"><span class="post-items-create-comment-items-interaction-items-like-amount">451</span></li>
+                            <li class="post-items-create-comment-items-interaction-items-like">@await Html.PartialAsync("_Like", Model, ViewData)</li>
                             <li class="post-items-create-comment-items-interaction-items-save"><img class="post-items-create-comment-items-interaction-items-save-element" src="~/Images/Icons/Save.svg" alt="Icon of save"></li>
                         </ul>
                     </li>

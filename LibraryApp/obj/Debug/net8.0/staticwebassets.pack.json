@@ -21,6 +21,14 @@
       "PackagePath": "staticwebassets\\Images\\Icons\\Like.svg"
     },
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Like_active.png",
+      "PackagePath": "staticwebassets\\Images\\Icons\\Like_active.png"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Like_active.svg",
+      "PackagePath": "staticwebassets\\Images\\Icons\\Like_active.svg"
+    },
+    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Logout_icon.svg",
       "PackagePath": "staticwebassets\\Images\\Icons\\Logout_icon.svg"
     },
@@ -215,6 +223,10 @@
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\profile-settings.js",
       "PackagePath": "staticwebassets\\js\\profile-settings.js"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\toggle-like.js",
+      "PackagePath": "staticwebassets\\js\\toggle-like.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LibraryApp.UI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

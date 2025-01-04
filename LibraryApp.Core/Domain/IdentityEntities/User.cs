@@ -23,5 +23,7 @@ namespace LibraryApp.Core.Domain.IdentityEntities
         public bool IsBlocked { get; set; }
 
         public List<Post>? Posts { get; set; }
+        public List<Like>? Likes { get; set; }
+        public List<Save>? Saves { get; set; }
     }
 }

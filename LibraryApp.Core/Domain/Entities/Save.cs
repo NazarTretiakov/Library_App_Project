@@ -8,9 +8,11 @@ namespace LibraryApp.Core.Domain.Entities
     {
         [Key]
         public Guid SaveId { get; set; }
+        public Guid UserId { get; set; }
 
         [ForeignKey("UserId")]
         public User? User { get; set; }
+        public Guid PostId { get; set; }
 
         [ForeignKey("PostId")]
         public Post? Post { get; set; }

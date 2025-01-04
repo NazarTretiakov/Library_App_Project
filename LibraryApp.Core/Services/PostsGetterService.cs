@@ -31,7 +31,7 @@ namespace LibraryApp.Core.Services
                 break;
 
                 case "username":
-                    filteredPosts = await _postsRepository.GetFilteredPosts(p => p.Title.ToUpper().Contains(searchString.ToUpper()));
+                    filteredPosts = await _postsRepository.GetFilteredPosts(p => p.User.NormalizedUserName.ToUpper().Contains(searchString.ToUpper()));
                 break;
 
                 case "topic":

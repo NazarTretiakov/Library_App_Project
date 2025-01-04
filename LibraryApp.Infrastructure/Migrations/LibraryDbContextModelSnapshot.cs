@@ -44,10 +44,13 @@ namespace LibraryApp.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("PostId")
+                    b.Property<Guid>("PostId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("UserId")
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("UserId1")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("LikeId");
@@ -55,6 +58,8 @@ namespace LibraryApp.Infrastructure.Migrations
                     b.HasIndex("PostId");
 
                     b.HasIndex("UserId");
+
+                    b.HasIndex("UserId1");
 
                     b.ToTable("Likes", (string)null);
                 });
@@ -115,10 +120,13 @@ namespace LibraryApp.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("PostId")
+                    b.Property<Guid>("PostId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("UserId")
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("UserId1")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("SaveId");
@@ -126,6 +134,8 @@ namespace LibraryApp.Infrastructure.Migrations
                     b.HasIndex("PostId");
 
                     b.HasIndex("UserId");
+
+                    b.HasIndex("UserId1");
 
                     b.ToTable("Saves", (string)null);
                 });
@@ -377,12 +387,18 @@ namespace LibraryApp.Infrastructure.Migrations
                     b.HasOne("LibraryApp.Core.Domain.Entities.Post", "Post")
                         .WithMany("Likes")
                         .HasForeignKey("PostId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("LibraryApp.Core.Domain.IdentityEntities.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("LibraryApp.Core.Domain.IdentityEntities.User", null)
+                        .WithMany("Likes")
+                        .HasForeignKey("UserId1");
 
                     b.Navigation("Post");
 
@@ -422,12 +438,18 @@ namespace LibraryApp.Infrastructure.Migrations
                     b.HasOne("LibraryApp.Core.Domain.Entities.Post", "Post")
                         .WithMany("Saves")
                         .HasForeignKey("PostId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("LibraryApp.Core.Domain.IdentityEntities.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("LibraryApp.Core.Domain.IdentityEntities.User", null)
+                        .WithMany("Saves")
+                        .HasForeignKey("UserId1");
 
                     b.Navigation("Post");
 
@@ -503,7 +525,11 @@ namespace LibraryApp.Infrastructure.Migrations
 
             modelBuilder.Entity("LibraryApp.Core.Domain.IdentityEntities.User", b =>
                 {
+                    b.Navigation("Likes");
+
                     b.Navigation("Posts");
+
+                    b.Navigation("Saves");
                 });
 #pragma warning restore 612, 618
         }

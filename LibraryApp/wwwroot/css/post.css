@@ -196,9 +196,14 @@
 }
 .post-items-create-comment-items-interaction-items-like-element {
   width: 30px;
+  transition: all 0.2s ease;
+}
+.post-items-create-comment-items-interaction-items-like-element-active {
+  stroke: none;
 }
 .post-items-create-comment-items-interaction-items-like-element:hover {
   cursor: pointer;
+  transform: scale(1.2);
 }
 .post-items-create-comment-items-interaction-items-like-amount {
   font-size: 14px;

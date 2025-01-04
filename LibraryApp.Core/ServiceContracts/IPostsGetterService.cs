@@ -1,5 +1,4 @@
 ﻿using LibraryApp.Core.Domain.Entities;
-using LibraryApp.Core.Domain.IdentityEntities;
 
 namespace LibraryApp.Core.ServiceContracts
 {

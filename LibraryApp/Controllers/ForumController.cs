@@ -9,11 +9,17 @@ namespace LibraryApp.UI.Controllers
     {
         private readonly IPostsCreatorService _postsCreatorService;
         private readonly IPostsGetterService _postsGetterService;
+        private readonly IToggleLikeService _toggleLikeService;
+        private readonly ILikesGetterService _likesGetterService;
+        private readonly IIsPostLikedService _isPostLikedService;
 
-        public ForumController(IPostsCreatorService postAdderService, IPostsGetterService postsGetterService)
+        public ForumController(IPostsCreatorService postAdderService, IPostsGetterService postsGetterService, IToggleLikeService toggleLikeService, ILikesGetterService likesGetterService, IIsPostLikedService isPostLikedService)
         {
             _postsCreatorService = postAdderService;
             _postsGetterService = postsGetterService;
+            _toggleLikeService = toggleLikeService;
+            _likesGetterService = likesGetterService;
+            _isPostLikedService = isPostLikedService;
         }
 
         [Route("/forum")]
@@ -43,6 +49,10 @@ namespace LibraryApp.UI.Controllers
         public async Task<IActionResult> Post(string postId)  //TODO: create custom exception page for that type of situations (when the postId is not entered in the query string)
         {
             Post post = await _postsGetterService.GetPostByPostId(postId);
+            List<Like> likesOfPost = await _likesGetterService.GetPostLikes(postId);
+
+            ViewBag.IsLiked = await _isPostLikedService.IsPostLiked(postId);
+            ViewBag.LikesCount = likesOfPost.Count;
 
             if (post == null)
             {
@@ -50,6 +60,20 @@ namespace LibraryApp.UI.Controllers
             }
 
             return View(post);
+        }
+
+        [Route("/forum/post/toggle-like")]
+        [HttpPost]
+        public async Task<IActionResult> ToggleLike([FromBody] ToggleLikeDTO toggleLikeDTO)
+        {
+            bool isPostLiked = await _toggleLikeService.ToggleLike(toggleLikeDTO.PostId);
+            List<Like> likesOfPost = await _likesGetterService.GetPostLikes(toggleLikeDTO.PostId);
+            Post post = await _postsGetterService.GetPostByPostId(toggleLikeDTO.PostId);
+
+            ViewBag.IsLiked = isPostLiked;
+            ViewBag.LikesCount = likesOfPost.Count;
+
+            return PartialView("_Like", post);
         }
 
         [Route("/forum/create-post")]

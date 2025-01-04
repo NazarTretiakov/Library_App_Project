@@ -21,10 +21,16 @@ namespace LibraryApp.UI.StartupExtensions
             services.AddScoped<IUsersRepository, UsersRepository>();
             services.AddScoped<IPostsRepository, PostsRepository>();
             services.AddScoped<ITopicsRepository, TopicsRepository>();
+            services.AddScoped<ILikesRepository, LikesRepository>();
 
             services.AddScoped<IUsersGetterService, UsersGetterService>();
             services.AddScoped<IPostsCreatorService, PostsCreatorService>();
             services.AddScoped<IPostsGetterService, PostsGetterService>();
+            services.AddScoped<ILikesGetterService, LikesGetterService>();
+            services.AddScoped<ILikesAdderService, LikesAdderService>();
+            services.AddScoped<ILikesRemoverService, LikesRemoverService>();
+            services.AddScoped<IToggleLikeService, ToggleLikeService>();
+            services.AddScoped<IIsPostLikedService, IsPostLikedService>();
 
 
             services.AddDbContext<LibraryDbContext>(options => 

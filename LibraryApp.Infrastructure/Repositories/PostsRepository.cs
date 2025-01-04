@@ -1,5 +1,4 @@
 ﻿using LibraryApp.Core.Domain.Entities;
-using LibraryApp.Core.Domain.IdentityEntities;
 using LibraryApp.Core.Domain.RepositoryContracts;
 using LibraryApp.Infrastructure.DbContext;
 using Microsoft.EntityFrameworkCore;
@@ -42,9 +41,9 @@ namespace LibraryApp.Infrastructure.Repositories
         {
             await _db.Posts.AddAsync(post);
 
-            var entitiesAddedToDb = await _db.SaveChangesAsync();
+            var rowsAdded = await _db.SaveChangesAsync();
 
-            return entitiesAddedToDb > 0;
+            return rowsAdded > 0;
         }
 
         public async Task<List<Post>> GetFilteredPosts(Expression<Func<Post, bool>> predicate)

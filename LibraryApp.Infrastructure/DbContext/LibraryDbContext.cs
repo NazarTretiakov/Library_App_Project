@@ -10,6 +10,8 @@ namespace LibraryApp.Infrastructure.DbContext
         public DbSet<Post> Posts { get; set; }
         public DbSet<Topic> Topics { get; set; }
         public DbSet<PostTopic> PostTopic { get; set; }
+        public DbSet<Like> Likes { get; set; }
+        public DbSet<Save> Saves { get; set; }
 
         public LibraryDbContext(DbContextOptions options) : base(options) { }
 
@@ -44,25 +46,25 @@ namespace LibraryApp.Infrastructure.DbContext
             modelBuilder.Entity<Like>()
                         .HasOne(l => l.User)      
                         .WithMany()               
-                        .HasForeignKey("UserId")
+                        .HasForeignKey(l => l.UserId)
                         .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Like>()
                         .HasOne(l => l.Post)
                         .WithMany(p => p.Likes)
-                        .HasForeignKey("PostId")
+                        .HasForeignKey(l => l.PostId)
                         .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Save>()
                         .HasOne(s => s.User)
                         .WithMany()
-                        .HasForeignKey("UserId")
+                        .HasForeignKey(s => s.UserId)
                         .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Save>()
                         .HasOne(s => s.Post)
                         .WithMany(p => p.Saves)
-                        .HasForeignKey("PostId")
+                        .HasForeignKey(s => s.PostId)
                         .OnDelete(DeleteBehavior.Cascade);
         }
     }

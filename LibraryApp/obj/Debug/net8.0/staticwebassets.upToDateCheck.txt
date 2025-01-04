@@ -35,6 +35,8 @@ wwwroot\Images\Icons\icons8-twitterx-50.png
 wwwroot\Images\Icons\icons8-youtube-50.png
 wwwroot\Images\Icons\improve.png
 wwwroot\Images\Icons\Like.svg
+wwwroot\Images\Icons\Like_active.png
+wwwroot\Images\Icons\Like_active.svg
 wwwroot\Images\Icons\Logout_icon.svg
 wwwroot\Images\Icons\natural-product.png
 wwwroot\Images\Icons\Notifications_icon.svg
@@ -52,3 +54,4 @@ wwwroot\Images\Photo_of_Library.jpg
 wwwroot\Images\Photo_of_library_2.jpg
 wwwroot\js\create-post.js
 wwwroot\js\profile-settings.js
+wwwroot\js\toggle-like.js
