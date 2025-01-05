@@ -3,7 +3,7 @@
 namespace LibraryApp.Core.ServiceContracts
 {
     /// <summary>
-    /// Represents the service for remove likes.
+    /// Represents the service for removing likes.
     /// </summary>
     public interface ILikesRemoverService
     {

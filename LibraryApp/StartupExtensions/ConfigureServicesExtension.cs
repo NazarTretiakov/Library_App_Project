@@ -22,6 +22,7 @@ namespace LibraryApp.UI.StartupExtensions
             services.AddScoped<IPostsRepository, PostsRepository>();
             services.AddScoped<ITopicsRepository, TopicsRepository>();
             services.AddScoped<ILikesRepository, LikesRepository>();
+            services.AddScoped<ISavesRepository, SavesRepository>();
 
             services.AddScoped<IUsersGetterService, UsersGetterService>();
             services.AddScoped<IPostsCreatorService, PostsCreatorService>();
@@ -31,6 +32,11 @@ namespace LibraryApp.UI.StartupExtensions
             services.AddScoped<ILikesRemoverService, LikesRemoverService>();
             services.AddScoped<IToggleLikeService, ToggleLikeService>();
             services.AddScoped<IIsPostLikedService, IsPostLikedService>();
+            services.AddScoped<ISavesGetterService, SavesGetterService>();
+            services.AddScoped<ISavesAdderService, SavesAdderService>();
+            services.AddScoped<ISavesRemoverService, SavesRemoverService>();
+            services.AddScoped<IToggleSaveService, ToggleSaveService>();
+            services.AddScoped<IIsPostSavedService, IsPostSavedService>();
 
 
             services.AddDbContext<LibraryDbContext>(options => 

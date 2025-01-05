@@ -66,6 +66,12 @@ namespace LibraryApp.Infrastructure.DbContext
                         .WithMany(p => p.Saves)
                         .HasForeignKey(s => s.PostId)
                         .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Save>()
+                        .HasOne(s => s.Book)
+                        .WithMany(b => b.Saves)
+                        .HasForeignKey(s => s.BookId)
+                        .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

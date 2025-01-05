@@ -9,8 +9,14 @@
     <link href="~/css/basic.css" rel="stylesheet" />
     <link href="@Url.Content(ViewBag.StylesPath)" rel="stylesheet" />
 
-    @if (ViewBag.ScriptPath != null) {
+    @if (ViewBag.ScriptPath != null) 
+    {
         <script src="@Url.Content(ViewBag.ScriptPath)" defer></script>
+
+        @if (ViewBag.SecondScriptPath != null)
+        {
+            <script src="@Url.Content(ViewBag.SecondScriptPath)" defer></script>
+        }
     }
 
     <link rel="preconnect" href="https://fonts.googleapis.com">

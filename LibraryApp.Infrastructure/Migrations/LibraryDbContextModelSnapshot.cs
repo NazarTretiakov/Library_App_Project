@@ -22,6 +22,17 @@ namespace LibraryApp.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Book", b =>
+                {
+                    b.Property<Guid>("BookId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("BookId");
+
+                    b.ToTable("Book");
+                });
+
             modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Comment", b =>
                 {
                     b.Property<Guid>("CommentId")
@@ -120,7 +131,10 @@ namespace LibraryApp.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("PostId")
+                    b.Property<Guid?>("BookId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("PostId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("UserId")
@@ -130,6 +144,8 @@ namespace LibraryApp.Infrastructure.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("SaveId");
+
+                    b.HasIndex("BookId");
 
                     b.HasIndex("PostId");
 
@@ -435,11 +451,15 @@ namespace LibraryApp.Infrastructure.Migrations
 
             modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Save", b =>
                 {
+                    b.HasOne("LibraryApp.Core.Domain.Entities.Book", "Book")
+                        .WithMany("Saves")
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
                     b.HasOne("LibraryApp.Core.Domain.Entities.Post", "Post")
                         .WithMany("Saves")
                         .HasForeignKey("PostId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("LibraryApp.Core.Domain.IdentityEntities.User", "User")
                         .WithMany()
@@ -450,6 +470,8 @@ namespace LibraryApp.Infrastructure.Migrations
                     b.HasOne("LibraryApp.Core.Domain.IdentityEntities.User", null)
                         .WithMany("Saves")
                         .HasForeignKey("UserId1");
+
+                    b.Navigation("Book");
 
                     b.Navigation("Post");
 
@@ -505,6 +527,11 @@ namespace LibraryApp.Infrastructure.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Book", b =>
+                {
+                    b.Navigation("Saves");
                 });
 
             modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Post", b =>

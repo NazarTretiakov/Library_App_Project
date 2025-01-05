@@ -45,9 +45,9 @@ namespace LibraryApp.Infrastructure.Repositories
         public async Task<List<Like>> GetPostLikes(string postId)
         {
             return await _db.Likes.Include(l => l.User)
-                            .Include(l => l.Post)
-                            .Where(l => l.PostId == Guid.Parse(postId))
-                            .ToListAsync();
+                                  .Include(l => l.Post)
+                                  .Where(l => l.PostId == Guid.Parse(postId))
+                                  .ToListAsync();
         }
 
         public async Task<bool> RemoveLike(Like like)

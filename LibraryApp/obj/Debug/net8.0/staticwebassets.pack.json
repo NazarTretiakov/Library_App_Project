@@ -49,6 +49,10 @@
       "PackagePath": "staticwebassets\\Images\\Icons\\Save.svg"
     },
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Save_active.svg",
+      "PackagePath": "staticwebassets\\Images\\Icons\\Save_active.svg"
+    },
+    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Search.svg",
       "PackagePath": "staticwebassets\\Images\\Icons\\Search.svg"
     },
@@ -227,6 +231,10 @@
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\toggle-like.js",
       "PackagePath": "staticwebassets\\js\\toggle-like.js"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\toggle-post-save.js",
+      "PackagePath": "staticwebassets\\js\\toggle-post-save.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LibraryApp.UI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

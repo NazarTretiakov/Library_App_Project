@@ -1,7 +1,7 @@
 ﻿namespace LibraryApp.Core.ServiceContracts
 {
     /// <summary>
-    /// Represent the service for checking if the post liked by current working user.
+    /// Represent the service for checking if the post is liked by current working user.
     /// </summary>
     public interface IIsPostLikedService
     {

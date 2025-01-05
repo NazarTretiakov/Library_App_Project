@@ -216,9 +216,15 @@
 }
 .post-items-create-comment-items-interaction-items-save-element {
   width: 30px;
+  transition: all 0.2s ease;
+}
+.post-items-create-comment-items-interaction-items-save-element-active {
+  stroke: none;
+  fill: black;
 }
 .post-items-create-comment-items-interaction-items-save-element:hover {
   cursor: pointer;
+  transform: scale(1.2);
 }
 .post-items-comments {
   margin: 80px 0 50px 0;

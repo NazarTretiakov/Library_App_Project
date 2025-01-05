@@ -12,14 +12,18 @@ namespace LibraryApp.UI.Controllers
         private readonly IToggleLikeService _toggleLikeService;
         private readonly ILikesGetterService _likesGetterService;
         private readonly IIsPostLikedService _isPostLikedService;
+        private readonly IToggleSaveService _toggleSaveService;
+        private readonly IIsPostSavedService _isPostSavedService;
 
-        public ForumController(IPostsCreatorService postAdderService, IPostsGetterService postsGetterService, IToggleLikeService toggleLikeService, ILikesGetterService likesGetterService, IIsPostLikedService isPostLikedService)
+        public ForumController(IPostsCreatorService postAdderService, IPostsGetterService postsGetterService, IToggleLikeService toggleLikeService, ILikesGetterService likesGetterService, IIsPostLikedService isPostLikedService, IToggleSaveService toggleSaveService, IIsPostSavedService isPostSavedService)
         {
             _postsCreatorService = postAdderService;
             _postsGetterService = postsGetterService;
             _toggleLikeService = toggleLikeService;
             _likesGetterService = likesGetterService;
             _isPostLikedService = isPostLikedService;
+            _toggleSaveService = toggleSaveService;
+            _isPostSavedService = isPostSavedService;
         }
 
         [Route("/forum")]
@@ -53,6 +57,7 @@ namespace LibraryApp.UI.Controllers
 
             ViewBag.IsLiked = await _isPostLikedService.IsPostLiked(postId);
             ViewBag.LikesCount = likesOfPost.Count;
+            ViewBag.IsSaved = await _isPostSavedService.IsPostSaved(postId);
 
             if (post == null)
             {
@@ -74,6 +79,18 @@ namespace LibraryApp.UI.Controllers
             ViewBag.LikesCount = likesOfPost.Count;
 
             return PartialView("_Like", post);
+        }
+
+        [Route("/forum/post/toggle-post-save")]
+        [HttpPost]
+        public async Task<IActionResult> TogglePostSave([FromBody] TogglePostSaveDTO toggleSaveDTO)
+        {
+            bool isPostSaved = await _toggleSaveService.ToggleSave(toggleSaveDTO.PostId);
+            Post post = await _postsGetterService.GetPostByPostId(toggleSaveDTO.PostId);
+
+            ViewBag.IsSaved = isPostSaved;
+
+            return PartialView("_Save", post);
         }
 
         [Route("/forum/create-post")]

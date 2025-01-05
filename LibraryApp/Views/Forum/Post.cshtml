@@ -4,6 +4,7 @@
     ViewBag.Title = Model.Title;
     ViewBag.StylesPath = "~/css/post.css";
     ViewBag.ScriptPath = "~/js/toggle-like.js";
+    ViewBag.SecondScriptPath = "~/js/toggle-post-save.js";
 
     TimeSpan timeSincePostPublished = DateTime.Now - Model.DateOfPublication;
 }
@@ -107,7 +108,7 @@
                     <li class="post-items-create-comment-items-interaction">
                         <ul class="post-items-create-comment-items-interaction-items">
                             <li class="post-items-create-comment-items-interaction-items-like">@await Html.PartialAsync("_Like", Model, ViewData)</li>
-                            <li class="post-items-create-comment-items-interaction-items-save"><img class="post-items-create-comment-items-interaction-items-save-element" src="~/Images/Icons/Save.svg" alt="Icon of save"></li>
+                            <li class="post-items-create-comment-items-interaction-items-save">@await Html.PartialAsync("_Save", Model, ViewData)</li>
                         </ul>
                     </li>
                 </ul>
