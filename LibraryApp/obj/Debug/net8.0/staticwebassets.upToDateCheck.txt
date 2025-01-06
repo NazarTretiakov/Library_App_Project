@@ -53,6 +53,7 @@ wwwroot\Images\Logo_gray.jpg
 wwwroot\Images\Logo_icon.jpg
 wwwroot\Images\Photo_of_Library.jpg
 wwwroot\Images\Photo_of_library_2.jpg
+wwwroot\js\create-comment.js
 wwwroot\js\create-post.js
 wwwroot\js\profile-settings.js
 wwwroot\js\toggle-like.js

@@ -33,10 +33,10 @@
                 const partialHtml = await response.text();
                 container.innerHTML = partialHtml;
             } else {
-                console.error("Error while toggling save");
+                console.error('Error while toggling save');
             }
         } catch (error) {
-            console.error("Connection error:", error);
+            console.error('Connection error:', error);
         }
     }
 });

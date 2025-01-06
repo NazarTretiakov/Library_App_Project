@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JPJkcNE5isGWZnS/VqKDP79unV+xqB0unCXpyVJuDCA=",
+  "Hash": "+nQmXGCVUh0KNYuwSCw9pUXKuuovwcu7pByRq8pWc+4=",
   "Source": "LibraryApp.UI",
   "BasePath": "_content/LibraryApp.UI",
   "Mode": "Default",
@@ -283,8 +283,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "gr9eso1b48",
-      "Integrity": "FAtJOZEVzTGs4pKh/dqsRwgzsQaX/+fcYo+hYpl/Tkw=",
+      "Fingerprint": "n6x5c5tkji",
+      "Integrity": "P8epiarR2URRLY2dUH2qKpG2s+4Mxmz1S9LucB1rd0s=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\post.css"
@@ -304,8 +304,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "wk73ulvgb9",
-      "Integrity": "4HTXhxN4sHHksAWb9Y83TO8YfAma/bLej1Or8TBcj/k=",
+      "Fingerprint": "svn25j2ash",
+      "Integrity": "mClHefGvj7aqZifXddvdZBmvDLhlyp/ARVdNAPxTBNA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\post.css.map"
@@ -367,8 +367,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "1sqm15f3h4",
-      "Integrity": "70lj71fUHjLS/PsAdm1YdYOv8tcT6DtMhmqkJkpiRsI=",
+      "Fingerprint": "wmhyd243x5",
+      "Integrity": "yALHunfMa9YQQ1JxENFS5zDmMznrZb6O2iOIiaFdna4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\registration.css"
@@ -388,8 +388,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "2x39gvaaya",
-      "Integrity": "6ndGdjcXLhPRUAs9+4GELRb9pgwHdxvs2VFTMO7/S7Y=",
+      "Fingerprint": "bzy21l82ms",
+      "Integrity": "ac1p2qypwgGBVXZH3z1YEfjgeDQU/5AkFr4yuQJstzE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\registration.css.map"
@@ -1172,6 +1172,27 @@
       "OriginalItemSpec": "wwwroot\\Images\\Photo_of_library_2.jpg"
     },
     {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\create-comment.js",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "js/create-comment#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2wwmtz4xm9",
+      "Integrity": "AnkYckOGGF0y3SEwuOkl5XxZo+rmuRmTFcBm/o1HRlM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\create-comment.js"
+    },
+    {
       "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\create-post.js",
       "SourceId": "LibraryApp.UI",
       "SourceType": "Discovered",
@@ -1228,8 +1249,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "j29o3nduu6",
-      "Integrity": "6zKoPyvTM21kfF1c1M7KjV0REKLuDvY9pY/h0ATHMoo=",
+      "Fingerprint": "f9msb3issc",
+      "Integrity": "TamXdfWINsqn5WayHgdXeFy6HurHhh4SIxicNkhPl70=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\toggle-like.js"
@@ -1249,8 +1270,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "4kkmsqhykm",
-      "Integrity": "bBptXs7I3qKvVBxBpNCHow8epDFkAurbviRqd7uOFMo=",
+      "Fingerprint": "mqj9kwd8jd",
+      "Integrity": "LrA4fjCACO5sWJBMXV+axiwLQcuHOML7RcKIthyvsD4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\toggle-post-save.js"
@@ -2252,7 +2273,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8027"
+          "Value": "8242"
         },
         {
           "Name": "Content-Type",
@@ -2260,11 +2281,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"FAtJOZEVzTGs4pKh/dqsRwgzsQaX/+fcYo+hYpl/Tkw=\""
+          "Value": "\"P8epiarR2URRLY2dUH2qKpG2s+4Mxmz1S9LucB1rd0s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 05 Jan 2025 10:08:02 GMT"
+          "Value": "Mon, 06 Jan 2025 13:48:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2274,7 +2295,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-FAtJOZEVzTGs4pKh/dqsRwgzsQaX/+fcYo+hYpl/Tkw="
+          "Value": "sha256-P8epiarR2URRLY2dUH2qKpG2s+4Mxmz1S9LucB1rd0s="
         }
       ]
     },
@@ -2289,7 +2310,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1669"
+          "Value": "1706"
         },
         {
           "Name": "Content-Type",
@@ -2297,11 +2318,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4HTXhxN4sHHksAWb9Y83TO8YfAma/bLej1Or8TBcj/k=\""
+          "Value": "\"mClHefGvj7aqZifXddvdZBmvDLhlyp/ARVdNAPxTBNA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 05 Jan 2025 10:08:02 GMT"
+          "Value": "Mon, 06 Jan 2025 13:48:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2311,12 +2332,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-4HTXhxN4sHHksAWb9Y83TO8YfAma/bLej1Or8TBcj/k="
+          "Value": "sha256-mClHefGvj7aqZifXddvdZBmvDLhlyp/ARVdNAPxTBNA="
         }
       ]
     },
     {
-      "Route": "css/post.css.wk73ulvgb9.map",
+      "Route": "css/post.css.svn25j2ash.map",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\post.css.map",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2326,7 +2347,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1669"
+          "Value": "1706"
         },
         {
           "Name": "Content-Type",
@@ -2334,11 +2355,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4HTXhxN4sHHksAWb9Y83TO8YfAma/bLej1Or8TBcj/k=\""
+          "Value": "\"mClHefGvj7aqZifXddvdZBmvDLhlyp/ARVdNAPxTBNA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 05 Jan 2025 10:08:02 GMT"
+          "Value": "Mon, 06 Jan 2025 13:48:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2348,7 +2369,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "wk73ulvgb9"
+          "Value": "svn25j2ash"
         },
         {
           "Name": "label",
@@ -2356,12 +2377,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-4HTXhxN4sHHksAWb9Y83TO8YfAma/bLej1Or8TBcj/k="
+          "Value": "sha256-mClHefGvj7aqZifXddvdZBmvDLhlyp/ARVdNAPxTBNA="
         }
       ]
     },
     {
-      "Route": "css/post.gr9eso1b48.css",
+      "Route": "css/post.n6x5c5tkji.css",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\post.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2371,7 +2392,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8027"
+          "Value": "8242"
         },
         {
           "Name": "Content-Type",
@@ -2379,11 +2400,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"FAtJOZEVzTGs4pKh/dqsRwgzsQaX/+fcYo+hYpl/Tkw=\""
+          "Value": "\"P8epiarR2URRLY2dUH2qKpG2s+4Mxmz1S9LucB1rd0s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 05 Jan 2025 10:08:02 GMT"
+          "Value": "Mon, 06 Jan 2025 13:48:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2393,7 +2414,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "gr9eso1b48"
+          "Value": "n6x5c5tkji"
         },
         {
           "Name": "label",
@@ -2401,7 +2422,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-FAtJOZEVzTGs4pKh/dqsRwgzsQaX/+fcYo+hYpl/Tkw="
+          "Value": "sha256-P8epiarR2URRLY2dUH2qKpG2s+4Mxmz1S9LucB1rd0s="
         }
       ]
     },
@@ -2570,51 +2591,6 @@
       ]
     },
     {
-      "Route": "css/registration.1sqm15f3h4.css",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\registration.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4294"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"70lj71fUHjLS/PsAdm1YdYOv8tcT6DtMhmqkJkpiRsI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 29 Dec 2024 12:34:09 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "1sqm15f3h4"
-        },
-        {
-          "Name": "label",
-          "Value": "css/registration.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-70lj71fUHjLS/PsAdm1YdYOv8tcT6DtMhmqkJkpiRsI="
-        }
-      ]
-    },
-    {
       "Route": "css/registration.css",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\registration.css",
       "Selectors": [],
@@ -2625,7 +2601,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4294"
+          "Value": "4310"
         },
         {
           "Name": "Content-Type",
@@ -2633,11 +2609,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"70lj71fUHjLS/PsAdm1YdYOv8tcT6DtMhmqkJkpiRsI=\""
+          "Value": "\"yALHunfMa9YQQ1JxENFS5zDmMznrZb6O2iOIiaFdna4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 29 Dec 2024 12:34:09 GMT"
+          "Value": "Mon, 06 Jan 2025 15:08:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2647,12 +2623,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-70lj71fUHjLS/PsAdm1YdYOv8tcT6DtMhmqkJkpiRsI="
+          "Value": "sha256-yALHunfMa9YQQ1JxENFS5zDmMznrZb6O2iOIiaFdna4="
         }
       ]
     },
     {
-      "Route": "css/registration.css.2x39gvaaya.map",
+      "Route": "css/registration.css.bzy21l82ms.map",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\registration.css.map",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2662,7 +2638,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1002"
+          "Value": "1007"
         },
         {
           "Name": "Content-Type",
@@ -2670,11 +2646,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6ndGdjcXLhPRUAs9+4GELRb9pgwHdxvs2VFTMO7/S7Y=\""
+          "Value": "\"ac1p2qypwgGBVXZH3z1YEfjgeDQU/5AkFr4yuQJstzE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 29 Dec 2024 12:34:09 GMT"
+          "Value": "Mon, 06 Jan 2025 15:08:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2684,7 +2660,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "2x39gvaaya"
+          "Value": "bzy21l82ms"
         },
         {
           "Name": "label",
@@ -2692,7 +2668,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-6ndGdjcXLhPRUAs9+4GELRb9pgwHdxvs2VFTMO7/S7Y="
+          "Value": "sha256-ac1p2qypwgGBVXZH3z1YEfjgeDQU/5AkFr4yuQJstzE="
         }
       ]
     },
@@ -2707,7 +2683,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1002"
+          "Value": "1007"
         },
         {
           "Name": "Content-Type",
@@ -2715,11 +2691,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6ndGdjcXLhPRUAs9+4GELRb9pgwHdxvs2VFTMO7/S7Y=\""
+          "Value": "\"ac1p2qypwgGBVXZH3z1YEfjgeDQU/5AkFr4yuQJstzE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 29 Dec 2024 12:34:09 GMT"
+          "Value": "Mon, 06 Jan 2025 15:08:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2729,7 +2705,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-6ndGdjcXLhPRUAs9+4GELRb9pgwHdxvs2VFTMO7/S7Y="
+          "Value": "sha256-ac1p2qypwgGBVXZH3z1YEfjgeDQU/5AkFr4yuQJstzE="
+        }
+      ]
+    },
+    {
+      "Route": "css/registration.wmhyd243x5.css",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\registration.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4310"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yALHunfMa9YQQ1JxENFS5zDmMznrZb6O2iOIiaFdna4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 06 Jan 2025 15:08:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wmhyd243x5"
+        },
+        {
+          "Name": "label",
+          "Value": "css/registration.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yALHunfMa9YQQ1JxENFS5zDmMznrZb6O2iOIiaFdna4="
         }
       ]
     },
@@ -5768,6 +5789,88 @@
       ]
     },
     {
+      "Route": "js/create-comment.2wwmtz4xm9.js",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\create-comment.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2060"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AnkYckOGGF0y3SEwuOkl5XxZo+rmuRmTFcBm/o1HRlM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 06 Jan 2025 14:24:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2wwmtz4xm9"
+        },
+        {
+          "Name": "label",
+          "Value": "js/create-comment.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AnkYckOGGF0y3SEwuOkl5XxZo+rmuRmTFcBm/o1HRlM="
+        }
+      ]
+    },
+    {
+      "Route": "js/create-comment.js",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\create-comment.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2060"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AnkYckOGGF0y3SEwuOkl5XxZo+rmuRmTFcBm/o1HRlM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 06 Jan 2025 14:24:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AnkYckOGGF0y3SEwuOkl5XxZo+rmuRmTFcBm/o1HRlM="
+        }
+      ]
+    },
+    {
       "Route": "js/create-post.js",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\create-post.js",
       "Selectors": [],
@@ -5932,7 +6035,7 @@
       ]
     },
     {
-      "Route": "js/toggle-like.j29o3nduu6.js",
+      "Route": "js/toggle-like.f9msb3issc.js",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\toggle-like.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5950,11 +6053,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6zKoPyvTM21kfF1c1M7KjV0REKLuDvY9pY/h0ATHMoo=\""
+          "Value": "\"TamXdfWINsqn5WayHgdXeFy6HurHhh4SIxicNkhPl70=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 18:23:44 GMT"
+          "Value": "Mon, 06 Jan 2025 10:38:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5964,7 +6067,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "j29o3nduu6"
+          "Value": "f9msb3issc"
         },
         {
           "Name": "label",
@@ -5972,7 +6075,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-6zKoPyvTM21kfF1c1M7KjV0REKLuDvY9pY/h0ATHMoo="
+          "Value": "sha256-TamXdfWINsqn5WayHgdXeFy6HurHhh4SIxicNkhPl70="
         }
       ]
     },
@@ -5995,11 +6098,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6zKoPyvTM21kfF1c1M7KjV0REKLuDvY9pY/h0ATHMoo=\""
+          "Value": "\"TamXdfWINsqn5WayHgdXeFy6HurHhh4SIxicNkhPl70=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 04 Jan 2025 18:23:44 GMT"
+          "Value": "Mon, 06 Jan 2025 10:38:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6009,52 +6112,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-6zKoPyvTM21kfF1c1M7KjV0REKLuDvY9pY/h0ATHMoo="
-        }
-      ]
-    },
-    {
-      "Route": "js/toggle-post-save.4kkmsqhykm.js",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\toggle-post-save.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1317"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"bBptXs7I3qKvVBxBpNCHow8epDFkAurbviRqd7uOFMo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 05 Jan 2025 10:08:02 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "4kkmsqhykm"
-        },
-        {
-          "Name": "label",
-          "Value": "js/toggle-post-save.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-bBptXs7I3qKvVBxBpNCHow8epDFkAurbviRqd7uOFMo="
+          "Value": "sha256-TamXdfWINsqn5WayHgdXeFy6HurHhh4SIxicNkhPl70="
         }
       ]
     },
@@ -6077,11 +6135,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bBptXs7I3qKvVBxBpNCHow8epDFkAurbviRqd7uOFMo=\""
+          "Value": "\"LrA4fjCACO5sWJBMXV+axiwLQcuHOML7RcKIthyvsD4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 05 Jan 2025 10:08:02 GMT"
+          "Value": "Mon, 06 Jan 2025 10:38:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6091,7 +6149,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-bBptXs7I3qKvVBxBpNCHow8epDFkAurbviRqd7uOFMo="
+          "Value": "sha256-LrA4fjCACO5sWJBMXV+axiwLQcuHOML7RcKIthyvsD4="
+        }
+      ]
+    },
+    {
+      "Route": "js/toggle-post-save.mqj9kwd8jd.js",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\toggle-post-save.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1317"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LrA4fjCACO5sWJBMXV+axiwLQcuHOML7RcKIthyvsD4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 06 Jan 2025 10:38:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mqj9kwd8jd"
+        },
+        {
+          "Name": "label",
+          "Value": "js/toggle-post-save.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LrA4fjCACO5sWJBMXV+axiwLQcuHOML7RcKIthyvsD4="
         }
       ]
     }

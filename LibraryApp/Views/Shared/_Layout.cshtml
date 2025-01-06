@@ -16,6 +16,11 @@
         @if (ViewBag.SecondScriptPath != null)
         {
             <script src="@Url.Content(ViewBag.SecondScriptPath)" defer></script>
+
+            @if (ViewBag.ThirdScriptPath != null)
+            {
+                <script src="@Url.Content(ViewBag.ThirdScriptPath)" defer></script>
+            }
         }
     }
 

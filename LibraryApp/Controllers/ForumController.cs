@@ -14,8 +14,9 @@ namespace LibraryApp.UI.Controllers
         private readonly IIsPostLikedService _isPostLikedService;
         private readonly IToggleSaveService _toggleSaveService;
         private readonly IIsPostSavedService _isPostSavedService;
+        private readonly ICommentsCreatorService _commentsCreatorService;
 
-        public ForumController(IPostsCreatorService postAdderService, IPostsGetterService postsGetterService, IToggleLikeService toggleLikeService, ILikesGetterService likesGetterService, IIsPostLikedService isPostLikedService, IToggleSaveService toggleSaveService, IIsPostSavedService isPostSavedService)
+        public ForumController(IPostsCreatorService postAdderService, IPostsGetterService postsGetterService, IToggleLikeService toggleLikeService, ILikesGetterService likesGetterService, IIsPostLikedService isPostLikedService, IToggleSaveService toggleSaveService, IIsPostSavedService isPostSavedService, ICommentsCreatorService commentsCreatorService)
         {
             _postsCreatorService = postAdderService;
             _postsGetterService = postsGetterService;
@@ -24,6 +25,7 @@ namespace LibraryApp.UI.Controllers
             _isPostLikedService = isPostLikedService;
             _toggleSaveService = toggleSaveService;
             _isPostSavedService = isPostSavedService;
+            _commentsCreatorService = commentsCreatorService;
         }
 
         [Route("/forum")]
@@ -64,7 +66,7 @@ namespace LibraryApp.UI.Controllers
                 return NotFound();  //TODO: create custom exception page for that type of situations (when the post is not found in db)
             }
 
-            return View(post);
+            return View(post); //TODO: create empty state of the page, for situation when posts has no comments
         }
 
         [Route("/forum/post/toggle-like")]
@@ -91,6 +93,17 @@ namespace LibraryApp.UI.Controllers
             ViewBag.IsSaved = isPostSaved;
 
             return PartialView("_Save", post);
+        }
+
+        [Route("/forum/post/create-comment")]
+        [HttpPost]
+        public async Task<IActionResult> CreateComment([FromBody] CreateCommentDTO createCommentDTO)
+        {
+            await _commentsCreatorService.CreateComment(createCommentDTO);
+
+            Post currentPost = await _postsGetterService.GetPostByPostId(createCommentDTO.PostId);
+
+            return PartialView("_Comments", currentPost);
         }
 
         [Route("/forum/create-post")]

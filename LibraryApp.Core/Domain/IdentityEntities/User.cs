@@ -25,5 +25,6 @@ namespace LibraryApp.Core.Domain.IdentityEntities
         public List<Post>? Posts { get; set; }
         public List<Like>? Likes { get; set; }
         public List<Save>? Saves { get; set; }
+        public List<Comment>? Comments { get; set; }
     }
 }

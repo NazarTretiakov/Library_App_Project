@@ -228,8 +228,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>gr9eso1b48</Fingerprint>
-      <Integrity>FAtJOZEVzTGs4pKh/dqsRwgzsQaX/+fcYo+hYpl/Tkw=</Integrity>
+      <Fingerprint>n6x5c5tkji</Fingerprint>
+      <Integrity>P8epiarR2URRLY2dUH2qKpG2s+4Mxmz1S9LucB1rd0s=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\post.css'))</OriginalItemSpec>
@@ -246,8 +246,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>wk73ulvgb9</Fingerprint>
-      <Integrity>4HTXhxN4sHHksAWb9Y83TO8YfAma/bLej1Or8TBcj/k=</Integrity>
+      <Fingerprint>svn25j2ash</Fingerprint>
+      <Integrity>mClHefGvj7aqZifXddvdZBmvDLhlyp/ARVdNAPxTBNA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\post.css.map'))</OriginalItemSpec>
@@ -300,8 +300,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>1sqm15f3h4</Fingerprint>
-      <Integrity>70lj71fUHjLS/PsAdm1YdYOv8tcT6DtMhmqkJkpiRsI=</Integrity>
+      <Fingerprint>wmhyd243x5</Fingerprint>
+      <Integrity>yALHunfMa9YQQ1JxENFS5zDmMznrZb6O2iOIiaFdna4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\registration.css'))</OriginalItemSpec>
@@ -318,8 +318,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>2x39gvaaya</Fingerprint>
-      <Integrity>6ndGdjcXLhPRUAs9+4GELRb9pgwHdxvs2VFTMO7/S7Y=</Integrity>
+      <Fingerprint>bzy21l82ms</Fingerprint>
+      <Integrity>ac1p2qypwgGBVXZH3z1YEfjgeDQU/5AkFr4yuQJstzE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\registration.css.map'))</OriginalItemSpec>
@@ -990,6 +990,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Photo_of_library_2.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\create-comment.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>js/create-comment.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>2wwmtz4xm9</Fingerprint>
+      <Integrity>AnkYckOGGF0y3SEwuOkl5XxZo+rmuRmTFcBm/o1HRlM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\create-comment.js'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\create-post.js'))">
       <SourceType>Package</SourceType>
       <SourceId>LibraryApp.UI</SourceId>
@@ -1038,8 +1056,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>j29o3nduu6</Fingerprint>
-      <Integrity>6zKoPyvTM21kfF1c1M7KjV0REKLuDvY9pY/h0ATHMoo=</Integrity>
+      <Fingerprint>f9msb3issc</Fingerprint>
+      <Integrity>TamXdfWINsqn5WayHgdXeFy6HurHhh4SIxicNkhPl70=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\toggle-like.js'))</OriginalItemSpec>
@@ -1056,8 +1074,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>4kkmsqhykm</Fingerprint>
-      <Integrity>bBptXs7I3qKvVBxBpNCHow8epDFkAurbviRqd7uOFMo=</Integrity>
+      <Fingerprint>mqj9kwd8jd</Fingerprint>
+      <Integrity>LrA4fjCACO5sWJBMXV+axiwLQcuHOML7RcKIthyvsD4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\toggle-post-save.js'))</OriginalItemSpec>

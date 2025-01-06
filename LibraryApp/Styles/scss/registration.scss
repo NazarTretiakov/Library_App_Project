@@ -109,6 +109,7 @@
                 font-size: 14px;
                 margin: 0 0 0 16px;
                 list-style: none;
+                width: 300px;
 
                 & > div {
                     margin: 10px 0 0 0;
@@ -117,7 +118,7 @@
                         padding: 0;
                         list-style: none;
 
-                        &>li {
+                        & > li {
                             margin: 10px 0 0 0;
                         }
                     }

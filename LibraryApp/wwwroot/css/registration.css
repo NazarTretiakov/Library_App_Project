@@ -79,6 +79,7 @@
   font-size: 14px;
   margin: 0 0 0 16px;
   list-style: none;
+  width: 300px;
 }
 .registration-form-items-validation > div {
   margin: 10px 0 0 0;

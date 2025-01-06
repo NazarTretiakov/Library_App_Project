@@ -182,6 +182,9 @@
 .post-items-create-comment-items-creation-items-button-element-image {
   pointer-events: none;
 }
+.post-items-create-comment-items-creation-items-button-element-image path {
+  transition: fill 0.3s ease;
+}
 .post-items-create-comment-items-interaction-items {
   list-style: none;
   padding: 0;
@@ -233,6 +236,11 @@
   margin: 0;
   font-size: 20px;
 }
+.post-items-comments-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 .post-items-comment {
   padding: 0 0 0 0;
 }
@@ -265,6 +273,7 @@
 .post-items-comment-items-content-element {
   margin: 26px 0 0 0;
   line-height: 1.4;
+  white-space: pre-wrap;
 }
 .post-items-comment-items-content-div-for-space-between-commentaries {
   height: 60px;

@@ -24,7 +24,7 @@ namespace LibraryApp.Core.Domain.RepositoryContracts
         /// <summary>
         /// Adds post to the data store.
         /// </summary>
-        /// <param name="topic">Post object that will be added to the data store.</param>
+        /// <param name="post">Post object that will be added to the data store.</param>
         /// <returns>True if post was added. Otherwise false.</returns>
         Task<bool> AddPost(Post post);
 

@@ -1,0 +1,67 @@
+﻿@model Post
+
+
+@foreach (Comment comment in Model.Comments.OrderByDescending(c => c.DateOfPublication))
+{
+    TimeSpan timeSinceCommentPublished = DateTime.Now - comment.DateOfPublication;
+
+    <li class="post-items-comment">
+        <ul class="post-items-comment-items">
+            <li class="post-items-comment-items-header">
+                <ul class="post-items-comment-items-header-items">
+                    <li class="post-items-comment-items-header-items-user">
+                        <a class="post-link" asp-controller="UserProfile" asp-action="Posts" asp-route-userId="@comment.User.Id"><img class="post-items-comment-items-header-items-user-picture" src="~/Images/Icons/User_Profile_Photo.svg" alt="User profile photo"></a>
+                        <a class="post-link" asp-controller="UserProfile" asp-action="Posts" asp-route-userId="@comment.User.Id"><span class="post-items-comment-items-header-items-user-username">@comment.User.UserName</span></a>
+                    </li>
+                    <li class="post-items-comment-items-header-items-time-of-publication">
+
+                        @if (timeSinceCommentPublished.TotalMinutes < 1)
+                        {
+                            <span class="post-items-comment-items-header-items-time-of-publication-element">Just now</span>
+                        }
+                        else if (timeSinceCommentPublished.TotalHours < 1)
+                        {
+                            if (timeSinceCommentPublished.Minutes == 1)
+                            {
+                                <span class="post-items-comment-items-header-items-time-of-publication-element">@timeSinceCommentPublished.Minutes minute ago</span>
+                            }
+                            else
+                            {
+                                <span class="post-items-comment-items-header-items-time-of-publication-element">@timeSinceCommentPublished.Minutes minutes ago</span>
+                            }
+                        }
+                        else if (timeSinceCommentPublished.TotalDays < 1)
+                        {
+                            if (timeSinceCommentPublished.Hours == 1)
+                            {
+                                <span class="post-items-comment-items-header-items-time-of-publication-element">@timeSinceCommentPublished.Hours hour ago</span>
+                            }
+                            else
+                            {
+                                <span class="post-items-comment-items-header-items-time-of-publication-element">@timeSinceCommentPublished.Hours hours ago</span>
+                            }
+                        }
+                        else
+                        {
+                            if (timeSinceCommentPublished.Days == 1)
+                            {
+                                <span class="post-items-comment-items-header-items-time-of-publication-element">@timeSinceCommentPublished.Days day ago</span>
+                            }
+                            else
+                            {
+                                <span class="post-items-comment-items-header-items-time-of-publication-element">@timeSinceCommentPublished.Days days ago</span>
+                            }
+                        }
+                    </li>
+                </ul>
+            </li>
+            <li class="post-items-comment-items-content">
+                <p class="post-items-comment-items-content-element">@comment.Content</p>
+                @if (comment != Model.Comments.OrderByDescending(c => c.DateOfPublication).LastOrDefault())
+                {
+                    <div class="post-items-comment-items-content-div-for-space-between-commentaries"></div>
+                }
+            </li>
+        </ul>
+    </li>
+}

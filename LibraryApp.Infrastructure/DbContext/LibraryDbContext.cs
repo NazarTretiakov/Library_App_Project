@@ -10,6 +10,7 @@ namespace LibraryApp.Infrastructure.DbContext
         public DbSet<Post> Posts { get; set; }
         public DbSet<Topic> Topics { get; set; }
         public DbSet<PostTopic> PostTopic { get; set; }
+        public DbSet<Comment> Comments { get; set; }
         public DbSet<Like> Likes { get; set; }
         public DbSet<Save> Saves { get; set; }
 
@@ -22,6 +23,7 @@ namespace LibraryApp.Infrastructure.DbContext
             modelBuilder.Entity<Post>().ToTable("Posts");
             modelBuilder.Entity<Topic>().ToTable("Topics");
             modelBuilder.Entity<PostTopic>().ToTable("PostTopic");
+            modelBuilder.Entity<Comment>().ToTable("Comments");
 
             modelBuilder.Entity<Like>().ToTable("Likes");
             modelBuilder.Entity<Save>().ToTable("Saves");
@@ -41,6 +43,19 @@ namespace LibraryApp.Infrastructure.DbContext
                         .HasOne(pt => pt.Topic)
                         .WithMany(t => t.Posts)
                         .HasForeignKey(pt => pt.TopicId);
+
+
+            modelBuilder.Entity<Comment>()
+                        .HasOne(c => c.User)
+                        .WithMany(u => u.Comments)
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Comment>()
+                        .HasOne(c => c.Post)
+                        .WithMany(p => p.Comments)
+                        .HasForeignKey("PostId")
+                        .OnDelete(DeleteBehavior.Cascade);
 
 
             modelBuilder.Entity<Like>()

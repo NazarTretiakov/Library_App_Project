@@ -23,6 +23,7 @@ namespace LibraryApp.Infrastructure.Repositories
                                   .Include(p => p.Likes)
                                   .Include(p => p.Saves)
                                   .Include(p => p.Comments)
+                                    .ThenInclude(c => c.User)
                                   .ToListAsync();
         }
 
@@ -34,6 +35,7 @@ namespace LibraryApp.Infrastructure.Repositories
                                   .Include(p => p.Likes)
                                   .Include(p => p.Saves)
                                   .Include(p => p.Comments)
+                                    .ThenInclude(c => c.User)
                                   .FirstOrDefaultAsync(p => p.PostId == Guid.Parse(postId));
         }
 
@@ -54,6 +56,7 @@ namespace LibraryApp.Infrastructure.Repositories
                                   .Include(p => p.Likes)
                                   .Include(p => p.Saves)
                                   .Include(p => p.Comments)
+                                    .ThenInclude(c => c.User)
                                   .Where(predicate)
                                   .ToListAsync();
         }

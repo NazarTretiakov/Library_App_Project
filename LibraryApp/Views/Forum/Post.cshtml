@@ -5,6 +5,7 @@
     ViewBag.StylesPath = "~/css/post.css";
     ViewBag.ScriptPath = "~/js/toggle-like.js";
     ViewBag.SecondScriptPath = "~/js/toggle-post-save.js";
+    ViewBag.ThirdScriptPath = "~/js/create-comment.js";
 
     TimeSpan timeSincePostPublished = DateTime.Now - Model.DateOfPublication;
 }
@@ -102,7 +103,19 @@
                     <li class="post-items-create-comment-items-creation">
                         <ul class="post-items-create-comment-items-creation-items">
                             <li class="post-items-create-comment-items-creation-items-input"><input class="post-items-create-comment-items-creation-items-input-element" placeholder="Leave your comment..." type="text"></li>
-                            <li class="post-items-create-comment-items-creation-items-button"><button class="post-items-create-comment-items-creation-items-button-element"><img class="post-items-create-comment-items-creation-items-button-element-image" src="~/Images/Icons/Create_comment.svg" alt="Icon of create comment"></button></li>
+                            <li class="post-items-create-comment-items-creation-items-button">
+                                <button class="post-items-create-comment-items-creation-items-button-element" data-post-id="@Model.PostId">
+                                    
+                                    <svg class="post-items-create-comment-items-creation-items-button-element-image"
+                                         xmlns="http://www.w3.org/2000/svg"
+                                         height="24px"
+                                         viewBox="0 -960 960 960"
+                                         width="24px">
+                                        <path d="M120-160v-640l760 320-760 320Zm80-120 474-200-474-200v140l240 60-240 60v140Z"
+                                              fill="#D9D9D9" />
+                                    </svg>
+                                </button>
+                            </li>
                         </ul>
                     </li>
                     <li class="post-items-create-comment-items-interaction">
@@ -114,54 +127,9 @@
                 </ul>
             </li>
             <li class="post-items-comments"><h2 class="post-items-comments-title">Comments</h2></li>
-            <li class="post-items-comment">
-                <ul class="post-items-comment-items">
-                    <li class="post-items-comment-items-header">
-                        <ul class="post-items-comment-items-header-items">
-                            <li class="post-items-comment-items-header-items-user">
-                                <a class="post-link" asp-controller="UserProfile" asp-action="Posts"><img class="post-items-comment-items-header-items-user-picture" src="~/Images/Icons/User_Profile_Photo.svg" alt="User profile photo"></a>
-                                <a class="post-link" asp-controller="UserProfile" asp-action="Posts"><span class="post-items-comment-items-header-items-user-username">SomeUser1236123</span></a>
-                            </li>
-                            <li class="post-items-comment-items-header-items-time-of-publication"><span class="post-items-comment-items-header-items-time-of-publication-element">1 day ago</span></li>
-                        </ul>
-                    </li>
-                    <li class="post-items-comment-items-content">
-                        <p class="post-items-comment-items-content-element">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <div class="post-items-comment-items-content-div-for-space-between-commentaries"></div>
-                    </li>
-                </ul>
-            </li>
-            <li class="post-items-comment">
-                <ul class="post-items-comment-items">
-                    <li class="post-items-comment-items-header">
-                        <ul class="post-items-comment-items-header-items">
-                            <li class="post-items-comment-items-header-items-user">
-                                <a class="post-link" asp-controller="UserProfile" asp-action="Posts"><img class="post-items-comment-items-header-items-user-picture" src="~/Images/Icons/User_Profile_Photo.svg" alt="User profile photo"></a>
-                                <a class="post-link" asp-controller="UserProfile" asp-action="Posts"><span class="post-items-comment-items-header-items-user-username">SomeUser1236123</span></a>
-                            </li>
-                            <li class="post-items-comment-items-header-items-time-of-publication"><span class="post-items-comment-items-header-items-time-of-publication-element">1 day ago</span></li>
-                        </ul>
-                    </li>
-                    <li class="post-items-comment-items-content">
-                        <p class="post-items-comment-items-content-element">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <div class="post-items-comment-items-content-div-for-space-between-commentaries"></div>
-                    </li>
-                </ul>
-            </li>
-            <li class="post-items-comment">
-                <ul class="post-items-comment-items">
-                    <li class="post-items-comment-items-header">
-                        <ul class="post-items-comment-items-header-items">
-                            <li class="post-items-comment-items-header-items-user">
-                                <a class="post-link" asp-controller="UserProfile" asp-action="Posts"><img class="post-items-comment-items-header-items-user-picture" src="~/Images/Icons/User_Profile_Photo.svg" alt="User profile photo"></a>
-                                <a class="post-link" asp-controller="UserProfile" asp-action="Posts"><span class="post-items-comment-items-header-items-user-username">SomeUser1236123</span></a>
-                            </li>
-                            <li class="post-items-comment-items-header-items-time-of-publication"><span class="post-items-comment-items-header-items-time-of-publication-element">1 day ago</span></li>
-                        </ul>
-                    </li>
-                    <li class="post-items-comment-items-content">
-                        <p class="post-items-comment-items-content-element">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </li>
+            <li>
+                <ul class="post-items-comments-container">
+                    @await Html.PartialAsync("_Comments", Model)
                 </ul>
             </li>
         </ul>

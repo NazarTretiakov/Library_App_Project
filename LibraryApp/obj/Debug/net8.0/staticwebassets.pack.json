@@ -221,6 +221,10 @@
       "PackagePath": "staticwebassets\\css\\user-profile-posts.css.map"
     },
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\create-comment.js",
+      "PackagePath": "staticwebassets\\js\\create-comment.js"
+    },
+    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\create-post.js",
       "PackagePath": "staticwebassets\\js\\create-post.js"
     },
