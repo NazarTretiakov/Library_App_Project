@@ -292,13 +292,26 @@
                         width: 200px;
                         border-radius: 6px;
                         border: none;
-                        background-color: $buttonColor;
                         color: white;
-                        transition: background-color 0.3s ease;
 
-                        &:hover {
-                            cursor: pointer;
-                            background-color: $buttonColorHover;
+                        &-active {
+                            background-color: $buttonColor;
+                            transition: background-color 0.3s ease;
+
+                            &:hover {
+                                cursor: pointer;
+                                background-color: $buttonColorHover;
+                            }
+                        }
+
+                        &-unactive {
+                            background-color: #c0c0c0;
+                            transition: background-color 0.3s ease;
+
+                            &:hover {
+                                cursor: pointer;
+                                background-color: #a6a6a6;
+                            }
                         }
                     }
                 }

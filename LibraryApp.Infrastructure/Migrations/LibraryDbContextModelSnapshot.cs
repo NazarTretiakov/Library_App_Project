@@ -41,8 +41,8 @@ namespace LibraryApp.Infrastructure.Migrations
 
                     b.Property<string>("Content")
                         .IsRequired()
-                        .HasMaxLength(1700)
-                        .HasColumnType("nvarchar(1700)");
+                        .HasMaxLength(400)
+                        .HasColumnType("nvarchar(400)");
 
                     b.Property<DateTime>("DateOfPublication")
                         .HasColumnType("datetime2");
@@ -167,6 +167,27 @@ namespace LibraryApp.Infrastructure.Migrations
                     b.HasIndex("UserId1");
 
                     b.ToTable("Saves", (string)null);
+                });
+
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Subscription", b =>
+                {
+                    b.Property<Guid>("SubscriptionId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("SubscriberId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("SubscriptionId");
+
+                    b.HasIndex("SubscriberId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Subscriptions", (string)null);
                 });
 
             modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Topic", b =>
@@ -503,6 +524,25 @@ namespace LibraryApp.Infrastructure.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Subscription", b =>
+                {
+                    b.HasOne("LibraryApp.Core.Domain.IdentityEntities.User", "Subscriber")
+                        .WithMany("Subscriptions")
+                        .HasForeignKey("SubscriberId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("LibraryApp.Core.Domain.IdentityEntities.User", "User")
+                        .WithMany("Subscribers")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("Subscriber");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<System.Guid>", b =>
                 {
                     b.HasOne("LibraryApp.Core.Domain.IdentityEntities.Role", null)
@@ -584,6 +624,10 @@ namespace LibraryApp.Infrastructure.Migrations
                     b.Navigation("Posts");
 
                     b.Navigation("Saves");
+
+                    b.Navigation("Subscribers");
+
+                    b.Navigation("Subscriptions");
                 });
 #pragma warning restore 612, 618
         }

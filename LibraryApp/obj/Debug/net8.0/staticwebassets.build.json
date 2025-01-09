@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+nQmXGCVUh0KNYuwSCw9pUXKuuovwcu7pByRq8pWc+4=",
+  "Hash": "EyLEXyUuL/NMGH4UofZqExkTfIvEgx0yBG5XQX3flig=",
   "Source": "LibraryApp.UI",
   "BasePath": "_content/LibraryApp.UI",
   "Mode": "Default",
@@ -451,8 +451,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "a5f4hfpm4g",
-      "Integrity": "roLss+UqhAFRhHN8QibxmD2zZQa1EJi0X/xDkx1zBdQ=",
+      "Fingerprint": "30si5gdxoj",
+      "Integrity": "Q9O19V8JL9pbmm4c/PQyL8xTZpJH6AQ51fkgQZxpqNY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\user-profile-posts.css"
@@ -472,8 +472,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "annsypr3tk",
-      "Integrity": "tjwUzoSF/V9mb8sbn/La5bqBGO9fZW71Sew0i2AeJXA=",
+      "Fingerprint": "vlu3qylekv",
+      "Integrity": "TVDFy94S1PWfPSQYLIL3O2OPQgr2NoKBtk0wIRiB/Ms=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\user-profile-posts.css.map"
@@ -1275,6 +1275,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\toggle-post-save.js"
+    },
+    {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\toggle-subscription.js",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "js/toggle-subscription#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bsaebcovn5",
+      "Integrity": "GwnSMxucajNz/FCTyC+x8obagdR+QPrKLF6ytMl7cNk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\toggle-subscription.js"
     }
   ],
   "Endpoints": [
@@ -2919,7 +2940,7 @@
       ]
     },
     {
-      "Route": "css/user-profile-posts.a5f4hfpm4g.css",
+      "Route": "css/user-profile-posts.30si5gdxoj.css",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-posts.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2929,7 +2950,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9151"
+          "Value": "9509"
         },
         {
           "Name": "Content-Type",
@@ -2937,11 +2958,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"roLss+UqhAFRhHN8QibxmD2zZQa1EJi0X/xDkx1zBdQ=\""
+          "Value": "\"Q9O19V8JL9pbmm4c/PQyL8xTZpJH6AQ51fkgQZxpqNY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 03 Jan 2025 07:59:40 GMT"
+          "Value": "Thu, 09 Jan 2025 18:53:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2951,7 +2972,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "a5f4hfpm4g"
+          "Value": "30si5gdxoj"
         },
         {
           "Name": "label",
@@ -2959,7 +2980,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-roLss+UqhAFRhHN8QibxmD2zZQa1EJi0X/xDkx1zBdQ="
+          "Value": "sha256-Q9O19V8JL9pbmm4c/PQyL8xTZpJH6AQ51fkgQZxpqNY="
         }
       ]
     },
@@ -2974,7 +2995,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9151"
+          "Value": "9509"
         },
         {
           "Name": "Content-Type",
@@ -2982,11 +3003,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"roLss+UqhAFRhHN8QibxmD2zZQa1EJi0X/xDkx1zBdQ=\""
+          "Value": "\"Q9O19V8JL9pbmm4c/PQyL8xTZpJH6AQ51fkgQZxpqNY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 03 Jan 2025 07:59:40 GMT"
+          "Value": "Thu, 09 Jan 2025 18:53:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2996,52 +3017,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-roLss+UqhAFRhHN8QibxmD2zZQa1EJi0X/xDkx1zBdQ="
-        }
-      ]
-    },
-    {
-      "Route": "css/user-profile-posts.css.annsypr3tk.map",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-posts.css.map",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2037"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/plain"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"tjwUzoSF/V9mb8sbn/La5bqBGO9fZW71Sew0i2AeJXA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 03 Jan 2025 07:59:40 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "annsypr3tk"
-        },
-        {
-          "Name": "label",
-          "Value": "css/user-profile-posts.css.map"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-tjwUzoSF/V9mb8sbn/La5bqBGO9fZW71Sew0i2AeJXA="
+          "Value": "sha256-Q9O19V8JL9pbmm4c/PQyL8xTZpJH6AQ51fkgQZxpqNY="
         }
       ]
     },
@@ -3056,7 +3032,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2037"
+          "Value": "2075"
         },
         {
           "Name": "Content-Type",
@@ -3064,11 +3040,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"tjwUzoSF/V9mb8sbn/La5bqBGO9fZW71Sew0i2AeJXA=\""
+          "Value": "\"TVDFy94S1PWfPSQYLIL3O2OPQgr2NoKBtk0wIRiB/Ms=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 03 Jan 2025 07:59:40 GMT"
+          "Value": "Thu, 09 Jan 2025 18:53:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3078,7 +3054,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-tjwUzoSF/V9mb8sbn/La5bqBGO9fZW71Sew0i2AeJXA="
+          "Value": "sha256-TVDFy94S1PWfPSQYLIL3O2OPQgr2NoKBtk0wIRiB/Ms="
+        }
+      ]
+    },
+    {
+      "Route": "css/user-profile-posts.css.vlu3qylekv.map",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-posts.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2075"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TVDFy94S1PWfPSQYLIL3O2OPQgr2NoKBtk0wIRiB/Ms=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 18:53:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vlu3qylekv"
+        },
+        {
+          "Name": "label",
+          "Value": "css/user-profile-posts.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TVDFy94S1PWfPSQYLIL3O2OPQgr2NoKBtk0wIRiB/Ms="
         }
       ]
     },
@@ -6195,6 +6216,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-LrA4fjCACO5sWJBMXV+axiwLQcuHOML7RcKIthyvsD4="
+        }
+      ]
+    },
+    {
+      "Route": "js/toggle-subscription.bsaebcovn5.js",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\toggle-subscription.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1327"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GwnSMxucajNz/FCTyC+x8obagdR+QPrKLF6ytMl7cNk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 18:33:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bsaebcovn5"
+        },
+        {
+          "Name": "label",
+          "Value": "js/toggle-subscription.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GwnSMxucajNz/FCTyC+x8obagdR+QPrKLF6ytMl7cNk="
+        }
+      ]
+    },
+    {
+      "Route": "js/toggle-subscription.js",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\toggle-subscription.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1327"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GwnSMxucajNz/FCTyC+x8obagdR+QPrKLF6ytMl7cNk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 09 Jan 2025 18:33:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GwnSMxucajNz/FCTyC+x8obagdR+QPrKLF6ytMl7cNk="
         }
       ]
     }

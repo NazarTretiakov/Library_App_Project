@@ -1,0 +1,11 @@
+﻿@model User
+
+
+@if (ViewData["IsSubscribed"] != null && (bool)ViewData["IsSubscribed"] == true)
+{
+    <button class="profile-items_user-information-items_subscribe-button-element profile-items_user-information-items_subscribe-button-element-unactive" data-user-id="@Model.Id">Unsubscribe</button>
+}
+else if (ViewData["IsSubscribed"] != null && (bool)ViewData["IsSubscribed"] == false)
+{
+    <button class="profile-items_user-information-items_subscribe-button-element profile-items_user-information-items_subscribe-button-element-active" data-user-id="@Model.Id">Subscribe</button>
+}

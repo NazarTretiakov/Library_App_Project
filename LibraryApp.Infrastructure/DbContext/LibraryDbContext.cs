@@ -13,6 +13,7 @@ namespace LibraryApp.Infrastructure.DbContext
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Like> Likes { get; set; }
         public DbSet<Save> Saves { get; set; }
+        public DbSet<Subscription> Subscriptions { get; set; }
 
         public LibraryDbContext(DbContextOptions options) : base(options) { }
 
@@ -24,6 +25,7 @@ namespace LibraryApp.Infrastructure.DbContext
             modelBuilder.Entity<Topic>().ToTable("Topics");
             modelBuilder.Entity<PostTopic>().ToTable("PostTopic");
             modelBuilder.Entity<Comment>().ToTable("Comments");
+            modelBuilder.Entity<Subscription>().ToTable("Subscriptions");
 
             modelBuilder.Entity<Like>().ToTable("Likes");
             modelBuilder.Entity<Save>().ToTable("Saves");
@@ -87,6 +89,18 @@ namespace LibraryApp.Infrastructure.DbContext
                         .WithMany(b => b.Saves)
                         .HasForeignKey(s => s.BookId)
                         .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Subscription>()
+                        .HasOne(s => s.User)
+                        .WithMany(u => u.Subscribers)
+                        .HasForeignKey(s => s.UserId)
+                        .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<Subscription>()
+                        .HasOne(s => s.Subscriber)
+                        .WithMany(s => s.Subscriptions)
+                        .HasForeignKey(s => s.SubscriberId)
+                        .OnDelete(DeleteBehavior.NoAction);
         }
     }
 }

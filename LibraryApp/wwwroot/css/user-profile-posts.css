@@ -216,13 +216,23 @@
   width: 200px;
   border-radius: 6px;
   border: none;
-  background-color: #14A2DE;
   color: white;
+}
+.profile-items_user-information-items_subscribe-button-element-active {
+  background-color: #14A2DE;
   transition: background-color 0.3s ease;
 }
-.profile-items_user-information-items_subscribe-button-element:hover {
+.profile-items_user-information-items_subscribe-button-element-active:hover {
   cursor: pointer;
   background-color: #138dc1;
+}
+.profile-items_user-information-items_subscribe-button-element-unactive {
+  background-color: #c0c0c0;
+  transition: background-color 0.3s ease;
+}
+.profile-items_user-information-items_subscribe-button-element-unactive:hover {
+  cursor: pointer;
+  background-color: #a6a6a6;
 }
 .profile-items_user-information-items_subs-info-items {
   list-style: none;

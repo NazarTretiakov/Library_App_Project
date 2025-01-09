@@ -21,6 +21,11 @@ namespace LibraryApp.Infrastructure.Repositories
             return await _db.Users.Include(u => u.Posts)
                                     .ThenInclude(p => p.Topics)
                                       .ThenInclude(pt => pt.Topic)
+                                  .Include(u => u.Likes)
+                                  .Include(u => u.Saves)
+                                  .Include(u => u.Comments)
+                                  .Include(u => u.Subscribers)
+                                  .Include(u => u.Subscriptions)
                                   .ToListAsync();
         }
 
@@ -29,6 +34,11 @@ namespace LibraryApp.Infrastructure.Repositories
             return await _db.Users.Include(u => u.Posts)
                                     .ThenInclude(p => p.Topics)
                                       .ThenInclude(pt => pt.Topic)
+                                  .Include(u => u.Likes)
+                                  .Include(u => u.Saves)
+                                  .Include(u => u.Comments)
+                                  .Include(u => u.Subscribers)
+                                  .Include(u => u.Subscriptions)
                                   .FirstOrDefaultAsync(u => u.Id == Guid.Parse(userId));
         }
     }

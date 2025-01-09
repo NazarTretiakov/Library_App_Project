@@ -241,6 +241,10 @@
       "PackagePath": "staticwebassets\\js\\toggle-post-save.js"
     },
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\toggle-subscription.js",
+      "PackagePath": "staticwebassets\\js\\toggle-subscription.js"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LibraryApp.UI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

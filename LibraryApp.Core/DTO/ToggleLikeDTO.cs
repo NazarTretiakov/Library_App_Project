@@ -2,6 +2,6 @@
 {
     public class ToggleLikeDTO
     {
-        public string? PostId { get; set; }
+        public string PostId { get; set; }
     }
 }
