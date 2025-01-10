@@ -4,6 +4,8 @@
     ViewBag.Title = @Model.UserName;
     ViewBag.StylesPath = "~/css/user-profile-posts.css";
     ViewBag.ScriptPath = "~/js/toggle-subscription.js";
+
+    List<Post> posts = ViewBag.Posts;
 }
 
 <div class="container-for-header-panel">
@@ -36,21 +38,38 @@
 
     <section class="search-panel">
         <form class="search-panel-form">
+
+            <input name="userId" value="@Model.Id" hidden/>
+
             <ul class="search-panel-form-search">
                 <li class="search-panel-form-search-icon">
                     <div class="search-panel-form-search-icon-div"></div>
                 </li>
                 <li class="search-panel-form-search-input">
-                    <input class="search-panel-form-search-input-element" type="text" placeholder="Search">
+                    <input class="search-panel-form-search-input-element" name="searchString" type="text" placeholder="Search" value="@ViewBag.SearchString">
                 </li>
             </ul>
             <ul class="search-panel-form-dropdown">
                 <li class="search-panel-form-dropdown-select">
-                    <select class="search-panel-form-dropdown-select-element">
-                        <option class="search-panel-form-dropdown-select-element-author" value="all">All results</option>
-                        <option class="search-panel-form-dropdown-select-element-author" value="author">Username</option>
-                        <option class="search-panel-form-dropdown-select-element-title" value="title">Title</option>
-                        <option class="search-panel-form-dropdown-select-element-genre" value="genre">Topic</option>
+                    <select class="search-panel-form-dropdown-select-element" name="searchFilter">
+                        @if (ViewBag.SearchFilter == "all")
+                        {
+                            <option class="search-panel-form-dropdown-select-element-author" value="all" selected>All results</option>
+                            <option class="search-panel-form-dropdown-select-element-title" value="title">Title</option>
+                            <option class="search-panel-form-dropdown-select-element-genre" value="topic">Topic</option>
+                        }
+                        else if (ViewBag.SearchFilter == "title")
+                        {
+                            <option class="search-panel-form-dropdown-select-element-author" value="all">All results</option>
+                            <option class="search-panel-form-dropdown-select-element-title" value="title" selected>Title</option>
+                            <option class="search-panel-form-dropdown-select-element-genre" value="topic">Topic</option>
+                        }
+                        else if (ViewBag.SearchFilter == "topic")
+                        {
+                            <option class="search-panel-form-dropdown-select-element-author" value="all">All results</option>
+                            <option class="search-panel-form-dropdown-select-element-title" value="title">Title</option>
+                            <option class="search-panel-form-dropdown-select-element-genre" value="topic" selected>Topic</option>
+                        }
                     </select>
                 </li>
                 <li class="search-panel-form-dropdown-arrow">
@@ -84,8 +103,8 @@
                     <li class="profile-items_user-information-items_subscribe-button">@await Html.PartialAsync("_SubscribeButton", Model, ViewData)</li>
                     <li class="profile-items_user-information-items_subs-info">
                         <ul class="profile-items_user-information-items_subs-info-items">
-                            <li class="profile-items_user-information-items_subs-info-items_subscribers"><a class="profile-items_user-information-items_subs-info-items_subscribers-link" asp-controller="UserProfile" asp-action="Subscribers"><span class="profile-items_user-information-items_subs-info-items_subscribers-number">@Model.Subscribers.Count </span>subscribers</a></li>
-                            <li class="profile-items_user-information-items_subs-info-items_subscriptions"><a class="profile-items_user-information-items_subs-info-items_subscriptions-link" asp-controller="UserProfile" asp-action="Subscriptions"><span class="profile-items_user-information-items_subs-info-items_subscriptions-number">@Model.Subscriptions.Count </span>subscriptions</a></li>
+                            <li class="profile-items_user-information-items_subs-info-items_subscribers"><a class="profile-items_user-information-items_subs-info-items_subscribers-link" asp-controller="UserProfile" asp-action="Subscribers" asp-route-userId="@Model.Id"><span class="profile-items_user-information-items_subs-info-items_subscribers-number">@Model.Subscribers.Count </span>subscribers</a></li>
+                            <li class="profile-items_user-information-items_subs-info-items_subscriptions"><a class="profile-items_user-information-items_subs-info-items_subscriptions-link" asp-controller="UserProfile" asp-action="Subscriptions" asp-route-userId="@Model.Id"><span class="profile-items_user-information-items_subs-info-items_subscriptions-number">@Model.Subscriptions.Count </span>subscriptions</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -100,7 +119,7 @@
             <li class="profile-publication-titles_reviews"><span class="profile-publication-titles_reviews-element"><a class="profile-publication-titles-link" href="">Reviews</a></span></li>
         </ul>
         <ul class="profile-posts">
-            @foreach (Post post in Model.Posts)
+            @foreach (Post post in posts)
             {
                 TimeSpan timeSincePostPublished = DateTime.Now - post.DateOfPublication;
 
@@ -167,7 +186,7 @@
                             </ul>
                         </section>
                     </a>
-                    @if (post != Model.Posts.LastOrDefault()) 
+                    @if (post != posts.LastOrDefault())
                     {
                         <div class="profile-posts-div-for-space-between-posts"></div>
                     }

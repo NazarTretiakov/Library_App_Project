@@ -1,6 +1,14 @@
-﻿@{
-    ViewBag.Title = "NameOfUser subscriptions";
+﻿@model User
+
+@{
+    ViewBag.Title = $"{Model.UserName} subscriptions";
     ViewBag.StylesPath = "~/css/subscribers.css";
+
+    List<Subscription> subscriptions = ViewBag.Subscriptions;
+    var half = (int)Math.Ceiling(subscriptions.Count / 2.0);
+    var firstColumn = subscriptions.Take(half).ToList();
+    var secondColumn = subscriptions.Skip(half).ToList();
+
 }
 
 
@@ -33,22 +41,49 @@
 
 
     <section class="search-panel">
-        <form class="search-panel-form">
+        <form class="search-panel-form" asp-controller="UserProfile" asp-action="Subscriptions" method="get">
+
+            <input name="userId" value="@Model.Id" hidden />
+
             <ul class="search-panel-form-search">
                 <li class="search-panel-form-search-icon">
                     <div class="search-panel-form-search-icon-div"></div>
                 </li>
                 <li class="search-panel-form-search-input">
-                    <input class="search-panel-form-search-input-element" type="text" placeholder="Search">
+                    <input class="search-panel-form-search-input-element" name="searchString" type="text" placeholder="Search" value="@ViewBag.SearchString">
                 </li>
             </ul>
             <ul class="search-panel-form-dropdown">
                 <li class="search-panel-form-dropdown-select">
-                    <select class="search-panel-form-dropdown-select-element">
-                        <option class="search-panel-form-dropdown-select-element-author" value="all">All results</option>
-                        <option class="search-panel-form-dropdown-select-element-author" value="author">Username</option>
-                        <option class="search-panel-form-dropdown-select-element-title" value="title">Title</option>
-                        <option class="search-panel-form-dropdown-select-element-genre" value="genre">Topic</option>
+                    <select class="search-panel-form-dropdown-select-element" name="searchFilter">
+                        @if (ViewBag.SearchFilter == "all")
+                        {
+                            <option class="search-panel-form-dropdown-select-element-author" value="all" selected>All results</option>
+                            <option class="search-panel-form-dropdown-select-element-author" value="username">Username</option>
+                            <option class="search-panel-form-dropdown-select-element-title" value="firstname">Firstname</option>
+                            <option class="search-panel-form-dropdown-select-element-title" value="lastname">Lastname</option>
+                        }
+                        else if (ViewBag.SearchFilter == "username")
+                        {
+                            <option class="search-panel-form-dropdown-select-element-author" value="all">All results</option>
+                            <option class="search-panel-form-dropdown-select-element-author" value="username" selected>Username</option>
+                            <option class="search-panel-form-dropdown-select-element-title" value="firstname">Firstname</option>
+                            <option class="search-panel-form-dropdown-select-element-title" value="lastname">Lastname</option>
+                        }
+                        else if (ViewBag.SearchFilter == "firstname")
+                        {
+                            <option class="search-panel-form-dropdown-select-element-author" value="all">All results</option>
+                            <option class="search-panel-form-dropdown-select-element-author" value="username">Username</option>
+                            <option class="search-panel-form-dropdown-select-element-title" value="firstname" selected>Firstname</option>
+                            <option class="search-panel-form-dropdown-select-element-title" value="lastname">Lastname</option>
+                        }
+                        else if (ViewBag.SearchFilter == "lastname")
+                        {
+                            <option class="search-panel-form-dropdown-select-element-author" value="all">All results</option>
+                            <option class="search-panel-form-dropdown-select-element-author" value="username">Username</option>
+                            <option class="search-panel-form-dropdown-select-element-title" value="firstname">Firstname</option>
+                            <option class="search-panel-form-dropdown-select-element-title" value="lastname" selected>Lastname</option>
+                        }
                     </select>
                 </li>
                 <li class="search-panel-form-dropdown-arrow">
@@ -64,138 +99,62 @@
 <div class="subs-container">
     <section class="subs">
         <ul class="subs-items">
-            <li class="subs-items_title"><h1 class="subs-items_title-element">Subscriptions of <span class="subs-items_title-element-username">username421_:</span></h1></li>
-            <li class="subs-items_amount"><span class="subs-items_amount-element">9 subscriptions</span></li>
+            <li class="subs-items_title"><h1 class="subs-items_title-element">Subscriptions of <span class="subs-items_title-element-username">@Model.UserName:</span></h1></li>
+            <li class="subs-items_amount"><span class="subs-items_amount-element">@subscriptions.Count subscriptions</span></li>
             <li class="subs-items_subs-columns">
                 <ul class="subs-items_subs-columns-items">
 
                     <li class="subs-items_subs-columns-items_first-column">
                         <ul class="subs-items_subs-columns-items_first-column-items">
-
-                            <li class="subs-items_subs-columns-items_first-column-items_subscriber">
-                                <a class="subs-items_subs-columns-items_first-column-items_subscriber-link" href="">
-                                    <ul class="subs-items_subs-columns-items_first-column-items_subscriber-items">
-                                        <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_image"><img class="subs-items_subs-columns-items_first-column-items_subscriber-items_image-element" src="~/Images/Icons/User_Profile_Photo.svg" alt="Photo of the user"></li>
-                                        <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_info">
-                                            <ul class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items">
-                                                <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_username"><span class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_username-element">username463_</span></li>
-                                                <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_full-name"><span class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_full-name-element">Firstname Lastname</span></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </a>
-                            </li>
-                            <li class="subs-items_subs-columns-items_first-column-items_subscriber">
-                                <a class="subs-items_subs-columns-items_first-column-items_subscriber-link" href="">
-                                    <ul class="subs-items_subs-columns-items_first-column-items_subscriber-items">
-                                        <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_image"><img class="subs-items_subs-columns-items_first-column-items_subscriber-items_image-element" src="~/Images/Icons/User_Profile_Photo.svg" alt="Photo of the user"></li>
-                                        <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_info">
-                                            <ul class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items">
-                                                <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_username"><span class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_username-element">username463_</span></li>
-                                                <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_full-name"><span class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_full-name-element">Firstname Lastname</span></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </a>
-                            </li>
-                            <li class="subs-items_subs-columns-items_first-column-items_subscriber">
-                                <a class="subs-items_subs-columns-items_first-column-items_subscriber-link" href="">
-                                    <ul class="subs-items_subs-columns-items_first-column-items_subscriber-items">
-                                        <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_image"><img class="subs-items_subs-columns-items_first-column-items_subscriber-items_image-element" src="~/Images/Icons/User_Profile_Photo.svg" alt="Photo of the user"></li>
-                                        <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_info">
-                                            <ul class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items">
-                                                <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_username"><span class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_username-element">username463_</span></li>
-                                                <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_full-name"><span class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_full-name-element">Firstname Lastname</span></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </a>
-                            </li>
-                            <li class="subs-items_subs-columns-items_first-column-items_subscriber">
-                                <a class="subs-items_subs-columns-items_first-column-items_subscriber-link" href="">
-                                    <ul class="subs-items_subs-columns-items_first-column-items_subscriber-items">
-                                        <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_image"><img class="subs-items_subs-columns-items_first-column-items_subscriber-items_image-element" src="~/Images/Icons/User_Profile_Photo.svg" alt="Photo of the user"></li>
-                                        <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_info">
-                                            <ul class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items">
-                                                <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_username"><span class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_username-element">username463_</span></li>
-                                                <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_full-name"><span class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_full-name-element">Firstname Lastname</span></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </a>
-                            </li>
-                            <li class="subs-items_subs-columns-items_first-column-items_subscriber">
-                                <a class="subs-items_subs-columns-items_first-column-items_subscriber-link" href="">
-                                    <ul class="subs-items_subs-columns-items_first-column-items_subscriber-items">
-                                        <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_image"><img class="subs-items_subs-columns-items_first-column-items_subscriber-items_image-element" src="~/Images/Icons/User_Profile_Photo.svg" alt="Photo of the user"></li>
-                                        <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_info">
-                                            <ul class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items">
-                                                <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_username"><span class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_username-element">username463_</span></li>
-                                                <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_full-name"><span class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_full-name-element">Firstname Lastname</span></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </a>
-                            </li>
+                            @foreach (Subscription subscription in firstColumn)
+                            {
+                                <li class="subs-items_subs-columns-items_first-column-items_subscriber">
+                                    <a class="subs-items_subs-columns-items_first-column-items_subscriber-link" asp-controller="UserProfile" asp-action="Posts" asp-route-userId="@subscription.UserId">
+                                        <ul class="subs-items_subs-columns-items_first-column-items_subscriber-items">
+                                            <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_image"><img class="subs-items_subs-columns-items_first-column-items_subscriber-items_image-element" src="~/Images/Icons/User_Profile_Photo.svg" alt="Photo of the user"></li>
+                                            <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_info">
+                                                <ul class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items">
+                                                    <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_username"><span class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_username-element">@subscription.User.UserName</span></li>
+                                                    <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_full-name">
+                                                        <span class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_full-name-element">
+                                                            @(string.IsNullOrEmpty(subscription.User.Firstname) || string.IsNullOrEmpty(subscription.User.Lastname)
+                                                                ? "Name isn't mentioned"
+                                                                : $"{subscription.User.Firstname} {subscription.User.Lastname}")
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </li>
+                            }
                         </ul>
                     </li>
 
                     <li class="subs-items_subs-columns-items_second-column">
                         <ul class="subs-items_subs-columns-items_second-column-items">
-
-                            <li class="subs-items_subs-columns-items_second-column-items_subscriber">
-                                <a class="subs-items_subs-columns-items_first-column-items_subscriber-link" href="">
-                                    <ul class="subs-items_subs-columns-items_second-column-items_subscriber-items">
-                                        <li class="subs-items_subs-columns-items_second-column-items_subscriber-items_image"><img class="subs-items_subs-columns-items_second-column-items_subscriber-items_image-element" src="~/Images/Icons/User_Profile_Photo.svg" alt="Photo of the user"></li>
-                                        <li class="subs-items_subs-columns-items_second-column-items_subscriber-items_info">
-                                            <ul class="subs-items_subs-columns-items_second-column-items_subscriber-items_info-items">
-                                                <li class="subs-items_subs-columns-items_second-column-items_subscriber-items_info-items_username"><span class="subs-items_subs-columns-items_second-column-items_subscriber-items_info-items_username-element">username463_</span></li>
-                                                <li class="subs-items_subs-columns-items_second-column-items_subscriber-items_info-items_full-name"><span class="subs-items_subs-columns-items_second-column-items_subscriber-items_info-items_full-name-element">Firstname Lastname</span></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </a>
-                            </li>
-                            <li class="subs-items_subs-columns-items_second-column-items_subscriber">
-                                <a class="subs-items_subs-columns-items_first-column-items_subscriber-link" href="">
-                                    <ul class="subs-items_subs-columns-items_second-column-items_subscriber-items">
-                                        <li class="subs-items_subs-columns-items_second-column-items_subscriber-items_image"><img class="subs-items_subs-columns-items_second-column-items_subscriber-items_image-element" src="~/Images/Icons/User_Profile_Photo.svg" alt="Photo of the user"></li>
-                                        <li class="subs-items_subs-columns-items_second-column-items_subscriber-items_info">
-                                            <ul class="subs-items_subs-columns-items_second-column-items_subscriber-items_info-items">
-                                                <li class="subs-items_subs-columns-items_second-column-items_subscriber-items_info-items_username"><span class="subs-items_subs-columns-items_second-column-items_subscriber-items_info-items_username-element">username463_</span></li>
-                                                <li class="subs-items_subs-columns-items_second-column-items_subscriber-items_info-items_full-name"><span class="subs-items_subs-columns-items_second-column-items_subscriber-items_info-items_full-name-element">Firstname Lastname</span></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </a>
-                            </li>
-                            <li class="subs-items_subs-columns-items_second-column-items_subscriber">
-                                <a class="subs-items_subs-columns-items_first-column-items_subscriber-link" href="">
-                                    <ul class="subs-items_subs-columns-items_second-column-items_subscriber-items">
-                                        <li class="subs-items_subs-columns-items_second-column-items_subscriber-items_image"><img class="subs-items_subs-columns-items_second-column-items_subscriber-items_image-element" src="~/Images/Icons/User_Profile_Photo.svg" alt="Photo of the user"></li>
-                                        <li class="subs-items_subs-columns-items_second-column-items_subscriber-items_info">
-                                            <ul class="subs-items_subs-columns-items_second-column-items_subscriber-items_info-items">
-                                                <li class="subs-items_subs-columns-items_second-column-items_subscriber-items_info-items_username"><span class="subs-items_subs-columns-items_second-column-items_subscriber-items_info-items_username-element">username463_</span></li>
-                                                <li class="subs-items_subs-columns-items_second-column-items_subscriber-items_info-items_full-name"><span class="subs-items_subs-columns-items_second-column-items_subscriber-items_info-items_full-name-element">Firstname Lastname</span></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </a>
-                            </li>
-                            <li class="subs-items_subs-columns-items_second-column-items_subscriber">
-                                <a class="subs-items_subs-columns-items_first-column-items_subscriber-link" href="">
-                                    <ul class="subs-items_subs-columns-items_second-column-items_subscriber-items">
-                                        <li class="subs-items_subs-columns-items_second-column-items_subscriber-items_image"><img class="subs-items_subs-columns-items_second-column-items_subscriber-items_image-element" src="~/Images/Icons/User_Profile_Photo.svg" alt="Photo of the user"></li>
-                                        <li class="subs-items_subs-columns-items_second-column-items_subscriber-items_info">
-                                            <ul class="subs-items_subs-columns-items_second-column-items_subscriber-items_info-items">
-                                                <li class="subs-items_subs-columns-items_second-column-items_subscriber-items_info-items_username"><span class="subs-items_subs-columns-items_second-column-items_subscriber-items_info-items_username-element">username463_</span></li>
-                                                <li class="subs-items_subs-columns-items_second-column-items_subscriber-items_info-items_full-name"><span class="subs-items_subs-columns-items_second-column-items_subscriber-items_info-items_full-name-element">Firstname Lastname</span></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </a>
-                            </li>
-
+                                @foreach (Subscription subscription in secondColumn)
+                                {
+                                <li class="subs-items_subs-columns-items_first-column-items_subscriber">
+                                    <a class="subs-items_subs-columns-items_first-column-items_subscriber-link" asp-controller="UserProfile" asp-action="Posts" asp-route-userId="@subscription.UserId">
+                                        <ul class="subs-items_subs-columns-items_first-column-items_subscriber-items">
+                                            <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_image"><img class="subs-items_subs-columns-items_first-column-items_subscriber-items_image-element" src="~/Images/Icons/User_Profile_Photo.svg" alt="Photo of the user"></li>
+                                            <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_info">
+                                                <ul class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items">
+                                                    <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_username"><span class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_username-element">@subscription.User.UserName</span></li>
+                                                    <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_full-name">
+                                                        <span class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_full-name-element">
+                                                                @(string.IsNullOrEmpty(subscription.User.Firstname) || string.IsNullOrEmpty(subscription.User.Lastname)
+                                                                    ? "Name isn't mentioned"
+                                                                    : $"{subscription.User.Firstname} {subscription.User.Lastname}")
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                }
                         </ul>
                     </li>
 

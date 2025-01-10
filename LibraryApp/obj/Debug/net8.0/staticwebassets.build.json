@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EyLEXyUuL/NMGH4UofZqExkTfIvEgx0yBG5XQX3flig=",
+  "Hash": "Lc0nkFp+CikbKBPll8zqkgqmCyQSmeiDQtV7cMnQ/LI=",
   "Source": "LibraryApp.UI",
   "BasePath": "_content/LibraryApp.UI",
   "Mode": "Default",
@@ -409,8 +409,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "u2fv2w9a02",
-      "Integrity": "6s+DFDlf6MGVP6WztCcUrb6MTFFx/wkRfOWB1UYhLl4=",
+      "Fingerprint": "rp2i1wm9t7",
+      "Integrity": "wWAgHA/ieN7IIXQmWGetMexQOrPE1RfGkqz/NLF4KxI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\subscribers.css"
@@ -2786,7 +2786,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8231"
+          "Value": "8237"
         },
         {
           "Name": "Content-Type",
@@ -2794,11 +2794,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6s+DFDlf6MGVP6WztCcUrb6MTFFx/wkRfOWB1UYhLl4=\""
+          "Value": "\"wWAgHA/ieN7IIXQmWGetMexQOrPE1RfGkqz/NLF4KxI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 08:21:59 GMT"
+          "Value": "Fri, 10 Jan 2025 15:24:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2808,7 +2808,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-6s+DFDlf6MGVP6WztCcUrb6MTFFx/wkRfOWB1UYhLl4="
+          "Value": "sha256-wWAgHA/ieN7IIXQmWGetMexQOrPE1RfGkqz/NLF4KxI="
         }
       ]
     },
@@ -2835,7 +2835,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 08:21:59 GMT"
+          "Value": "Fri, 10 Jan 2025 15:24:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2880,7 +2880,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 08:21:59 GMT"
+          "Value": "Fri, 10 Jan 2025 15:24:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2895,7 +2895,7 @@
       ]
     },
     {
-      "Route": "css/subscribers.u2fv2w9a02.css",
+      "Route": "css/subscribers.rp2i1wm9t7.css",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\subscribers.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2905,7 +2905,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8231"
+          "Value": "8237"
         },
         {
           "Name": "Content-Type",
@@ -2913,11 +2913,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6s+DFDlf6MGVP6WztCcUrb6MTFFx/wkRfOWB1UYhLl4=\""
+          "Value": "\"wWAgHA/ieN7IIXQmWGetMexQOrPE1RfGkqz/NLF4KxI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 21 Dec 2024 08:21:59 GMT"
+          "Value": "Fri, 10 Jan 2025 15:24:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2927,7 +2927,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "u2fv2w9a02"
+          "Value": "rp2i1wm9t7"
         },
         {
           "Name": "label",
@@ -2935,7 +2935,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-6s+DFDlf6MGVP6WztCcUrb6MTFFx/wkRfOWB1UYhLl4="
+          "Value": "sha256-wWAgHA/ieN7IIXQmWGetMexQOrPE1RfGkqz/NLF4KxI="
         }
       ]
     },

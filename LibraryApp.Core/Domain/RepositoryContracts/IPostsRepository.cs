@@ -34,5 +34,20 @@ namespace LibraryApp.Core.Domain.RepositoryContracts
         /// <param name="predicate">LINQ expression to filter posts that will be retrieved.</param>
         /// <returns>List of Post objects or null.</returns>
         Task<List<Post>> GetFilteredPosts(Expression<Func<Post, bool>> predicate);
+
+        /// <summary>
+        /// Retrieves all user's posts from the data store.
+        /// </summary>
+        /// <param name="userId">The id of the user which posts will be retrieved.</param>
+        /// <returns>The list of Post objects or null.</returns>
+        Task<List<Post>> GetUserPosts(string userId);
+
+        /// <summary>
+        /// Retrieves filtered posts of particular user from the data store.
+        /// </summary>
+        /// <param name="userId">The id of the user which posts will be retrieved.</param>
+        /// <param name="predicate">LINQ expression to filter posts that will be retrieved.</param>
+        /// <returns>List of Post objects or null.</returns>
+        Task<List<Post>> GetFilteredUserPosts(string userId, Expression<Func<Post, bool>> predicate);
     }
 }

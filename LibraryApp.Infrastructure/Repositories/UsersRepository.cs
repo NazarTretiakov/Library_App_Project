@@ -25,7 +25,10 @@ namespace LibraryApp.Infrastructure.Repositories
                                   .Include(u => u.Saves)
                                   .Include(u => u.Comments)
                                   .Include(u => u.Subscribers)
+                                  .Include(u=> u.Subscribers)
+                                    .ThenInclude(s => s.Subscriber)
                                   .Include(u => u.Subscriptions)
+                                    .ThenInclude(s => s.User)
                                   .ToListAsync();
         }
 
@@ -38,7 +41,10 @@ namespace LibraryApp.Infrastructure.Repositories
                                   .Include(u => u.Saves)
                                   .Include(u => u.Comments)
                                   .Include(u => u.Subscribers)
+                                  .Include(u => u.Subscribers)
+                                    .ThenInclude(s => s.Subscriber)
                                   .Include(u => u.Subscriptions)
+                                    .ThenInclude(s => s.User)
                                   .FirstOrDefaultAsync(u => u.Id == Guid.Parse(userId));
         }
     }

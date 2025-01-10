@@ -27,5 +27,21 @@ namespace LibraryApp.Core.ServiceContracts
         /// <param name="searchFilter">The name of the filter that will be used to search.</param>
         /// <returns>The list of Post objects or null.</returns>
         Task<List<Post>> GetFilteredPosts(string searchFilter, string searchString);
+
+        /// <summary>
+        /// Retrieves all user's posts from the system.
+        /// </summary>
+        /// <param name="userId">The id of the user which posts will be retrieved.</param>
+        /// <returns>The list of Post objects or null.</returns>
+        Task<List<Post>> GetUserPosts(string userId);
+
+        /// <summary>
+        /// Retrieves filtered posts of particular user from the system.
+        /// </summary>
+        /// <param name="userId">The id of the user which posts will be retrieved.</param>
+        /// <param name="searchString">The phrase to be searched for.</param>
+        /// <param name="searchFilter">The name of the filter that will be used to search.</param>
+        /// <returns>The list of Post objects or null.</returns>
+        Task<List<Post>> GetFilteredUserPosts(string userId, string searchFilter, string searchString);
     }
 }

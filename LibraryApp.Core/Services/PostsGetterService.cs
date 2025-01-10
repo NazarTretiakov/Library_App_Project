@@ -25,9 +25,8 @@ namespace LibraryApp.Core.Services
             {
                 case "all":
                     filteredPosts = await _postsRepository.GetFilteredPosts(p => p.Title.ToUpper().Contains(searchString.ToUpper()) || 
-                                                                            p.User.NormalizedUserName.Contains(searchString.ToUpper()) ||
-                                                                            p.Topics.Any(topic => topic.Topic.Name.ToUpper() == searchString.ToUpper()) ||
-                                                                            p.Title.ToUpper().Contains(searchString.ToUpper()));
+                                                                                 p.User.NormalizedUserName.Contains(searchString.ToUpper()) ||
+                                                                                 p.Topics.Any(topic => topic.Topic.Name.ToUpper() == searchString.ToUpper()));
                 break;
 
                 case "username":
@@ -46,9 +45,42 @@ namespace LibraryApp.Core.Services
             return filteredPosts;
         }
 
+        public async Task<List<Post>> GetFilteredUserPosts(string userId, string searchFilter, string searchString)
+        {
+            List<Post> filteredPosts = null;
+
+            switch (searchFilter)
+            {
+                case "all":
+                    filteredPosts = await _postsRepository.GetFilteredUserPosts(userId, p => p.Title.ToUpper().Contains(searchString.ToUpper()) ||
+                                                                                        p.User.NormalizedUserName.Contains(searchString.ToUpper()) ||
+                                                                                        p.Topics.Any(topic => topic.Topic.Name.ToUpper() == searchString.ToUpper()));
+                    break;
+
+                case "username":
+                    filteredPosts = await _postsRepository.GetFilteredUserPosts(userId, p => p.User.NormalizedUserName.ToUpper().Contains(searchString.ToUpper()));
+                    break;
+
+                case "topic":
+                    filteredPosts = await _postsRepository.GetFilteredUserPosts(userId, p => p.Topics.Any(topic => topic.Topic.Name.ToUpper() == searchString.ToUpper()));
+                    break;
+
+                case "title":
+                    filteredPosts = await _postsRepository.GetFilteredUserPosts(userId, p => p.Title.ToUpper().Contains(searchString.ToUpper()));
+                    break;
+            }
+
+            return filteredPosts;
+        }
+
         public async Task<Post> GetPostByPostId(string postId)
         {
             return await _postsRepository.GetPost(postId);
+        }
+
+        public async Task<List<Post>> GetUserPosts(string userId)
+        {
+            return await _postsRepository.GetUserPosts(userId);
         }
     }
 }

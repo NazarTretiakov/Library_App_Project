@@ -1,5 +1,6 @@
 ﻿using LibraryApp.Core.Domain.Entities;
 using LibraryApp.Core.Domain.IdentityEntities;
+using System.Linq.Expressions;
 
 namespace LibraryApp.Core.Domain.RepositoryContracts
 {
@@ -36,6 +37,22 @@ namespace LibraryApp.Core.Domain.RepositoryContracts
         /// <param name="userId">The id of user which subscriptions will be retrieved.</param>
         /// <returns>List of Subscription objects or null.</returns>
         Task<List<Subscription>> GetUserSubscriptions(string userId);
+
+        /// <summary>
+        /// Retrieves filtered subscribers of the user from the data store.
+        /// </summary>
+        /// <param name="userId">The id of user which subscribers will be retrieved.</param>
+        /// <param name="predicate">LINQ expression to filter subscribers that will be retrieved.</param>
+        /// <returns>List of Subscription objects or null.</returns>
+        Task<List<Subscription>> GetUserFilteredSubscribers(string userId, Expression<Func<Subscription, bool>> predicate);
+
+        /// <summary>
+        /// Retrieves filtered subscriptions of the user from the data store.
+        /// </summary>
+        /// <param name="userId">The id of user which subscriptions will be retrieved.</param>
+        /// <param name="predicate">LINQ expression to filter subscriptions that will be retrieved.</param>
+        /// <returns>List of Subscription objects or null.</returns>
+        Task<List<Subscription>> GetUserFilteredSubscriptions(string userId, Expression<Func<Subscription, bool>> predicate);
 
         /// <summary>
         /// Adds subscription to the data store.

@@ -60,5 +60,32 @@ namespace LibraryApp.Infrastructure.Repositories
                                   .Where(predicate)
                                   .ToListAsync();
         }
+
+        public async Task<List<Post>> GetUserPosts(string userId)
+        {
+            return await _db.Posts.Include(p => p.User)
+                      .Include(p => p.Topics)
+                        .ThenInclude(pt => pt.Topic)
+                      .Include(p => p.Likes)
+                      .Include(p => p.Saves)
+                      .Include(p => p.Comments)
+                        .ThenInclude(c => c.User)
+                      .Where(p => p.User.Id == Guid.Parse(userId))
+                      .ToListAsync();
+        }
+
+        public async Task<List<Post>> GetFilteredUserPosts(string userId, Expression<Func<Post, bool>> predicate)
+        {
+            return await _db.Posts.Include(p => p.User)
+                                 .Include(p => p.Topics)
+                                   .ThenInclude(pt => pt.Topic)
+                                 .Include(p => p.Likes)
+                                 .Include(p => p.Saves)
+                                 .Include(p => p.Comments)
+                                   .ThenInclude(c => c.User)
+                                 .Where(p => p.User.Id == Guid.Parse(userId))
+                                 .Where(predicate)
+                                 .ToListAsync();
+        }
     }
 }

@@ -336,8 +336,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>u2fv2w9a02</Fingerprint>
-      <Integrity>6s+DFDlf6MGVP6WztCcUrb6MTFFx/wkRfOWB1UYhLl4=</Integrity>
+      <Fingerprint>rp2i1wm9t7</Fingerprint>
+      <Integrity>wWAgHA/ieN7IIXQmWGetMexQOrPE1RfGkqz/NLF4KxI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\subscribers.css'))</OriginalItemSpec>

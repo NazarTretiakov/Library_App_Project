@@ -28,5 +28,24 @@ namespace LibraryApp.Core.ServiceContracts
         /// <param name="userId">The id of user which subscriptions will be retrieved.</param>
         /// <returns>List of Subscription objects or null.</returns>
         Task<List<Subscription>> GetUserSubscriptions(string userId);
+
+        /// <summary>
+        /// Retrieves filtered subscribers of the user from the system.
+        /// </summary>
+        /// <param name="userId">The id of user which subscribers will be retrieved.</param>
+        /// <param name="searchString">The phrase to be searched for.</param>
+        /// <param name="searchFilter">The name of the filter that will be used to search.</param>
+        /// <returns>List of Subscription objects or null.</returns>
+        Task<List<Subscription>> GetUserFilteredSubscribers(string userId, string searchFilter, string searchString);
+
+        /// <summary>
+        /// Retrieves filtered subscriptions of the user from the system.
+        /// </summary>
+        /// <param name="userId">The id of user which subscriptions will be retrieved.</param>
+        /// <param name="searchString">The phrase to be searched for.</param>
+        /// <param name="searchFilter">The name of the filter that will be used to search.</param>
+        /// <returns>List of Subscription objects or null.</returns>
+        Task<List<Subscription>> GetUserFilteredSubscriptions(string userId, string searchFilter, string searchString);
+
     }
 }
