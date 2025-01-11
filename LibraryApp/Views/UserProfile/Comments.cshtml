@@ -2,10 +2,10 @@
 
 @{
     ViewBag.Title = @Model.UserName;
-    ViewBag.StylesPath = "~/css/user-profile-posts.css";
+    ViewBag.StylesPath = "~/css/user-profile-comments.css";
     ViewBag.ScriptPath = "~/js/toggle-subscription.js";
 
-    List<Post> posts = ViewBag.Posts;
+    List<Comment> comments = ViewBag.Comments;
 }
 
 <div class="container-for-header-panel">
@@ -37,9 +37,9 @@
 
 
     <section class="search-panel">
-        <form class="search-panel-form">
+        <form class="search-panel-form" asp-controller="UserProfile" asp-action="Comments" method="get">
 
-            <input name="userId" value="@Model.Id" hidden/>
+            <input name="userId" value="@Model.Id" hidden />
 
             <ul class="search-panel-form-search">
                 <li class="search-panel-form-search-icon">
@@ -55,18 +55,28 @@
                         @if (ViewBag.SearchFilter == "all")
                         {
                             <option class="search-panel-form-dropdown-select-element-author" value="all" selected>All results</option>
+                            <option class="search-panel-form-dropdown-select-element-author" value="username">Username</option>
+                            <option class="search-panel-form-dropdown-select-element-title" value="title">Title</option>
+                            <option class="search-panel-form-dropdown-select-element-genre" value="topic">Topic</option>
+                        }
+                        else if (ViewBag.SearchFilter == "username")
+                        {
+                            <option class="search-panel-form-dropdown-select-element-author" value="all">All results</option>
+                            <option class="search-panel-form-dropdown-select-element-author" value="username" selected>Username</option>
                             <option class="search-panel-form-dropdown-select-element-title" value="title">Title</option>
                             <option class="search-panel-form-dropdown-select-element-genre" value="topic">Topic</option>
                         }
                         else if (ViewBag.SearchFilter == "title")
                         {
                             <option class="search-panel-form-dropdown-select-element-author" value="all">All results</option>
+                            <option class="search-panel-form-dropdown-select-element-author" value="username">Username</option>
                             <option class="search-panel-form-dropdown-select-element-title" value="title" selected>Title</option>
                             <option class="search-panel-form-dropdown-select-element-genre" value="topic">Topic</option>
                         }
                         else if (ViewBag.SearchFilter == "topic")
                         {
                             <option class="search-panel-form-dropdown-select-element-author" value="all">All results</option>
+                            <option class="search-panel-form-dropdown-select-element-author" value="username">Username</option>
                             <option class="search-panel-form-dropdown-select-element-title" value="title">Title</option>
                             <option class="search-panel-form-dropdown-select-element-genre" value="topic" selected>Topic</option>
                         }
@@ -119,19 +129,20 @@
             <li class="profile-publication-titles_reviews"><span class="profile-publication-titles_reviews-element"><a class="profile-publication-titles-link" asp-controller="UserProfile" asp-action="Reviews" asp-route-userId="@Model.Id">Reviews</a></span></li>
         </ul>
         <ul class="profile-posts">
-            @foreach (Post post in posts)
+            @foreach (Comment comment in comments)
             {
-                TimeSpan timeSincePostPublished = DateTime.Now - post.DateOfPublication;
+                TimeSpan timeSincePostPublished = DateTime.Now - comment.Post.DateOfPublication;
+                TimeSpan timeSinceCommentPublished = DateTime.Now - comment.DateOfPublication;
 
                 <li>
-                    <a class="profile-posts-post-link" asp-controller="Forum" asp-action="Post" asp-route-postId="@post.PostId">
+                    <a class="profile-posts-post-link" asp-controller="Forum" asp-action="Post" asp-route-postId="@comment.Post.PostId">
                         <section class="profile-posts-post">
                             <ul class="profile-posts-post-items">
                                 <li class="profile-posts-post-items-header">
                                     <ul class="profile-posts-post-items-header-items">
                                         <li class="profile-posts-post-items-header-items-user-information">
                                             <img class="profile-posts-post-items-header-items-user-information-profile-photo" src="~/Images/Icons/User_Profile_Photo.svg" alt="User profile photo">
-                                            <span class="profile-posts-post-items-header-items-user-information-username">@post.User.UserName</span>
+                                            <span class="profile-posts-post-items-header-items-user-information-username">@comment.Post.User.UserName</span>
                                         </li>
                                         <li class="profile-posts-post-items-header-items-time">
                                             @if (timeSincePostPublished.TotalMinutes < 1)
@@ -174,19 +185,69 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="profile-posts-post-items-title"><h1 class="profile-posts-post-items-title-element">@post.Title</h1></li>
+                                <li class="profile-posts-post-items-title"><h1 class="profile-posts-post-items-title-element">@comment.Post.Title</h1></li>
                                 <li class="profile-posts-post-items-topics">
-                                    @foreach (PostTopic postTopic in post.Topics)
+                                    @foreach (PostTopic postTopic in comment.Post.Topics)
                                     {
                                         <span class="post-items-topics-topic">#@postTopic.Topic.Name</span>
                                         <span> </span>
                                     }
                                 </li>
-                                <li class="profile-posts-post-items-paragraph"><p class="profile-posts-post-items-paragraph-element">@(post.Content.Length > 570 ? post.Content.Substring(0, 570) + "..." : post.Content)</p></li>
+                                <li class="profile-posts-post-items-paragraph"><p class="profile-posts-post-items-paragraph-element">@(comment.Post.Content.Length > 300 ? comment.Post.Content.Substring(0, 300) + "..." : comment.Post.Content)</p></li>
+                            </ul>
+                            <ul class="profile-posts-reply-items">
+                                <li class="profile-posts-reply-items-header">
+                                    <ul class="profile-posts-reply-items-header-items">
+                                        <li class="profile-posts-reply-items-header-items-user-information">
+                                            <img class="profile-posts-reply-items-header-items-user-information-profile-photo" src="~/Images/Icons/User_Profile_Photo.svg" alt="User profile photo">
+                                            <span class="profile-posts-reply-items-header-items-user-information-username">@comment.User.UserName</span>
+                                        </li>
+                                        <li class="profile-posts-reply-items-header-items-time">
+                                            @if (timeSinceCommentPublished.TotalMinutes < 1)
+                                            {
+                                                <span class="post-items-header-items-time-element">Just now</span>
+                                            }
+                                            else if (timeSinceCommentPublished.TotalHours < 1)
+                                            {
+                                                if (@timeSinceCommentPublished.Minutes == 1)
+                                                {
+                                                    <span class="post-items-header-items-time-element">@timeSinceCommentPublished.Minutes minute ago</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="post-items-header-items-time-element">@timeSinceCommentPublished.Minutes minutes ago</span>
+                                                }
+                                            }
+                                            else if (timeSinceCommentPublished.TotalDays < 1)
+                                            {
+                                                if (@timeSinceCommentPublished.Hours == 1)
+                                                {
+                                                    <span class="post-items-header-items-time-element">@timeSinceCommentPublished.Hours hour ago</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="post-items-header-items-time-element">@timeSinceCommentPublished.Hours hours ago</span>
+                                                }
+                                            }
+                                            else
+                                            {
+                                                if (@timeSinceCommentPublished.Days == 1)
+                                                {
+                                                    <span class="post-items-header-items-time-element">@timeSinceCommentPublished.Days day ago</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="post-items-header-items-time-element">@timeSinceCommentPublished.Days days ago</span>
+                                                }
+                                            }
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="profile-posts-reply-items-paragraph"><p class="profile-posts-post-items-paragraph-element">@(comment.Content.Length > 180 ? comment.Content.Substring(0, 180) + "..." : comment.Content)</p></li>
                             </ul>
                         </section>
                     </a>
-                    @if (post != posts.LastOrDefault())
+                    @if (comment != comments.LastOrDefault())
                     {
                         <div class="profile-posts-div-for-space-between-posts"></div>
                     }

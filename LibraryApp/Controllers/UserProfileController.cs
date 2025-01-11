@@ -15,14 +15,16 @@ namespace LibraryApp.UI.Controllers
         private readonly ISubscriptionsGetterService _subscriptionsGetterService;
         private readonly IIsCurrentWorkingUserSubscribedService _isCurrentWorkingUserSubscribed;
         private readonly IPostsGetterService _postsGetterService;
+        private readonly ICommentsGetterService _commentsGetterService;
 
-        public UserProfileController(IUsersGetterService usersGetterService, IToggleSubscriptionService toggleSubscriptionService, ISubscriptionsGetterService subscriptionsGetterService, IIsCurrentWorkingUserSubscribedService isCurrentWorkingUserSubscribed, IPostsGetterService postsGetterService)
+        public UserProfileController(IUsersGetterService usersGetterService, IToggleSubscriptionService toggleSubscriptionService, ISubscriptionsGetterService subscriptionsGetterService, IIsCurrentWorkingUserSubscribedService isCurrentWorkingUserSubscribed, IPostsGetterService postsGetterService, ICommentsGetterService commentsGetterService)
         {
             _usersGetterService = usersGetterService;
             _toggleSubscriptionService = toggleSubscriptionService;
             _subscriptionsGetterService = subscriptionsGetterService;
             _isCurrentWorkingUserSubscribed = isCurrentWorkingUserSubscribed;
             _postsGetterService = postsGetterService;
+            _commentsGetterService = commentsGetterService;
         }
 
         [Route("/user-profile")]
@@ -53,6 +55,30 @@ namespace LibraryApp.UI.Controllers
             ViewBag.Posts = posts.OrderByDescending(p => p.DateOfPublication).ToList();  //TODO: find out why I can't use here async version of query methods
 
             return View(user);  //TODO: create empty state of the page, for situation when user has no posts
+        }
+
+        [Route("/user-profile/replies")]
+        public async Task<IActionResult> Comments(string userId, string searchString, string searchFilter = "all")
+        {
+            User user = await _usersGetterService.GetUserByUserId(userId);
+            List<Comment> comments;
+
+            ViewBag.IsSubscribed = await _isCurrentWorkingUserSubscribed.IsCurrentWorkingUserSubscribed(userId);
+            ViewBag.SearchString = searchString;
+            ViewBag.SearchFilter = searchFilter;
+
+            if (searchString == null)
+            {
+                comments = await _commentsGetterService.GetUserComments(userId);
+            }
+            else
+            {
+                comments = await _commentsGetterService.GetUserFilteredComments(userId, searchFilter, searchString);
+            }
+
+            ViewBag.Comments = comments.OrderByDescending(p => p.DateOfPublication).ToList();
+
+            return View(user);  //TODO: create empty state of the page, for situation when user has no replies(comments)
         }
 
         [Route("/user-profile/toggle-subscription")]

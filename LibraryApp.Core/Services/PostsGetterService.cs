@@ -34,7 +34,7 @@ namespace LibraryApp.Core.Services
                 break;
 
                 case "topic":
-                    filteredPosts = await _postsRepository.GetFilteredPosts(p => p.Topics.Any(topic => topic.Topic.Name.ToUpper() == searchString.ToUpper()));
+                    filteredPosts = await _postsRepository.GetFilteredPosts(p => p.Topics.Any(topic => topic.Topic.Name.ToUpper().Contains(searchString.ToUpper())));
                 break;
 
                 case "title":

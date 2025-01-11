@@ -1,8 +1,9 @@
 ﻿using LibraryApp.Core.Domain.Entities;
-using LibraryApp.Core.Domain.IdentityEntities;
 using LibraryApp.Core.Domain.RepositoryContracts;
 using LibraryApp.Infrastructure.DbContext;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Linq.Expressions;
 
 namespace LibraryApp.Infrastructure.Repositories
 {
@@ -27,16 +28,34 @@ namespace LibraryApp.Infrastructure.Repositories
         public async Task<List<Comment>> GetCommentsByUser(string userId)
         {
             return await _db.Comments.Include(c => c.User)
-                               .Include(c => c.Post)
-                               .Where(c => c.User.Id == Guid.Parse(userId))
-                               .ToListAsync();
+                                     .Include(c => c.Post)
+                                     .Include(c => c.Post.User)
+                                     .Include(c => c.Post.Topics)
+                                       .ThenInclude(pt => pt.Topic)
+                                     .Where(c => c.User.Id == Guid.Parse(userId))
+                                     .ToListAsync();
         }
 
         public async Task<List<Comment>> GetCommentsOfPost(string postId)
         {
             return await _db.Comments.Include(c => c.User)
                                      .Include(c => c.Post)
+                                     .Include(c => c.Post.User)
+                                     .Include(c => c.Post.Topics)
+                                       .ThenInclude(pt => pt.Topic)
                                      .Where(c => c.Post.PostId == Guid.Parse(postId))
+                                     .ToListAsync();
+        }
+
+        public async Task<List<Comment>> GetFilteredCommentsByuser(string userId, Expression<Func<Comment, bool>> predicate)
+        {
+            return await _db.Comments.Include(c => c.User)
+                                     .Include(c => c.Post)
+                                     .Include(c => c.Post.User)
+                                     .Include(c => c.Post.Topics)
+                                       .ThenInclude(pt => pt.Topic)
+                                     .Where(c => c.User.Id == Guid.Parse(userId))
+                                     .Where(predicate)
                                      .ToListAsync();
         }
     }

@@ -213,6 +213,14 @@
       "PackagePath": "staticwebassets\\css\\subscribers.css.map"
     },
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-comments.css",
+      "PackagePath": "staticwebassets\\css\\user-profile-comments.css"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-comments.css.map",
+      "PackagePath": "staticwebassets\\css\\user-profile-comments.css.map"
+    },
+    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-posts.css",
       "PackagePath": "staticwebassets\\css\\user-profile-posts.css"
     },
