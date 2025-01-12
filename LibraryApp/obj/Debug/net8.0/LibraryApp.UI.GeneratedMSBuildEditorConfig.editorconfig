@@ -56,12 +56,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicmFyeVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Studying/Library App Project/LibraryApp/LibraryApp/Views/MyAccount/ChangePasswordSettings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlBY2NvdW50XENoYW5nZVBhc3N3b3JkU2V0dGluZ3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Studying/Library App Project/LibraryApp/LibraryApp/Views/MyAccount/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlBY2NvdW50XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Studying/Library App Project/LibraryApp/LibraryApp/Views/MyAccount/ProfileInformationSettings.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlBY2NvdW50XFByb2ZpbGVJbmZvcm1hdGlvblNldHRpbmdzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Studying/Library App Project/LibraryApp/LibraryApp/Views/MyAccount/ProfilePhotoSettings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlBY2NvdW50XFByb2ZpbGVQaG90b1NldHRpbmdzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Studying/Library App Project/LibraryApp/LibraryApp/Views/Shared/_Comments.cshtml]

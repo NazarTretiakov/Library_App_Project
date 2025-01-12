@@ -1,7 +1,7 @@
 ﻿@{
     ViewBag.Title = "Settings";
-    ViewBag.StylesPath = "~/css/profile-settings.css";
-    ViewBag.ScriptPath = "~/js/profile-settings.js";
+    ViewBag.StylesPath = "~/css/photo-settings.css";
+    ViewBag.ScriptPath = "~/js/photo-settings.js";
 }
 
 
@@ -33,6 +33,7 @@
     </header>
 </div>
 
+
 <div class="settings-container">
     <section class="settings">
         <ul class="settings-elements">
@@ -47,11 +48,9 @@
             </li>
             <li class="settings-elements_profile-information">
                 <ul class="settings-elements_profile-information-elements">
-                    <li class="settings-elements_profile-information-elements_title"><h1 class="settings-elements_profile-information-elements_title-item">Profile information</h1></li>
-                    <li class="settings-elements_profile-information-elements_subtitle"><h2 class="settings-elements_profile-information-elements_subtitle-item">Add or change information about yourself</h2></li>
-                    <li class="settings-elements_profile-information-elements_input-firstname"><input class="settings-elements_profile-information-elements_input-firstname-item" type="text" placeholder="Firstname"></li>
-                    <li class="settings-elements_profile-information-elements_input-lastname"><input class="settings-elements_profile-information-elements_input-lastname-item" type="text" placeholder="Lastname"></li>
-                    <li class="settings-elements_profile-information-elements_input-description"><textarea class="settings-elements_profile-information-elements_input-description-item" placeholder="Description"></textarea><span class="settings-elements_profile-information-elements_input-description-number-of-characters"><span class="settings-elements_profile-information-elements_input-description-number-of-characters-entered">0</span><span class="settings-elements_profile-information-elements_input-description-number-of-characters-max">/300</span></span></li>
+                    <li class="settings-elements_profile-information-elements_title"><h1 class="settings-elements_profile-information-elements_title-item">Photo</h1></li>
+                    <li class="settings-elements_profile-information-elements_subtitle"><h2 class="settings-elements_profile-information-elements_subtitle-item">Add or change photo of your account</h2></li>
+                    <li class="settings-elements_profile-information-elements_input-photo"><label class="settings-elements_profile-information-elements_input-photo-custom-uploader" for="input-file"><span>Choose photo</span></label><input class="settings-elements_profile-information-elements_input-photo-element" id="input-file" type="file"></li>
                     <li class="settings-elements_profile-information-elements_save-changes"><button class="settings-elements_profile-information-elements_save-changes-item">Save changes</button></li>
                 </ul>
             </li>

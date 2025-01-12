@@ -141,6 +141,14 @@
       "PackagePath": "staticwebassets\\css\\basic.css.map"
     },
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\change-password-settings.css",
+      "PackagePath": "staticwebassets\\css\\change-password-settings.css"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\change-password-settings.css.map",
+      "PackagePath": "staticwebassets\\css\\change-password-settings.css.map"
+    },
+    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\config.css",
       "PackagePath": "staticwebassets\\css\\config.css"
     },
@@ -179,6 +187,14 @@
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\my-account.css.map",
       "PackagePath": "staticwebassets\\css\\my-account.css.map"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\photo-settings.css",
+      "PackagePath": "staticwebassets\\css\\photo-settings.css"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\photo-settings.css.map",
+      "PackagePath": "staticwebassets\\css\\photo-settings.css.map"
     },
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\post.css",
@@ -235,6 +251,10 @@
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\create-post.js",
       "PackagePath": "staticwebassets\\js\\create-post.js"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\photo-settings.js",
+      "PackagePath": "staticwebassets\\js\\photo-settings.js"
     },
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\profile-settings.js",

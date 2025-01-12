@@ -21,5 +21,17 @@ namespace LibraryApp.UI.Controllers
         {
             return View();
         }
+
+        [Route("/my-account/settings/photo")]
+        public IActionResult ProfilePhotoSettings()
+        {
+            return View();
+        }
+
+        [Route("/my-account/settings/change-password")]
+        public IActionResult ChangePasswordSettings()
+        {
+            return View();
+        }
     }
 }

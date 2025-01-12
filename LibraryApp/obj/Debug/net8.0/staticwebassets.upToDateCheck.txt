@@ -1,5 +1,7 @@
 wwwroot\css\basic.css
 wwwroot\css\basic.css.map
+wwwroot\css\change-password-settings.css
+wwwroot\css\change-password-settings.css.map
 wwwroot\css\config.css
 wwwroot\css\config.css.map
 wwwroot\css\create-post.css
@@ -10,6 +12,8 @@ wwwroot\css\homepage.css
 wwwroot\css\homepage.css.map
 wwwroot\css\my-account.css
 wwwroot\css\my-account.css.map
+wwwroot\css\photo-settings.css
+wwwroot\css\photo-settings.css.map
 wwwroot\css\post.css
 wwwroot\css\post.css.map
 wwwroot\css\profile-settings.css
@@ -57,6 +61,7 @@ wwwroot\Images\Photo_of_Library.jpg
 wwwroot\Images\Photo_of_library_2.jpg
 wwwroot\js\create-comment.js
 wwwroot\js\create-post.js
+wwwroot\js\photo-settings.js
 wwwroot\js\profile-settings.js
 wwwroot\js\toggle-like.js
 wwwroot\js\toggle-post-save.js
