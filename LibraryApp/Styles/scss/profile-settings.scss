@@ -145,6 +145,7 @@
                 padding: 50px 30px 0 30px;
                 align-items: center;
                 margin: -16px 0 0 0;
+                width: 164px;
 
                 &_user-image {
 
@@ -291,6 +292,52 @@
                         }
 
                         &-max {
+                        }
+                    }
+                }
+
+                &_validation {
+                    color: $errorTextColor;
+                    display: flex;
+                    justify-content: start;
+                    font-size: 14px;
+                    margin: 0 0 0 16px;
+                    list-style: none;
+
+                    & > div {
+                        margin: 10px 0 0 0;
+
+                        & > ul {
+                            padding: 0;
+                            list-style: none;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: start;
+                            align-items: start;
+                            width: 518px;
+                        }
+                    }
+                }
+
+                &_information-changed-message {
+                    color: $buttonColor;
+                    display: flex;
+                    justify-content: start;
+                    font-size: 14px;
+                    margin: 0 0 0 16px;
+                    list-style: none;
+
+                    & > div {
+                        margin: 10px 0 0 0;
+
+                        & > ul {
+                            padding: 0;
+                            list-style: none;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: start;
+                            align-items: start;
+                            width: 518px;
                         }
                     }
                 }

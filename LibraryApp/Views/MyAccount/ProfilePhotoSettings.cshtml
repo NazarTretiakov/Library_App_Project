@@ -40,7 +40,18 @@
             <li class="settings-elements_menu">
                 <ul class="settings-elements_menu-elements">
                     <li class="settings-elements_menu-elements_user-image"><a class="settings-link" asp-controller="MyAccount" asp-action="ProfilePhotoSettings"><img class="settings-elements_menu-elements_user-image-item" src="~/Images/Icons/User_Profile_Photo.svg" alt="User profile photo"></a></li>
-                    <li class="settings-elements_menu-elements_firstname-lastname"><a class="settings-link" asp-controller="MyAccount" asp-action="ProfileInformationSettings"><span class="settings-elements_menu-elements_firstname-lastname-item">Name isn't mentioned</span></a></li>
+                    <li class="settings-elements_menu-elements_firstname-lastname">
+                        <a class="settings-link" asp-controller="MyAccount" asp-action="ProfileInformationSettings">
+                            @if (ViewBag.CurrentWorkingUser.Firstname == null && ViewBag.CurrentWorkingUser.Lastname == null)
+                            {
+                                <span class="settings-elements_menu-elements_firstname-lastname-item">Name isn't mentioned</span>
+                            }
+                            else
+                            {
+                                <span class="settings-elements_menu-elements_firstname-lastname-item">@ViewBag.CurrentWorkingUser.Firstname @ViewBag.CurrentWorkingUser.Lastname</span>
+                            }
+                        </a>
+                    </li>
                     <li class="settings-elements_menu-elements_profile"><a class="settings-link" asp-controller="MyAccount" asp-action="ProfileInformationSettings"><span class="settings-elements_menu-elements_profile-item">Profile</span></a></li>
                     <li class="settings-elements_menu-elements_photo"><a class="settings-link" asp-controller="MyAccount" asp-action="ProfilePhotoSettings"><span class="settings-elements_menu-elements_photo-item">Photo</span></a></li>
                     <li class="settings-elements_menu-elements_change-password"><a class="settings-link" asp-controller="MyAccount" asp-action="ChangePasswordSettings"><span class="settings-elements_menu-elements_change-password-item">Change password</span></a></li>

@@ -4,6 +4,7 @@ using LibraryApp.Infrastructure.DbContext;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 using System;
+using LibraryApp.Core.DTO;
 
 namespace LibraryApp.Infrastructure.Repositories
 {
@@ -46,6 +47,17 @@ namespace LibraryApp.Infrastructure.Repositories
                                   .Include(u => u.Subscriptions)
                                     .ThenInclude(s => s.User)
                                   .FirstOrDefaultAsync(u => u.Id == Guid.Parse(userId));
+        }
+
+        public async Task<User> ChangeUserInformation(User user, ChangeProfileInformationDTO changeProfileInformationDTO)
+        {
+            user.Firstname = changeProfileInformationDTO.Firstname;
+            user.Lastname = changeProfileInformationDTO.Lastname;
+            user.Description = changeProfileInformationDTO.Description;
+
+            await _db.SaveChangesAsync();
+
+            return user;
         }
     }
 }

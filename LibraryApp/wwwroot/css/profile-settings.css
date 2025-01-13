@@ -104,6 +104,7 @@
   padding: 50px 30px 0 30px;
   align-items: center;
   margin: -16px 0 0 0;
+  width: 164px;
 }
 .settings-elements_menu-elements_user-image-item {
   width: 100px;
@@ -206,6 +207,46 @@
 }
 .settings-elements_profile-information-elements_input-description-number-of-characters-entered-normal {
   color: #D9D9D9;
+}
+.settings-elements_profile-information-elements_validation {
+  color: #ff6452;
+  display: flex;
+  justify-content: start;
+  font-size: 14px;
+  margin: 0 0 0 16px;
+  list-style: none;
+}
+.settings-elements_profile-information-elements_validation > div {
+  margin: 10px 0 0 0;
+}
+.settings-elements_profile-information-elements_validation > div > ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 518px;
+}
+.settings-elements_profile-information-elements_information-changed-message {
+  color: #14A2DE;
+  display: flex;
+  justify-content: start;
+  font-size: 14px;
+  margin: 0 0 0 16px;
+  list-style: none;
+}
+.settings-elements_profile-information-elements_information-changed-message > div {
+  margin: 10px 0 0 0;
+}
+.settings-elements_profile-information-elements_information-changed-message > div > ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 518px;
 }
 .settings-elements_profile-information-elements_save-changes-item {
   height: 40px;
