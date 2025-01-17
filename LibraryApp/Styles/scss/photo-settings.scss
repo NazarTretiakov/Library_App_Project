@@ -151,6 +151,11 @@
 
                     &-item {
                         width: 100px;
+                        height: 100px;
+                        overflow: hidden;
+                        position: relative;
+                        border-radius: 50px;
+                        object-fit: cover;
                     }
                 }
 

@@ -1,6 +1,8 @@
 ﻿using LibraryApp.Core.Domain.Entities;
+using LibraryApp.Core.Domain.IdentityEntities;
 using LibraryApp.Core.DTO;
 using LibraryApp.Core.ServiceContracts;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LibraryApp.UI.Controllers
@@ -15,8 +17,9 @@ namespace LibraryApp.UI.Controllers
         private readonly IToggleSaveService _toggleSaveService;
         private readonly IIsPostSavedService _isPostSavedService;
         private readonly ICommentsCreatorService _commentsCreatorService;
+        private readonly UserManager<User> _userManager;
 
-        public ForumController(IPostsCreatorService postAdderService, IPostsGetterService postsGetterService, IToggleLikeService toggleLikeService, ILikesGetterService likesGetterService, IIsPostLikedService isPostLikedService, IToggleSaveService toggleSaveService, IIsPostSavedService isPostSavedService, ICommentsCreatorService commentsCreatorService)
+        public ForumController(IPostsCreatorService postAdderService, IPostsGetterService postsGetterService, IToggleLikeService toggleLikeService, ILikesGetterService likesGetterService, IIsPostLikedService isPostLikedService, IToggleSaveService toggleSaveService, IIsPostSavedService isPostSavedService, ICommentsCreatorService commentsCreatorService, UserManager<User> userManager)
         {
             _postsCreatorService = postAdderService;
             _postsGetterService = postsGetterService;
@@ -26,12 +29,16 @@ namespace LibraryApp.UI.Controllers
             _toggleSaveService = toggleSaveService;
             _isPostSavedService = isPostSavedService;
             _commentsCreatorService = commentsCreatorService;
+            _userManager = userManager;
         }
 
         [Route("/forum")]
         [HttpGet]
         public async Task<IActionResult> Index(string searchString, string searchFilter = "all")
         {
+            User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
+            ViewBag.CurrentWorkingUser = currentWorkingUser;
+
             ViewBag.SearchString = searchString;
             ViewBag.SearchFilter = searchFilter;
 
@@ -54,6 +61,9 @@ namespace LibraryApp.UI.Controllers
         [Route("/forum/post")]
         public async Task<IActionResult> Post(string postId)  //TODO: create custom exception page for that type of situations (when the postId is not entered in the query string)
         {
+            User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
+            ViewBag.CurrentWorkingUser = currentWorkingUser;
+
             Post post = await _postsGetterService.GetPostByPostId(postId);
             List<Like> likesOfPost = await _likesGetterService.GetPostLikes(postId);
 

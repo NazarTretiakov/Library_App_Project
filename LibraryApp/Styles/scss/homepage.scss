@@ -71,6 +71,11 @@
 
                             &-element {
                                 width: 46px;
+                                height: 46px;
+                                overflow: hidden;
+                                position: relative;
+                                border-radius: 46px;
+                                object-fit: cover;
                             }
                         }
 

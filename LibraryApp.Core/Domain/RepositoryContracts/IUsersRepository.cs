@@ -30,5 +30,13 @@ namespace LibraryApp.Core.Domain.RepositoryContracts
         /// <param name="changeProfileInformationDTO">Data Transfer Object with new data of user profile.</param>
         /// <returns>User object with changed data.</returns>
         public Task<User> ChangeUserInformation(User user, ChangeProfileInformationDTO changeProfileInformationDTO);
+
+        /// <summary>
+        /// Changes profile photo path of the user.
+        /// </summary>
+        /// <param name="user">User object in which data will be changed.</param>
+        /// <param name="photoPath">New path of the profile photo of the user.</param>
+        /// <returns>User object with changed data.</returns>
+        public Task<User> ChangeUserProfilePhoto(User user, string photoPath);
     }
 }

@@ -10,7 +10,7 @@
             <li class="post-items-comment-items-header">
                 <ul class="post-items-comment-items-header-items">
                     <li class="post-items-comment-items-header-items-user">
-                        <a class="post-link" asp-controller="UserProfile" asp-action="Posts" asp-route-userId="@comment.User.Id"><img class="post-items-comment-items-header-items-user-picture" src="~/Images/Icons/User_Profile_Photo.svg" alt="User profile photo"></a>
+                        <a class="post-link" asp-controller="UserProfile" asp-action="Posts" asp-route-userId="@comment.User.Id"><img class="post-items-comment-items-header-items-user-picture" src="@Url.Content(comment.User.ProfilePhotoPath)" alt="User profile photo"></a>
                         <a class="post-link" asp-controller="UserProfile" asp-action="Posts" asp-route-userId="@comment.User.Id"><span class="post-items-comment-items-header-items-user-username">@comment.User.UserName</span></a>
                     </li>
                     <li class="post-items-comment-items-header-items-time-of-publication">

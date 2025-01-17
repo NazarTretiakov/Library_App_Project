@@ -59,5 +59,14 @@ namespace LibraryApp.Infrastructure.Repositories
 
             return user;
         }
+
+        public async Task<User> ChangeUserProfilePhoto(User user, string photoPath)
+        {
+            user.ProfilePhotoPath = photoPath;
+
+            await _db.SaveChangesAsync();
+
+            return user;
+        }
     }
 }

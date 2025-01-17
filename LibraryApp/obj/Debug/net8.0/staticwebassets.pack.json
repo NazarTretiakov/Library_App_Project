@@ -133,6 +133,98 @@
       "PackagePath": "staticwebassets\\Images\\Photo_of_library_2.jpg"
     },
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\0e2dbb97-9a55-4f6b-a741-7ef2720245a5_leo_dicaprio.jpg",
+      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\0e2dbb97-9a55-4f6b-a741-7ef2720245a5_leo_dicaprio.jpg"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\23ef06b2-bf42-4ae3-9275-fe9dfa2108fa_enova365_error.png",
+      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\23ef06b2-bf42-4ae3-9275-fe9dfa2108fa_enova365_error.png"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\28540d26-5a3c-46be-bee0-93aac6e87648_Снимок экрана 2024-12-27 112304.png",
+      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\28540d26-5a3c-46be-bee0-93aac6e87648_Снимок экрана 2024-12-27 112304.png"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\353c5cc9-770b-4227-bfba-6279955c4df2_Снимок экрана 2024-11-27 202926.png",
+      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\353c5cc9-770b-4227-bfba-6279955c4df2_Снимок экрана 2024-11-27 202926.png"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\493e0aa9-496a-455b-a047-c35f89cd8a77_liljibob.jpg",
+      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\493e0aa9-496a-455b-a047-c35f89cd8a77_liljibob.jpg"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\4c44fe22-a615-4175-bff6-bdb7ef45d65e_smile.avif",
+      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\4c44fe22-a615-4175-bff6-bdb7ef45d65e_smile.avif"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\4c64ae44-7f2b-4a48-8c25-88858350121e_spider-man-across-7680x4320-11476.png",
+      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\4c64ae44-7f2b-4a48-8c25-88858350121e_spider-man-across-7680x4320-11476.png"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\555e1f59-9b3c-4a94-90e4-f40666d0f714_Luke_Skywalker_Profile_Photo.jpg",
+      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\555e1f59-9b3c-4a94-90e4-f40666d0f714_Luke_Skywalker_Profile_Photo.jpg"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\557c0026-3b93-4e28-bf4f-4aac7aab18ab_enova365_error.png",
+      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\557c0026-3b93-4e28-bf4f-4aac7aab18ab_enova365_error.png"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\7825c1c9-d5b8-4c9b-9081-efb0a8cda9e2_Снимок экрана 2024-12-27 112236.png",
+      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\7825c1c9-d5b8-4c9b-9081-efb0a8cda9e2_Снимок экрана 2024-12-27 112236.png"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\7fd75953-4257-438e-98f8-e260400ad310_first.webp",
+      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\7fd75953-4257-438e-98f8-e260400ad310_first.webp"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\8217d831-c95f-484d-a446-42ea058a6130_smile.jpg",
+      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\8217d831-c95f-484d-a446-42ea058a6130_smile.jpg"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\9424dd12-3686-4dd3-9c54-be39f994d4ce_enova365_error.png",
+      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\9424dd12-3686-4dd3-9c54-be39f994d4ce_enova365_error.png"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\9828bdbc-d733-4fba-82ae-228e40d625f1_Luke_Skywalker_Profile_Photo.jpg",
+      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\9828bdbc-d733-4fba-82ae-228e40d625f1_Luke_Skywalker_Profile_Photo.jpg"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\9bc5153a-cfbf-4db2-9408-bf42b563ecbc_nazar_0222 cd.JPG",
+      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\9bc5153a-cfbf-4db2-9408-bf42b563ecbc_nazar_0222 cd.JPG"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\a6212d00-9d32-4bd7-9edd-159e134f86bc_enova365_error.png",
+      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\a6212d00-9d32-4bd7-9edd-159e134f86bc_enova365_error.png"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\bd635296-5086-4186-a062-7104b1534439_smile.jpg",
+      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\bd635296-5086-4186-a062-7104b1534439_smile.jpg"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\c468cd87-c280-4b26-ad63-e8b62607fd6e_Снимок экрана 2024-11-27 202926.png",
+      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\c468cd87-c280-4b26-ad63-e8b62607fd6e_Снимок экрана 2024-11-27 202926.png"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\c7010544-53c7-4790-bf09-dc08c1463273_Luke_Skywalker_Profile_Photo.jpg",
+      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\c7010544-53c7-4790-bf09-dc08c1463273_Luke_Skywalker_Profile_Photo.jpg"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\c719d929-e4ee-423d-b90f-0d1a368a66d2_Снимок экрана 2024-12-27 112304.png",
+      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\c719d929-e4ee-423d-b90f-0d1a368a66d2_Снимок экрана 2024-12-27 112304.png"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\d1e2b826-62e8-4502-b5d5-6407e5c94fb5_enova365_error.png",
+      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\d1e2b826-62e8-4502-b5d5-6407e5c94fb5_enova365_error.png"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\e444a2e1-b028-4fbb-82fb-1d48d06356c3_Franklin_Profile_Photo.webp",
+      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\e444a2e1-b028-4fbb-82fb-1d48d06356c3_Franklin_Profile_Photo.webp"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\eb5c9a29-9cd8-4e83-9863-bff740042b47_Luke_Skywalker_Profile_Photo.jpg",
+      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\eb5c9a29-9cd8-4e83-9863-bff740042b47_Luke_Skywalker_Profile_Photo.jpg"
+    },
+    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\basic.css",
       "PackagePath": "staticwebassets\\css\\basic.css"
     },

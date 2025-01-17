@@ -20,7 +20,7 @@
                     <li class="header-items-links-list-item header-items-links-list-register">
                         <a class="header-items-links-list-item-profile-link" asp-controller="MyAccount" asp-action="Index">
                             <ul class="header-items-links-list-item-profile">
-                                <li class="header-items-links-list-item-profile-image"><img class="header-items-links-list-item-profile-image-element" src="~/Images/Icons/User_Profile_Photo.svg" alt="Profile picture of user"></li>
+                                <li class="header-items-links-list-item-profile-image"><img class="header-items-links-list-item-profile-image-element" src="@Url.Content(ViewBag.CurrentWorkingUser.ProfilePhotoPath)" alt="Profile picture of user"></li>
                                 <li class="header-items-links-list-item-profile-inscription">
                                     <ul class="header-items-links-list-item-profile-inscription-items">
                                         <li class="header-items-links-list-item-profile-inscription-items-logged-as">Logged as</li>
@@ -110,7 +110,7 @@
                 </ul>
             </li>
             <li class="profile-items_photo">
-                <img class="profile-items_photo-element" src="~/Images/Icons/User_Profile_Photo.svg" alt="User profile photo">
+                <img class="profile-items_photo-element" src="@Url.Content(Model.ProfilePhotoPath)" alt="User profile photo">
             </li>
         </ul>
         <ul class="profile-publication-titles">
@@ -130,7 +130,7 @@
                                 <li class="profile-posts-post-items-header">
                                     <ul class="profile-posts-post-items-header-items">
                                         <li class="profile-posts-post-items-header-items-user-information">
-                                            <img class="profile-posts-post-items-header-items-user-information-profile-photo" src="~/Images/Icons/User_Profile_Photo.svg" alt="User profile photo">
+                                            <img class="profile-posts-post-items-header-items-user-information-profile-photo" src="@Url.Content(post.User.ProfilePhotoPath)" alt="User profile photo">
                                             <span class="profile-posts-post-items-header-items-user-information-username">@post.User.UserName</span>
                                         </li>
                                         <li class="profile-posts-post-items-header-items-time">

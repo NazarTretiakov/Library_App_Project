@@ -80,6 +80,11 @@
 
                             &-element {
                                 width: 46px;
+                                height: 46px;
+                                overflow: hidden;
+                                position: relative;
+                                border-radius: 46px;
+                                object-fit: cover;
                             }
                         }
 
@@ -153,6 +158,11 @@
 
                     &-profile-photo {
                         width: 40px;
+                        height: 40px;
+                        overflow: hidden;
+                        position: relative;
+                        border-radius: 40px;
+                        object-fit: cover;
                     }
 
                     &-username {
@@ -351,6 +361,10 @@
 
                             &-picture {
                                 width: 30px;
+                                height: 30px;
+                                overflow: hidden;
+                                border-radius: 30px;
+                                object-fit: cover;
                             }
 
                             &-username {

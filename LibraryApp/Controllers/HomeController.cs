@@ -8,11 +8,21 @@ namespace LibraryApp.UI.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly UserManager<User> _userManager;
+
+        public HomeController(UserManager<User> userManager)
+        {
+            _userManager = userManager;
+        }
+
         [Route("/")]
         [Route("/home")]
         [AllowAnonymous]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+            User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
+            ViewBag.CurrentWorkingUser = currentWorkingUser;
+
             return View();
         }
 

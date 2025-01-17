@@ -10,13 +10,15 @@ namespace LibraryApp.UI.Controllers
     public class MyAccountController : Controller
     {
         private readonly IChangeProfileInformationService _changeProfileInformationService;
+        private readonly IChangeProfilePhotoService _changeProfilePhotoService;
         private readonly IUsersGetterService _usersGetterService;
 
         private readonly UserManager<User> _userManager;
 
-        public MyAccountController(IChangeProfileInformationService changeProfileInformationService, IUsersGetterService usersGetterService, UserManager<User> userManager)
+        public MyAccountController(IChangeProfileInformationService changeProfileInformationService, IChangeProfilePhotoService changeProfilePhotoService, IUsersGetterService usersGetterService, UserManager<User> userManager)
         {
             _changeProfileInformationService = changeProfileInformationService;
+            _changeProfilePhotoService = changeProfilePhotoService;
             _usersGetterService = usersGetterService;
             _userManager = userManager;
         }
@@ -70,10 +72,28 @@ namespace LibraryApp.UI.Controllers
         }
 
         [Route("/my-account/settings/photo")]
+        [HttpGet]
         public async Task<IActionResult> ProfilePhotoSettings()
         {
             User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
             ViewBag.CurrentWorkingUser = currentWorkingUser;
+
+            return View();
+        }
+
+        [Route("/my-account/settings/photo")]
+        [HttpPost]
+        public async Task<IActionResult> ProfilePhotoSettings(ChangeProfilePhotoDTO changeProfilePhotoDTO)
+        {
+            User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
+            ViewBag.CurrentWorkingUser = currentWorkingUser;
+
+            if (ModelState.IsValid == false)
+            {
+                return View();
+            }
+
+            await _changeProfilePhotoService.ChangeProfilePhoto(changeProfilePhotoDTO);
 
             return View();
         }

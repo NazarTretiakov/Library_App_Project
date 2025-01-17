@@ -108,6 +108,10 @@
 }
 .settings-elements_menu-elements_user-image-item {
   width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50px;
+  object-fit: cover;
 }
 .settings-elements_menu-elements_profile {
   display: flex;

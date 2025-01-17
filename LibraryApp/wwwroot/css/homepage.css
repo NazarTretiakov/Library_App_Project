@@ -51,6 +51,11 @@
 }
 .header-items-links-list-item-profile-image-element {
   width: 46px;
+  height: 46px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 46px;
+  object-fit: cover;
 }
 .header-items-links-list-item-profile-inscription {
   font-size: 12px;

@@ -1,4 +1,6 @@
-﻿@{
+﻿@model ChangeProfilePhotoDTO
+
+@{
     ViewBag.Title = "Settings";
     ViewBag.StylesPath = "~/css/photo-settings.css";
     ViewBag.ScriptPath = "~/js/photo-settings.js";
@@ -39,7 +41,7 @@
         <ul class="settings-elements">
             <li class="settings-elements_menu">
                 <ul class="settings-elements_menu-elements">
-                    <li class="settings-elements_menu-elements_user-image"><a class="settings-link" asp-controller="MyAccount" asp-action="ProfilePhotoSettings"><img class="settings-elements_menu-elements_user-image-item" src="~/Images/Icons/User_Profile_Photo.svg" alt="User profile photo"></a></li>
+                    <li class="settings-elements_menu-elements_user-image"><a class="settings-link" asp-controller="MyAccount" asp-action="ProfilePhotoSettings"><img class="settings-elements_menu-elements_user-image-item" src="@Url.Content(ViewBag.CurrentWorkingUser.ProfilePhotoPath)" alt="User profile photo"></a></li>
                     <li class="settings-elements_menu-elements_firstname-lastname">
                         <a class="settings-link" asp-controller="MyAccount" asp-action="ProfileInformationSettings">
                             @if (ViewBag.CurrentWorkingUser.Firstname == null && ViewBag.CurrentWorkingUser.Lastname == null)
@@ -58,12 +60,14 @@
                 </ul>
             </li>
             <li class="settings-elements_profile-information">
-                <ul class="settings-elements_profile-information-elements">
-                    <li class="settings-elements_profile-information-elements_title"><h1 class="settings-elements_profile-information-elements_title-item">Photo</h1></li>
-                    <li class="settings-elements_profile-information-elements_subtitle"><h2 class="settings-elements_profile-information-elements_subtitle-item">Add or change photo of your account</h2></li>
-                    <li class="settings-elements_profile-information-elements_input-photo"><label class="settings-elements_profile-information-elements_input-photo-custom-uploader" for="input-file"><span>Choose photo</span></label><input class="settings-elements_profile-information-elements_input-photo-element" id="input-file" type="file"></li>
-                    <li class="settings-elements_profile-information-elements_save-changes"><button class="settings-elements_profile-information-elements_save-changes-item">Save changes</button></li>
-                </ul>
+                <form asp-controller="MyAccount" asp-action="ProfilePhotoSettings" enctype="multipart/form-data" method="post">
+                    <ul class="settings-elements_profile-information-elements">
+                        <li class="settings-elements_profile-information-elements_title"><h1 class="settings-elements_profile-information-elements_title-item">Photo</h1></li>
+                        <li class="settings-elements_profile-information-elements_subtitle"><h2 class="settings-elements_profile-information-elements_subtitle-item">Add or change photo of your account</h2></li>
+                        <li class="settings-elements_profile-information-elements_input-photo"><label class="settings-elements_profile-information-elements_input-photo-custom-uploader" asp-for="Photo"><span>Choose photo</span></label><input class="settings-elements_profile-information-elements_input-photo-element" asp-for="Photo"></li>
+                        <li class="settings-elements_profile-information-elements_save-changes"><button class="settings-elements_profile-information-elements_save-changes-item">Save changes</button></li>
+                    </ul>
+                </form>
             </li>
         </ul>
     </section>

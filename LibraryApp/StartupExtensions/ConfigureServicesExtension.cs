@@ -47,6 +47,7 @@ namespace LibraryApp.UI.StartupExtensions
             services.AddScoped<IToggleSubscriptionService, ToggleSubscriptionService>();
             services.AddScoped<IIsCurrentWorkingUserSubscribedService, IsCurrentWorkingUserSubscribedService>();
             services.AddScoped<IChangeProfileInformationService, ChangeProfileInformationService>();
+            services.AddScoped<IChangeProfilePhotoService, ChangeProfilePhotoService>();
 
 
             services.AddDbContext<LibraryDbContext>(options => 

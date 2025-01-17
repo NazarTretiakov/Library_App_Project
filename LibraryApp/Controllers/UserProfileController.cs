@@ -3,6 +3,7 @@ using LibraryApp.Core.Domain.IdentityEntities;
 using LibraryApp.Core.DTO;
 using LibraryApp.Core.ServiceContracts;
 using LibraryApp.Core.Services;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting;
 
@@ -16,8 +17,9 @@ namespace LibraryApp.UI.Controllers
         private readonly IIsCurrentWorkingUserSubscribedService _isCurrentWorkingUserSubscribed;
         private readonly IPostsGetterService _postsGetterService;
         private readonly ICommentsGetterService _commentsGetterService;
+        private readonly UserManager<User> _userManager;
 
-        public UserProfileController(IUsersGetterService usersGetterService, IToggleSubscriptionService toggleSubscriptionService, ISubscriptionsGetterService subscriptionsGetterService, IIsCurrentWorkingUserSubscribedService isCurrentWorkingUserSubscribed, IPostsGetterService postsGetterService, ICommentsGetterService commentsGetterService)
+        public UserProfileController(IUsersGetterService usersGetterService, IToggleSubscriptionService toggleSubscriptionService, ISubscriptionsGetterService subscriptionsGetterService, IIsCurrentWorkingUserSubscribedService isCurrentWorkingUserSubscribed, IPostsGetterService postsGetterService, ICommentsGetterService commentsGetterService, UserManager<User> userManager)
         {
             _usersGetterService = usersGetterService;
             _toggleSubscriptionService = toggleSubscriptionService;
@@ -25,6 +27,7 @@ namespace LibraryApp.UI.Controllers
             _isCurrentWorkingUserSubscribed = isCurrentWorkingUserSubscribed;
             _postsGetterService = postsGetterService;
             _commentsGetterService = commentsGetterService;
+            _userManager = userManager;
         }
 
         [Route("/user-profile")]
@@ -36,6 +39,9 @@ namespace LibraryApp.UI.Controllers
         [Route("/user-profile/posts")]
         public async Task<IActionResult> Posts(string userId, string searchString, string searchFilter = "all")
         {
+            User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
+            ViewBag.CurrentWorkingUser = currentWorkingUser;
+
             User user = await _usersGetterService.GetUserByUserId(userId);
             List<Post> posts;
 
@@ -60,6 +66,9 @@ namespace LibraryApp.UI.Controllers
         [Route("/user-profile/replies")]
         public async Task<IActionResult> Comments(string userId, string searchString, string searchFilter = "all")
         {
+            User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
+            ViewBag.CurrentWorkingUser = currentWorkingUser;
+
             User user = await _usersGetterService.GetUserByUserId(userId);
             List<Comment> comments;
 
@@ -96,6 +105,9 @@ namespace LibraryApp.UI.Controllers
         [Route("/user-profile/subscribers")]
         public async Task<IActionResult> Subscribers(string userId, string searchString, string searchFilter = "all")
         {
+            User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
+            ViewBag.CurrentWorkingUser = currentWorkingUser;
+
             User user = await _usersGetterService.GetUserByUserId(userId);
             List<Subscription> subscribers;
 
@@ -119,6 +131,9 @@ namespace LibraryApp.UI.Controllers
         [Route("/user-profile/subscriptions")]
         public async Task<IActionResult> Subscriptions(string userId, string searchString, string searchFilter = "all")
         {
+            User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
+            ViewBag.CurrentWorkingUser = currentWorkingUser;
+
             User user = await _usersGetterService.GetUserByUserId(userId);
             List<Subscription> subscriptions;
 

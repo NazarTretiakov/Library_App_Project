@@ -23,7 +23,7 @@
                     <li class="header-items-links-list-item header-items-links-list-register">
                         <a class="header-items-links-list-item-profile-link" asp-controller="MyAccount" asp-action="Index">
                             <ul class="header-items-links-list-item-profile">
-                                <li class="header-items-links-list-item-profile-image"><img class="header-items-links-list-item-profile-image-element" src="~/Images/Icons/User_Profile_Photo.svg" alt="Profile picture of user"></li>
+                                <li class="header-items-links-list-item-profile-image"><img class="header-items-links-list-item-profile-image-element" src="@Url.Content(ViewBag.CurrentWorkingUser.ProfilePhotoPath)" alt="Profile picture of user"></li>
                                 <li class="header-items-links-list-item-profile-inscription">
                                     <ul class="header-items-links-list-item-profile-inscription-items">
                                         <li class="header-items-links-list-item-profile-inscription-items-logged-as">Logged as</li>
@@ -45,7 +45,7 @@
             <li class="post-items-header">
                 <ul class="post-items-header-items">
                     <li class="post-items-header-items-user-information">
-                        <a class="post-link" asp-controller="UserProfile" asp-action="Posts" asp-route-userId="@Model.User.Id"><img class="post-items-header-items-user-information-profile-photo" src="~/Images/Icons/User_Profile_Photo.svg" alt="User profile photo"></a>
+                        <a class="post-link" asp-controller="UserProfile" asp-action="Posts" asp-route-userId="@Model.User.Id"><img class="post-items-header-items-user-information-profile-photo" src="@Url.Content(Model.User.ProfilePhotoPath)" alt="User profile photo"></a>
                         <a class="post-link" asp-controller="UserProfile" asp-action="Posts" asp-route-userId="@Model.User.Id"><span class="post-items-header-items-user-information-username">@Model.User.UserName</span></a>
                     </li>
                     <li class="post-items-header-items-time">

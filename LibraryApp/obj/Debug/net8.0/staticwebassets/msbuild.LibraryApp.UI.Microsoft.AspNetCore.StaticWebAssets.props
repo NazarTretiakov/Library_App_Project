@@ -48,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>d9q8npa5gt</Fingerprint>
-      <Integrity>8ZFPdqhNgHEzbuArWj2+5PtZO1hmUMOwkt43JQ7KPt8=</Integrity>
+      <Fingerprint>cu6vvqezo0</Fingerprint>
+      <Integrity>ZPviWgdu8Rx15csf9E0/sx/L3UfNrSxGyn8Fd+FL2BM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\change-password-settings.css'))</OriginalItemSpec>
@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>d7h3tl08lr</Fingerprint>
-      <Integrity>2Sp8fGAsRroWDjq3tNzH01VMcOfEf+onC+uL7mzy7IA=</Integrity>
+      <Fingerprint>ix5ky6vokg</Fingerprint>
+      <Integrity>+no9DBjCRBGfKrkYPZHcsIX5rUEoLIXRnogTp1Uk+Dw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\change-password-settings.css.map'))</OriginalItemSpec>
@@ -156,8 +156,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>lneoctwfq4</Fingerprint>
-      <Integrity>MUDbey2sHB5HPMo8uS+ggXJ1zrH5cfvhlM0N1h9fwac=</Integrity>
+      <Fingerprint>1au5gtt15h</Fingerprint>
+      <Integrity>idyOL+j0jGlLYe1T+DuAd57Wt+h0SVaE5AMFT52ii10=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\forum.css'))</OriginalItemSpec>
@@ -174,8 +174,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>meju3e9svg</Fingerprint>
-      <Integrity>vijdi9qJV2EAVQANvb1rrZkaYnXXe7oChENEiD4UrQo=</Integrity>
+      <Fingerprint>cyxoiyk9lx</Fingerprint>
+      <Integrity>HKTAP313IRLMK58Pk3r1enKIA2ditwuq39hfFQBpOZM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\forum.css.map'))</OriginalItemSpec>
@@ -192,8 +192,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>4p1ywmxui2</Fingerprint>
-      <Integrity>6Poi9V4upWDa9Njlr/2nSML2PRcctY3oT2aHGmGFq80=</Integrity>
+      <Fingerprint>nvgtu4y43d</Fingerprint>
+      <Integrity>s4iQqxRQnggJZzjaKREMdOvBYlsULZXYuy0AcTTGdR0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\homepage.css'))</OriginalItemSpec>
@@ -210,8 +210,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>07j5vmu6n4</Fingerprint>
-      <Integrity>bOe4Qpa5vJ9AaCJ3oa5mhViShJVG1zRrpTLWn/zmtJo=</Integrity>
+      <Fingerprint>nuj8qncd1e</Fingerprint>
+      <Integrity>gdMDyQP6NrnQ6/tNnkXYWsnwvyodW6XFwVv3XlKdAok=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\homepage.css.map'))</OriginalItemSpec>
@@ -264,8 +264,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>33ddl0vaeb</Fingerprint>
-      <Integrity>gddQ2U9+DqWtl4mwxSCtJ8zsJebzSdl3lvXmafWI8dc=</Integrity>
+      <Fingerprint>5wfcewq92b</Fingerprint>
+      <Integrity>dQmqsgXI9kUls4HUnlug4J2xq80p1zMLsFY0davBfXw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\photo-settings.css'))</OriginalItemSpec>
@@ -282,8 +282,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>zl1cym15px</Fingerprint>
-      <Integrity>2aJiUxqKpqeUobEmjH0B2gpOkLOWKbeSbBySuHCVmxc=</Integrity>
+      <Fingerprint>xoy46po71e</Fingerprint>
+      <Integrity>X20it+ao6zWUhUH/54GVBRqlVGo4Q8MD5Her+qoolZk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\photo-settings.css.map'))</OriginalItemSpec>
@@ -300,8 +300,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>n6x5c5tkji</Fingerprint>
-      <Integrity>P8epiarR2URRLY2dUH2qKpG2s+4Mxmz1S9LucB1rd0s=</Integrity>
+      <Fingerprint>pz6nrwvhgt</Fingerprint>
+      <Integrity>29HNbUaOaQHLgzxt4M+1UgEQOWIcV1gA5U+tyoSSNM8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\post.css'))</OriginalItemSpec>
@@ -318,8 +318,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>svn25j2ash</Fingerprint>
-      <Integrity>mClHefGvj7aqZifXddvdZBmvDLhlyp/ARVdNAPxTBNA=</Integrity>
+      <Fingerprint>0e7dpxp557</Fingerprint>
+      <Integrity>qBP69tV+E5VVhuy3/8lLgCJ2InMUQwSwbquxSQsHCS0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\post.css.map'))</OriginalItemSpec>
@@ -336,8 +336,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>vssuv4h61j</Fingerprint>
-      <Integrity>sXMiiXsiTOfz3RcQJehomZrsFyoTDd7tNCWg1MevZyM=</Integrity>
+      <Fingerprint>dgodhipdlu</Fingerprint>
+      <Integrity>8znkQu/FrVK/lwY+Z/S4rShOLReHKmJHPx7L3PAPBx0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\profile-settings.css'))</OriginalItemSpec>
@@ -354,8 +354,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>nx902itbnn</Fingerprint>
-      <Integrity>S4wHKgwsYJ91VcMzePuuQ8W24QuSee5pEzo7J53B9/s=</Integrity>
+      <Fingerprint>3adbs56ax5</Fingerprint>
+      <Integrity>+8dYqn/71EYDXWtULS+z/3xNqkepNVYlm27AksUt1Mg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\profile-settings.css.map'))</OriginalItemSpec>
@@ -408,8 +408,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>rp2i1wm9t7</Fingerprint>
-      <Integrity>wWAgHA/ieN7IIXQmWGetMexQOrPE1RfGkqz/NLF4KxI=</Integrity>
+      <Fingerprint>p4irrmbfa2</Fingerprint>
+      <Integrity>iRf/6bTt36AOgVBb7QBpMYsInDO1xtxphrzYnxbgR9g=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\subscribers.css'))</OriginalItemSpec>
@@ -426,8 +426,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>dri1n23olk</Fingerprint>
-      <Integrity>x/tDTPLkqrXXgWJ9ecxUTENPp3fMVSL5gMJkqur9qJ0=</Integrity>
+      <Fingerprint>dc3nmeeh2y</Fingerprint>
+      <Integrity>U6EnksChMxqtfEwIsL4FO/5k3Z9bpsMCg+XW7tvBLKM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\subscribers.css.map'))</OriginalItemSpec>
@@ -444,8 +444,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>zrh3wb7xhe</Fingerprint>
-      <Integrity>Qad7DlkQRVDtzh/0cvKz/qJmX9rzPj62YS25vBdO/ZY=</Integrity>
+      <Fingerprint>v6t2s35chk</Fingerprint>
+      <Integrity>R9jmlScI/qJLhTZ7gYSinWrGRH8LXLnO7p4W077s5iI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\user-profile-comments.css'))</OriginalItemSpec>
@@ -462,8 +462,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>w79u34tnr9</Fingerprint>
-      <Integrity>1HInI3M+hEPSdykpJa8pYjBrSTYAdZS3DdBiOcgolpM=</Integrity>
+      <Fingerprint>2cywykcwvr</Fingerprint>
+      <Integrity>LpiUVmFwpdj8C3gk8YhNSX0p7LGVgzlXo8dXVCpCn5I=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\user-profile-comments.css.map'))</OriginalItemSpec>
@@ -480,8 +480,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>30si5gdxoj</Fingerprint>
-      <Integrity>Q9O19V8JL9pbmm4c/PQyL8xTZpJH6AQ51fkgQZxpqNY=</Integrity>
+      <Fingerprint>z6qe42djee</Fingerprint>
+      <Integrity>5SfRojpn1fv0j2Hvq99sAG2jbSe1MoBcJFHTg+w4qoY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\user-profile-posts.css'))</OriginalItemSpec>
@@ -498,8 +498,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>vlu3qylekv</Fingerprint>
-      <Integrity>TVDFy94S1PWfPSQYLIL3O2OPQgr2NoKBtk0wIRiB/Ms=</Integrity>
+      <Fingerprint>2y2t3qlh9t</Fingerprint>
+      <Integrity>1jBO5ecX+QnWcQ0xD72/g9uYRSlh12sWRI1eC/+tuPE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\user-profile-posts.css.map'))</OriginalItemSpec>
@@ -1097,6 +1097,420 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Photo_of_library_2.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\0e2dbb97-9a55-4f6b-a741-7ef2720245a5_leo_dicaprio.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>Images/Profile_Photos/0e2dbb97-9a55-4f6b-a741-7ef2720245a5_leo_dicaprio.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>yci9cvxlhs</Fingerprint>
+      <Integrity>zoJuDViO2PrGde1s7wXFgp8OYZ0dB0p909XoPMxrJkI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\0e2dbb97-9a55-4f6b-a741-7ef2720245a5_leo_dicaprio.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\23ef06b2-bf42-4ae3-9275-fe9dfa2108fa_enova365_error.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>Images/Profile_Photos/23ef06b2-bf42-4ae3-9275-fe9dfa2108fa_enova365_error.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>lucgyobpc1</Fingerprint>
+      <Integrity>DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\23ef06b2-bf42-4ae3-9275-fe9dfa2108fa_enova365_error.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\28540d26-5a3c-46be-bee0-93aac6e87648_Снимок экрана 2024-12-27 112304.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>Images/Profile_Photos/28540d26-5a3c-46be-bee0-93aac6e87648_Снимок экрана 2024-12-27 112304.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>lucgyobpc1</Fingerprint>
+      <Integrity>DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\28540d26-5a3c-46be-bee0-93aac6e87648_Снимок экрана 2024-12-27 112304.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\353c5cc9-770b-4227-bfba-6279955c4df2_Снимок экрана 2024-11-27 202926.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>Images/Profile_Photos/353c5cc9-770b-4227-bfba-6279955c4df2_Снимок экрана 2024-11-27 202926.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>cjwkxdufdb</Fingerprint>
+      <Integrity>SGmmLZygk077mtP+5/FgwXYrVFaovd41ZHt7GverXAo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\353c5cc9-770b-4227-bfba-6279955c4df2_Снимок экрана 2024-11-27 202926.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\493e0aa9-496a-455b-a047-c35f89cd8a77_liljibob.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>Images/Profile_Photos/493e0aa9-496a-455b-a047-c35f89cd8a77_liljibob.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>g07rnj6puh</Fingerprint>
+      <Integrity>wGD0TihO2fPts8qEqqh3AG6bBMm1jaU0RKCoEPnZVrM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\493e0aa9-496a-455b-a047-c35f89cd8a77_liljibob.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\4c44fe22-a615-4175-bff6-bdb7ef45d65e_smile.avif'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>Images/Profile_Photos/4c44fe22-a615-4175-bff6-bdb7ef45d65e_smile.avif</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>vmpmwx4cxl</Fingerprint>
+      <Integrity>uVBQwOzAcvaaOZpaHH95bvK855icuf3x5VwVMW7mlyg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\4c44fe22-a615-4175-bff6-bdb7ef45d65e_smile.avif'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\4c64ae44-7f2b-4a48-8c25-88858350121e_spider-man-across-7680x4320-11476.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>Images/Profile_Photos/4c64ae44-7f2b-4a48-8c25-88858350121e_spider-man-across-7680x4320-11476.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>m3jbvvdtl5</Fingerprint>
+      <Integrity>cqC2Y84GJzRqCCSmbwbUJJYToU2OWhW1aGxiG3SNMsQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\4c64ae44-7f2b-4a48-8c25-88858350121e_spider-man-across-7680x4320-11476.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\555e1f59-9b3c-4a94-90e4-f40666d0f714_Luke_Skywalker_Profile_Photo.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>Images/Profile_Photos/555e1f59-9b3c-4a94-90e4-f40666d0f714_Luke_Skywalker_Profile_Photo.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5h5ipp3gkl</Fingerprint>
+      <Integrity>OdmgP7W03Q9XyqB1JVPv6h9bX3lCvQj/+v4+oHgXJDI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\555e1f59-9b3c-4a94-90e4-f40666d0f714_Luke_Skywalker_Profile_Photo.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\557c0026-3b93-4e28-bf4f-4aac7aab18ab_enova365_error.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>Images/Profile_Photos/557c0026-3b93-4e28-bf4f-4aac7aab18ab_enova365_error.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>lucgyobpc1</Fingerprint>
+      <Integrity>DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\557c0026-3b93-4e28-bf4f-4aac7aab18ab_enova365_error.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\7825c1c9-d5b8-4c9b-9081-efb0a8cda9e2_Снимок экрана 2024-12-27 112236.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>Images/Profile_Photos/7825c1c9-d5b8-4c9b-9081-efb0a8cda9e2_Снимок экрана 2024-12-27 112236.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>w6fyjjjz6s</Fingerprint>
+      <Integrity>mG//Kl5IaKTuZAhZXx2lWSswcC8hG+gsHt3A1zyFo+w=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\7825c1c9-d5b8-4c9b-9081-efb0a8cda9e2_Снимок экрана 2024-12-27 112236.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\7fd75953-4257-438e-98f8-e260400ad310_first.webp'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>Images/Profile_Photos/7fd75953-4257-438e-98f8-e260400ad310_first.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>wzxhe3quu2</Fingerprint>
+      <Integrity>pF/jPtvTDfiSz5CyX5NjlnN+artJGfsmE0yWJnnllEY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\7fd75953-4257-438e-98f8-e260400ad310_first.webp'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\8217d831-c95f-484d-a446-42ea058a6130_smile.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>Images/Profile_Photos/8217d831-c95f-484d-a446-42ea058a6130_smile.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>p3561vkdna</Fingerprint>
+      <Integrity>q6OSvd3ddyDZU0QzJWcnPKm54nGc4sCwVG80Vzh8iFY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\8217d831-c95f-484d-a446-42ea058a6130_smile.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\9424dd12-3686-4dd3-9c54-be39f994d4ce_enova365_error.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>Images/Profile_Photos/9424dd12-3686-4dd3-9c54-be39f994d4ce_enova365_error.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>lucgyobpc1</Fingerprint>
+      <Integrity>DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\9424dd12-3686-4dd3-9c54-be39f994d4ce_enova365_error.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\9828bdbc-d733-4fba-82ae-228e40d625f1_Luke_Skywalker_Profile_Photo.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>Images/Profile_Photos/9828bdbc-d733-4fba-82ae-228e40d625f1_Luke_Skywalker_Profile_Photo.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5h5ipp3gkl</Fingerprint>
+      <Integrity>OdmgP7W03Q9XyqB1JVPv6h9bX3lCvQj/+v4+oHgXJDI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\9828bdbc-d733-4fba-82ae-228e40d625f1_Luke_Skywalker_Profile_Photo.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\9bc5153a-cfbf-4db2-9408-bf42b563ecbc_nazar_0222 cd.JPG'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>Images/Profile_Photos/9bc5153a-cfbf-4db2-9408-bf42b563ecbc_nazar_0222 cd.JPG</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>l3i89see82</Fingerprint>
+      <Integrity>oQaBfFLz43R8wRnsY+igbjfv8wgDQEddghmzf2ufooY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\9bc5153a-cfbf-4db2-9408-bf42b563ecbc_nazar_0222 cd.JPG'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\a6212d00-9d32-4bd7-9edd-159e134f86bc_enova365_error.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>Images/Profile_Photos/a6212d00-9d32-4bd7-9edd-159e134f86bc_enova365_error.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>lucgyobpc1</Fingerprint>
+      <Integrity>DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\a6212d00-9d32-4bd7-9edd-159e134f86bc_enova365_error.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\bd635296-5086-4186-a062-7104b1534439_smile.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>Images/Profile_Photos/bd635296-5086-4186-a062-7104b1534439_smile.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>vg0oblubvo</Fingerprint>
+      <Integrity>oeiFN3uhl2y7aa1TYXKNGwOLEf22xzJgXwN5r8rg8Ko=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\bd635296-5086-4186-a062-7104b1534439_smile.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\c468cd87-c280-4b26-ad63-e8b62607fd6e_Снимок экрана 2024-11-27 202926.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>Images/Profile_Photos/c468cd87-c280-4b26-ad63-e8b62607fd6e_Снимок экрана 2024-11-27 202926.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>cjwkxdufdb</Fingerprint>
+      <Integrity>SGmmLZygk077mtP+5/FgwXYrVFaovd41ZHt7GverXAo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\c468cd87-c280-4b26-ad63-e8b62607fd6e_Снимок экрана 2024-11-27 202926.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\c7010544-53c7-4790-bf09-dc08c1463273_Luke_Skywalker_Profile_Photo.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>Images/Profile_Photos/c7010544-53c7-4790-bf09-dc08c1463273_Luke_Skywalker_Profile_Photo.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5h5ipp3gkl</Fingerprint>
+      <Integrity>OdmgP7W03Q9XyqB1JVPv6h9bX3lCvQj/+v4+oHgXJDI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\c7010544-53c7-4790-bf09-dc08c1463273_Luke_Skywalker_Profile_Photo.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\c719d929-e4ee-423d-b90f-0d1a368a66d2_Снимок экрана 2024-12-27 112304.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>Images/Profile_Photos/c719d929-e4ee-423d-b90f-0d1a368a66d2_Снимок экрана 2024-12-27 112304.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>lucgyobpc1</Fingerprint>
+      <Integrity>DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\c719d929-e4ee-423d-b90f-0d1a368a66d2_Снимок экрана 2024-12-27 112304.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\d1e2b826-62e8-4502-b5d5-6407e5c94fb5_enova365_error.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>Images/Profile_Photos/d1e2b826-62e8-4502-b5d5-6407e5c94fb5_enova365_error.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>lucgyobpc1</Fingerprint>
+      <Integrity>DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\d1e2b826-62e8-4502-b5d5-6407e5c94fb5_enova365_error.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\e444a2e1-b028-4fbb-82fb-1d48d06356c3_Franklin_Profile_Photo.webp'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>Images/Profile_Photos/e444a2e1-b028-4fbb-82fb-1d48d06356c3_Franklin_Profile_Photo.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5h3nx54nnh</Fingerprint>
+      <Integrity>p5kdqWkZH6mi/DtcLtvsAJp6D4cr0w3+7afzrQ4hJU4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\e444a2e1-b028-4fbb-82fb-1d48d06356c3_Franklin_Profile_Photo.webp'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\eb5c9a29-9cd8-4e83-9863-bff740042b47_Luke_Skywalker_Profile_Photo.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>Images/Profile_Photos/eb5c9a29-9cd8-4e83-9863-bff740042b47_Luke_Skywalker_Profile_Photo.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5h5ipp3gkl</Fingerprint>
+      <Integrity>OdmgP7W03Q9XyqB1JVPv6h9bX3lCvQj/+v4+oHgXJDI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Profile_Photos\eb5c9a29-9cd8-4e83-9863-bff740042b47_Luke_Skywalker_Profile_Photo.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\create-comment.js'))">
       <SourceType>Package</SourceType>

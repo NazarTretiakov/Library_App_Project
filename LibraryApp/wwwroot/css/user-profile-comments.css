@@ -61,6 +61,10 @@
 }
 .header-items-links-list-item-profile-image-element {
   width: 46px;
+  height: 46px;
+  overflow: hidden;
+  border-radius: 46px;
+  object-fit: cover;
 }
 .header-items-links-list-item-profile-inscription {
   font-size: 12px;
@@ -249,6 +253,10 @@
 }
 .profile-items_photo-element {
   width: 70px;
+  height: 70px;
+  overflow: hidden;
+  border-radius: 70px;
+  object-fit: cover;
 }
 .profile-publication-titles {
   list-style: none;
@@ -301,6 +309,10 @@
 }
 .profile-posts-post-items-header-items-user-information-profile-photo {
   width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 40px;
+  object-fit: cover;
 }
 .profile-posts-post-items-header-items-user-information-username {
   margin: 0 0 0 12px;
@@ -364,6 +376,10 @@
 }
 .profile-posts-reply-items-header-items-user-information-profile-photo {
   width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 40px;
+  object-fit: cover;
 }
 .profile-posts-reply-items-header-items-user-information-username {
   margin: 0 0 0 12px;

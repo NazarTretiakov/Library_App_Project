@@ -80,6 +80,10 @@
 
                             &-element {
                                 width: 46px;
+                                height: 46px;
+                                overflow: hidden;
+                                border-radius: 46px;
+                                object-fit: cover;
                             }
                         }
 
@@ -306,6 +310,10 @@
 
                                     &-element {
                                         width: 50px;
+                                        height: 50px;
+                                        overflow: hidden;
+                                        border-radius: 50px;
+                                        object-fit: cover;
                                         margin: 0 10px 0 0;
                                     }
                                 }
@@ -364,6 +372,10 @@
 
                                     &-element {
                                         width: 50px;
+                                        height: 50px;
+                                        overflow: hidden;
+                                        border-radius: 50px;
+                                        object-fit: cover;
                                         margin: 0 10px 0 0;
                                     }
                                 }
