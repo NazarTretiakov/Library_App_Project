@@ -4,6 +4,7 @@ using LibraryApp.Core.ServiceContracts;
 using LibraryApp.Core.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace LibraryApp.UI.Controllers
 {
@@ -99,12 +100,48 @@ namespace LibraryApp.UI.Controllers
         }
 
         [Route("/my-account/settings/change-password")]
+        [HttpGet]
         public async Task<IActionResult> ChangePasswordSettings()
         {
             User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
             ViewBag.CurrentWorkingUser = currentWorkingUser;
 
             return View();
+        }
+
+        [Route("/my-account/settings/change-password")]
+        [HttpPost]
+        public async Task<IActionResult> ChangePasswordSettings(ChangePasswordDTO changePasswordDTO)
+        {
+            User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
+            ViewBag.CurrentWorkingUser = currentWorkingUser;
+
+            if (ModelState.IsValid == false)
+            {
+                return View();
+            }
+            else if (changePasswordDTO.OldPassword == changePasswordDTO.NewPassword)
+            {
+                ModelState.AddModelError("Change password", "New password can't be the same as old password.");
+                return View();
+            }
+
+            var result = await _userManager.ChangePasswordAsync(currentWorkingUser, changePasswordDTO.OldPassword, changePasswordDTO.NewPassword);
+
+            if (result.Succeeded)
+            {
+                ViewBag.IsPasswordChanged = true;
+                return View();
+            }
+            else
+            {
+                foreach (IdentityError error in result.Errors)
+                {
+                    ModelState.AddModelError("Change password", error.Description);
+                }
+
+                return View();
+            }
         }
     }
 }

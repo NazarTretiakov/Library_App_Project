@@ -24,29 +24,29 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ljT0OARsvZ3gzb95bNMBdJDXzrLuT/ittrZrGs9w0UQ="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"174"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022ljT0OARsvZ3gzb95bNMBdJDXzrLuT/ittrZrGs9w0UQ=\u0022"},{"Name":"Last-Modified","Value":"Sat, 14 Dec 2024 08:31:36 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/LibraryApp.UI/css/change-password-settings.8pk70juezo.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\change-password-settings.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8pk70juezo"},{"Name":"integrity","Value":"sha256-jPAtGX73WzlLIIDnLZLo\u002Bxaq2dF1FgqFYimR0nxkmu4="},{"Name":"label","Value":"_content/LibraryApp.UI/css/change-password-settings.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7633"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022jPAtGX73WzlLIIDnLZLo\u002Bxaq2dF1FgqFYimR0nxkmu4=\u0022"},{"Name":"Last-Modified","Value":"Fri, 17 Jan 2025 16:39:07 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/LibraryApp.UI/css/change-password-settings.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\change-password-settings.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ZPviWgdu8Rx15csf9E0/sx/L3UfNrSxGyn8Fd\u002BFL2BM="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6600"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ZPviWgdu8Rx15csf9E0/sx/L3UfNrSxGyn8Fd\u002BFL2BM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 17 Jan 2025 12:18:25 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-jPAtGX73WzlLIIDnLZLo\u002Bxaq2dF1FgqFYimR0nxkmu4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"7633"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022jPAtGX73WzlLIIDnLZLo\u002Bxaq2dF1FgqFYimR0nxkmu4=\u0022"},{"Name":"Last-Modified","Value":"Fri, 17 Jan 2025 16:39:07 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/LibraryApp.UI/css/change-password-settings.css.ix5ky6vokg.map">
+    <StaticWebAssetEndpoint Include="_content/LibraryApp.UI/css/change-password-settings.css.euuspush82.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\change-password-settings.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ix5ky6vokg"},{"Name":"integrity","Value":"sha256-\u002Bno9DBjCRBGfKrkYPZHcsIX5rUEoLIXRnogTp1Uk\u002BDw="},{"Name":"label","Value":"_content/LibraryApp.UI/css/change-password-settings.css.map"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1452"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022\u002Bno9DBjCRBGfKrkYPZHcsIX5rUEoLIXRnogTp1Uk\u002BDw=\u0022"},{"Name":"Last-Modified","Value":"Fri, 17 Jan 2025 12:18:25 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"euuspush82"},{"Name":"integrity","Value":"sha256-Jnz8nCg5RUJkLb8z0DYzDxAH3Z2VYrIICWFe\u002BnTGNZw="},{"Name":"label","Value":"_content/LibraryApp.UI/css/change-password-settings.css.map"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1642"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022Jnz8nCg5RUJkLb8z0DYzDxAH3Z2VYrIICWFe\u002BnTGNZw=\u0022"},{"Name":"Last-Modified","Value":"Fri, 17 Jan 2025 16:39:07 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/LibraryApp.UI/css/change-password-settings.css.map">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\change-password-settings.css.map'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-\u002Bno9DBjCRBGfKrkYPZHcsIX5rUEoLIXRnogTp1Uk\u002BDw="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1452"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022\u002Bno9DBjCRBGfKrkYPZHcsIX5rUEoLIXRnogTp1Uk\u002BDw=\u0022"},{"Name":"Last-Modified","Value":"Fri, 17 Jan 2025 12:18:25 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/LibraryApp.UI/css/change-password-settings.cu6vvqezo0.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\change-password-settings.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"cu6vvqezo0"},{"Name":"integrity","Value":"sha256-ZPviWgdu8Rx15csf9E0/sx/L3UfNrSxGyn8Fd\u002BFL2BM="},{"Name":"label","Value":"_content/LibraryApp.UI/css/change-password-settings.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6600"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ZPviWgdu8Rx15csf9E0/sx/L3UfNrSxGyn8Fd\u002BFL2BM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 17 Jan 2025 12:18:25 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jnz8nCg5RUJkLb8z0DYzDxAH3Z2VYrIICWFe\u002BnTGNZw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1642"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022Jnz8nCg5RUJkLb8z0DYzDxAH3Z2VYrIICWFe\u002BnTGNZw=\u0022"},{"Name":"Last-Modified","Value":"Fri, 17 Jan 2025 16:39:07 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/LibraryApp.UI/css/config.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\config.css'))</AssetFile>

@@ -48,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>cu6vvqezo0</Fingerprint>
-      <Integrity>ZPviWgdu8Rx15csf9E0/sx/L3UfNrSxGyn8Fd+FL2BM=</Integrity>
+      <Fingerprint>8pk70juezo</Fingerprint>
+      <Integrity>jPAtGX73WzlLIIDnLZLo+xaq2dF1FgqFYimR0nxkmu4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\change-password-settings.css'))</OriginalItemSpec>
@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ix5ky6vokg</Fingerprint>
-      <Integrity>+no9DBjCRBGfKrkYPZHcsIX5rUEoLIXRnogTp1Uk+Dw=</Integrity>
+      <Fingerprint>euuspush82</Fingerprint>
+      <Integrity>Jnz8nCg5RUJkLb8z0DYzDxAH3Z2VYrIICWFe+nTGNZw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\change-password-settings.css.map'))</OriginalItemSpec>

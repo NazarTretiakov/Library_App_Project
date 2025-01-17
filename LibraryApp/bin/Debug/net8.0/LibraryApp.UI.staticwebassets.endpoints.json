@@ -4759,6 +4759,51 @@
       ]
     },
     {
+      "Route": "css/change-password-settings.8pk70juezo.css",
+      "AssetFile": "css/change-password-settings.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7633"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jPAtGX73WzlLIIDnLZLo+xaq2dF1FgqFYimR0nxkmu4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Jan 2025 16:39:07 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8pk70juezo"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jPAtGX73WzlLIIDnLZLo+xaq2dF1FgqFYimR0nxkmu4="
+        },
+        {
+          "Name": "label",
+          "Value": "css/change-password-settings.css"
+        }
+      ]
+    },
+    {
       "Route": "css/change-password-settings.css",
       "AssetFile": "css/change-password-settings.css",
       "Selectors": [],
@@ -4773,7 +4818,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6600"
+          "Value": "7633"
         },
         {
           "Name": "Content-Type",
@@ -4781,22 +4826,22 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ZPviWgdu8Rx15csf9E0/sx/L3UfNrSxGyn8Fd+FL2BM=\""
+          "Value": "\"jPAtGX73WzlLIIDnLZLo+xaq2dF1FgqFYimR0nxkmu4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 12:18:25 GMT"
+          "Value": "Fri, 17 Jan 2025 16:39:07 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ZPviWgdu8Rx15csf9E0/sx/L3UfNrSxGyn8Fd+FL2BM="
+          "Value": "sha256-jPAtGX73WzlLIIDnLZLo+xaq2dF1FgqFYimR0nxkmu4="
         }
       ]
     },
     {
-      "Route": "css/change-password-settings.css.ix5ky6vokg.map",
+      "Route": "css/change-password-settings.css.euuspush82.map",
       "AssetFile": "css/change-password-settings.css.map",
       "Selectors": [],
       "ResponseHeaders": [
@@ -4810,7 +4855,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1452"
+          "Value": "1642"
         },
         {
           "Name": "Content-Type",
@@ -4818,21 +4863,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+no9DBjCRBGfKrkYPZHcsIX5rUEoLIXRnogTp1Uk+Dw=\""
+          "Value": "\"Jnz8nCg5RUJkLb8z0DYzDxAH3Z2VYrIICWFe+nTGNZw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 12:18:25 GMT"
+          "Value": "Fri, 17 Jan 2025 16:39:07 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ix5ky6vokg"
+          "Value": "euuspush82"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-+no9DBjCRBGfKrkYPZHcsIX5rUEoLIXRnogTp1Uk+Dw="
+          "Value": "sha256-Jnz8nCg5RUJkLb8z0DYzDxAH3Z2VYrIICWFe+nTGNZw="
         },
         {
           "Name": "label",
@@ -4855,7 +4900,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1452"
+          "Value": "1642"
         },
         {
           "Name": "Content-Type",
@@ -4863,62 +4908,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+no9DBjCRBGfKrkYPZHcsIX5rUEoLIXRnogTp1Uk+Dw=\""
+          "Value": "\"Jnz8nCg5RUJkLb8z0DYzDxAH3Z2VYrIICWFe+nTGNZw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 12:18:25 GMT"
+          "Value": "Fri, 17 Jan 2025 16:39:07 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+no9DBjCRBGfKrkYPZHcsIX5rUEoLIXRnogTp1Uk+Dw="
-        }
-      ]
-    },
-    {
-      "Route": "css/change-password-settings.cu6vvqezo0.css",
-      "AssetFile": "css/change-password-settings.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6600"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ZPviWgdu8Rx15csf9E0/sx/L3UfNrSxGyn8Fd+FL2BM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 12:18:25 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "cu6vvqezo0"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ZPviWgdu8Rx15csf9E0/sx/L3UfNrSxGyn8Fd+FL2BM="
-        },
-        {
-          "Name": "label",
-          "Value": "css/change-password-settings.css"
+          "Value": "sha256-Jnz8nCg5RUJkLb8z0DYzDxAH3Z2VYrIICWFe+nTGNZw="
         }
       ]
     },
