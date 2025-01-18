@@ -1,10 +1,158 @@
 ﻿@{
     ViewBag.Title = "Library";
-    ViewBag.StylesPath = "~/css/forum.css";
+    ViewBag.StylesPath = "~/css/library.css";
 }
 
 
+<div class="container-for-header-panel">
+    <header class="header">
+        <ul class="header-items">
+            <li class="header-items-item header-items-item-logo">
+                <a asp-controller="Home" asp-action="Index"><img class="header-items-item-logo-image" src="/Images/Logo.jpg" alt="Logo of page"></a>
+                <a class="header-link-title" asp-controller="Library" asp-action="Index"><h1 class="header-items-item-logo-title">Library</h1></a>
+            </li>
+            <li class="header-items-links">
+                <ul class="header-items-links-list">
+                    <li class="header-items-links-list-item header-items-links-list-register">
+                        <a class="header-items-links-list-item-profile-link" asp-controller="MyAccount" asp-action="Index">
+                            <ul class="header-items-links-list-item-profile">
+                                <li class="header-items-links-list-item-profile-image"><img class="header-items-links-list-item-profile-image-element" src="@Url.Content(ViewBag.CurrentWorkingUser.ProfilePhotoPath)" alt="Profile picture of user"></li>
+                                <li class="header-items-links-list-item-profile-inscription">
+                                    <ul class="header-items-links-list-item-profile-inscription-items">
+                                        <li class="header-items-links-list-item-profile-inscription-items-logged-as">Logged as</li>
+                                        <li class="header-items-links-list-item-profile-inscription-items-username">@User.Identity.Name</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </header>
 
-<section class="registration">
-    <h1>Library</h1>
-</section>
+
+    <section class="search-panel">
+        <form class="search-panel-form" asp-controller="Library" asp-action="Index" method="get">
+            <ul class="search-panel-form-search">
+                <li class="search-panel-form-search-icon">
+                    <div class="search-panel-form-search-icon-div"></div>
+                </li>
+                <li class="search-panel-form-search-input">
+                    <input class="search-panel-form-search-input-element" name="searchString" type="text" placeholder="Search">
+                </li>
+            </ul>
+            <ul class="search-panel-form-dropdown">
+                <li class="search-panel-form-dropdown-select">
+                    <select class="search-panel-form-dropdown-select-element" name="searchFilter">
+                        <option class="search-panel-form-dropdown-select-element-author" value="all" selected>All results</option>
+                        <option class="search-panel-form-dropdown-select-element-author" value="authorName">Author name</option>
+                        <option class="search-panel-form-dropdown-select-element-title" value="title">Title</option>
+                        <option class="search-panel-form-dropdown-select-element-genre" value="genre">Genre</option>
+                    </select>
+                </li>
+                <li class="search-panel-form-dropdown-arrow">
+                    <div class="search-panel-form-dropdown-arrow-div"></div>
+                </li>
+            </ul>
+            <button class="search-panel-form-button">Search</button>
+        </form>
+    </section>
+</div>
+
+<div class="book-container">
+    <a class="book-link" asp-controller="Library" asp-action="Book">
+        <section class="book">
+            <ul class="book-items">
+                <li class="book-items_image"><img class="book-items_image-element" src="~/Images/Atomic_habits_book.jpg" alt="Image of the book"></li>
+                <li class="book-items_information">
+                    <ul class="book-items_information-items">
+                        <li class="book-items_information-items_title"><h1 class="book-items_information-items_title-element">Atomic Habits</h1></li>
+                        <li class="book-items_information-items_topics"><span class="book-items_information-items_topics-topic">NameOfTopic1</span> <span class="book-items_information-items_topics-topic">NameOfTopic2</span> <span class="book-items_information-items_topics-topic">NameOfTopic3</span></li>
+                        <li class="book-items_information-items_author"><span class="book-items_information-items_author-element">James Clear</span></li>
+                        <li class="book-items_information-items_description"><p class="book-items_information-items_description-element">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book...</p></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </a>
+</div>
+
+<div class="container-for-space-between-books"></div>
+
+<div class="book-container">
+    <a class="book-link" asp-controller="Library" asp-action="Book">
+        <section class="book">
+            <ul class="book-items">
+                <li class="book-items_image"><img class="book-items_image-element" src="~/Images/Atomic_habits_book.jpg" alt="Image of the book"></li>
+                <li class="book-items_information">
+                    <ul class="book-items_information-items">
+                        <li class="book-items_information-items_title"><h1 class="book-items_information-items_title-element">Atomic Habits</h1></li>
+                        <li class="book-items_information-items_topics"><span class="book-items_information-items_topics-topic">NameOfTopic1</span> <span class="book-items_information-items_topics-topic">NameOfTopic2</span> <span class="book-items_information-items_topics-topic">NameOfTopic3</span></li>
+                        <li class="book-items_information-items_author"><span class="book-items_information-items_author-element">James Clear</span></li>
+                        <li class="book-items_information-items_description"><p class="book-items_information-items_description-element">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book...</p></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </a>
+</div>
+
+<div class="container-for-space-between-books"></div>
+
+<div class="book-container">
+    <a class="book-link" asp-controller="Library" asp-action="Book">
+        <section class="book">
+            <ul class="book-items">
+                <li class="book-items_image"><img class="book-items_image-element" src="~/Images/Atomic_habits_book.jpg" alt="Image of the book"></li>
+                <li class="book-items_information">
+                    <ul class="book-items_information-items">
+                        <li class="book-items_information-items_title"><h1 class="book-items_information-items_title-element">Atomic Habits</h1></li>
+                        <li class="book-items_information-items_topics"><span class="book-items_information-items_topics-topic">NameOfTopic1</span> <span class="book-items_information-items_topics-topic">NameOfTopic2</span> <span class="book-items_information-items_topics-topic">NameOfTopic3</span></li>
+                        <li class="book-items_information-items_author"><span class="book-items_information-items_author-element">James Clear</span></li>
+                        <li class="book-items_information-items_description"><p class="book-items_information-items_description-element">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book...</p></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </a>
+</div>
+
+<div class="container-for-space-between-books"></div>
+
+
+<footer class="footer">
+    <ul class="footer-items">
+        <li class="footer-items-address">
+            <ul class="footer-items-address-items">
+                <li class="footer-items-address-items-logo"><a asp-controller="Home" asp-action="Index"><img class="footer-items-address-items-logo-element" src="~/Images/Logo_gray.jpg" alt="Logo of webpage"></a></li>
+                <li class="footer-items-address-items-description">
+                    <ul class="footer-items-address-items-description-items">
+                        <li class="footer-items-address-items-description-items-1">1000 Forth Ave.</li>
+                        <li class="footer-items-address-items-description-items-2">CityName, WA 34104-1105</li>
+                        <li class="footer-items-address-items-description-items-3">206-386-4636 or <a class="footer-link" asp-controller="Home" asp-action="AskUs">Ask us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="footer-items-social-medias">
+            <ul class="footer-items-social-medias-items">
+                <li class="footer-items-social-medias-items-about-us"><a class="footer-link" asp-controller="Home" asp-action="AboutUs">About us</a></li>
+                <li class="footer-items-social-medias-items-icons">
+                    <ul class="footer-items-social-medias-items-icons-items">
+                        <li class="footer-items-social-medias-items-icons-items-description">Find us on:</li>
+                        <li class="footer-items-social-medias-items-icons-items-links">
+                            <ul class="footer-items-social-medias-items-icons-items-links-items">
+                                <li class="footer-items-social-medias-items-icons-items-links-items-facebook"><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img class="footer-items-social-medias-items-icons-items-links-items-facebook-element" src="~/Images/Icons/icons8-facebook-50.png" alt="Icon of facebook"></a></li>
+                                <li class="footer-items-social-medias-items-icons-items-links-items-linkedin"><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><img class="footer-items-social-medias-items-icons-items-links-items-linkedin-element" src="~/Images/Icons/icons8-linkedin-50.png" alt="Icon of linkedin"></a></li>
+                                <li class="footer-items-social-medias-items-icons-items-links-items-youtube"><a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><img class="footer-items-social-medias-items-icons-items-links-items-youtube-element" src="~/Images/Icons/icons8-youtube-50.png" alt="Icon of youtube"></a></li>
+                                <li class="footer-items-social-medias-items-icons-items-links-items-instagram"><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img class="footer-items-social-medias-items-icons-items-links-items-instagram-element" src="~/Images/Icons/icons8-instagram-50.png" alt="Icon of instagram"></a></li>
+                                <li class="footer-items-social-medias-items-icons-items-links-items-x"><a href="https://www.x.com" target="_blank" rel="noopener noreferrer"><img class="footer-items-social-medias-items-icons-items-links-items-x-element" src="~/Images/Icons/icons8-twitterx-50.png" alt="Icon of twitterx"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</footer>

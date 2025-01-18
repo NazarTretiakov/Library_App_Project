@@ -1,0 +1,163 @@
+﻿@{
+    ViewBag.Title = "BOOKNAMEHERE";
+    ViewBag.StylesPath = "~/css/book.css";
+}
+
+
+<div class="container-for-header-panel">
+    <header class="header">
+        <ul class="header-items">
+            <li class="header-items-item header-items-item-logo">
+                <a asp-controller="Home" asp-action="Index"><img class="header-items-item-logo-image" src="/Images/Logo.jpg" alt="Logo of page"></a>
+                <a class="header-link-title" asp-controller="Library" asp-action="Index"><h1 class="header-items-item-logo-title">Library</h1></a>
+            </li>
+            <li class="header-items-links">
+                <ul class="header-items-links-list">
+                    <li class="header-items-links-list-item header-items-links-list-register">
+                        <a class="header-items-links-list-item-profile-link" asp-controller="MyAccount" asp-action="Index">
+                            <ul class="header-items-links-list-item-profile">
+                                <li class="header-items-links-list-item-profile-image"><img class="header-items-links-list-item-profile-image-element" src="@Url.Content(ViewBag.CurrentWorkingUser.ProfilePhotoPath)" alt="Profile picture of user"></li>
+                                <li class="header-items-links-list-item-profile-inscription">
+                                    <ul class="header-items-links-list-item-profile-inscription-items">
+                                        <li class="header-items-links-list-item-profile-inscription-items-logged-as">Logged as</li>
+                                        <li class="header-items-links-list-item-profile-inscription-items-username">@User.Identity.Name</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+</div>
+
+
+<section class="book">
+    <ul class="book-items">
+        <li class="book-items_image"><img class="book-items_image-element" src="~/Images/Atomic_habits_book.jpg" alt="Image of the book"></li>
+        <li class="book-items_information">
+            <ul class="book-items_information-items">
+                <li class="book-items_information-items_title"><h1 class="book-items_information-items_title-element">Atomic Habits</h1></li>
+                <li class="book-items_information-items_author"><span class="book-items_information-items_author-inscription">Author: </span><a class="book-items_information-items_author-element" href="">James Clear</a></li>
+                <li class="book-items_information-items_date"><span class="book-items_information-items_date-inscription">Publication date: </span>2011</li>
+                <li class="book-items_information-items_genre"><span class="book-items_information-items_genre-inscription">Genre: </span><a class="book-items_information-items_genre-element" href="">Nonfiction</a> <a class="book-items_information-items_genre-element" href="">NameOfGenre2</a></li>
+                <li class="book-items_information-items_rating"><span class="book-items_information-items_rating-inscription">Rating: </span>⭐⭐⭐⭐⭐</li>
+                <li class="book-items_information-items_language"><span class="book-items_information-items_language-inscription">Language: </span>English</li>
+                <li class="book-items_information-items_description"><span class="book-items_information-items_description-inscription">Description: </span><p class="book-items_information-items_description-element">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum </p></li>
+                <li class="book-items_information-items_available"><span class="book-items_information-items_available-inscription">Available: </span>5</li>
+                <li class="book-items_information-items_holds"><span class="book-items_information-items_holds-inscription">Holds: </span>2</li>
+                <li class="book-items_information-items_order-button"><button class="book-items_information-items_order-button-element">Order book</button></li>
+            </ul>
+        </li>
+        <li class="book-items_save-icon"><img class="book-items_save-icon-element" src="~/Images/Icons/Save.svg" alt="Save icon"></li>
+    </ul>
+
+    <section class="book-author-information">
+        <h2 class="book-author-information_name">James Clear</h2>
+        <p class="book-author-information_description">James Clear is ... Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum </p>
+    </section>
+
+    <section class="book-reviews">
+        <ul class="book-reviews-items">
+            <li class="book-reviews-items-reviews"><h2 class="book-reviews-items-reviews-title">Reviews</h2><a class="book-reviews-items-reviews-leave-review-button-link" href=""><button class="book-reviews-items-reviews-leave-review-button"><img src="~/Images/Icons/Add_icon.svg" alt="Add icon">Leave review</button></a></li>
+
+            <li class="book-reviews-items-review">
+                <ul class="book-reviews-items-review-items">
+                    <li class="book-reviews-items-review-items-header">
+                        <ul class="book-reviews-items-review-items-header-items">
+                            <li class="book-reviews-items-review-items-header-items-user">
+                                <a class="book-link" href=""><img class="book-reviews-items-review-items-header-items-user-picture" src="~/Images/Icons/User_Profile_Photo.svg" alt="User profile photo"></a>
+                                <a class="book-link" href=""><span class="book-reviews-items-review-items-header-items-user-username">SomeUser1236123</span></a>
+                            </li>
+                            <li class="book-reviews-items-review-items-header-items-time-of-publication"><span class="book-reviews-items-review-items-header-items-time-of-publication-element">1 day ago</span></li>
+                        </ul>
+                    </li>
+                    <li class="book-reviews-items-review-items-title"><h3 class="book-reviews-items-review-items-title-element">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</h3></li>
+                    <li class="book-reviews-items-review-items-rating"><span class="book-reviews-items-review-items-rating-element">⭐⭐⭐⭐⭐</span></li>
+                    <li class="book-reviews-items-review-items-content">
+                        <p class="book-reviews-items-review-items-content-element">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <div class="book-reviews-items-review-items-content-div-for-space-between-reviews"></div>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="book-reviews-items-review">
+                <ul class="book-reviews-items-review-items">
+                    <li class="book-reviews-items-review-items-header">
+                        <ul class="book-reviews-items-review-items-header-items">
+                            <li class="book-reviews-items-review-items-header-items-user">
+                                <a class="book-link" href=""><img class="book-reviews-items-review-items-header-items-user-picture" src="~/Images/Icons/User_Profile_Photo.svg" alt="User profile photo"></a>
+                                <a class="book-link" href=""><span class="book-reviews-items-review-items-header-items-user-username">SomeUser1236123</span></a>
+                            </li>
+                            <li class="book-reviews-items-review-items-header-items-time-of-publication"><span class="book-reviews-items-review-items-header-items-time-of-publication-element">1 day ago</span></li>
+                        </ul>
+                    </li>
+                    <li class="book-reviews-items-review-items-title"><h3 class="book-reviews-items-review-items-title-element">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3></li>
+                    <li class="book-reviews-items-review-items-rating"><span class="book-reviews-items-review-items-rating-element">⭐⭐⭐⭐⭐</span></li>
+                    <li class="book-reviews-items-review-items-content">
+                        <p class="book-reviews-items-review-items-content-element">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <div class="book-reviews-items-review-items-content-div-for-space-between-reviews"></div>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="book-reviews-items-review">
+                <ul class="book-reviews-items-review-items">
+                    <li class="book-reviews-items-review-items-header">
+                        <ul class="book-reviews-items-review-items-header-items">
+                            <li class="book-reviews-items-review-items-header-items-user">
+                                <a class="book-link" href=""><img class="book-reviews-items-review-items-header-items-user-picture" src="~/Images/Icons/User_Profile_Photo.svg" alt="User profile photo"></a>
+                                <a class="book-link" href=""><span class="book-reviews-items-review-items-header-items-user-username">SomeUser1236123</span></a>
+                            </li>
+                            <li class="book-reviews-items-review-items-header-items-time-of-publication"><span class="book-reviews-items-review-items-header-items-time-of-publication-element">1 day ago</span></li>
+                        </ul>
+                    </li>
+                    <li class="book-reviews-items-review-items-title"><h3 class="book-reviews-items-review-items-title-element">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3></li>
+                    <li class="book-reviews-items-review-items-rating"><span class="book-reviews-items-review-items-rating-element">⭐⭐⭐⭐⭐</span></li>
+                    <li class="book-reviews-items-review-items-content">
+                        <p class="book-reviews-items-review-items-content-element">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </section>
+</section>
+
+
+<footer class="footer">
+    <ul class="footer-items">
+        <li class="footer-items-address">
+            <ul class="footer-items-address-items">
+                <li class="footer-items-address-items-logo"><a asp-controller="Home" asp-action="Index"><img class="footer-items-address-items-logo-element" src="~/Images/Logo_gray.jpg" alt="Logo of webpage"></a></li>
+                <li class="footer-items-address-items-description">
+                    <ul class="footer-items-address-items-description-items">
+                        <li class="footer-items-address-items-description-items-1">1000 Forth Ave.</li>
+                        <li class="footer-items-address-items-description-items-2">CityName, WA 34104-1105</li>
+                        <li class="footer-items-address-items-description-items-3">206-386-4636 or <a class="footer-link" asp-controller="Home" asp-action="AskUs">Ask us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="footer-items-social-medias">
+            <ul class="footer-items-social-medias-items">
+                <li class="footer-items-social-medias-items-about-us"><a class="footer-link" asp-controller="Home" asp-action="AboutUs">About us</a></li>
+                <li class="footer-items-social-medias-items-icons">
+                    <ul class="footer-items-social-medias-items-icons-items">
+                        <li class="footer-items-social-medias-items-icons-items-description">Find us on:</li>
+                        <li class="footer-items-social-medias-items-icons-items-links">
+                            <ul class="footer-items-social-medias-items-icons-items-links-items">
+                                <li class="footer-items-social-medias-items-icons-items-links-items-facebook"><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img class="footer-items-social-medias-items-icons-items-links-items-facebook-element" src="~/Images/Icons/icons8-facebook-50.png" alt="Icon of facebook"></a></li>
+                                <li class="footer-items-social-medias-items-icons-items-links-items-linkedin"><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><img class="footer-items-social-medias-items-icons-items-links-items-linkedin-element" src="~/Images/Icons/icons8-linkedin-50.png" alt="Icon of linkedin"></a></li>
+                                <li class="footer-items-social-medias-items-icons-items-links-items-youtube"><a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><img class="footer-items-social-medias-items-icons-items-links-items-youtube-element" src="~/Images/Icons/icons8-youtube-50.png" alt="Icon of youtube"></a></li>
+                                <li class="footer-items-social-medias-items-icons-items-links-items-instagram"><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img class="footer-items-social-medias-items-icons-items-links-items-instagram-element" src="~/Images/Icons/icons8-instagram-50.png" alt="Icon of instagram"></a></li>
+                                <li class="footer-items-social-medias-items-icons-items-links-items-x"><a href="https://www.x.com" target="_blank" rel="noopener noreferrer"><img class="footer-items-social-medias-items-icons-items-links-items-x-element" src="~/Images/Icons/icons8-twitterx-50.png" alt="Icon of twitterx"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</footer>

@@ -84,7 +84,7 @@ namespace LibraryApp.UI.Controllers
 
         [Route("/my-account/settings/photo")]
         [HttpPost]
-        public async Task<IActionResult> ProfilePhotoSettings(ChangeProfilePhotoDTO changeProfilePhotoDTO)
+        public async Task<IActionResult> ProfilePhotoSettings(ChangeProfilePhotoDTO changeProfilePhotoDTO)//  TODO: Fix the bug where the old user profile image is not removed when the user updates their profile image.The old image should be removed.
         {
             User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
             ViewBag.CurrentWorkingUser = currentWorkingUser;

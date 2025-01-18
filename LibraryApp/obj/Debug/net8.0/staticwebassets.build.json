@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OFFqz2Nmq4Ks7FtWiXe9vquMZzOEyFicHi1oS88K7F0=",
+  "Hash": "sFffREoXVz+4m51dEXRFe+Ex6YBT5R9wkU6bEj7nL7Q=",
   "Source": "LibraryApp.UI",
   "BasePath": "_content/LibraryApp.UI",
   "Mode": "Default",
@@ -57,6 +57,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\basic.css.map"
+    },
+    {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\book.css",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "css/book#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sumy8zqqn8",
+      "Integrity": "NDzrGVhLWVBZ/63DG3aQPgiaHu1fD4Tnr6463BwRGaU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\book.css"
+    },
+    {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\book.css.map",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "css/book.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "r50c3eb688",
+      "Integrity": "MWkC7lmehFuXt74OEgLstXqt0hUG/m30yL5Lg8rr4Jw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\book.css.map"
     },
     {
       "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\change-password-settings.css",
@@ -267,6 +309,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\homepage.css.map"
+    },
+    {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\library.css",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "css/library#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "brc5v1icql",
+      "Integrity": "Ke2u8MvLiYygDEMqIjVjFylhKcZ2rqyiSLj+W/OwXSY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\library.css"
+    },
+    {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\library.css.map",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "css/library.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5got99gt6s",
+      "Integrity": "Bc7PazuHU4JdtqHpX7/dWbYBOGi+G7SZ3q0jrdrGLSQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\library.css.map"
     },
     {
       "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\my-account.css",
@@ -603,6 +687,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\user-profile-posts.css.map"
+    },
+    {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Atomic_habits_book.jpg",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "Images/Atomic_habits_book#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "d9kdyf99gq",
+      "Integrity": "L4o/eaSqP4XNowTx9JR10aiyKbCgtTZcqVR0jbJ6wjw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Atomic_habits_book.jpg"
     },
     {
       "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Add_icon.svg",
@@ -1319,69 +1424,6 @@
       "OriginalItemSpec": "wwwroot\\Images\\Profile_Photos\\0e2dbb97-9a55-4f6b-a741-7ef2720245a5_leo_dicaprio.jpg"
     },
     {
-      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\23ef06b2-bf42-4ae3-9275-fe9dfa2108fa_enova365_error.png",
-      "SourceId": "LibraryApp.UI",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
-      "BasePath": "_content/LibraryApp.UI",
-      "RelativePath": "Images/Profile_Photos/23ef06b2-bf42-4ae3-9275-fe9dfa2108fa_enova365_error#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "lucgyobpc1",
-      "Integrity": "DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Profile_Photos\\23ef06b2-bf42-4ae3-9275-fe9dfa2108fa_enova365_error.png"
-    },
-    {
-      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\28540d26-5a3c-46be-bee0-93aac6e87648_Снимок экрана 2024-12-27 112304.png",
-      "SourceId": "LibraryApp.UI",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
-      "BasePath": "_content/LibraryApp.UI",
-      "RelativePath": "Images/Profile_Photos/28540d26-5a3c-46be-bee0-93aac6e87648_Снимок экрана 2024-12-27 112304#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "lucgyobpc1",
-      "Integrity": "DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Profile_Photos\\28540d26-5a3c-46be-bee0-93aac6e87648_Снимок экрана 2024-12-27 112304.png"
-    },
-    {
-      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\353c5cc9-770b-4227-bfba-6279955c4df2_Снимок экрана 2024-11-27 202926.png",
-      "SourceId": "LibraryApp.UI",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
-      "BasePath": "_content/LibraryApp.UI",
-      "RelativePath": "Images/Profile_Photos/353c5cc9-770b-4227-bfba-6279955c4df2_Снимок экрана 2024-11-27 202926#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "cjwkxdufdb",
-      "Integrity": "SGmmLZygk077mtP+5/FgwXYrVFaovd41ZHt7GverXAo=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Profile_Photos\\353c5cc9-770b-4227-bfba-6279955c4df2_Снимок экрана 2024-11-27 202926.png"
-    },
-    {
       "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\493e0aa9-496a-455b-a047-c35f89cd8a77_liljibob.jpg",
       "SourceId": "LibraryApp.UI",
       "SourceType": "Discovered",
@@ -1401,48 +1443,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Profile_Photos\\493e0aa9-496a-455b-a047-c35f89cd8a77_liljibob.jpg"
-    },
-    {
-      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\4c44fe22-a615-4175-bff6-bdb7ef45d65e_smile.avif",
-      "SourceId": "LibraryApp.UI",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
-      "BasePath": "_content/LibraryApp.UI",
-      "RelativePath": "Images/Profile_Photos/4c44fe22-a615-4175-bff6-bdb7ef45d65e_smile#[.{fingerprint}]?.avif",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "vmpmwx4cxl",
-      "Integrity": "uVBQwOzAcvaaOZpaHH95bvK855icuf3x5VwVMW7mlyg=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Profile_Photos\\4c44fe22-a615-4175-bff6-bdb7ef45d65e_smile.avif"
-    },
-    {
-      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\4c64ae44-7f2b-4a48-8c25-88858350121e_spider-man-across-7680x4320-11476.png",
-      "SourceId": "LibraryApp.UI",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
-      "BasePath": "_content/LibraryApp.UI",
-      "RelativePath": "Images/Profile_Photos/4c64ae44-7f2b-4a48-8c25-88858350121e_spider-man-across-7680x4320-11476#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "m3jbvvdtl5",
-      "Integrity": "cqC2Y84GJzRqCCSmbwbUJJYToU2OWhW1aGxiG3SNMsQ=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Profile_Photos\\4c64ae44-7f2b-4a48-8c25-88858350121e_spider-man-across-7680x4320-11476.png"
     },
     {
       "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\555e1f59-9b3c-4a94-90e4-f40666d0f714_Luke_Skywalker_Profile_Photo.jpg",
@@ -1466,48 +1466,6 @@
       "OriginalItemSpec": "wwwroot\\Images\\Profile_Photos\\555e1f59-9b3c-4a94-90e4-f40666d0f714_Luke_Skywalker_Profile_Photo.jpg"
     },
     {
-      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\557c0026-3b93-4e28-bf4f-4aac7aab18ab_enova365_error.png",
-      "SourceId": "LibraryApp.UI",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
-      "BasePath": "_content/LibraryApp.UI",
-      "RelativePath": "Images/Profile_Photos/557c0026-3b93-4e28-bf4f-4aac7aab18ab_enova365_error#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "lucgyobpc1",
-      "Integrity": "DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Profile_Photos\\557c0026-3b93-4e28-bf4f-4aac7aab18ab_enova365_error.png"
-    },
-    {
-      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\7825c1c9-d5b8-4c9b-9081-efb0a8cda9e2_Снимок экрана 2024-12-27 112236.png",
-      "SourceId": "LibraryApp.UI",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
-      "BasePath": "_content/LibraryApp.UI",
-      "RelativePath": "Images/Profile_Photos/7825c1c9-d5b8-4c9b-9081-efb0a8cda9e2_Снимок экрана 2024-12-27 112236#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "w6fyjjjz6s",
-      "Integrity": "mG//Kl5IaKTuZAhZXx2lWSswcC8hG+gsHt3A1zyFo+w=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Profile_Photos\\7825c1c9-d5b8-4c9b-9081-efb0a8cda9e2_Снимок экрана 2024-12-27 112236.png"
-    },
-    {
       "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\7fd75953-4257-438e-98f8-e260400ad310_first.webp",
       "SourceId": "LibraryApp.UI",
       "SourceType": "Discovered",
@@ -1529,48 +1487,6 @@
       "OriginalItemSpec": "wwwroot\\Images\\Profile_Photos\\7fd75953-4257-438e-98f8-e260400ad310_first.webp"
     },
     {
-      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\8217d831-c95f-484d-a446-42ea058a6130_smile.jpg",
-      "SourceId": "LibraryApp.UI",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
-      "BasePath": "_content/LibraryApp.UI",
-      "RelativePath": "Images/Profile_Photos/8217d831-c95f-484d-a446-42ea058a6130_smile#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "p3561vkdna",
-      "Integrity": "q6OSvd3ddyDZU0QzJWcnPKm54nGc4sCwVG80Vzh8iFY=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Profile_Photos\\8217d831-c95f-484d-a446-42ea058a6130_smile.jpg"
-    },
-    {
-      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\9424dd12-3686-4dd3-9c54-be39f994d4ce_enova365_error.png",
-      "SourceId": "LibraryApp.UI",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
-      "BasePath": "_content/LibraryApp.UI",
-      "RelativePath": "Images/Profile_Photos/9424dd12-3686-4dd3-9c54-be39f994d4ce_enova365_error#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "lucgyobpc1",
-      "Integrity": "DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Profile_Photos\\9424dd12-3686-4dd3-9c54-be39f994d4ce_enova365_error.png"
-    },
-    {
       "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\9828bdbc-d733-4fba-82ae-228e40d625f1_Luke_Skywalker_Profile_Photo.jpg",
       "SourceId": "LibraryApp.UI",
       "SourceType": "Discovered",
@@ -1590,48 +1506,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Profile_Photos\\9828bdbc-d733-4fba-82ae-228e40d625f1_Luke_Skywalker_Profile_Photo.jpg"
-    },
-    {
-      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\9bc5153a-cfbf-4db2-9408-bf42b563ecbc_nazar_0222 cd.JPG",
-      "SourceId": "LibraryApp.UI",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
-      "BasePath": "_content/LibraryApp.UI",
-      "RelativePath": "Images/Profile_Photos/9bc5153a-cfbf-4db2-9408-bf42b563ecbc_nazar_0222 cd#[.{fingerprint}]?.JPG",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "l3i89see82",
-      "Integrity": "oQaBfFLz43R8wRnsY+igbjfv8wgDQEddghmzf2ufooY=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Profile_Photos\\9bc5153a-cfbf-4db2-9408-bf42b563ecbc_nazar_0222 cd.JPG"
-    },
-    {
-      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\a6212d00-9d32-4bd7-9edd-159e134f86bc_enova365_error.png",
-      "SourceId": "LibraryApp.UI",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
-      "BasePath": "_content/LibraryApp.UI",
-      "RelativePath": "Images/Profile_Photos/a6212d00-9d32-4bd7-9edd-159e134f86bc_enova365_error#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "lucgyobpc1",
-      "Integrity": "DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Profile_Photos\\a6212d00-9d32-4bd7-9edd-159e134f86bc_enova365_error.png"
     },
     {
       "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\bd635296-5086-4186-a062-7104b1534439_smile.jpg",
@@ -1695,48 +1569,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Profile_Photos\\c7010544-53c7-4790-bf09-dc08c1463273_Luke_Skywalker_Profile_Photo.jpg"
-    },
-    {
-      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\c719d929-e4ee-423d-b90f-0d1a368a66d2_Снимок экрана 2024-12-27 112304.png",
-      "SourceId": "LibraryApp.UI",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
-      "BasePath": "_content/LibraryApp.UI",
-      "RelativePath": "Images/Profile_Photos/c719d929-e4ee-423d-b90f-0d1a368a66d2_Снимок экрана 2024-12-27 112304#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "lucgyobpc1",
-      "Integrity": "DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Profile_Photos\\c719d929-e4ee-423d-b90f-0d1a368a66d2_Снимок экрана 2024-12-27 112304.png"
-    },
-    {
-      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\d1e2b826-62e8-4502-b5d5-6407e5c94fb5_enova365_error.png",
-      "SourceId": "LibraryApp.UI",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
-      "BasePath": "_content/LibraryApp.UI",
-      "RelativePath": "Images/Profile_Photos/d1e2b826-62e8-4502-b5d5-6407e5c94fb5_enova365_error#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "lucgyobpc1",
-      "Integrity": "DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Profile_Photos\\d1e2b826-62e8-4502-b5d5-6407e5c94fb5_enova365_error.png"
     },
     {
       "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\e444a2e1-b028-4fbb-82fb-1d48d06356c3_Franklin_Profile_Photo.webp",
@@ -2090,6 +1922,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-ljT0OARsvZ3gzb95bNMBdJDXzrLuT/ittrZrGs9w0UQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/book.css",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\book.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8441"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NDzrGVhLWVBZ/63DG3aQPgiaHu1fD4Tnr6463BwRGaU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 11:23:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NDzrGVhLWVBZ/63DG3aQPgiaHu1fD4Tnr6463BwRGaU="
+        }
+      ]
+    },
+    {
+      "Route": "css/book.css.map",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\book.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1774"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MWkC7lmehFuXt74OEgLstXqt0hUG/m30yL5Lg8rr4Jw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 11:23:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MWkC7lmehFuXt74OEgLstXqt0hUG/m30yL5Lg8rr4Jw="
+        }
+      ]
+    },
+    {
+      "Route": "css/book.css.r50c3eb688.map",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\book.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1774"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MWkC7lmehFuXt74OEgLstXqt0hUG/m30yL5Lg8rr4Jw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 11:23:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r50c3eb688"
+        },
+        {
+          "Name": "label",
+          "Value": "css/book.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MWkC7lmehFuXt74OEgLstXqt0hUG/m30yL5Lg8rr4Jw="
+        }
+      ]
+    },
+    {
+      "Route": "css/book.sumy8zqqn8.css",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\book.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8441"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NDzrGVhLWVBZ/63DG3aQPgiaHu1fD4Tnr6463BwRGaU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 11:23:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sumy8zqqn8"
+        },
+        {
+          "Name": "label",
+          "Value": "css/book.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NDzrGVhLWVBZ/63DG3aQPgiaHu1fD4Tnr6463BwRGaU="
         }
       ]
     },
@@ -2910,6 +2906,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-s4iQqxRQnggJZzjaKREMdOvBYlsULZXYuy0AcTTGdR0="
+        }
+      ]
+    },
+    {
+      "Route": "css/library.brc5v1icql.css",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\library.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6625"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ke2u8MvLiYygDEMqIjVjFylhKcZ2rqyiSLj+W/OwXSY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 11:23:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "brc5v1icql"
+        },
+        {
+          "Name": "label",
+          "Value": "css/library.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ke2u8MvLiYygDEMqIjVjFylhKcZ2rqyiSLj+W/OwXSY="
+        }
+      ]
+    },
+    {
+      "Route": "css/library.css",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\library.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6625"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ke2u8MvLiYygDEMqIjVjFylhKcZ2rqyiSLj+W/OwXSY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 11:23:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ke2u8MvLiYygDEMqIjVjFylhKcZ2rqyiSLj+W/OwXSY="
+        }
+      ]
+    },
+    {
+      "Route": "css/library.css.5got99gt6s.map",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\library.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1538"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bc7PazuHU4JdtqHpX7/dWbYBOGi+G7SZ3q0jrdrGLSQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 11:23:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5got99gt6s"
+        },
+        {
+          "Name": "label",
+          "Value": "css/library.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bc7PazuHU4JdtqHpX7/dWbYBOGi+G7SZ3q0jrdrGLSQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/library.css.map",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\library.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1538"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Bc7PazuHU4JdtqHpX7/dWbYBOGi+G7SZ3q0jrdrGLSQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 18 Jan 2025 11:23:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Bc7PazuHU4JdtqHpX7/dWbYBOGi+G7SZ3q0jrdrGLSQ="
         }
       ]
     },
@@ -4222,6 +4382,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-5SfRojpn1fv0j2Hvq99sAG2jbSe1MoBcJFHTg+w4qoY="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Atomic_habits_book.d9kdyf99gq.jpg",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Atomic_habits_book.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "68098"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L4o/eaSqP4XNowTx9JR10aiyKbCgtTZcqVR0jbJ6wjw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 03 Nov 2024 10:20:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "d9kdyf99gq"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Atomic_habits_book.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-L4o/eaSqP4XNowTx9JR10aiyKbCgtTZcqVR0jbJ6wjw="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Atomic_habits_book.jpg",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Atomic_habits_book.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "68098"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L4o/eaSqP4XNowTx9JR10aiyKbCgtTZcqVR0jbJ6wjw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 03 Nov 2024 10:20:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-L4o/eaSqP4XNowTx9JR10aiyKbCgtTZcqVR0jbJ6wjw="
         }
       ]
     },
@@ -7014,252 +7256,6 @@
       ]
     },
     {
-      "Route": "Images/Profile_Photos/23ef06b2-bf42-4ae3-9275-fe9dfa2108fa_enova365_error.lucgyobpc1.png",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\23ef06b2-bf42-4ae3-9275-fe9dfa2108fa_enova365_error.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "68738"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 08:25:25 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "lucgyobpc1"
-        },
-        {
-          "Name": "label",
-          "Value": "Images/Profile_Photos/23ef06b2-bf42-4ae3-9275-fe9dfa2108fa_enova365_error.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Profile_Photos/23ef06b2-bf42-4ae3-9275-fe9dfa2108fa_enova365_error.png",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\23ef06b2-bf42-4ae3-9275-fe9dfa2108fa_enova365_error.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "68738"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 08:25:25 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Profile_Photos/28540d26-5a3c-46be-bee0-93aac6e87648_Снимок экрана 2024-12-27 112304.lucgyobpc1.png",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\28540d26-5a3c-46be-bee0-93aac6e87648_Снимок экрана 2024-12-27 112304.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "68738"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 08:05:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "lucgyobpc1"
-        },
-        {
-          "Name": "label",
-          "Value": "Images/Profile_Photos/28540d26-5a3c-46be-bee0-93aac6e87648_Снимок экрана 2024-12-27 112304.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Profile_Photos/28540d26-5a3c-46be-bee0-93aac6e87648_Снимок экрана 2024-12-27 112304.png",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\28540d26-5a3c-46be-bee0-93aac6e87648_Снимок экрана 2024-12-27 112304.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "68738"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 08:05:39 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Profile_Photos/353c5cc9-770b-4227-bfba-6279955c4df2_Снимок экрана 2024-11-27 202926.cjwkxdufdb.png",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\353c5cc9-770b-4227-bfba-6279955c4df2_Снимок экрана 2024-11-27 202926.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "55250"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SGmmLZygk077mtP+5/FgwXYrVFaovd41ZHt7GverXAo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 08:15:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "cjwkxdufdb"
-        },
-        {
-          "Name": "label",
-          "Value": "Images/Profile_Photos/353c5cc9-770b-4227-bfba-6279955c4df2_Снимок экрана 2024-11-27 202926.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-SGmmLZygk077mtP+5/FgwXYrVFaovd41ZHt7GverXAo="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Profile_Photos/353c5cc9-770b-4227-bfba-6279955c4df2_Снимок экрана 2024-11-27 202926.png",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\353c5cc9-770b-4227-bfba-6279955c4df2_Снимок экрана 2024-11-27 202926.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "55250"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SGmmLZygk077mtP+5/FgwXYrVFaovd41ZHt7GverXAo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 08:15:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-SGmmLZygk077mtP+5/FgwXYrVFaovd41ZHt7GverXAo="
-        }
-      ]
-    },
-    {
       "Route": "Images/Profile_Photos/493e0aa9-496a-455b-a047-c35f89cd8a77_liljibob.g07rnj6puh.jpg",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\493e0aa9-496a-455b-a047-c35f89cd8a77_liljibob.jpg",
       "Selectors": [],
@@ -7338,170 +7334,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-wGD0TihO2fPts8qEqqh3AG6bBMm1jaU0RKCoEPnZVrM="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Profile_Photos/4c44fe22-a615-4175-bff6-bdb7ef45d65e_smile.avif",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\4c44fe22-a615-4175-bff6-bdb7ef45d65e_smile.avif",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "16556"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"uVBQwOzAcvaaOZpaHH95bvK855icuf3x5VwVMW7mlyg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 12:45:54 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-uVBQwOzAcvaaOZpaHH95bvK855icuf3x5VwVMW7mlyg="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Profile_Photos/4c44fe22-a615-4175-bff6-bdb7ef45d65e_smile.vmpmwx4cxl.avif",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\4c44fe22-a615-4175-bff6-bdb7ef45d65e_smile.avif",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "16556"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"uVBQwOzAcvaaOZpaHH95bvK855icuf3x5VwVMW7mlyg=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 12:45:54 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "vmpmwx4cxl"
-        },
-        {
-          "Name": "label",
-          "Value": "Images/Profile_Photos/4c44fe22-a615-4175-bff6-bdb7ef45d65e_smile.avif"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-uVBQwOzAcvaaOZpaHH95bvK855icuf3x5VwVMW7mlyg="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Profile_Photos/4c64ae44-7f2b-4a48-8c25-88858350121e_spider-man-across-7680x4320-11476.m3jbvvdtl5.png",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\4c64ae44-7f2b-4a48-8c25-88858350121e_spider-man-across-7680x4320-11476.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6906609"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"cqC2Y84GJzRqCCSmbwbUJJYToU2OWhW1aGxiG3SNMsQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 12:16:36 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "m3jbvvdtl5"
-        },
-        {
-          "Name": "label",
-          "Value": "Images/Profile_Photos/4c64ae44-7f2b-4a48-8c25-88858350121e_spider-man-across-7680x4320-11476.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-cqC2Y84GJzRqCCSmbwbUJJYToU2OWhW1aGxiG3SNMsQ="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Profile_Photos/4c64ae44-7f2b-4a48-8c25-88858350121e_spider-man-across-7680x4320-11476.png",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\4c64ae44-7f2b-4a48-8c25-88858350121e_spider-man-across-7680x4320-11476.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6906609"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"cqC2Y84GJzRqCCSmbwbUJJYToU2OWhW1aGxiG3SNMsQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 12:16:36 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-cqC2Y84GJzRqCCSmbwbUJJYToU2OWhW1aGxiG3SNMsQ="
         }
       ]
     },
@@ -7588,170 +7420,6 @@
       ]
     },
     {
-      "Route": "Images/Profile_Photos/557c0026-3b93-4e28-bf4f-4aac7aab18ab_enova365_error.lucgyobpc1.png",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\557c0026-3b93-4e28-bf4f-4aac7aab18ab_enova365_error.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "68738"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 08:36:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "lucgyobpc1"
-        },
-        {
-          "Name": "label",
-          "Value": "Images/Profile_Photos/557c0026-3b93-4e28-bf4f-4aac7aab18ab_enova365_error.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Profile_Photos/557c0026-3b93-4e28-bf4f-4aac7aab18ab_enova365_error.png",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\557c0026-3b93-4e28-bf4f-4aac7aab18ab_enova365_error.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "68738"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 08:36:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Profile_Photos/7825c1c9-d5b8-4c9b-9081-efb0a8cda9e2_Снимок экрана 2024-12-27 112236.png",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\7825c1c9-d5b8-4c9b-9081-efb0a8cda9e2_Снимок экрана 2024-12-27 112236.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "53894"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"mG//Kl5IaKTuZAhZXx2lWSswcC8hG+gsHt3A1zyFo+w=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 08:09:38 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-mG//Kl5IaKTuZAhZXx2lWSswcC8hG+gsHt3A1zyFo+w="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Profile_Photos/7825c1c9-d5b8-4c9b-9081-efb0a8cda9e2_Снимок экрана 2024-12-27 112236.w6fyjjjz6s.png",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\7825c1c9-d5b8-4c9b-9081-efb0a8cda9e2_Снимок экрана 2024-12-27 112236.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "53894"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"mG//Kl5IaKTuZAhZXx2lWSswcC8hG+gsHt3A1zyFo+w=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 08:09:38 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "w6fyjjjz6s"
-        },
-        {
-          "Name": "label",
-          "Value": "Images/Profile_Photos/7825c1c9-d5b8-4c9b-9081-efb0a8cda9e2_Снимок экрана 2024-12-27 112236.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-mG//Kl5IaKTuZAhZXx2lWSswcC8hG+gsHt3A1zyFo+w="
-        }
-      ]
-    },
-    {
       "Route": "Images/Profile_Photos/7fd75953-4257-438e-98f8-e260400ad310_first.webp",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\7fd75953-4257-438e-98f8-e260400ad310_first.webp",
       "Selectors": [],
@@ -7834,170 +7502,6 @@
       ]
     },
     {
-      "Route": "Images/Profile_Photos/8217d831-c95f-484d-a446-42ea058a6130_smile.jpg",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\8217d831-c95f-484d-a446-42ea058a6130_smile.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "26375"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"q6OSvd3ddyDZU0QzJWcnPKm54nGc4sCwVG80Vzh8iFY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 12:46:25 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-q6OSvd3ddyDZU0QzJWcnPKm54nGc4sCwVG80Vzh8iFY="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Profile_Photos/8217d831-c95f-484d-a446-42ea058a6130_smile.p3561vkdna.jpg",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\8217d831-c95f-484d-a446-42ea058a6130_smile.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "26375"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"q6OSvd3ddyDZU0QzJWcnPKm54nGc4sCwVG80Vzh8iFY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 12:46:25 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "p3561vkdna"
-        },
-        {
-          "Name": "label",
-          "Value": "Images/Profile_Photos/8217d831-c95f-484d-a446-42ea058a6130_smile.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-q6OSvd3ddyDZU0QzJWcnPKm54nGc4sCwVG80Vzh8iFY="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Profile_Photos/9424dd12-3686-4dd3-9c54-be39f994d4ce_enova365_error.lucgyobpc1.png",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\9424dd12-3686-4dd3-9c54-be39f994d4ce_enova365_error.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "68738"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 08:18:16 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "lucgyobpc1"
-        },
-        {
-          "Name": "label",
-          "Value": "Images/Profile_Photos/9424dd12-3686-4dd3-9c54-be39f994d4ce_enova365_error.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Profile_Photos/9424dd12-3686-4dd3-9c54-be39f994d4ce_enova365_error.png",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\9424dd12-3686-4dd3-9c54-be39f994d4ce_enova365_error.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "68738"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 08:18:16 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo="
-        }
-      ]
-    },
-    {
       "Route": "Images/Profile_Photos/9828bdbc-d733-4fba-82ae-228e40d625f1_Luke_Skywalker_Profile_Photo.5h5ipp3gkl.jpg",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\9828bdbc-d733-4fba-82ae-228e40d625f1_Luke_Skywalker_Profile_Photo.jpg",
       "Selectors": [],
@@ -8076,170 +7580,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-OdmgP7W03Q9XyqB1JVPv6h9bX3lCvQj/+v4+oHgXJDI="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Profile_Photos/9bc5153a-cfbf-4db2-9408-bf42b563ecbc_nazar_0222 cd.JPG",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\9bc5153a-cfbf-4db2-9408-bf42b563ecbc_nazar_0222 cd.JPG",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "636764"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"oQaBfFLz43R8wRnsY+igbjfv8wgDQEddghmzf2ufooY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 12:16:25 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-oQaBfFLz43R8wRnsY+igbjfv8wgDQEddghmzf2ufooY="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Profile_Photos/9bc5153a-cfbf-4db2-9408-bf42b563ecbc_nazar_0222 cd.l3i89see82.JPG",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\9bc5153a-cfbf-4db2-9408-bf42b563ecbc_nazar_0222 cd.JPG",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "636764"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"oQaBfFLz43R8wRnsY+igbjfv8wgDQEddghmzf2ufooY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 12:16:25 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "l3i89see82"
-        },
-        {
-          "Name": "label",
-          "Value": "Images/Profile_Photos/9bc5153a-cfbf-4db2-9408-bf42b563ecbc_nazar_0222 cd.JPG"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-oQaBfFLz43R8wRnsY+igbjfv8wgDQEddghmzf2ufooY="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Profile_Photos/a6212d00-9d32-4bd7-9edd-159e134f86bc_enova365_error.lucgyobpc1.png",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\a6212d00-9d32-4bd7-9edd-159e134f86bc_enova365_error.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "68738"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 08:19:40 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "lucgyobpc1"
-        },
-        {
-          "Name": "label",
-          "Value": "Images/Profile_Photos/a6212d00-9d32-4bd7-9edd-159e134f86bc_enova365_error.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Profile_Photos/a6212d00-9d32-4bd7-9edd-159e134f86bc_enova365_error.png",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\a6212d00-9d32-4bd7-9edd-159e134f86bc_enova365_error.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "68738"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 08:19:40 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo="
         }
       ]
     },
@@ -8486,170 +7826,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-OdmgP7W03Q9XyqB1JVPv6h9bX3lCvQj/+v4+oHgXJDI="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Profile_Photos/c719d929-e4ee-423d-b90f-0d1a368a66d2_Снимок экрана 2024-12-27 112304.lucgyobpc1.png",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\c719d929-e4ee-423d-b90f-0d1a368a66d2_Снимок экрана 2024-12-27 112304.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "68738"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 08:05:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "lucgyobpc1"
-        },
-        {
-          "Name": "label",
-          "Value": "Images/Profile_Photos/c719d929-e4ee-423d-b90f-0d1a368a66d2_Снимок экрана 2024-12-27 112304.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Profile_Photos/c719d929-e4ee-423d-b90f-0d1a368a66d2_Снимок экрана 2024-12-27 112304.png",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\c719d929-e4ee-423d-b90f-0d1a368a66d2_Снимок экрана 2024-12-27 112304.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "68738"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 08:05:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Profile_Photos/d1e2b826-62e8-4502-b5d5-6407e5c94fb5_enova365_error.lucgyobpc1.png",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\d1e2b826-62e8-4502-b5d5-6407e5c94fb5_enova365_error.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "68738"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 08:19:44 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "lucgyobpc1"
-        },
-        {
-          "Name": "label",
-          "Value": "Images/Profile_Photos/d1e2b826-62e8-4502-b5d5-6407e5c94fb5_enova365_error.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Profile_Photos/d1e2b826-62e8-4502-b5d5-6407e5c94fb5_enova365_error.png",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\d1e2b826-62e8-4502-b5d5-6407e5c94fb5_enova365_error.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "68738"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 08:19:44 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-DVdsAT9ej3Qmhn1/W7SALDf3eVuzNEAUzjZ17oGasjo="
         }
       ]
     },

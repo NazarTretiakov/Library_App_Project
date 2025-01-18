@@ -48,6 +48,10 @@ namespace LibraryApp.UI.Controllers
             {
                 posts = await _postsGetterService.GetAllPosts();
             }
+            else if (searchFilter != "all" && searchFilter != "username" && searchFilter != "topic" && searchFilter != "title")
+            {
+                return BadRequest();  //TODO: create custom exception page for that type of situations (input searchString is not correct)
+            }
             else
             {
                 posts = await _postsGetterService.GetFilteredPosts(searchFilter, searchString);
@@ -61,20 +65,26 @@ namespace LibraryApp.UI.Controllers
         [Route("/forum/post")]
         public async Task<IActionResult> Post(string postId)  //TODO: create custom exception page for that type of situations (when the postId is not entered in the query string)
         {
+            if (!Guid.TryParse(postId, out Guid result))
+            {
+                return BadRequest();  //TODO: create custom exception page for that type of situations (input postId is not in the correct format, or postId is not present in the query string)
+            }
+
             User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
             ViewBag.CurrentWorkingUser = currentWorkingUser;
 
             Post post = await _postsGetterService.GetPostByPostId(postId);
-            List<Like> likesOfPost = await _likesGetterService.GetPostLikes(postId);
-
-            ViewBag.IsLiked = await _isPostLikedService.IsPostLiked(postId);
-            ViewBag.LikesCount = likesOfPost.Count;
-            ViewBag.IsSaved = await _isPostSavedService.IsPostSaved(postId);
 
             if (post == null)
             {
                 return NotFound();  //TODO: create custom exception page for that type of situations (when the post is not found in db)
             }
+
+            List<Like> likesOfPost = await _likesGetterService.GetPostLikes(postId);
+
+            ViewBag.IsLiked = await _isPostLikedService.IsPostLiked(postId);
+            ViewBag.LikesCount = likesOfPost.Count;
+            ViewBag.IsSaved = await _isPostSavedService.IsPostSaved(postId);
 
             return View(post); //TODO: create empty state of the page, for situation when posts has no comments
         }

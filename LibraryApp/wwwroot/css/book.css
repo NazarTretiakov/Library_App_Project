@@ -1,0 +1,387 @@
+.container-for-header-panel {
+  position: sticky;
+  top: 0;
+}
+
+.header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 100px 0 100px;
+  background-color: white;
+}
+.header-items {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  justify-content: space-between;
+}
+.header-items-item-logo {
+  display: flex;
+  align-items: center;
+}
+.header-items-item-logo-image {
+  width: 120px;
+  margin: 0 20px 0 0;
+}
+.header-items-item-logo-title {
+  margin: 8px 0 0 0;
+  padding: 10px 0 10px 20px;
+  border-left: 3px #D9D9D9 solid;
+  display: inline;
+  font-size: 20px;
+  align-self: center;
+  font-weight: normal;
+}
+.header-items-links-list {
+  list-style: none;
+  padding: 0;
+}
+.header-items-links-list-item-discussion {
+  font-size: 14px;
+}
+.header-items-links-list-item-register-span {
+  font-size: 14px;
+}
+.header-items-links-list-item-profile {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-items-links-list-item-profile-link {
+  text-decoration: none;
+  color: black;
+}
+.header-items-links-list-item-profile-image {
+  margin: 0 6px 0 0;
+}
+.header-items-links-list-item-profile-image-element {
+  width: 46px;
+  height: 46px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 46px;
+  object-fit: cover;
+}
+.header-items-links-list-item-profile-inscription {
+  font-size: 12px;
+}
+.header-items-links-list-item-profile-inscription-items {
+  list-style: none;
+  padding: 0;
+}
+.header-items-links-list-item-profile-inscription-items-logged-as {
+  color: #D9D9D9;
+}
+.header-items-links-list-item-profile-inscription-items-username {
+  margin: 0 0 4px 0;
+}
+.header-link {
+  color: black;
+  text-decoration: none;
+}
+.header-link-title {
+  color: black;
+  text-decoration: none;
+}
+.header-link:hover {
+  text-decoration: underline;
+}
+
+.book {
+  margin: 50px 200px 0 200px;
+}
+.book-items {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.book-items_image-element {
+  width: 260px;
+}
+.book-items_information-items {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 70px;
+}
+.book-items_information-items_title-element {
+  margin: 0 0 20px 0;
+}
+.book-items_information-items_author {
+  margin: 0 0 16px 0;
+  font-size: 14px;
+}
+.book-items_information-items_author-inscription {
+  font-weight: bolder;
+}
+.book-items_information-items_author-element {
+  color: #0066CC;
+  text-decoration: none;
+}
+.book-items_information-items_author-element:hover {
+  text-decoration: underline;
+}
+.book-items_information-items_date {
+  margin: 0 0 16px 0;
+  font-size: 14px;
+}
+.book-items_information-items_date-inscription {
+  font-weight: bolder;
+}
+.book-items_information-items_genre {
+  margin: 0 0 16px 0;
+  font-size: 14px;
+}
+.book-items_information-items_genre-inscription {
+  font-weight: bolder;
+}
+.book-items_information-items_genre-element {
+  color: #0066CC;
+  text-decoration: none;
+}
+.book-items_information-items_genre-element:hover {
+  text-decoration: underline;
+}
+.book-items_information-items_rating {
+  margin: 0 0 16px 0;
+  font-size: 14px;
+}
+.book-items_information-items_rating-inscription {
+  font-weight: bolder;
+}
+.book-items_information-items_language {
+  margin: 0 0 16px 0;
+  font-size: 14px;
+}
+.book-items_information-items_language-inscription {
+  font-weight: bolder;
+}
+.book-items_information-items_description {
+  margin: 0 0 16px 0;
+  font-size: 14px;
+}
+.book-items_information-items_description-inscription {
+  font-weight: bolder;
+}
+.book-items_information-items_description-element {
+  display: inline;
+  line-height: 1.4;
+  white-space: pre-wrap;
+}
+.book-items_information-items_available {
+  margin: 0 0 16px 0;
+  font-size: 14px;
+}
+.book-items_information-items_available-inscription {
+  font-weight: bolder;
+}
+.book-items_information-items_holds {
+  margin: 0 0 50px 0;
+  font-size: 14px;
+}
+.book-items_information-items_holds-inscription {
+  font-weight: bolder;
+}
+.book-items_information-items_order-button-element {
+  height: 30px;
+  width: 200px;
+  border-radius: 6px;
+  border: none;
+  background-color: #14A2DE;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+.book-items_information-items_order-button-element:hover {
+  cursor: pointer;
+  background-color: #138dc1;
+}
+.book-items_save-icon-element {
+  width: 40px;
+}
+.book-items_save-icon-element:hover {
+  cursor: pointer;
+}
+.book-author-information {
+  margin: 100px 0 0 0;
+}
+.book-author-information_name {
+  font-size: 20px;
+}
+.book-author-information_description {
+  font-size: 14px;
+  white-space: pre-wrap;
+  line-height: 1.4;
+}
+.book-reviews-items {
+  padding: 0;
+  list-style: none;
+}
+.book-reviews-items-reviews {
+  margin: 100px 0 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.book-reviews-items-reviews-title {
+  margin: 0;
+  font-size: 20px;
+}
+.book-reviews-items-reviews-leave-review-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px 10px 30px;
+  background-color: #eefaff;
+  border: none;
+  color: #14A2DE;
+  transition: background-color 0.3s ease;
+  border-radius: 6px;
+}
+.book-reviews-items-reviews-leave-review-button:hover {
+  background-color: #CCE7F2;
+  cursor: pointer;
+}
+.book-reviews-items-reviews-leave-review-button-link {
+  text-decoration: none;
+}
+.book-reviews-items-review {
+  padding: 0 0 0 0;
+}
+.book-reviews-items-review-items {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.book-reviews-items-review-items-header-items {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+.book-reviews-items-review-items-header-items-user {
+  display: flex;
+  align-items: center;
+}
+.book-reviews-items-review-items-header-items-user-picture {
+  width: 30px;
+}
+.book-reviews-items-review-items-header-items-user-username {
+  margin: 0 0 0 10px;
+}
+.book-reviews-items-review-items-header-items-time-of-publication-element {
+  color: #D9D9D9;
+}
+.book-reviews-items-review-items-title {
+  font-size: 16px;
+}
+.book-reviews-items-review-items-content-element {
+  margin: 26px 0 0 0;
+  line-height: 1.4;
+  font-size: 14px;
+  white-space: pre-wrap;
+}
+.book-reviews-items-review-items-content-div-for-space-between-reviews {
+  height: 60px;
+  border-bottom: 3px #D9D9D9 solid;
+  margin: 0 0 60px 0;
+}
+.book-link {
+  color: black;
+  text-decoration: none;
+}
+
+.footer {
+  padding: 60px 100px 40px 100px;
+  margin: 100px 0 0 0;
+  background-color: #D9D9D9;
+}
+.footer-items {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-items-address-items {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.footer-items-address-items-logo-element {
+  width: 100px;
+}
+.footer-items-address-items-description {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.footer-items-address-items-description-items {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 20px;
+}
+.footer-items-address-items-description-items-1 {
+  margin: 8px 0 0 0;
+}
+.footer-items-social-medias-items {
+  list-style: none;
+  padding: 0;
+}
+.footer-items-social-medias-items-about-us {
+  font-size: 14px;
+  margin: 0 0 40px 0;
+}
+.footer-items-social-medias-items-icons-items {
+  list-style: none;
+  padding: 0;
+}
+.footer-items-social-medias-items-icons-items-description {
+  font-size: 14px;
+  margin: 0 0 14px 0;
+}
+.footer-items-social-medias-items-icons-items-links-items {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.footer-items-social-medias-items-icons-items-links-items-facebook {
+  margin: 0 10px 0 0;
+}
+.footer-items-social-medias-items-icons-items-links-items-facebook-element {
+  width: 32px;
+}
+.footer-items-social-medias-items-icons-items-links-items-linkedin {
+  margin: 0 10px 0 0;
+}
+.footer-items-social-medias-items-icons-items-links-items-linkedin-element {
+  width: 32px;
+}
+.footer-items-social-medias-items-icons-items-links-items-youtube {
+  margin: 0 10px 0 0;
+}
+.footer-items-social-medias-items-icons-items-links-items-youtube-element {
+  width: 32px;
+}
+.footer-items-social-medias-items-icons-items-links-items-instagram {
+  margin: 0 10px 0 0;
+}
+.footer-items-social-medias-items-icons-items-links-items-instagram-element {
+  width: 32px;
+}
+.footer-items-social-medias-items-icons-items-links-items-x-element {
+  width: 32px;
+}
+.footer-link {
+  text-decoration: none;
+  color: #0066CC;
+}
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=book.css.map */
