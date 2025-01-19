@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\Images\\Icons\\Arrow_forward.svg"
     },
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Author.svg",
+      "PackagePath": "staticwebassets\\Images\\Icons\\Author.svg"
+    },
+    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Create_comment.svg",
       "PackagePath": "staticwebassets\\Images\\Icons\\Create_comment.svg"
     },
@@ -35,6 +39,10 @@
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Logout_icon.svg",
       "PackagePath": "staticwebassets\\Images\\Icons\\Logout_icon.svg"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Messages.svg",
+      "PackagePath": "staticwebassets\\Images\\Icons\\Messages.svg"
     },
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Notifications_icon.svg",
@@ -231,6 +239,14 @@
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\homepage.css.map",
       "PackagePath": "staticwebassets\\css\\homepage.css.map"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\librarian-panel.css",
+      "PackagePath": "staticwebassets\\css\\librarian-panel.css"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\librarian-panel.css.map",
+      "PackagePath": "staticwebassets\\css\\librarian-panel.css.map"
     },
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\library.css",

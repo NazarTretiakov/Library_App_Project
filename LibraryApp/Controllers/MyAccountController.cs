@@ -2,12 +2,14 @@
 using LibraryApp.Core.DTO;
 using LibraryApp.Core.ServiceContracts;
 using LibraryApp.Core.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace LibraryApp.UI.Controllers
 {
+    [Authorize(Roles = "User")]
     public class MyAccountController : Controller
     {
         private readonly IChangeProfileInformationService _changeProfileInformationService;

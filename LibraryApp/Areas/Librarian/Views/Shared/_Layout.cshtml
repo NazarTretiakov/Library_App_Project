@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="icon" href="~/Images/Logo_icon.jpg">
+
+    <link href="~/css/basic.css" rel="stylesheet" />
+    <link href="@Url.Content(ViewBag.StylesPath)" rel="stylesheet" />
+
+    @if (ViewBag.ScriptPath != null) 
+    {
+        <script src="@Url.Content(ViewBag.ScriptPath)" defer></script>
+
+        @if (ViewBag.SecondScriptPath != null)
+        {
+            <script src="@Url.Content(ViewBag.SecondScriptPath)" defer></script>
+
+            @if (ViewBag.ThirdScriptPath != null)
+            {
+                <script src="@Url.Content(ViewBag.ThirdScriptPath)" defer></script>
+            }
+        }
+    }
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

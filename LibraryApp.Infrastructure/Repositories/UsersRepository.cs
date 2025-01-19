@@ -68,5 +68,21 @@ namespace LibraryApp.Infrastructure.Repositories
 
             return user;
         }
+
+        public async Task<User> GetUserByUsername(string username)
+        {
+            return await _db.Users.Include(u => u.Posts)
+                                    .ThenInclude(p => p.Topics)
+                                      .ThenInclude(pt => pt.Topic)
+                                  .Include(u => u.Likes)
+                                  .Include(u => u.Saves)
+                                  .Include(u => u.Comments)
+                                  .Include(u => u.Subscribers)
+                                  .Include(u => u.Subscribers)
+                                    .ThenInclude(s => s.Subscriber)
+                                  .Include(u => u.Subscriptions)
+                                    .ThenInclude(s => s.User)
+                                  .FirstOrDefaultAsync(u => u.UserName == username);
+        }
     }
 }

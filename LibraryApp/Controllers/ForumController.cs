@@ -2,11 +2,13 @@
 using LibraryApp.Core.Domain.IdentityEntities;
 using LibraryApp.Core.DTO;
 using LibraryApp.Core.ServiceContracts;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LibraryApp.UI.Controllers
 {
+    [Authorize(Roles = "User")]
     public class ForumController : Controller
     {
         private readonly IPostsCreatorService _postsCreatorService;

@@ -1,6 +1,7 @@
 ﻿using LibraryApp.Core.Domain.IdentityEntities;
 using LibraryApp.Core.DTO;
 using LibraryApp.Core.Enums;
+using LibraryApp.Core.ServiceContracts;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -9,13 +10,15 @@ namespace LibraryApp.UI.Controllers
 {
     public class AccountController : Controller
     {
+        private readonly IUsersGetterService _usersGetterService;
+
         private readonly UserManager<User> _userManager;
         private readonly RoleManager<Role> _roleManager;
-
         private readonly SignInManager<User> _signInManager;
 
-        public AccountController(UserManager<User> userManager, RoleManager<Role> roleManager, SignInManager<User> signInManager)
+        public AccountController(IUsersGetterService usersGetterService, UserManager<User> userManager, RoleManager<Role> roleManager, SignInManager<User> signInManager)
         {
+            _usersGetterService = usersGetterService;
             _userManager = userManager;
             _roleManager = roleManager;
             _signInManager = signInManager;
@@ -24,8 +27,11 @@ namespace LibraryApp.UI.Controllers
         [Route("/register")]
         [HttpGet]
         [Authorize("NotAuthorized")]
-        public IActionResult Register()
+        public async Task<IActionResult> Register()
         {
+            User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
+            ViewBag.CurrentWorkingUser = currentWorkingUser;
+
             return View();
         }
 
@@ -34,6 +40,9 @@ namespace LibraryApp.UI.Controllers
         [Authorize("NotAuthorized")]
         public async Task<IActionResult> Register(RegisterDTO registerDTO, string? returnUrl)
         {
+            User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
+            ViewBag.CurrentWorkingUser = currentWorkingUser;
+
             if (ModelState.IsValid == false)
             {
                 return View(registerDTO);
@@ -42,7 +51,8 @@ namespace LibraryApp.UI.Controllers
             User user = new User()
             {
                 UserName = registerDTO.UserName,
-                DateOfRegistration = DateTime.Now
+                DateOfRegistration = DateTime.Now,
+                ProfilePhotoPath = "~/Images/Icons/User_Profile_Photo.svg"
             };
             IdentityResult result = await _userManager.CreateAsync(user, registerDTO.Password);
             
@@ -54,7 +64,7 @@ namespace LibraryApp.UI.Controllers
 
                 if (!string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
                 {
-                    return LocalRedirect(returnUrl);
+                    return LocalRedirectPermanent(returnUrl);
                 }
 
                 return RedirectToAction(nameof(HomeController.Index), "Home");
@@ -73,8 +83,11 @@ namespace LibraryApp.UI.Controllers
         [Route("/sign-in")]
         [HttpGet]
         [Authorize("NotAuthorized")]
-        public IActionResult SignIn()
+        public async Task<IActionResult> SignIn()
         {
+            User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
+            ViewBag.CurrentWorkingUser = currentWorkingUser;
+
             return View();
         }
 
@@ -83,6 +96,9 @@ namespace LibraryApp.UI.Controllers
         [Authorize("NotAuthorized")]
         public async Task<IActionResult> SignIn(SignInDTO signInDTO, string? returnUrl)
         {
+            User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
+            ViewBag.CurrentWorkingUser = currentWorkingUser;
+
             if (!ModelState.IsValid)
             {
                 ViewBag.Errors = ModelState.Values.SelectMany(temp => temp.Errors).Select(temp => temp.ErrorMessage);
@@ -93,6 +109,17 @@ namespace LibraryApp.UI.Controllers
 
             if (result.Succeeded)
             {
+                User signedUser = await _usersGetterService.GetUserByUsername(signInDTO.UserName);
+
+                if (await _userManager.IsInRoleAsync(signedUser, UserRoleOptions.Librarian.ToString()))
+                {
+                    return RedirectToAction("Index", "Librarian", new { area = "Librarian"});
+                }
+                else if (await _userManager.IsInRoleAsync(signedUser, UserRoleOptions.Admin.ToString()))
+                {
+                    return RedirectToAction("Index", "Admin", new { area = "Admin" });
+                }
+
                 if (!string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
                 {
                     return LocalRedirect(returnUrl);

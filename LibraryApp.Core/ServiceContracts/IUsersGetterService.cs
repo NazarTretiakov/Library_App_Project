@@ -20,5 +20,12 @@ namespace LibraryApp.Core.ServiceContracts
         /// <param name="userId">The id of user that will be retrieved.</param>
         /// <returns>User object or null.</returns>
         Task<User> GetUserByUserId(string userId);
+
+        /// <summary>
+        /// Retrieves user from the system.
+        /// </summary>
+        /// <param name="username">The username of user that will be retrieved.</param>
+        /// <returns>User object or null.</returns>
+        Task<User> GetUserByUsername(string username);
     }
 }

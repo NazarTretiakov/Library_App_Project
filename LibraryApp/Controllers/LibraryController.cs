@@ -1,10 +1,12 @@
 ﻿using LibraryApp.Core.Domain.IdentityEntities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace LibraryApp.UI.Controllers
 {
+    [Authorize(Roles = "User")]
     public class LibraryController : Controller
     {
         private readonly UserManager<User> _userManager;

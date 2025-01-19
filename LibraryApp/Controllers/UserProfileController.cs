@@ -3,12 +3,14 @@ using LibraryApp.Core.Domain.IdentityEntities;
 using LibraryApp.Core.DTO;
 using LibraryApp.Core.ServiceContracts;
 using LibraryApp.Core.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting;
 
 namespace LibraryApp.UI.Controllers
 {
+    [Authorize(Roles = "User")]
     public class UserProfileController : Controller
     {
         private readonly IUsersGetterService _usersGetterService;

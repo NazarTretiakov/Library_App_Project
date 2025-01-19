@@ -12,6 +12,8 @@ wwwroot\css\forum.css
 wwwroot\css\forum.css.map
 wwwroot\css\homepage.css
 wwwroot\css\homepage.css.map
+wwwroot\css\librarian-panel.css
+wwwroot\css\librarian-panel.css.map
 wwwroot\css\library.css
 wwwroot\css\library.css.map
 wwwroot\css\my-account.css
@@ -33,6 +35,7 @@ wwwroot\css\user-profile-posts.css.map
 wwwroot\Images\Atomic_habits_book.jpg
 wwwroot\Images\Icons\Add_icon.svg
 wwwroot\Images\Icons\Arrow_forward.svg
+wwwroot\Images\Icons\Author.svg
 wwwroot\Images\Icons\Create_comment.svg
 wwwroot\Images\Icons\data-science.png
 wwwroot\Images\Icons\Dropdown_arrow.svg
@@ -49,6 +52,7 @@ wwwroot\Images\Icons\Like.svg
 wwwroot\Images\Icons\Like_active.png
 wwwroot\Images\Icons\Like_active.svg
 wwwroot\Images\Icons\Logout_icon.svg
+wwwroot\Images\Icons\Messages.svg
 wwwroot\Images\Icons\natural-product.png
 wwwroot\Images\Icons\Notifications_icon.svg
 wwwroot\Images\Icons\Order_history.svg

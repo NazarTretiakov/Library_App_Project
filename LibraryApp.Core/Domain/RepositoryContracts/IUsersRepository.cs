@@ -24,6 +24,13 @@ namespace LibraryApp.Core.Domain.RepositoryContracts
         Task<User> GetUser(string userId);
 
         /// <summary>
+        /// Retrieves user from the data store.
+        /// </summary>
+        /// <param name="username">Username of the user that will be retrieved.</param>
+        /// <returns>User object or null.</returns>
+        Task<User> GetUserByUsername(string username);
+
+        /// <summary>
         /// Changes firstname, lastname and description of user based on the entered values.
         /// </summary>
         /// <param name="user">User object in which data will be changed.</param>

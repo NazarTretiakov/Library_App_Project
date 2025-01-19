@@ -22,5 +22,10 @@ namespace LibraryApp.Core.Services
         {
             return await _usersRepository.GetUser(userId);
         }
+
+        public async Task<User> GetUserByUsername(string username)
+        {
+            return await _usersRepository.GetUserByUsername(username);
+        }
     }
 }

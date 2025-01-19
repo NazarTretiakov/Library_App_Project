@@ -1,0 +1,239 @@
+.container-for-header-panel {
+  position: sticky;
+  top: 0;
+}
+
+.header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 100px 50px 100px;
+  background-color: white;
+}
+.header-items {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  justify-content: space-between;
+}
+.header-items-item-logo {
+  display: flex;
+  align-items: center;
+}
+.header-items-item-logo-image {
+  width: 120px;
+  margin: 0 20px 0 0;
+}
+.header-items-item-logo-title {
+  margin: 8px 0 0 0;
+  padding: 10px 0 10px 20px;
+  border-left: 3px #D9D9D9 solid;
+  display: inline;
+  font-size: 20px;
+  align-self: center;
+  font-weight: normal;
+}
+.header-items-links-list {
+  list-style: none;
+  padding: 0;
+}
+.header-items-links-list-item-discussion {
+  font-size: 14px;
+}
+.header-items-links-list-item-register-span {
+  font-size: 14px;
+}
+.header-items-links-list-item-profile {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-items-links-list-item-profile-link {
+  text-decoration: none;
+  color: black;
+}
+.header-items-links-list-item-profile-image {
+  margin: 0 6px 0 0;
+}
+.header-items-links-list-item-profile-image-element {
+  width: 46px;
+}
+.header-items-links-list-item-profile-inscription {
+  font-size: 12px;
+}
+.header-items-links-list-item-profile-inscription-items {
+  list-style: none;
+  padding: 0;
+}
+.header-items-links-list-item-profile-inscription-items-username {
+  margin: 0 0 4px 0;
+}
+.header-link {
+  color: black;
+  text-decoration: none;
+}
+.header-link-title {
+  color: black;
+  text-decoration: none;
+}
+.header-link:hover {
+  text-decoration: underline;
+}
+
+.my-account-container {
+  margin: 50px 230px 100px 230px;
+}
+.my-account-panels {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.my-account-panels_first-row {
+  margin: 0 0 90px 0;
+}
+.my-account-panels_first-row-panels, .my-account-panels_second-row-panels {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.my-account-panels_first-row-panels_orders, .my-account-panels_first-row-panels_notifications, .my-account-panels_first-row-panels_settings, .my-account-panels_first-row-panels_order-history, .my-account-panels_first-row-panels_saved, .my-account-panels_first-row-panels_my-page, .my-account-panels_second-row-panels_orders, .my-account-panels_second-row-panels_notifications, .my-account-panels_second-row-panels_settings, .my-account-panels_second-row-panels_order-history, .my-account-panels_second-row-panels_saved, .my-account-panels_second-row-panels_my-page {
+  background-color: #efeeee;
+  width: 280px;
+  height: 160px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+}
+.my-account-panels_first-row-panels_orders:hover, .my-account-panels_first-row-panels_notifications:hover, .my-account-panels_first-row-panels_settings:hover, .my-account-panels_first-row-panels_order-history:hover, .my-account-panels_first-row-panels_saved:hover, .my-account-panels_first-row-panels_my-page:hover, .my-account-panels_second-row-panels_orders:hover, .my-account-panels_second-row-panels_notifications:hover, .my-account-panels_second-row-panels_settings:hover, .my-account-panels_second-row-panels_order-history:hover, .my-account-panels_second-row-panels_saved:hover, .my-account-panels_second-row-panels_my-page:hover {
+  background-color: #dddcdc;
+}
+.my-account-panels_first-row-panels_orders-items, .my-account-panels_first-row-panels_notifications-items, .my-account-panels_first-row-panels_settings-items, .my-account-panels_first-row-panels_order-history-items, .my-account-panels_first-row-panels_saved-items, .my-account-panels_first-row-panels_my-page-items, .my-account-panels_second-row-panels_orders-items, .my-account-panels_second-row-panels_notifications-items, .my-account-panels_second-row-panels_settings-items, .my-account-panels_second-row-panels_order-history-items, .my-account-panels_second-row-panels_saved-items, .my-account-panels_second-row-panels_my-page-items {
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.my-account-panels_first-row-panels_orders-items_icon-element, .my-account-panels_first-row-panels_notifications-items_icon-element, .my-account-panels_first-row-panels_settings-items_icon-element, .my-account-panels_first-row-panels_order-history-items_icon-element, .my-account-panels_first-row-panels_saved-items_icon-element, .my-account-panels_first-row-panels_my-page-items_icon-element, .my-account-panels_second-row-panels_orders-items_icon-element, .my-account-panels_second-row-panels_notifications-items_icon-element, .my-account-panels_second-row-panels_settings-items_icon-element, .my-account-panels_second-row-panels_order-history-items_icon-element, .my-account-panels_second-row-panels_saved-items_icon-element, .my-account-panels_second-row-panels_my-page-items_icon-element {
+  width: 60px;
+  margin: 16px 20px 0 0;
+}
+.my-account-panels_first-row-panels_orders-items_description-items, .my-account-panels_first-row-panels_notifications-items_description-items, .my-account-panels_first-row-panels_settings-items_description-items, .my-account-panels_first-row-panels_order-history-items_description-items, .my-account-panels_first-row-panels_saved-items_description-items, .my-account-panels_first-row-panels_my-page-items_description-items, .my-account-panels_second-row-panels_orders-items_description-items, .my-account-panels_second-row-panels_notifications-items_description-items, .my-account-panels_second-row-panels_settings-items_description-items, .my-account-panels_second-row-panels_order-history-items_description-items, .my-account-panels_second-row-panels_saved-items_description-items, .my-account-panels_second-row-panels_my-page-items_description-items {
+  padding: 0;
+  list-style: none;
+}
+.my-account-panels_first-row-panels_orders-items_description-items_header-element, .my-account-panels_first-row-panels_notifications-items_description-items_header-element, .my-account-panels_first-row-panels_settings-items_description-items_header-element, .my-account-panels_first-row-panels_order-history-items_description-items_header-element, .my-account-panels_first-row-panels_saved-items_description-items_header-element, .my-account-panels_first-row-panels_my-page-items_description-items_header-element, .my-account-panels_second-row-panels_orders-items_description-items_header-element, .my-account-panels_second-row-panels_notifications-items_description-items_header-element, .my-account-panels_second-row-panels_settings-items_description-items_header-element, .my-account-panels_second-row-panels_order-history-items_description-items_header-element, .my-account-panels_second-row-panels_saved-items_description-items_header-element, .my-account-panels_second-row-panels_my-page-items_description-items_header-element {
+  font-size: 20px;
+  width: 160px;
+}
+.my-account-panels_first-row-panels_orders-items_description-items_description, .my-account-panels_first-row-panels_notifications-items_description-items_description, .my-account-panels_first-row-panels_settings-items_description-items_description, .my-account-panels_first-row-panels_order-history-items_description-items_description, .my-account-panels_first-row-panels_saved-items_description-items_description, .my-account-panels_first-row-panels_my-page-items_description-items_description, .my-account-panels_second-row-panels_orders-items_description-items_description, .my-account-panels_second-row-panels_notifications-items_description-items_description, .my-account-panels_second-row-panels_settings-items_description-items_description, .my-account-panels_second-row-panels_order-history-items_description-items_description, .my-account-panels_second-row-panels_saved-items_description-items_description, .my-account-panels_second-row-panels_my-page-items_description-items_description {
+  width: 140px;
+}
+.my-account-panels_first-row-panels_orders-items_description-items_description-element, .my-account-panels_first-row-panels_notifications-items_description-items_description-element, .my-account-panels_first-row-panels_settings-items_description-items_description-element, .my-account-panels_first-row-panels_order-history-items_description-items_description-element, .my-account-panels_first-row-panels_saved-items_description-items_description-element, .my-account-panels_first-row-panels_my-page-items_description-items_description-element, .my-account-panels_second-row-panels_orders-items_description-items_description-element, .my-account-panels_second-row-panels_notifications-items_description-items_description-element, .my-account-panels_second-row-panels_settings-items_description-items_description-element, .my-account-panels_second-row-panels_order-history-items_description-items_description-element, .my-account-panels_second-row-panels_saved-items_description-items_description-element, .my-account-panels_second-row-panels_my-page-items_description-items_description-element {
+  font-size: 14px;
+}
+.my-account-panels_second-row-panels {
+  display: flex;
+  justify-content: space-around;
+}
+.my-account-link {
+  width: 220px;
+  padding: 30px;
+  color: black;
+  text-decoration: none;
+}
+
+.footer {
+  padding: 60px 100px 40px 100px;
+  margin: 50px 0 0 0;
+  background-color: #D9D9D9;
+}
+.footer-items {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-items-address-items {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.footer-items-address-items-logo-element {
+  width: 100px;
+}
+.footer-items-address-items-description {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.footer-items-address-items-description-items {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 20px;
+}
+.footer-items-address-items-description-items-1 {
+  margin: 8px 0 0 0;
+}
+.footer-items-social-medias-items {
+  list-style: none;
+  padding: 0;
+}
+.footer-items-social-medias-items-about-us {
+  font-size: 14px;
+  margin: 0 0 40px 0;
+}
+.footer-items-social-medias-items-icons-items {
+  list-style: none;
+  padding: 0;
+}
+.footer-items-social-medias-items-icons-items-description {
+  font-size: 14px;
+  margin: 0 0 14px 0;
+}
+.footer-items-social-medias-items-icons-items-links-items {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+.footer-items-social-medias-items-icons-items-links-items-facebook {
+  margin: 0 10px 0 0;
+}
+.footer-items-social-medias-items-icons-items-links-items-facebook-element {
+  width: 32px;
+}
+.footer-items-social-medias-items-icons-items-links-items-linkedin {
+  margin: 0 10px 0 0;
+}
+.footer-items-social-medias-items-icons-items-links-items-linkedin-element {
+  width: 32px;
+}
+.footer-items-social-medias-items-icons-items-links-items-youtube {
+  margin: 0 10px 0 0;
+}
+.footer-items-social-medias-items-icons-items-links-items-youtube-element {
+  width: 32px;
+}
+.footer-items-social-medias-items-icons-items-links-items-instagram {
+  margin: 0 10px 0 0;
+}
+.footer-items-social-medias-items-icons-items-links-items-instagram-element {
+  width: 32px;
+}
+.footer-items-social-medias-items-icons-items-links-items-x-element {
+  width: 32px;
+}
+.footer-link {
+  text-decoration: none;
+  color: #0066CC;
+}
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=librarian-panel.css.map */
