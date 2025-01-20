@@ -32,6 +32,10 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Studying/Library App Project/LibraryApp/LibraryApp/Areas/Admin/Views/Admin/ManageBooks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cTWFuYWdlQm9va3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Studying/Library App Project/LibraryApp/LibraryApp/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -46,6 +50,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Studying/Library App Project/LibraryApp/LibraryApp/Areas/Librarian/Views/Librarian/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGlicmFyaWFuXFZpZXdzXExpYnJhcmlhblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Studying/Library App Project/LibraryApp/LibraryApp/Areas/Librarian/Views/Librarian/ManageBooks.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGlicmFyaWFuXFZpZXdzXExpYnJhcmlhblxNYW5hZ2VCb29rcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Studying/Library App Project/LibraryApp/LibraryApp/Areas/Librarian/Views/Shared/_Layout.cshtml]

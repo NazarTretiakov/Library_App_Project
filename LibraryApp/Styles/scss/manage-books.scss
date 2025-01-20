@@ -1,0 +1,463 @@
+﻿@use "config" as *;
+
+.container-for-header-panel {
+    position: sticky;
+    top: 0;
+}
+
+
+.header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 100px 50px 100px;
+    background-color: white;
+
+    &-items {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        justify-content: space-between;
+
+        &-item {
+
+            &-logo {
+                display: flex;
+                align-items: center;
+
+                &-image {
+                    width: 120px;
+                    margin: 0 20px 0 0;
+                }
+
+                &-title {
+                    margin: 8px 0 0 0;
+                    padding: 10px 0 10px 20px;
+                    border-left: 3px $grayBackgroundColor solid;
+                    display: inline;
+                    font-size: 20px;
+                    align-self: center;
+                    font-weight: normal;
+                }
+            }
+        }
+
+        &-links {
+
+            &-list {
+                list-style: none;
+                padding: 0;
+
+                &-item {
+
+                    &-discussion {
+                        font-size: $headerFontSize;
+                    }
+
+                    &-register {
+
+                        &-span {
+                            font-size: $headerFontSize;
+                        }
+                    }
+
+                    &-profile {
+                        list-style: none;
+                        padding: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        &-link {
+                            text-decoration: none;
+                            color: black;
+                        }
+
+                        &-image {
+                            margin: 0 6px 0 0;
+
+                            &-element {
+                                width: 46px;
+                            }
+                        }
+
+                        &-inscription {
+                            font-size: 12px;
+
+                            &-items {
+                                list-style: none;
+                                padding: 0;
+
+                                &-logged-as {
+                                }
+
+                                &-username {
+                                    margin: 0 0 4px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-link {
+        color: black;
+        text-decoration: none;
+
+        &-title {
+            color: black;
+            text-decoration: none;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.search-panel {
+    background-color: $grayBackgroundColor;
+    padding: 0 200px 0 200px;
+    margin: 0 0 50px 0;
+    height: 80px;
+    align-items: center;
+    display: flex;
+
+    &-form {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+
+        &-search {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+
+            &-icon {
+
+                &-div {
+                    height: 20px;
+                    width: 20px;
+                    position: absolute;
+                    margin: 4px 0 0 10px;
+                    background-image: url('/Images/Icons/Search.svg');
+                    background-size: 100%;
+                }
+            }
+
+            &-input {
+
+                &-element {
+                    height: 30px;
+                    width: 500px;
+                    border-radius: 6px;
+                    border: none;
+                    padding: 0 15px 0 45px;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+
+        &-dropdown {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+
+            &-select {
+
+                &-element {
+                    appearance: none;
+                    height: 30px;
+                    width: 200px;
+                    padding: 0 0 0 15px;
+                    border-radius: 6px;
+                    border: none;
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            &-arrow {
+
+                &-div {
+                    height: 16px;
+                    width: 16px;
+                    position: absolute;
+                    margin: 8px 0 0 -30px;
+                    background-image: url('/Images/Icons/Dropdown_arrow.svg');
+                    background-size: 100%;
+                    transform: rotate(90deg);
+                    pointer-events: none;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        &-button {
+            height: 30px;
+            width: 200px;
+            border-radius: 6px;
+            border: none;
+            background-color: $buttonColor;
+            color: white;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $buttonColorHover;
+            }
+        }
+    }
+}
+
+
+.manage-books {
+    margin: 0 180px 100px 180px;
+
+    &-items {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        &_create-book {
+            display: flex;
+            justify-content: end;
+            margin: 0 0 50px 0;
+
+            &-link {
+                text-decoration: none;
+            }
+
+            &-button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px 30px 10px 30px;
+                background-color: #eefaff;
+                border: none;
+                color: $buttonColor;
+                transition: background-color 0.3s ease;
+                border-radius: 6px;
+
+                &:hover {
+                    background-color: #CCE7F2;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &_books {
+
+            &-items {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+
+                &_book {
+
+                    &-link {
+                        text-decoration: none;
+                        color: black;
+                    }
+
+                    &-items {
+                        display: flex;
+                        padding: 0;
+                        margin: 0 20px 0 20px;
+                        list-style: none;
+                        align-items: center;
+                        justify-content: space-between;
+                        font-size: 14px;
+
+                        &_image {
+
+                            &-element {
+                                width: 80px;
+                            }
+                        }
+
+                        &_title {
+                            &-element {
+                            }
+                        }
+
+                        &_author {
+                            &-element {
+                            }
+                        }
+
+                        &_amount-available {
+                            &-amount {
+                                font-weight: bold;
+                            }
+                        }
+                    }
+
+                    &-div-for-space-between-books {
+                        height: 20px;
+                        border-bottom: 3px $grayBackgroundColor solid;
+                        margin: 0 0 20px 0;
+                        padding: 0 20px 0 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.footer {
+    padding: 60px 100px 40px 100px;
+    margin: 50px 0 0 0;
+    background-color: $grayBackgroundColor;
+
+    &-items {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+
+        &-address {
+
+            &-items {
+                list-style: none;
+                padding: 0;
+                display: flex;
+
+                &-logo {
+
+                    &-element {
+                        width: 100px;
+                    }
+                }
+
+                &-description {
+                    font-size: 14px;
+                    line-height: 1.6;
+
+                    &-items {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0 0 0 20px;
+
+                        &-1 {
+                            margin: 8px 0 0 0;
+                        }
+
+                        &-2 {
+                        }
+
+                        &-3 {
+                        }
+                    }
+                }
+            }
+        }
+
+        &-social-medias {
+
+            &-items {
+                list-style: none;
+                padding: 0;
+
+                &-about-us {
+                    font-size: 14px;
+                    margin: 0 0 40px 0;
+                }
+
+                &-icons {
+
+                    &-items {
+                        list-style: none;
+                        padding: 0;
+
+                        &-description {
+                            font-size: 14px;
+                            margin: 0 0 14px 0;
+                        }
+
+                        &-links {
+
+                            &-items {
+                                list-style: none;
+                                padding: 0;
+                                display: flex;
+
+                                &-facebook {
+                                    margin: 0 10px 0 0;
+
+                                    &-element {
+                                        width: 32px;
+                                    }
+                                }
+
+                                &-linkedin {
+                                    margin: 0 10px 0 0;
+
+                                    &-element {
+                                        width: 32px;
+                                    }
+                                }
+
+                                &-youtube {
+                                    margin: 0 10px 0 0;
+
+                                    &-element {
+                                        width: 32px;
+                                    }
+                                }
+
+                                &-instagram {
+                                    margin: 0 10px 0 0;
+
+                                    &-element {
+                                        width: 32px;
+                                    }
+                                }
+
+                                &-x {
+
+                                    &-element {
+                                        width: 32px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-link {
+        text-decoration: none;
+        color: $footerLinkColor;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
