@@ -185,6 +185,14 @@
       "PackagePath": "staticwebassets\\Images\\Profile_Photos\\eb5c9a29-9cd8-4e83-9863-bff740042b47_Luke_Skywalker_Profile_Photo.jpg"
     },
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\add-book.css",
+      "PackagePath": "staticwebassets\\css\\add-book.css"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\add-book.css.map",
+      "PackagePath": "staticwebassets\\css\\add-book.css.map"
+    },
+    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\basic.css",
       "PackagePath": "staticwebassets\\css\\basic.css"
     },
@@ -215,6 +223,10 @@
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\config.css.map",
       "PackagePath": "staticwebassets\\css\\config.css.map"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\create-book.css.map",
+      "PackagePath": "staticwebassets\\css\\create-book.css.map"
     },
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\create-post.css",
@@ -327,6 +339,10 @@
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-posts.css.map",
       "PackagePath": "staticwebassets\\css\\user-profile-posts.css.map"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\add-book.js",
+      "PackagePath": "staticwebassets\\js\\add-book.js"
     },
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\create-comment.js",

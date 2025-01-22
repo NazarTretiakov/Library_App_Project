@@ -1,3 +1,5 @@
+wwwroot\css\add-book.css
+wwwroot\css\add-book.css.map
 wwwroot\css\basic.css
 wwwroot\css\basic.css.map
 wwwroot\css\book.css
@@ -6,6 +8,7 @@ wwwroot\css\change-password-settings.css
 wwwroot\css\change-password-settings.css.map
 wwwroot\css\config.css
 wwwroot\css\config.css.map
+wwwroot\css\create-book.css.map
 wwwroot\css\create-post.css
 wwwroot\css\create-post.css.map
 wwwroot\css\forum.css
@@ -80,6 +83,7 @@ wwwroot\Images\Profile_Photos\c468cd87-c280-4b26-ad63-e8b62607fd6e_Снимок 
 wwwroot\Images\Profile_Photos\c7010544-53c7-4790-bf09-dc08c1463273_Luke_Skywalker_Profile_Photo.jpg
 wwwroot\Images\Profile_Photos\e444a2e1-b028-4fbb-82fb-1d48d06356c3_Franklin_Profile_Photo.webp
 wwwroot\Images\Profile_Photos\eb5c9a29-9cd8-4e83-9863-bff740042b47_Luke_Skywalker_Profile_Photo.jpg
+wwwroot\js\add-book.js
 wwwroot\js\create-comment.js
 wwwroot\js\create-post.js
 wwwroot\js\photo-settings.js

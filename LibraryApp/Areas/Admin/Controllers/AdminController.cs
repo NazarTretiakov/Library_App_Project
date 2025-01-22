@@ -18,5 +18,11 @@ namespace LibraryApp.UI.Areas.Admin.Controllers
         {
             return View();
         }
+
+        [Route("/admin-panel/manage-books/add-book")]
+        public IActionResult AddBook()
+        {
+            return View();
+        }
     }
 }

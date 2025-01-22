@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Gdy0AaWSyYswh1mzkzT6slUeWNArtG2/IlHAKSsaC/g=",
+  "Hash": "sIOkin836uXXgV1MtJOZ2MqV5920vz21J5DmbnPiOqA=",
   "Source": "LibraryApp.UI",
   "BasePath": "_content/LibraryApp.UI",
   "Mode": "Default",
@@ -16,6 +16,48 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\add-book.css",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "css/add-book#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "obzo7lgo76",
+      "Integrity": "1KP6YmNiMCRAMUUdm7LI1+q7RDT6QIJqKaY8dfXaNA0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\add-book.css"
+    },
+    {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\add-book.css.map",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "css/add-book.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ploj9chadf",
+      "Integrity": "TeybUdBSy19b465tI0JvyDC9hkPtYiQ1TqyVD9AI4aE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\add-book.css.map"
+    },
     {
       "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\basic.css",
       "SourceId": "LibraryApp.UI",
@@ -183,6 +225,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\config.css.map"
+    },
+    {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\create-book.css.map",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "css/create-book.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6e1432aa6w",
+      "Integrity": "DivwTvNRfVc6stZAFpmjjLZHF03ZU54RNrsHgxAkZJ4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\create-book.css.map"
     },
     {
       "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\create-post.css",
@@ -409,8 +472,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "hmmp2xrlls",
-      "Integrity": "N2uEUhYm6GONlEihbMLSQnfSfBmDYwbCjTTgpmfCzrM=",
+      "Fingerprint": "dum0drqet8",
+      "Integrity": "pQyJpHOlh7YPAFe4k2iEscxG6STlT04/yB/vBRHlJBw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\manage-books.css"
@@ -1739,6 +1802,27 @@
       "OriginalItemSpec": "wwwroot\\Images\\Profile_Photos\\eb5c9a29-9cd8-4e83-9863-bff740042b47_Luke_Skywalker_Profile_Photo.jpg"
     },
     {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\add-book.js",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "js/add-book#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5akzy14uyg",
+      "Integrity": "bReV6ZmuejkjcecP+OKvZBJAd9mZpz4QtqNXEzIbmdo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\add-book.js"
+    },
+    {
       "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\create-comment.js",
       "SourceId": "LibraryApp.UI",
       "SourceType": "Discovered",
@@ -1887,6 +1971,170 @@
     }
   ],
   "Endpoints": [
+    {
+      "Route": "css/add-book.css",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\add-book.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5661"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1KP6YmNiMCRAMUUdm7LI1+q7RDT6QIJqKaY8dfXaNA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Jan 2025 08:13:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1KP6YmNiMCRAMUUdm7LI1+q7RDT6QIJqKaY8dfXaNA0="
+        }
+      ]
+    },
+    {
+      "Route": "css/add-book.css.map",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\add-book.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1192"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TeybUdBSy19b465tI0JvyDC9hkPtYiQ1TqyVD9AI4aE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Jan 2025 08:13:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TeybUdBSy19b465tI0JvyDC9hkPtYiQ1TqyVD9AI4aE="
+        }
+      ]
+    },
+    {
+      "Route": "css/add-book.css.ploj9chadf.map",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\add-book.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1192"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TeybUdBSy19b465tI0JvyDC9hkPtYiQ1TqyVD9AI4aE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Jan 2025 08:13:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ploj9chadf"
+        },
+        {
+          "Name": "label",
+          "Value": "css/add-book.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TeybUdBSy19b465tI0JvyDC9hkPtYiQ1TqyVD9AI4aE="
+        }
+      ]
+    },
+    {
+      "Route": "css/add-book.obzo7lgo76.css",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\add-book.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5661"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1KP6YmNiMCRAMUUdm7LI1+q7RDT6QIJqKaY8dfXaNA0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Jan 2025 08:13:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "obzo7lgo76"
+        },
+        {
+          "Name": "label",
+          "Value": "css/add-book.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1KP6YmNiMCRAMUUdm7LI1+q7RDT6QIJqKaY8dfXaNA0="
+        }
+      ]
+    },
     {
       "Route": "css/basic.0j0oyw6na8.css",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\basic.css",
@@ -2540,6 +2788,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-5039detcNHcK5umBvgyza9Zsv/3n4KUU5RoRFBj7TyQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/create-book.css.6e1432aa6w.map",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\create-book.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1198"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DivwTvNRfVc6stZAFpmjjLZHF03ZU54RNrsHgxAkZJ4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Jan 2025 08:11:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6e1432aa6w"
+        },
+        {
+          "Name": "label",
+          "Value": "css/create-book.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DivwTvNRfVc6stZAFpmjjLZHF03ZU54RNrsHgxAkZJ4="
+        }
+      ]
+    },
+    {
+      "Route": "css/create-book.css.map",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\create-book.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1198"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DivwTvNRfVc6stZAFpmjjLZHF03ZU54RNrsHgxAkZJ4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Jan 2025 08:11:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DivwTvNRfVc6stZAFpmjjLZHF03ZU54RNrsHgxAkZJ4="
         }
       ]
     },
@@ -3374,7 +3704,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6925"
+          "Value": "6922"
         },
         {
           "Name": "Content-Type",
@@ -3382,11 +3712,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"N2uEUhYm6GONlEihbMLSQnfSfBmDYwbCjTTgpmfCzrM=\""
+          "Value": "\"pQyJpHOlh7YPAFe4k2iEscxG6STlT04/yB/vBRHlJBw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 11:06:38 GMT"
+          "Value": "Tue, 21 Jan 2025 16:49:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3396,7 +3726,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-N2uEUhYm6GONlEihbMLSQnfSfBmDYwbCjTTgpmfCzrM="
+          "Value": "sha256-pQyJpHOlh7YPAFe4k2iEscxG6STlT04/yB/vBRHlJBw="
         }
       ]
     },
@@ -3423,7 +3753,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 11:06:38 GMT"
+          "Value": "Tue, 21 Jan 2025 16:49:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3468,7 +3798,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 11:06:38 GMT"
+          "Value": "Tue, 21 Jan 2025 16:49:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3483,7 +3813,7 @@
       ]
     },
     {
-      "Route": "css/manage-books.hmmp2xrlls.css",
+      "Route": "css/manage-books.dum0drqet8.css",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\manage-books.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3493,7 +3823,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6925"
+          "Value": "6922"
         },
         {
           "Name": "Content-Type",
@@ -3501,11 +3831,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"N2uEUhYm6GONlEihbMLSQnfSfBmDYwbCjTTgpmfCzrM=\""
+          "Value": "\"pQyJpHOlh7YPAFe4k2iEscxG6STlT04/yB/vBRHlJBw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 11:06:38 GMT"
+          "Value": "Tue, 21 Jan 2025 16:49:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3515,7 +3845,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "hmmp2xrlls"
+          "Value": "dum0drqet8"
         },
         {
           "Name": "label",
@@ -3523,7 +3853,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-N2uEUhYm6GONlEihbMLSQnfSfBmDYwbCjTTgpmfCzrM="
+          "Value": "sha256-pQyJpHOlh7YPAFe4k2iEscxG6STlT04/yB/vBRHlJBw="
         }
       ]
     },
@@ -8608,6 +8938,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-OdmgP7W03Q9XyqB1JVPv6h9bX3lCvQj/+v4+oHgXJDI="
+        }
+      ]
+    },
+    {
+      "Route": "js/add-book.5akzy14uyg.js",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\add-book.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "997"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bReV6ZmuejkjcecP+OKvZBJAd9mZpz4QtqNXEzIbmdo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Jan 2025 08:18:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5akzy14uyg"
+        },
+        {
+          "Name": "label",
+          "Value": "js/add-book.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bReV6ZmuejkjcecP+OKvZBJAd9mZpz4QtqNXEzIbmdo="
+        }
+      ]
+    },
+    {
+      "Route": "js/add-book.js",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\add-book.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "997"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bReV6ZmuejkjcecP+OKvZBJAd9mZpz4QtqNXEzIbmdo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Jan 2025 08:18:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bReV6ZmuejkjcecP+OKvZBJAd9mZpz4QtqNXEzIbmdo="
         }
       ]
     },
