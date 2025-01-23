@@ -5497,6 +5497,170 @@
       ]
     },
     {
+      "Route": "css/manage-book.agopcogr08.css",
+      "AssetFile": "css/manage-book.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5434"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CvQmCNefCLMHrG7s8YoMbnl/NYLZ3/XKrKbIAfWcKoY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 23 Jan 2025 19:44:16 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "agopcogr08"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CvQmCNefCLMHrG7s8YoMbnl/NYLZ3/XKrKbIAfWcKoY="
+        },
+        {
+          "Name": "label",
+          "Value": "css/manage-book.css"
+        }
+      ]
+    },
+    {
+      "Route": "css/manage-book.css",
+      "AssetFile": "css/manage-book.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5434"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CvQmCNefCLMHrG7s8YoMbnl/NYLZ3/XKrKbIAfWcKoY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 23 Jan 2025 19:44:16 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CvQmCNefCLMHrG7s8YoMbnl/NYLZ3/XKrKbIAfWcKoY="
+        }
+      ]
+    },
+    {
+      "Route": "css/manage-book.css.map",
+      "AssetFile": "css/manage-book.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1254"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7v+l2SE81NHtY+llomSb1aFjzFVoLVYzIZk7wtqFQMY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 23 Jan 2025 19:44:16 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7v+l2SE81NHtY+llomSb1aFjzFVoLVYzIZk7wtqFQMY="
+        }
+      ]
+    },
+    {
+      "Route": "css/manage-book.css.y0bl9joa6z.map",
+      "AssetFile": "css/manage-book.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1254"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7v+l2SE81NHtY+llomSb1aFjzFVoLVYzIZk7wtqFQMY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 23 Jan 2025 19:44:16 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y0bl9joa6z"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7v+l2SE81NHtY+llomSb1aFjzFVoLVYzIZk7wtqFQMY="
+        },
+        {
+          "Name": "label",
+          "Value": "css/manage-book.css.map"
+        }
+      ]
+    },
+    {
       "Route": "css/manage-books.css",
       "AssetFile": "css/manage-books.css",
       "Selectors": [],

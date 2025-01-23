@@ -269,6 +269,14 @@
       "PackagePath": "staticwebassets\\css\\library.css.map"
     },
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\manage-book.css",
+      "PackagePath": "staticwebassets\\css\\manage-book.css"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\manage-book.css.map",
+      "PackagePath": "staticwebassets\\css\\manage-book.css.map"
+    },
+    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\manage-books.css",
       "PackagePath": "staticwebassets\\css\\manage-books.css"
     },

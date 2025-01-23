@@ -1,2 +1,0 @@
-D:\Studying\Library App Project\LibraryApp\LibraryApp\wwwroot\css\create-book.css
-D:\Studying\Library App Project\LibraryApp\LibraryApp\wwwroot\js\create-book.js
