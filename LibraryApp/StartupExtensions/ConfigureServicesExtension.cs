@@ -25,6 +25,9 @@ namespace LibraryApp.UI.StartupExtensions
             services.AddScoped<ISavesRepository, SavesRepository>();
             services.AddScoped<ICommentsRepository, CommentsRepository>();
             services.AddScoped<ISubscriptionsRepository, SubscriptionsRepository>();
+            services.AddScoped<IAuthorsRepository, AuthorsRepository>();
+            services.AddScoped<IBooksRepository, BooksRepository>();
+            services.AddScoped<IGenresRepository, GenresRepository>();
 
             services.AddScoped<IUsersGetterService, UsersGetterService>();
             services.AddScoped<IPostsCreatorService, PostsCreatorService>();
@@ -48,6 +51,9 @@ namespace LibraryApp.UI.StartupExtensions
             services.AddScoped<IIsCurrentWorkingUserSubscribedService, IsCurrentWorkingUserSubscribedService>();
             services.AddScoped<IChangeProfileInformationService, ChangeProfileInformationService>();
             services.AddScoped<IChangeProfilePhotoService, ChangeProfilePhotoService>();
+            services.AddScoped<IAuthorsGetterService, AuthorsGetterService>();
+            services.AddScoped<IBooksAdderService, BooksAdderService>();
+            services.AddScoped<IBooksGetterService, BooksGetterService>();
 
 
             services.AddDbContext<LibraryDbContext>(options => 

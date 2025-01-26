@@ -120,17 +120,17 @@
 .create-book_form-items-input-content-element:focus {
   outline: none;
 }
-.create-book_form-items-input-validation-result {
+.create-book_form-items-validation-result {
   color: #ff6452;
   margin: 10px 0 0 16px;
   width: 300px;
   font-size: 14px;
 }
-.create-book_form-items-input-validation-result > ul {
+.create-book_form-items-validation-result > div > ul {
   padding: 0;
   list-style: none;
 }
-.create-book_form-items-input-validation-result > ul > li {
+.create-book_form-items-validation-result > div > ul > li {
   margin: 0 0 10px 0;
 }
 .create-book_form-items-button-element {

@@ -14,6 +14,10 @@ namespace LibraryApp.Infrastructure.DbContext
         public DbSet<Like> Likes { get; set; }
         public DbSet<Save> Saves { get; set; }
         public DbSet<Subscription> Subscriptions { get; set; }
+        public DbSet<Author> Authors { get; set; }
+        public DbSet<Book> Books { get; set; }
+        public DbSet<Genre> Genres { get; set; }
+        public DbSet<BookGenre> BookGenre { get; set; }
 
         public LibraryDbContext(DbContextOptions options) : base(options) { }
 
@@ -29,6 +33,11 @@ namespace LibraryApp.Infrastructure.DbContext
 
             modelBuilder.Entity<Like>().ToTable("Likes");
             modelBuilder.Entity<Save>().ToTable("Saves");
+
+            modelBuilder.Entity<Author>().ToTable("Authors");
+            modelBuilder.Entity<Book>().ToTable("Books");
+            modelBuilder.Entity<Genre>().ToTable("Genres");
+            modelBuilder.Entity<BookGenre>().ToTable("BookGenres");
 
 
             modelBuilder.Entity<User>()
@@ -101,6 +110,21 @@ namespace LibraryApp.Infrastructure.DbContext
                         .WithMany(s => s.Subscriptions)
                         .HasForeignKey(s => s.SubscriberId)
                         .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<Book>()
+                        .HasOne(b => b.Author)
+                        .WithMany(a => a.Books)
+                        .HasForeignKey("AuthorId");
+
+            modelBuilder.Entity<BookGenre>()
+                        .HasOne(bg => bg.Book)
+                        .WithMany(b => b.Genres)
+                        .HasForeignKey(bg => bg.BookId);
+
+            modelBuilder.Entity<BookGenre>()
+                        .HasOne(bg => bg.Genre)
+                        .WithMany(g => g.Books)
+                        .HasForeignKey(bg => bg.GenreId);
         }
     }
 }

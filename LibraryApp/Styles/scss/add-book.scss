@@ -168,18 +168,21 @@
                 }
             }
 
-            &-input-validation-result {
+            &-validation-result {
                 color: $errorTextColor;
                 margin: 10px 0 0 16px;
                 width: 300px;
                 font-size: 14px;
 
-                & > ul {
-                    padding: 0;
-                    list-style: none;
+                & > div {
 
-                    & > li {
-                        margin: 0 0 10px 0;
+                    & > ul {
+                        padding: 0;
+                        list-style: none;
+
+                        & > li {
+                            margin: 0 0 10px 0;
+                        }
                     }
                 }
             }

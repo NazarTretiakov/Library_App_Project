@@ -1,5 +1,7 @@
-﻿@{
-    ViewBag.Title = "BOOKNAMEHERE";
+﻿@model Book
+
+@{
+    ViewBag.Title = Model.Title;
     ViewBag.StylesPath = "~/css/manage-book.css";
 }
 
@@ -35,10 +37,10 @@
 
 <div class="book-container">
     <section class="book">
-        <img class="book-image" src="~/Images/Atomic_habits_book.jpg" alt="Image of the book">
+        <img class="book-image" src="@Url.Content(Model.ImagePath)" alt="Image of the book">
         <ul class="book-actions">
-            <li class="book-actions-title"><h1 class="book-actions-title-element">Atomic Habits</h1></li>
-            <li class="book-actions-author"><h2 class="book-actions-author-element">James Clear</h2></li>
+            <li class="book-actions-title"><h1 class="book-actions-title-element">@Model.Title</h1></li>
+            <li class="book-actions-author"><h2 class="book-actions-author-element">@Model.Author.Firstname @Model.Author.Lastname</h2></li>
             <li class="book-actions_change-amount">
                 <form action="">
                     <ul class="book-actions_change-amount-items">

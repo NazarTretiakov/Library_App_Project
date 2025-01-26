@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IHpYwGuRyZf5l43QzcjiwsX8KbOBNhFmdRq9zBiPVrU=",
+  "Hash": "Yb7lu6fYloT20Y9Zk9qRl2qDR3q+/N1rkkGdV7VQUhk=",
   "Source": "LibraryApp.UI",
   "BasePath": "_content/LibraryApp.UI",
   "Mode": "Default",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "obzo7lgo76",
-      "Integrity": "1KP6YmNiMCRAMUUdm7LI1+q7RDT6QIJqKaY8dfXaNA0=",
+      "Fingerprint": "q8967viz7p",
+      "Integrity": "SpeuEqO2c2spNIZZx8bQGyI8qfJwa4x3BbtGze+NELc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\add-book.css"
@@ -52,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ploj9chadf",
-      "Integrity": "TeybUdBSy19b465tI0JvyDC9hkPtYiQ1TqyVD9AI4aE=",
+      "Fingerprint": "zxswdxchfi",
+      "Integrity": "h6txqRPruzBx7muupkPKprWSEThhU5K8KNO2EEYgPwI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\add-book.css.map"
@@ -878,12 +878,33 @@
       "OriginalItemSpec": "wwwroot\\css\\user-profile-posts.css.map"
     },
     {
-      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Atomic_habits_book.jpg",
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Book_Images\\00071b62-a827-4e5f-a799-ca7bea2d2bfa_Clean_Code.jpg",
       "SourceId": "LibraryApp.UI",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
       "BasePath": "_content/LibraryApp.UI",
-      "RelativePath": "Images/Atomic_habits_book#[.{fingerprint}]?.jpg",
+      "RelativePath": "Images/Book_Images/00071b62-a827-4e5f-a799-ca7bea2d2bfa_Clean_Code#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hzb9rk5yl8",
+      "Integrity": "7T8kDPLbamA7teLjACIIzVawZIP/ohhz2SC6VvzvPwc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Book_Images\\00071b62-a827-4e5f-a799-ca7bea2d2bfa_Clean_Code.jpg"
+    },
+    {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Book_Images\\3fa54fb2-70ab-4c3a-b6b8-c0b0986320d7_Atomic_habits_book.jpg",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "Images/Book_Images/3fa54fb2-70ab-4c3a-b6b8-c0b0986320d7_Atomic_habits_book#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -896,7 +917,7 @@
       "Integrity": "L4o/eaSqP4XNowTx9JR10aiyKbCgtTZcqVR0jbJ6wjw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Atomic_habits_book.jpg"
+      "OriginalItemSpec": "wwwroot\\Images\\Book_Images\\3fa54fb2-70ab-4c3a-b6b8-c0b0986320d7_Atomic_habits_book.jpg"
     },
     {
       "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Add_icon.svg",
@@ -2024,7 +2045,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5661"
+          "Value": "5655"
         },
         {
           "Name": "Content-Type",
@@ -2032,11 +2053,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1KP6YmNiMCRAMUUdm7LI1+q7RDT6QIJqKaY8dfXaNA0=\""
+          "Value": "\"SpeuEqO2c2spNIZZx8bQGyI8qfJwa4x3BbtGze+NELc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 22 Jan 2025 08:13:04 GMT"
+          "Value": "Sun, 26 Jan 2025 08:14:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2046,7 +2067,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-1KP6YmNiMCRAMUUdm7LI1+q7RDT6QIJqKaY8dfXaNA0="
+          "Value": "sha256-SpeuEqO2c2spNIZZx8bQGyI8qfJwa4x3BbtGze+NELc="
         }
       ]
     },
@@ -2069,11 +2090,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"TeybUdBSy19b465tI0JvyDC9hkPtYiQ1TqyVD9AI4aE=\""
+          "Value": "\"h6txqRPruzBx7muupkPKprWSEThhU5K8KNO2EEYgPwI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 22 Jan 2025 08:13:04 GMT"
+          "Value": "Sun, 26 Jan 2025 08:14:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2083,12 +2104,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-TeybUdBSy19b465tI0JvyDC9hkPtYiQ1TqyVD9AI4aE="
+          "Value": "sha256-h6txqRPruzBx7muupkPKprWSEThhU5K8KNO2EEYgPwI="
         }
       ]
     },
     {
-      "Route": "css/add-book.css.ploj9chadf.map",
+      "Route": "css/add-book.css.zxswdxchfi.map",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\add-book.css.map",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2106,11 +2127,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"TeybUdBSy19b465tI0JvyDC9hkPtYiQ1TqyVD9AI4aE=\""
+          "Value": "\"h6txqRPruzBx7muupkPKprWSEThhU5K8KNO2EEYgPwI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 22 Jan 2025 08:13:04 GMT"
+          "Value": "Sun, 26 Jan 2025 08:14:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2120,7 +2141,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ploj9chadf"
+          "Value": "zxswdxchfi"
         },
         {
           "Name": "label",
@@ -2128,12 +2149,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-TeybUdBSy19b465tI0JvyDC9hkPtYiQ1TqyVD9AI4aE="
+          "Value": "sha256-h6txqRPruzBx7muupkPKprWSEThhU5K8KNO2EEYgPwI="
         }
       ]
     },
     {
-      "Route": "css/add-book.obzo7lgo76.css",
+      "Route": "css/add-book.q8967viz7p.css",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\add-book.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2143,7 +2164,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5661"
+          "Value": "5655"
         },
         {
           "Name": "Content-Type",
@@ -2151,11 +2172,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1KP6YmNiMCRAMUUdm7LI1+q7RDT6QIJqKaY8dfXaNA0=\""
+          "Value": "\"SpeuEqO2c2spNIZZx8bQGyI8qfJwa4x3BbtGze+NELc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 22 Jan 2025 08:13:04 GMT"
+          "Value": "Sun, 26 Jan 2025 08:14:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2165,7 +2186,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "obzo7lgo76"
+          "Value": "q8967viz7p"
         },
         {
           "Name": "label",
@@ -2173,7 +2194,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-1KP6YmNiMCRAMUUdm7LI1+q7RDT6QIJqKaY8dfXaNA0="
+          "Value": "sha256-SpeuEqO2c2spNIZZx8bQGyI8qfJwa4x3BbtGze+NELc="
         }
       ]
     },
@@ -5376,8 +5397,90 @@
       ]
     },
     {
-      "Route": "Images/Atomic_habits_book.d9kdyf99gq.jpg",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Atomic_habits_book.jpg",
+      "Route": "Images/Book_Images/00071b62-a827-4e5f-a799-ca7bea2d2bfa_Clean_Code.hzb9rk5yl8.jpg",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Book_Images\\00071b62-a827-4e5f-a799-ca7bea2d2bfa_Clean_Code.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44740"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7T8kDPLbamA7teLjACIIzVawZIP/ohhz2SC6VvzvPwc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 11:49:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hzb9rk5yl8"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Book_Images/00071b62-a827-4e5f-a799-ca7bea2d2bfa_Clean_Code.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7T8kDPLbamA7teLjACIIzVawZIP/ohhz2SC6VvzvPwc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Book_Images/00071b62-a827-4e5f-a799-ca7bea2d2bfa_Clean_Code.jpg",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Book_Images\\00071b62-a827-4e5f-a799-ca7bea2d2bfa_Clean_Code.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44740"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7T8kDPLbamA7teLjACIIzVawZIP/ohhz2SC6VvzvPwc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Jan 2025 11:49:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7T8kDPLbamA7teLjACIIzVawZIP/ohhz2SC6VvzvPwc="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Book_Images/3fa54fb2-70ab-4c3a-b6b8-c0b0986320d7_Atomic_habits_book.d9kdyf99gq.jpg",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Book_Images\\3fa54fb2-70ab-4c3a-b6b8-c0b0986320d7_Atomic_habits_book.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5398,7 +5501,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 03 Nov 2024 10:20:59 GMT"
+          "Value": "Sun, 26 Jan 2025 08:38:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5412,7 +5515,7 @@
         },
         {
           "Name": "label",
-          "Value": "Images/Atomic_habits_book.jpg"
+          "Value": "Images/Book_Images/3fa54fb2-70ab-4c3a-b6b8-c0b0986320d7_Atomic_habits_book.jpg"
         },
         {
           "Name": "integrity",
@@ -5421,8 +5524,8 @@
       ]
     },
     {
-      "Route": "Images/Atomic_habits_book.jpg",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Atomic_habits_book.jpg",
+      "Route": "Images/Book_Images/3fa54fb2-70ab-4c3a-b6b8-c0b0986320d7_Atomic_habits_book.jpg",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Book_Images\\3fa54fb2-70ab-4c3a-b6b8-c0b0986320d7_Atomic_habits_book.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5443,7 +5546,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 03 Nov 2024 10:20:59 GMT"
+          "Value": "Sun, 26 Jan 2025 08:38:35 GMT"
         },
         {
           "Name": "Cache-Control",

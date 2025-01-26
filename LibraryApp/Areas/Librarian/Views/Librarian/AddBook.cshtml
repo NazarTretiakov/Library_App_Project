@@ -1,4 +1,6 @@
-﻿@{
+﻿@model BookDTO
+
+@{
     ViewBag.Title = "Add book";
     ViewBag.StylesPath = "~/css/add-book.css";
     ViewBag.ScriptPath = "~/js/add-book.js";
@@ -18,17 +20,20 @@
 
 <div class="container-for_create-book">
     <section class="create-book">
-        <form class="create-book_form">
+        <form class="create-book_form" asp-controller="Librarian" asp-action="AddBook" enctype="multipart/form-data" method="post">
             <ul class="create-book_form-items">
                 <li class="create-book_form-items-header"><h1 class="create-book_form-items-header-element">Add book</h1></li>
-                <li class="create-book_form-items-input-title"><input class="create-book_form-items-input-title-element" type="text" placeholder="Title"></li>
-                <li class="create-book_form-items-input-image"><label class="create-book_form-items-input-image-custom-uploader" for="input-file"><span>Choose photo</span></label><input class="create-book_form-items-input-image-element" id="input-file" type="file"></li>
-                <li class="create-book_form-items-input-author"><input class="create-book_form-items-input-author-element" type="text" placeholder="Author"></li>
-                <li class="create-book_form-items-input-publication-date"><input class="create-book_form-items-input-publication-date-element" type="number" placeholder="Publication date"></li>
-                <li class="create-book_form-items-input-topics"><input class="create-book_form-items-input-topics-element" type="text" placeholder="Genres"></li>
-                <li class="create-book_form-items-input-language"><input class="create-book_form-items-input-language-element" type="text" placeholder="Language"></li>
-                <li class="create-book_form-items-input-content"><textarea class="create-book_form-items-input-content-element" placeholder="Content"></textarea><span class="create-book_form-items-input-content-element-number-of-signs"><span class="create-book_form-items-input-content-element-number-of-signs-entered">0</span><span class="create-book_form-items-input-content-element-number-of-signs-max">/1000</span></span></li>
-                <li class="create-book_form-items-input-amount"><input class="create-book_form-items-input-amount-element" type="number" placeholder="Amount"></li>
+                <li class="create-book_form-items-input-title"><input class="create-book_form-items-input-title-element" asp-for="Title" placeholder="Title"></li>
+                <li class="create-book_form-items-input-image"><label class="create-book_form-items-input-image-custom-uploader" asp-for="Image"><span>Choose image</span></label><input class="create-book_form-items-input-image-element" asp-for="Image"></li>
+                <li class="create-book_form-items-input-author"><input class="create-book_form-items-input-author-element" asp-for="AuthorFirstname" placeholder="Author's firstname"></li>
+                <li class="create-book_form-items-input-author"><input class="create-book_form-items-input-author-element" asp-for="AuthorLastname" placeholder="Author's lastname"></li>
+                <li class="create-book_form-items-input-publication-date"><input class="create-book_form-items-input-publication-date-element" asp-for="PublicationYear" placeholder="Publication year"></li>
+                <li class="create-book_form-items-input-topics"><input class="create-book_form-items-input-topics-element" asp-for="Genres" placeholder="Genres"></li>
+                <li class="create-book_form-items-input-language"><input class="create-book_form-items-input-language-element" asp-for="Language" placeholder="Language"></li>
+                <li class="create-book_form-items-input-content"><textarea class="create-book_form-items-input-content-element" asp-for=Description placeholder="Description"></textarea><span class="create-book_form-items-input-content-element-number-of-signs"><span class="create-book_form-items-input-content-element-number-of-signs-entered">0</span><span class="create-book_form-items-input-content-element-number-of-signs-max">/1000</span></span></li>
+                <li class="create-book_form-items-validation-result">
+                    <div asp-validation-summary="All"></div>
+                </li>
                 <li class="create-book_form-items-button"><button class="create-book_form-items-button-element" type="submit">Add</button></li>
             </ul>
         </form>

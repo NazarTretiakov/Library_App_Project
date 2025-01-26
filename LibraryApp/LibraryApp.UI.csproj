@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\css\" />
+    <Folder Include="wwwroot\Images\Book_Images\" />
     <Folder Include="wwwroot\Images\Profile_Photos\" />
   </ItemGroup>
 

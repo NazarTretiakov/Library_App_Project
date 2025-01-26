@@ -52,7 +52,7 @@ namespace LibraryApp.UI.Controllers
             }
             else if (searchFilter != "all" && searchFilter != "username" && searchFilter != "topic" && searchFilter != "title")
             {
-                return BadRequest();  //TODO: create custom exception page for that type of situations (input searchString is not correct)
+                return NotFound();  //TODO: create custom exception page for that type of situations (input searchString is not correct)
             }
             else
             {
@@ -69,7 +69,7 @@ namespace LibraryApp.UI.Controllers
         {
             if (!Guid.TryParse(postId, out Guid result))
             {
-                return BadRequest();  //TODO: create custom exception page for that type of situations (input postId is not in the correct format, or postId is not present in the query string)
+                return NotFound();  //TODO: create custom exception page for that type of situations (input postId is not in the correct format, or postId is not present in the query string)
             }
 
             User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);

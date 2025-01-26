@@ -22,15 +22,98 @@ namespace LibraryApp.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Author", b =>
+                {
+                    b.Property<Guid>("AuthorId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("Firstname")
+                        .IsRequired()
+                        .HasMaxLength(40)
+                        .HasColumnType("nvarchar(40)");
+
+                    b.Property<string>("Lastname")
+                        .IsRequired()
+                        .HasMaxLength(40)
+                        .HasColumnType("nvarchar(40)");
+
+                    b.HasKey("AuthorId");
+
+                    b.ToTable("Authors", (string)null);
+                });
+
             modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Book", b =>
                 {
                     b.Property<Guid>("BookId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<int>("Amount")
+                        .HasColumnType("int");
+
+                    b.Property<Guid?>("AuthorId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(700)
+                        .HasColumnType("nvarchar(700)");
+
+                    b.Property<int>("Holds")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ImagePath")
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
+
+                    b.Property<string>("Language")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
+
+                    b.Property<int>("PublicationYear")
+                        .HasColumnType("int");
+
+                    b.Property<double>("Rating")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
                     b.HasKey("BookId");
 
-                    b.ToTable("Book");
+                    b.HasIndex("AuthorId");
+
+                    b.ToTable("Books", (string)null);
+                });
+
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.BookGenre", b =>
+                {
+                    b.Property<Guid>("BookGenreId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("BookId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("GenreId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("BookGenreId");
+
+                    b.HasIndex("BookId");
+
+                    b.HasIndex("GenreId");
+
+                    b.ToTable("BookGenres", (string)null);
                 });
 
             modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Comment", b =>
@@ -60,6 +143,22 @@ namespace LibraryApp.Infrastructure.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Comments", (string)null);
+                });
+
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Genre", b =>
+                {
+                    b.Property<Guid>("GenreId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(40)
+                        .HasColumnType("nvarchar(40)");
+
+                    b.HasKey("GenreId");
+
+                    b.ToTable("Genres", (string)null);
                 });
 
             modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Like", b =>
@@ -425,6 +524,34 @@ namespace LibraryApp.Infrastructure.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Book", b =>
+                {
+                    b.HasOne("LibraryApp.Core.Domain.Entities.Author", "Author")
+                        .WithMany("Books")
+                        .HasForeignKey("AuthorId");
+
+                    b.Navigation("Author");
+                });
+
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.BookGenre", b =>
+                {
+                    b.HasOne("LibraryApp.Core.Domain.Entities.Book", "Book")
+                        .WithMany("Genres")
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("LibraryApp.Core.Domain.Entities.Genre", "Genre")
+                        .WithMany("Books")
+                        .HasForeignKey("GenreId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Book");
+
+                    b.Navigation("Genre");
+                });
+
             modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Comment", b =>
                 {
                     b.HasOne("LibraryApp.Core.Domain.Entities.Post", "Post")
@@ -594,9 +721,21 @@ namespace LibraryApp.Infrastructure.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Author", b =>
+                {
+                    b.Navigation("Books");
+                });
+
             modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Book", b =>
                 {
+                    b.Navigation("Genres");
+
                     b.Navigation("Saves");
+                });
+
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Genre", b =>
+                {
+                    b.Navigation("Books");
                 });
 
             modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Post", b =>

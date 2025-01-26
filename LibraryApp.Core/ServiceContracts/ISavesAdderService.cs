@@ -19,7 +19,7 @@ namespace LibraryApp.Core.ServiceContracts
         /// <summary>
         /// Adds a save of the book to the system.
         /// </summary>
-        /// <param name="post">Book which was saved.</param>
+        /// <param name="book">Book which was saved.</param>
         /// <param name="user">User that saved a book.</param>
         /// <returns>True if save was added. Otherwise false.</returns>
         Task<Save> AddBookSave(Book book, User user);
