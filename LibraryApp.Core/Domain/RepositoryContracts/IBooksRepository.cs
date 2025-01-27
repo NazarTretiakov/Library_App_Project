@@ -34,5 +34,20 @@ namespace LibraryApp.Core.Domain.RepositoryContracts
         /// <param name="book">Book object that will be added to the data store.</param>
         /// <returns>True if book was added. Otherwise false.</returns>
         Task<bool> AddBook(Book book);
+
+        /// <summary>
+        /// Changes book amount in the data store.
+        /// </summary>
+        /// <param name="book">The book object of which amount will be changed.</param>
+        /// <param name="newAmount">The new amount of the book.</param>
+        /// <returns>Book object.</returns>
+        Task<Book> ChangeBookAmount(Book book, int newAmount);
+
+        /// <summary>
+        /// Deletes book from the data store.
+        /// </summary>
+        /// <param name="book">The book object which will be deleted.</param>
+        /// <returns>True if the book was deleted. Otherwise false.</returns>
+        Task<bool> DeleteBook(Book book);
     }
 }

@@ -54,6 +54,8 @@ namespace LibraryApp.UI.StartupExtensions
             services.AddScoped<IAuthorsGetterService, AuthorsGetterService>();
             services.AddScoped<IBooksAdderService, BooksAdderService>();
             services.AddScoped<IBooksGetterService, BooksGetterService>();
+            services.AddScoped<IChangeBookAmountService, ChangeBookAmountService>();
+            services.AddScoped<IBooksRemoverService, BooksRemoverService>();
 
 
             services.AddDbContext<LibraryDbContext>(options => 

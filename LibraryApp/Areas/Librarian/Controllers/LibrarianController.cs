@@ -19,12 +19,16 @@ namespace LibraryApp.UI.Areas.Librarian.Controllers
         private readonly IAuthorsGetterService _authorsGetterService;
         private readonly IBooksAdderService _booksAdderService;
         private readonly IBooksGetterService _booksGetterService;
+        private readonly IChangeBookAmountService _changeBookAmountService;
+        private readonly IBooksRemoverService _booksRemoverService;
 
-        public LibrarianController(IAuthorsGetterService authorsGetterService, IBooksAdderService booksAdderService, IBooksGetterService booksGetterService)
+        public LibrarianController(IAuthorsGetterService authorsGetterService, IBooksAdderService booksAdderService, IBooksGetterService booksGetterService, IChangeBookAmountService changeBookAmountService, IBooksRemoverService booksRemoverService)
         {
             _authorsGetterService = authorsGetterService;
             _booksAdderService = booksAdderService;
             _booksGetterService = booksGetterService;
+            _changeBookAmountService = changeBookAmountService;
+            _booksRemoverService = booksRemoverService;
         }
 
         [Route("/librarian-panel")]
@@ -98,6 +102,38 @@ namespace LibraryApp.UI.Areas.Librarian.Controllers
             Book book = await _booksGetterService.GetBookByBookId(bookId);
 
             return View(book);
+        }
+
+        [Route("/librarian-panel/manage-books/manage-book/change-amount")]
+        [HttpPost]
+        public async Task<IActionResult> ChangeBookAmount(ChangeBookAmountDTO changeBookAmountDTO)
+        {
+            if (!Guid.TryParse(changeBookAmountDTO.BookId, out Guid result))
+            {
+                return NotFound();  //TODO: create custom exception page for that type of situations (input postId is not in the correct format, or postId is not present in the query string)
+            }
+
+            Book book = await _booksGetterService.GetBookByBookId(changeBookAmountDTO.BookId);
+
+            book = await _changeBookAmountService.ChangeBookAmount(book, changeBookAmountDTO.NewAmount);
+
+            return RedirectToAction(nameof(LibrarianController.ManageBook), "Librarian", new { bookId = book.BookId });
+        }
+
+        [Route("/librarian-panel/manage-books/manage-book/delete-book")]
+        [HttpPost]
+        public async Task<IActionResult> DeleteBook(string bookId)
+        {
+            if (!Guid.TryParse(bookId, out Guid result))
+            {
+                return NotFound();  //TODO: create custom exception page for that type of situations (input postId is not in the correct format, or postId is not present in the query string)
+            }
+
+            Book book = await _booksGetterService.GetBookByBookId(bookId);
+
+            await _booksRemoverService.DeleteBook(book);
+
+            return RedirectToAction(nameof(LibrarianController.ManageBooks), "Librarian");
         }
     }
 }

@@ -738,42 +738,6 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\user-profile-posts.css.map'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Book_Images\00071b62-a827-4e5f-a799-ca7bea2d2bfa_Clean_Code.jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>LibraryApp.UI</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/LibraryApp.UI</BasePath>
-      <RelativePath>Images/Book_Images/00071b62-a827-4e5f-a799-ca7bea2d2bfa_Clean_Code.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>hzb9rk5yl8</Fingerprint>
-      <Integrity>7T8kDPLbamA7teLjACIIzVawZIP/ohhz2SC6VvzvPwc=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Book_Images\00071b62-a827-4e5f-a799-ca7bea2d2bfa_Clean_Code.jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Book_Images\3fa54fb2-70ab-4c3a-b6b8-c0b0986320d7_Atomic_habits_book.jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>LibraryApp.UI</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/LibraryApp.UI</BasePath>
-      <RelativePath>Images/Book_Images/3fa54fb2-70ab-4c3a-b6b8-c0b0986320d7_Atomic_habits_book.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>d9kdyf99gq</Fingerprint>
-      <Integrity>L4o/eaSqP4XNowTx9JR10aiyKbCgtTZcqVR0jbJ6wjw=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Book_Images\3fa54fb2-70ab-4c3a-b6b8-c0b0986320d7_Atomic_habits_book.jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Icons\Add_icon.svg'))">
       <SourceType>Package</SourceType>
       <SourceId>LibraryApp.UI</SourceId>

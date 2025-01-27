@@ -492,30 +492,6 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"z6qe42djee"},{"Name":"integrity","Value":"sha256-5SfRojpn1fv0j2Hvq99sAG2jbSe1MoBcJFHTg\u002Bw4qoY="},{"Name":"label","Value":"_content/LibraryApp.UI/css/user-profile-posts.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9749"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00225SfRojpn1fv0j2Hvq99sAG2jbSe1MoBcJFHTg\u002Bw4qoY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 17 Jan 2025 13:14:23 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/LibraryApp.UI/Images/Book_Images/00071b62-a827-4e5f-a799-ca7bea2d2bfa_Clean_Code.hzb9rk5yl8.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Book_Images\00071b62-a827-4e5f-a799-ca7bea2d2bfa_Clean_Code.jpg'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hzb9rk5yl8"},{"Name":"integrity","Value":"sha256-7T8kDPLbamA7teLjACIIzVawZIP/ohhz2SC6VvzvPwc="},{"Name":"label","Value":"_content/LibraryApp.UI/Images/Book_Images/00071b62-a827-4e5f-a799-ca7bea2d2bfa_Clean_Code.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"44740"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00227T8kDPLbamA7teLjACIIzVawZIP/ohhz2SC6VvzvPwc=\u0022"},{"Name":"Last-Modified","Value":"Sun, 26 Jan 2025 11:49:18 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/LibraryApp.UI/Images/Book_Images/00071b62-a827-4e5f-a799-ca7bea2d2bfa_Clean_Code.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Book_Images\00071b62-a827-4e5f-a799-ca7bea2d2bfa_Clean_Code.jpg'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-7T8kDPLbamA7teLjACIIzVawZIP/ohhz2SC6VvzvPwc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"44740"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00227T8kDPLbamA7teLjACIIzVawZIP/ohhz2SC6VvzvPwc=\u0022"},{"Name":"Last-Modified","Value":"Sun, 26 Jan 2025 11:49:18 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/LibraryApp.UI/Images/Book_Images/3fa54fb2-70ab-4c3a-b6b8-c0b0986320d7_Atomic_habits_book.d9kdyf99gq.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Book_Images\3fa54fb2-70ab-4c3a-b6b8-c0b0986320d7_Atomic_habits_book.jpg'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"d9kdyf99gq"},{"Name":"integrity","Value":"sha256-L4o/eaSqP4XNowTx9JR10aiyKbCgtTZcqVR0jbJ6wjw="},{"Name":"label","Value":"_content/LibraryApp.UI/Images/Book_Images/3fa54fb2-70ab-4c3a-b6b8-c0b0986320d7_Atomic_habits_book.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"68098"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022L4o/eaSqP4XNowTx9JR10aiyKbCgtTZcqVR0jbJ6wjw=\u0022"},{"Name":"Last-Modified","Value":"Sun, 26 Jan 2025 08:38:35 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/LibraryApp.UI/Images/Book_Images/3fa54fb2-70ab-4c3a-b6b8-c0b0986320d7_Atomic_habits_book.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Book_Images\3fa54fb2-70ab-4c3a-b6b8-c0b0986320d7_Atomic_habits_book.jpg'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-L4o/eaSqP4XNowTx9JR10aiyKbCgtTZcqVR0jbJ6wjw="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"68098"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022L4o/eaSqP4XNowTx9JR10aiyKbCgtTZcqVR0jbJ6wjw=\u0022"},{"Name":"Last-Modified","Value":"Sun, 26 Jan 2025 08:38:35 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/LibraryApp.UI/Images/Icons/Add_icon.4cvqshaw56.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Icons\Add_icon.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

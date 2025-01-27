@@ -1,6 +1,10 @@
 ﻿using LibraryApp.Core.Domain.Entities;
+using LibraryApp.Core.Domain.IdentityEntities;
 using LibraryApp.Core.Domain.RepositoryContracts;
 using LibraryApp.Infrastructure.DbContext;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
@@ -10,9 +14,12 @@ namespace LibraryApp.Infrastructure.Repositories
     {
         private readonly LibraryDbContext _db;
 
-        public BooksRepository(LibraryDbContext db)
+        private readonly IWebHostEnvironment _webHostEnvironment;
+
+        public BooksRepository(LibraryDbContext db, IWebHostEnvironment webHostEnvironment)
         {
             _db = db;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         public async Task<bool> AddBook(Book book)
@@ -22,6 +29,35 @@ namespace LibraryApp.Infrastructure.Repositories
             var rowsAdded = await _db.SaveChangesAsync();
 
             return rowsAdded > 0;
+        }
+
+        public async Task<Book> ChangeBookAmount(Book book, int newAmount)
+        {
+            book.Amount = newAmount;
+
+            await _db.SaveChangesAsync();
+
+            return book;
+        }
+
+        public async Task<bool> DeleteBook(Book book)
+        {
+            string imagePath = Path.Combine(_webHostEnvironment.WebRootPath, "Images", "Book_Images", Path.GetFileName(book.ImagePath));
+            
+            if (File.Exists(imagePath))
+            {
+                File.Delete(imagePath);
+            }
+            else
+            {
+                throw new Exception();
+            }
+
+            _db.Books.Remove(book);
+
+            var rowsAffected = await _db.SaveChangesAsync();
+
+            return rowsAffected < 0;
         }
 
         public async Task<List<Book>> GetAllBooks()

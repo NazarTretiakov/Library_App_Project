@@ -42,18 +42,22 @@
             <li class="book-actions-title"><h1 class="book-actions-title-element">@Model.Title</h1></li>
             <li class="book-actions-author"><h2 class="book-actions-author-element">@Model.Author.Firstname @Model.Author.Lastname</h2></li>
             <li class="book-actions_change-amount">
-                <form action="">
+                <form asp-controller="Librarian" asp-action="ChangeBookAmount">
+                    <input name="bookId" value="@Model.BookId" hidden/>
                     <ul class="book-actions_change-amount-items">
                         <li class="book-actions_change-amount-items_input">
                             <span class="book-actions_change-amount-items_input-label">Amount:</span>
-                            <input class="book-actions_change-amount-items_input-element" type="number">
+                            <input class="book-actions_change-amount-items_input-element" type="number" name="newAmount" value="@Model.Amount">
                         </li>
                         <li class="book-actions_change-amount-items_button"><button class="book-actions_change-amount-items_button-element">Change amount</button></li>
                     </ul>
                 </form>
             </li>
             <li class="book-actions_delete-button">
-                <button class="book-actions_delete-button-element">Delete book</button>
+                <form asp-controller="Librarian" asp-action="DeleteBook">
+                    <input name="bookId" value="@Model.BookId" hidden />
+                    <button class="book-actions_delete-button-element">Delete book</button>
+                </form>
             </li>
         </ul>
     </section>

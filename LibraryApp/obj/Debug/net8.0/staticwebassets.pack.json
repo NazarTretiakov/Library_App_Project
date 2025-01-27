@@ -1,14 +1,6 @@
 {
   "Files": [
     {
-      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Book_Images\\00071b62-a827-4e5f-a799-ca7bea2d2bfa_Clean_Code.jpg",
-      "PackagePath": "staticwebassets\\Images\\Book_Images\\00071b62-a827-4e5f-a799-ca7bea2d2bfa_Clean_Code.jpg"
-    },
-    {
-      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Book_Images\\3fa54fb2-70ab-4c3a-b6b8-c0b0986320d7_Atomic_habits_book.jpg",
-      "PackagePath": "staticwebassets\\Images\\Book_Images\\3fa54fb2-70ab-4c3a-b6b8-c0b0986320d7_Atomic_habits_book.jpg"
-    },
-    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Add_icon.svg",
       "PackagePath": "staticwebassets\\Images\\Icons\\Add_icon.svg"
     },
