@@ -124,6 +124,7 @@
 }
 .book-items_information-items_author-element:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 .book-items_information-items_date {
   margin: 0 0 16px 0;
@@ -145,6 +146,7 @@
 }
 .book-items_information-items_genre-element:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 .book-items_information-items_rating {
   margin: 0 0 16px 0;
@@ -294,6 +296,10 @@
 }
 .book-link {
   color: black;
+  text-decoration: none;
+}
+.book-link-blue {
+  color: #0066CC;
   text-decoration: none;
 }
 

@@ -89,7 +89,7 @@
                 <ul class="profile-items_user-information-items">
                     <li class="profile-items_user-information-items_full-name">
                         <h1 class="profile-items_user-information-items_full-name-element">
-                            @(string.IsNullOrEmpty(Model.Firstname) || string.IsNullOrEmpty(Model.Lastname)
+                            @(string.IsNullOrEmpty(Model.Firstname) && string.IsNullOrEmpty(Model.Lastname)
                                     ? "Name isn't mentioned"
                                     : $"{Model.Firstname} {Model.Lastname}")
                         </h1>

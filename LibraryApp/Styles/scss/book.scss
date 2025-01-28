@@ -169,6 +169,7 @@
 
                         &:hover {
                             text-decoration: underline;
+                            cursor: pointer;
                         }
                     }
                 }
@@ -196,6 +197,7 @@
 
                         &:hover {
                             text-decoration: underline;
+                            cursor: pointer;
                         }
                     }
                 }
@@ -412,6 +414,11 @@
 
     &-link {
         color: black;
+        text-decoration: none;
+    }
+
+    &-link-blue {
+        color: $footerLinkColor;
         text-decoration: none;
     }
 }

@@ -117,7 +117,7 @@
                                                     <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_username"><span class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_username-element">@subscription.User.UserName</span></li>
                                                     <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_full-name">
                                                         <span class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_full-name-element">
-                                                            @(string.IsNullOrEmpty(subscription.User.Firstname) || string.IsNullOrEmpty(subscription.User.Lastname)
+                                                            @(string.IsNullOrEmpty(subscription.User.Firstname) && string.IsNullOrEmpty(subscription.User.Lastname)
                                                                 ? "Name isn't mentioned"
                                                                 : $"{subscription.User.Firstname} {subscription.User.Lastname}")
                                                         </span>
@@ -144,7 +144,7 @@
                                                     <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_username"><span class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_username-element">@subscription.User.UserName</span></li>
                                                     <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_full-name">
                                                         <span class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_full-name-element">
-                                                                @(string.IsNullOrEmpty(subscription.User.Firstname) || string.IsNullOrEmpty(subscription.User.Lastname)
+                                                                @(string.IsNullOrEmpty(subscription.User.Firstname) && string.IsNullOrEmpty(subscription.User.Lastname)
                                                                     ? "Name isn't mentioned"
                                                                     : $"{subscription.User.Firstname} {subscription.User.Lastname}")
                                                         </span>

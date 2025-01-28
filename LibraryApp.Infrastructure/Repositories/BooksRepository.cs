@@ -64,6 +64,7 @@ namespace LibraryApp.Infrastructure.Repositories
         {
             return await _db.Books.Include(b => b.Author)
                                   .Include(b => b.Genres)
+                                    .ThenInclude(bk => bk.Genre)
                                   .ToListAsync();
         }
 
@@ -71,6 +72,7 @@ namespace LibraryApp.Infrastructure.Repositories
         {
             return await _db.Books.Include(b => b.Author)
                                   .Include(b => b.Genres)
+                                    .ThenInclude(bk => bk.Genre)
                                   .FirstOrDefaultAsync(b => b.BookId == Guid.Parse(bookId));
         }
 
@@ -78,6 +80,7 @@ namespace LibraryApp.Infrastructure.Repositories
         {
             return await _db.Books.Include(b => b.Author)
                                   .Include(b => b.Genres)
+                                    .ThenInclude(bk => bk.Genre)
                                   .Where(predicate)
                                   .ToListAsync();
         }

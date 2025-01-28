@@ -39,6 +39,8 @@ wwwroot\css\user-profile-comments.css
 wwwroot\css\user-profile-comments.css.map
 wwwroot\css\user-profile-posts.css
 wwwroot\css\user-profile-posts.css.map
+wwwroot\Images\Book_Images\92e7e4cc-0cc0-40ee-968b-afd8066214d7_Clean_Code.jpg
+wwwroot\Images\Book_Images\945920c8-3909-4eea-9826-3dd2601acb9c_Atomic_habits.jpg
 wwwroot\Images\Icons\Add_icon.svg
 wwwroot\Images\Icons\Arrow_forward.svg
 wwwroot\Images\Icons\Author.svg

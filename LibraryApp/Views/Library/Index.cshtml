@@ -1,4 +1,6 @@
-﻿@{
+﻿@model List<Book>
+
+@{
     ViewBag.Title = "Library";
     ViewBag.StylesPath = "~/css/library.css";
 }
@@ -38,16 +40,40 @@
                     <div class="search-panel-form-search-icon-div"></div>
                 </li>
                 <li class="search-panel-form-search-input">
-                    <input class="search-panel-form-search-input-element" name="searchString" type="text" placeholder="Search">
+                    <input class="search-panel-form-search-input-element" name="searchString" type="text" placeholder="Search" value="@ViewBag.SearchString">
                 </li>
             </ul>
             <ul class="search-panel-form-dropdown">
                 <li class="search-panel-form-dropdown-select">
                     <select class="search-panel-form-dropdown-select-element" name="searchFilter">
-                        <option class="search-panel-form-dropdown-select-element-author" value="all" selected>All results</option>
-                        <option class="search-panel-form-dropdown-select-element-author" value="authorName">Author name</option>
-                        <option class="search-panel-form-dropdown-select-element-title" value="title">Title</option>
-                        <option class="search-panel-form-dropdown-select-element-genre" value="genre">Genre</option>
+                        @if (ViewBag.SearchFilter == "all")
+                        {
+                            <option class="search-panel-form-dropdown-select-element-author" value="all" selected>All results</option>
+                            <option class="search-panel-form-dropdown-select-element-title" value="title">Title</option>
+                            <option class="search-panel-form-dropdown-select-element-author" value="authorName">Author name</option>
+                            <option class="search-panel-form-dropdown-select-element-genre" value="genre">Genre</option>
+                        }
+                        else if (ViewBag.SearchFilter == "title")
+                        {
+                            <option class="search-panel-form-dropdown-select-element-author" value="all">All results</option>
+                            <option class="search-panel-form-dropdown-select-element-title" value="title" selected>Title</option>
+                            <option class="search-panel-form-dropdown-select-element-author" value="authorName">Author name</option>
+                            <option class="search-panel-form-dropdown-select-element-genre" value="genre">Genre</option>
+                        }
+                        else if (ViewBag.SearchFilter == "authorName")
+                        {
+                            <option class="search-panel-form-dropdown-select-element-author" value="all">All results</option>
+                            <option class="search-panel-form-dropdown-select-element-title" value="title">Title</option>
+                            <option class="search-panel-form-dropdown-select-element-author" value="authorName" selected>Author name</option>
+                            <option class="search-panel-form-dropdown-select-element-genre" value="genre">Genre</option>
+                        }
+                        else if (ViewBag.SearchFilter == "genre")
+                        {
+                            <option class="search-panel-form-dropdown-select-element-author" value="all">All results</option>
+                            <option class="search-panel-form-dropdown-select-element-title" value="title">Title</option>
+                            <option class="search-panel-form-dropdown-select-element-author" value="authorName">Author name</option>
+                            <option class="search-panel-form-dropdown-select-element-genre" value="genre" selected>Genre</option>
+                        }
                     </select>
                 </li>
                 <li class="search-panel-form-dropdown-arrow">
@@ -59,65 +85,34 @@
     </section>
 </div>
 
-<div class="book-container">
-    <a class="book-link" asp-controller="Library" asp-action="Book">
-        <section class="book">
-            <ul class="book-items">
-                <li class="book-items_image"><img class="book-items_image-element" src="~/Images/Atomic_habits_book.jpg" alt="Image of the book"></li>
-                <li class="book-items_information">
-                    <ul class="book-items_information-items">
-                        <li class="book-items_information-items_title"><h1 class="book-items_information-items_title-element">Atomic Habits</h1></li>
-                        <li class="book-items_information-items_topics"><span class="book-items_information-items_topics-topic">NameOfTopic1</span> <span class="book-items_information-items_topics-topic">NameOfTopic2</span> <span class="book-items_information-items_topics-topic">NameOfTopic3</span></li>
-                        <li class="book-items_information-items_author"><span class="book-items_information-items_author-element">James Clear</span></li>
-                        <li class="book-items_information-items_description"><p class="book-items_information-items_description-element">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book...</p></li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-    </a>
-</div>
+@foreach (Book book in Model)
+{
+    <div class="book-container">
+        <a class="book-link" asp-controller="Library" asp-action="Book" asp-route-bookId="@book.BookId">
+            <section class="book">
+                <ul class="book-items">
+                    <li class="book-items_image"><img class="book-items_image-element" src="@Url.Content(book.ImagePath)" alt="Image of the book"></li>
+                    <li class="book-items_information">
+                        <ul class="book-items_information-items">
+                            <li class="book-items_information-items_title"><h1 class="book-items_information-items_title-element">@book.Title</h1></li>
+                            <li class="book-items_information-items_topics">
+                                @foreach (BookGenre bookGenre in book.Genres)
+                                {
+                                    <span class="book-items_information-items_topics-topic">@bookGenre.Genre.Name</span>
+                                    <span> </span>
+                                }
+                            </li>
+                            <li class="book-items_information-items_author"><span class="book-items_information-items_author-element">@book.Author.Firstname @book.Author.Lastname</span></li>
+                            <li class="book-items_information-items_description"><p class="book-items_information-items_description-element">@(book.Description.Length > 250 ? book.Description.Substring(0, 250) + "..." : book.Description)</p></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </a>
+    </div>
 
-<div class="container-for-space-between-books"></div>
-
-<div class="book-container">
-    <a class="book-link" asp-controller="Library" asp-action="Book">
-        <section class="book">
-            <ul class="book-items">
-                <li class="book-items_image"><img class="book-items_image-element" src="~/Images/Atomic_habits_book.jpg" alt="Image of the book"></li>
-                <li class="book-items_information">
-                    <ul class="book-items_information-items">
-                        <li class="book-items_information-items_title"><h1 class="book-items_information-items_title-element">Atomic Habits</h1></li>
-                        <li class="book-items_information-items_topics"><span class="book-items_information-items_topics-topic">NameOfTopic1</span> <span class="book-items_information-items_topics-topic">NameOfTopic2</span> <span class="book-items_information-items_topics-topic">NameOfTopic3</span></li>
-                        <li class="book-items_information-items_author"><span class="book-items_information-items_author-element">James Clear</span></li>
-                        <li class="book-items_information-items_description"><p class="book-items_information-items_description-element">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book...</p></li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-    </a>
-</div>
-
-<div class="container-for-space-between-books"></div>
-
-<div class="book-container">
-    <a class="book-link" asp-controller="Library" asp-action="Book">
-        <section class="book">
-            <ul class="book-items">
-                <li class="book-items_image"><img class="book-items_image-element" src="~/Images/Atomic_habits_book.jpg" alt="Image of the book"></li>
-                <li class="book-items_information">
-                    <ul class="book-items_information-items">
-                        <li class="book-items_information-items_title"><h1 class="book-items_information-items_title-element">Atomic Habits</h1></li>
-                        <li class="book-items_information-items_topics"><span class="book-items_information-items_topics-topic">NameOfTopic1</span> <span class="book-items_information-items_topics-topic">NameOfTopic2</span> <span class="book-items_information-items_topics-topic">NameOfTopic3</span></li>
-                        <li class="book-items_information-items_author"><span class="book-items_information-items_author-element">James Clear</span></li>
-                        <li class="book-items_information-items_description"><p class="book-items_information-items_description-element">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book...</p></li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-    </a>
-</div>
-
-<div class="container-for-space-between-books"></div>
+    <div class="container-for-space-between-books"></div>
+}
 
 
 <footer class="footer">

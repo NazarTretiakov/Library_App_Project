@@ -117,9 +117,9 @@
                                                     <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_username"><span class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_username-element">@subscriber.Subscriber.UserName</span></li>
                                                     <li class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_full-name">
                                                         <span class="subs-items_subs-columns-items_first-column-items_subscriber-items_info-items_full-name-element">
-                                                            @(string.IsNullOrEmpty(subscriber.User.Firstname) || string.IsNullOrEmpty(subscriber.User.Lastname)
+                                                            @(string.IsNullOrEmpty(subscriber.Subscriber.Firstname) && string.IsNullOrEmpty(subscriber.Subscriber.Lastname)
                                                                 ? "Name isn't mentioned"
-                                                                : $"{subscriber.User.Firstname} {subscriber.User.Lastname}")
+                                                                : $"{subscriber.Subscriber.Firstname} {subscriber.Subscriber.Lastname}")
                                                         </span>
                                                     </li>
                                                 </ul>
@@ -146,9 +146,9 @@
                                                     <li class="subs-items_subs-columns-items_second-column-items_subscriber-items_info-items_username"><span class="subs-items_subs-columns-items_second-column-items_subscriber-items_info-items_username-element">@subscriber.Subscriber.UserName</span></li>
                                                     <li class="subs-items_subs-columns-items_second-column-items_subscriber-items_info-items_full-name">
                                                         <span class="subs-items_subs-columns-items_second-column-items_subscriber-items_info-items_full-name-element">
-                                                            @(string.IsNullOrEmpty(subscriber.User.Firstname) || string.IsNullOrEmpty(subscriber.User.Lastname)
+                                                            @(string.IsNullOrEmpty(subscriber.Subscriber.Firstname) && string.IsNullOrEmpty(subscriber.Subscriber.Lastname)
                                                                 ? "Name isn't mentioned"
-                                                                : $"{subscriber.User.Firstname} {subscriber.User.Lastname}")
+                                                                : $"{subscriber.Subscriber.Firstname} {subscriber.Subscriber.Lastname}")
                                                         </span>
                                                     </li>
                                                 </ul>

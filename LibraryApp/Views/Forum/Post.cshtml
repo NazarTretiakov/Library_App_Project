@@ -93,7 +93,7 @@
             <li class="post-items-topics">
                 @foreach (PostTopic postTopic in Model.Topics)
                 {
-                    <a href="" class="post-items-topics-topic footer-link">#@postTopic.Topic.Name</a>
+                    <a class="post-items-topics-topic footer-link" asp-controller="Forum" asp-action="Index" asp-route-searchString="@postTopic.Topic.Name" asp-route-searchFilter="topic">#@postTopic.Topic.Name</a>
                     <span> </span>
                 }
             </li>
