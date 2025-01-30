@@ -38,23 +38,22 @@
 
 
     <section class="search-panel">
-        <form class="search-panel-form" asp-controller="Library" asp-action="Index">
+        <form class="search-panel-form" asp-controller="Library" asp-action="Index" method="get">
             <ul class="search-panel-form-search">
                 <li class="search-panel-form-search-icon">
                     <div class="search-panel-form-search-icon-div"></div>
                 </li>
                 <li class="search-panel-form-search-input">
-                    <input class="search-panel-form-search-input-element" type="text" placeholder="Search">
+                    <input class="search-panel-form-search-input-element" name="searchString" type="text" placeholder="Search">
                 </li>
             </ul>
             <ul class="search-panel-form-dropdown">
                 <li class="search-panel-form-dropdown-select">
-                    <select class="search-panel-form-dropdown-select-element">
-                        <option class="search-panel-form-dropdown-select-element-author" value="all">All results</option>
-                        <option class="search-panel-form-dropdown-select-element-author" value="author">Author</option>
+                    <select class="search-panel-form-dropdown-select-element" name="searchFilter">
+                        <option class="search-panel-form-dropdown-select-element-author" value="all" selected>All results</option>
                         <option class="search-panel-form-dropdown-select-element-title" value="title">Title</option>
+                        <option class="search-panel-form-dropdown-select-element-author" value="authorName">Author name</option>
                         <option class="search-panel-form-dropdown-select-element-genre" value="genre">Genre</option>
-                        <option class="search-panel-form-dropdown-select-element-rating" value="rating">Rating</option>
                     </select>
                 </li>
                 <li class="search-panel-form-dropdown-arrow">
@@ -87,31 +86,31 @@
 <section class="genre-recommendations">
     <h1 class="genre-recommendations-title">Book genres that we recommend</h1>
     <ul class="genre-recommendations-genres">
-        <a class="genre-recommendations-link" href="">
+        <a class="genre-recommendations-link" asp-controller="Library" asp-action="Index" asp-route-searchString="Science" asp-route-searchFilter="genre">
         <li class="genre-recommendations-genres-science">
             <div class="genre-recommendations-genres-science-icon"></div>
             <span class="genre-recommendations-genres-science-span">Science</span>
         </li>
         </a>
-        <a class="genre-recommendations-link" href="">
+        <a class="genre-recommendations-link" asp-controller="Library" asp-action="Index" asp-route-searchString="Nature" asp-route-searchFilter="genre">
         <li class="genre-recommendations-genres-nature">
             <div class="genre-recommendations-genres-nature-icon"></div>
             <span class="genre-recommendations-genres-nature-span">Nature</span>
         </li>
         </a>
-        <a class="genre-recommendations-link" href="">
+        <a class="genre-recommendations-link" asp-controller="Library" asp-action="Index" asp-route-searchString="Finance" asp-route-searchFilter="genre">
         <li class="genre-recommendations-genres-finance">
             <div class="genre-recommendations-genres-finance-icon"></div>
             <span class="genre-recommendations-genres-finance-span">Finance</span>
         </li>
         </a>
-        <a class="genre-recommendations-link" href="">
+        <a class="genre-recommendations-link" asp-controller="Library" asp-action="Index" asp-route-searchString="Classic" asp-route-searchFilter="genre">
         <li class="genre-recommendations-genres-classic">
             <div class="genre-recommendations-genres-classic-icon"></div>
             <span class="genre-recommendations-genres-classic-span">Classic</span>
         </li>
         </a>
-        <a class="genre-recommendations-link" href="">
+        <a class="genre-recommendations-link" asp-controller="Library" asp-action="Index" asp-route-searchString="History" asp-route-searchFilter="genre">
         <li class="genre-recommendations-genres-history">
             <div class="genre-recommendations-genres-history-icon"></div>
             <span class="genre-recommendations-genres-history-span">History</span>

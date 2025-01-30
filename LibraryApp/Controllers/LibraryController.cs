@@ -1,9 +1,12 @@
 ﻿using LibraryApp.Core.Domain.Entities;
 using LibraryApp.Core.Domain.IdentityEntities;
+using LibraryApp.Core.DTO;
 using LibraryApp.Core.ServiceContracts;
+using LibraryApp.Core.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Hosting;
 using NuGet.Protocol.Core.Types;
 using static System.Net.Mime.MediaTypeNames;
 
@@ -13,12 +16,16 @@ namespace LibraryApp.UI.Controllers
     public class LibraryController : Controller
     {
         private readonly IBooksGetterService _booksGetterService;
+        private readonly IToggleSaveService _toggleSaveService;
+        private readonly IIsBookSavedService _isBookSavedService;
 
         private readonly UserManager<User> _userManager;
 
-        public LibraryController(IBooksGetterService booksGetterService, UserManager<User> userManager)
+        public LibraryController(IBooksGetterService booksGetterService, IToggleSaveService toggleSaveService, IIsBookSavedService isBookSavedService, UserManager<User> userManager)
         {
             _booksGetterService = booksGetterService;
+            _toggleSaveService = toggleSaveService;
+            _isBookSavedService = isBookSavedService;
             _userManager = userManager;
         }
 
@@ -64,7 +71,26 @@ namespace LibraryApp.UI.Controllers
 
             Book book = await _booksGetterService.GetBookByBookId(bookId);
 
+            if (book == null)
+            {
+                return NotFound();  //TODO: create custom exception page for that type of situations (when the post is not found in db)
+            }
+
+            ViewBag.IsSaved = await _isBookSavedService.IsBookSaved(book.BookId.ToString());
+
             return View(book);
+        }
+
+        [Route("/library/book/toggle-book-save")]
+        [HttpPost]
+        public async Task<IActionResult> ToggleBookSave([FromBody] ToggleBookSaveDTO toggleSaveDTO)
+        {
+            bool isBookSaved = await _toggleSaveService.ToggleSave(toggleSaveDTO.BookId);
+            Book book = await _booksGetterService.GetBookByBookId(toggleSaveDTO.BookId);
+
+            ViewBag.IsSaved = isBookSaved;
+
+            return PartialView("_BookSave", book);
         }
     }
 }

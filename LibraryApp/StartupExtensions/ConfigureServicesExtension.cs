@@ -42,6 +42,7 @@ namespace LibraryApp.UI.StartupExtensions
             services.AddScoped<ISavesRemoverService, SavesRemoverService>();
             services.AddScoped<IToggleSaveService, ToggleSaveService>();
             services.AddScoped<IIsPostSavedService, IsPostSavedService>();
+            services.AddScoped<IIsBookSavedService, IsBookSavedService>();
             services.AddScoped<ICommentsGetterService, CommentsGetterService>();
             services.AddScoped<ICommentsCreatorService, CommentsCreatorService>();
             services.AddScoped<ISubscriptionsGetterService, SubscriptionsGetterService>();

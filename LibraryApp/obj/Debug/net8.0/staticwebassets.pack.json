@@ -373,6 +373,10 @@
       "PackagePath": "staticwebassets\\js\\profile-settings.js"
     },
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\toggle-book-save.js",
+      "PackagePath": "staticwebassets\\js\\toggle-book-save.js"
+    },
+    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\toggle-like.js",
       "PackagePath": "staticwebassets\\js\\toggle-like.js"
     },

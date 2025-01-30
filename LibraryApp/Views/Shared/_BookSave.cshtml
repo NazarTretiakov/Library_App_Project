@@ -1,0 +1,22 @@
+﻿@model Book
+
+
+@if (ViewData["IsSaved"] != null && (bool)ViewData["IsSaved"] == true)
+{
+    <svg class="book-items_save-icon-element book-items_save-icon-element-active"
+         xmlns="http://www.w3.org/2000/svg"
+         height="40px"
+         viewBox="0 -960 960 960"
+         width="30px"
+         data-book-id="@Model.BookId">
+        <path d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Z"
+              fill="black" />
+    </svg>
+}
+else if (ViewData["IsSaved"] != null && (bool)ViewData["IsSaved"] == false)
+{
+    <img class="book-items_save-icon-element"
+         src="~/Images/Icons/Save.svg"
+         alt="Icon of save"
+         data-book-id="@Model.BookId">
+}

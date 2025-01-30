@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "of1wC6k0/TqVEytXW5hlNFO1UlVElcEUZ2cDkJoBgvM=",
+  "Hash": "zxk6arPe/Bz6pcluu0RvPZ7x8BKvCEgu0FYGOpOhmag=",
   "Source": "LibraryApp.UI",
   "BasePath": "_content/LibraryApp.UI",
   "Mode": "Default",
@@ -115,8 +115,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "bowh1s997n",
-      "Integrity": "Vd80+LNdZWvM/RtdTEmO64zQA4noO7+8WH7HXRu2BB4=",
+      "Fingerprint": "3znvdugvyd",
+      "Integrity": "H7Aj3RUEhztiVFQCcUN+S4Isp4SQcJoXMI8XHHou5z4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\book.css"
@@ -136,8 +136,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "7ofyb2fijc",
-      "Integrity": "KdlSUalgYjWTLKeNpLpM+m6Ug7dkuKJLhVBEj6iEibY=",
+      "Fingerprint": "f1dvb6m0d7",
+      "Integrity": "w3b0Daw4cLAhrPgAUMADyxkAduCB0LIgkCbpg9bn7r8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\book.css.map"
@@ -1970,6 +1970,27 @@
       "OriginalItemSpec": "wwwroot\\js\\profile-settings.js"
     },
     {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\toggle-book-save.js",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "js/toggle-book-save#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "q2562agiph",
+      "Integrity": "znbPzvXCxsuirRfF5uhjfwt+EAkX0x22d/dMjS4ykxg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\toggle-book-save.js"
+    },
+    {
       "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\toggle-like.js",
       "SourceId": "LibraryApp.UI",
       "SourceType": "Discovered",
@@ -2363,7 +2384,7 @@
       ]
     },
     {
-      "Route": "css/book.bowh1s997n.css",
+      "Route": "css/book.3znvdugvyd.css",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\book.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2373,7 +2394,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8542"
+          "Value": "8668"
         },
         {
           "Name": "Content-Type",
@@ -2381,11 +2402,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Vd80+LNdZWvM/RtdTEmO64zQA4noO7+8WH7HXRu2BB4=\""
+          "Value": "\"H7Aj3RUEhztiVFQCcUN+S4Isp4SQcJoXMI8XHHou5z4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 16:32:33 GMT"
+          "Value": "Wed, 29 Jan 2025 17:41:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2395,7 +2416,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "bowh1s997n"
+          "Value": "3znvdugvyd"
         },
         {
           "Name": "label",
@@ -2403,7 +2424,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Vd80+LNdZWvM/RtdTEmO64zQA4noO7+8WH7HXRu2BB4="
+          "Value": "sha256-H7Aj3RUEhztiVFQCcUN+S4Isp4SQcJoXMI8XHHou5z4="
         }
       ]
     },
@@ -2418,7 +2439,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8542"
+          "Value": "8668"
         },
         {
           "Name": "Content-Type",
@@ -2426,11 +2447,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Vd80+LNdZWvM/RtdTEmO64zQA4noO7+8WH7HXRu2BB4=\""
+          "Value": "\"H7Aj3RUEhztiVFQCcUN+S4Isp4SQcJoXMI8XHHou5z4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 16:32:33 GMT"
+          "Value": "Wed, 29 Jan 2025 17:41:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2440,12 +2461,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Vd80+LNdZWvM/RtdTEmO64zQA4noO7+8WH7HXRu2BB4="
+          "Value": "sha256-H7Aj3RUEhztiVFQCcUN+S4Isp4SQcJoXMI8XHHou5z4="
         }
       ]
     },
     {
-      "Route": "css/book.css.7ofyb2fijc.map",
+      "Route": "css/book.css.f1dvb6m0d7.map",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\book.css.map",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2455,7 +2476,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1807"
+          "Value": "1833"
         },
         {
           "Name": "Content-Type",
@@ -2463,11 +2484,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"KdlSUalgYjWTLKeNpLpM+m6Ug7dkuKJLhVBEj6iEibY=\""
+          "Value": "\"w3b0Daw4cLAhrPgAUMADyxkAduCB0LIgkCbpg9bn7r8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 16:32:33 GMT"
+          "Value": "Wed, 29 Jan 2025 17:41:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2477,7 +2498,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "7ofyb2fijc"
+          "Value": "f1dvb6m0d7"
         },
         {
           "Name": "label",
@@ -2485,7 +2506,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-KdlSUalgYjWTLKeNpLpM+m6Ug7dkuKJLhVBEj6iEibY="
+          "Value": "sha256-w3b0Daw4cLAhrPgAUMADyxkAduCB0LIgkCbpg9bn7r8="
         }
       ]
     },
@@ -2500,7 +2521,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1807"
+          "Value": "1833"
         },
         {
           "Name": "Content-Type",
@@ -2508,11 +2529,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"KdlSUalgYjWTLKeNpLpM+m6Ug7dkuKJLhVBEj6iEibY=\""
+          "Value": "\"w3b0Daw4cLAhrPgAUMADyxkAduCB0LIgkCbpg9bn7r8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Jan 2025 16:32:33 GMT"
+          "Value": "Wed, 29 Jan 2025 17:41:39 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2522,7 +2543,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-KdlSUalgYjWTLKeNpLpM+m6Ug7dkuKJLhVBEj6iEibY="
+          "Value": "sha256-w3b0Daw4cLAhrPgAUMADyxkAduCB0LIgkCbpg9bn7r8="
         }
       ]
     },
@@ -9657,6 +9678,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-CyFpq5odDXgWgRZNL5NkwMvGGLdVgufRV4GVcw7L2DM="
+        }
+      ]
+    },
+    {
+      "Route": "js/toggle-book-save.js",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\toggle-book-save.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1251"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"znbPzvXCxsuirRfF5uhjfwt+EAkX0x22d/dMjS4ykxg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Jan 2025 17:59:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-znbPzvXCxsuirRfF5uhjfwt+EAkX0x22d/dMjS4ykxg="
+        }
+      ]
+    },
+    {
+      "Route": "js/toggle-book-save.q2562agiph.js",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\toggle-book-save.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1251"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"znbPzvXCxsuirRfF5uhjfwt+EAkX0x22d/dMjS4ykxg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 29 Jan 2025 17:59:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "q2562agiph"
+        },
+        {
+          "Name": "label",
+          "Value": "js/toggle-book-save.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-znbPzvXCxsuirRfF5uhjfwt+EAkX0x22d/dMjS4ykxg="
         }
       ]
     },

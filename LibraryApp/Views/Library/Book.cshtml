@@ -3,6 +3,7 @@
 @{
     ViewBag.Title = Model.Title;
     ViewBag.StylesPath = "~/css/book.css";
+    ViewBag.ScriptPath = "~/js/toggle-book-save.js";
 }
 
 
@@ -66,7 +67,7 @@
                 <li class="book-items_information-items_order-button"><button class="book-items_information-items_order-button-element">Order book</button></li>
             </ul>
         </li>
-        <li class="book-items_save-icon"><img class="book-items_save-icon-element" src="~/Images/Icons/Save.svg" alt="Save icon"></li>
+        <li class="book-items_save-icon">@await Html.PartialAsync("_BookSave", Model, ViewData)</li>
     </ul>
 
     <section class="book-author-information">

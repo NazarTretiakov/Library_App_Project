@@ -91,6 +91,7 @@ wwwroot\js\create-comment.js
 wwwroot\js\create-post.js
 wwwroot\js\photo-settings.js
 wwwroot\js\profile-settings.js
+wwwroot\js\toggle-book-save.js
 wwwroot\js\toggle-like.js
 wwwroot\js\toggle-post-save.js
 wwwroot\js\toggle-subscription.js

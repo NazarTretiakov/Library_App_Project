@@ -203,9 +203,15 @@
 }
 .book-items_save-icon-element {
   width: 40px;
+  transition: all 0.2s ease;
+}
+.book-items_save-icon-element-active {
+  stroke: none;
+  fill: black;
 }
 .book-items_save-icon-element:hover {
   cursor: pointer;
+  transform: scale(1.2);
 }
 .book-author-information {
   margin: 100px 0 0 0;

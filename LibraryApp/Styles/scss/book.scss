@@ -277,9 +277,16 @@
 
             &-element {
                 width: 40px;
+                transition: all 0.2s ease;
+
+                &-active {
+                    stroke: none;
+                    fill: black;
+                }
 
                 &:hover {
                     cursor: pointer;
+                    transform: scale(1.2);
                 }
             }
         }
