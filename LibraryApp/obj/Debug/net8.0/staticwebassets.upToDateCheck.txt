@@ -39,6 +39,10 @@ wwwroot\css\user-profile-comments.css
 wwwroot\css\user-profile-comments.css.map
 wwwroot\css\user-profile-posts.css
 wwwroot\css\user-profile-posts.css.map
+wwwroot\Images\Book_Images\02611181-1c4f-45ff-ac3d-60998e6d08c5_history_book.jpg
+wwwroot\Images\Book_Images\10babb4a-0c31-4a8d-ae21-9b3f65a83346_nature_book.jpg
+wwwroot\Images\Book_Images\2e46c11a-51c5-43bf-b707-8abfbbf6cce3_classic_book.jpg
+wwwroot\Images\Book_Images\44803fa3-d53f-4538-bdfa-4a1852493e99_finance_book.jpg
 wwwroot\Images\Book_Images\92e7e4cc-0cc0-40ee-968b-afd8066214d7_Clean_Code.jpg
 wwwroot\Images\Book_Images\945920c8-3909-4eea-9826-3dd2601acb9c_Atomic_habits.jpg
 wwwroot\Images\Icons\Add_icon.svg
@@ -89,6 +93,7 @@ wwwroot\Images\Profile_Photos\eb5c9a29-9cd8-4e83-9863-bff740042b47_Luke_Skywalke
 wwwroot\js\add-book.js
 wwwroot\js\create-comment.js
 wwwroot\js\create-post.js
+wwwroot\js\leave-review.js
 wwwroot\js\photo-settings.js
 wwwroot\js\profile-settings.js
 wwwroot\js\toggle-book-save.js

@@ -49,5 +49,12 @@ namespace LibraryApp.Core.Domain.RepositoryContracts
         /// <param name="book">The book object which will be deleted.</param>
         /// <returns>True if the book was deleted. Otherwise false.</returns>
         Task<bool> DeleteBook(Book book);
+
+        /// <summary>
+        /// Updates rating of the book.
+        /// </summary>
+        /// <param name="book">The book object of which rating will be updated.</param>
+        /// <returns></returns>
+        Task UpdateRating(Book book);
     }
 }

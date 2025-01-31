@@ -370,6 +370,10 @@
 
                                 &-picture {
                                     width: 30px;
+                                    height: 30px;
+                                    overflow: hidden;
+                                    border-radius: 30px;
+                                    object-fit: cover;
                                 }
 
                                 &-username {

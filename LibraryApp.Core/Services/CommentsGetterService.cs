@@ -25,21 +25,21 @@ namespace LibraryApp.Core.Services
             switch (searchFilter)
             {
                 case "all":
-                    filteredComments = await _commentsRepository.GetFilteredCommentsByuser(userId, c => c.Post.Title.ToUpper().Contains(searchString.ToUpper()) ||
+                    filteredComments = await _commentsRepository.GetFilteredCommentsByUser(userId, c => c.Post.Title.ToUpper().Contains(searchString.ToUpper()) ||
                                                                                                         c.Post.User.NormalizedUserName.Contains(searchString.ToUpper()) ||
                                                                                                         c.Post.Topics.Any(topic => topic.Topic.Name.ToUpper() == searchString.ToUpper()));
                 break;
 
                 case "username":
-                    filteredComments = await _commentsRepository.GetFilteredCommentsByuser(userId, c => c.Post.User.NormalizedUserName.Contains(searchString.ToUpper()));
+                    filteredComments = await _commentsRepository.GetFilteredCommentsByUser(userId, c => c.Post.User.NormalizedUserName.Contains(searchString.ToUpper()));
                 break;
 
                 case "topic":
-                    filteredComments = await _commentsRepository.GetFilteredCommentsByuser(userId, c => c.Post.Topics.Any(topic => topic.Topic.Name.ToUpper().Contains(searchString.ToUpper())));
+                    filteredComments = await _commentsRepository.GetFilteredCommentsByUser(userId, c => c.Post.Topics.Any(topic => topic.Topic.Name.ToUpper().Contains(searchString.ToUpper())));
                     break;
 
                 case "title":
-                    filteredComments = await _commentsRepository.GetFilteredCommentsByuser(userId, c => c.Post.Title.ToUpper().Contains(searchString.ToUpper()));
+                    filteredComments = await _commentsRepository.GetFilteredCommentsByUser(userId, c => c.Post.Title.ToUpper().Contains(searchString.ToUpper()));
                 break;
             }
 

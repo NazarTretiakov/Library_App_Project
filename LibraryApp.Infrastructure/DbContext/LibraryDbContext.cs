@@ -18,6 +18,7 @@ namespace LibraryApp.Infrastructure.DbContext
         public DbSet<Book> Books { get; set; }
         public DbSet<Genre> Genres { get; set; }
         public DbSet<BookGenre> BookGenre { get; set; }
+        public DbSet<Review> Reviews { get; set; }
 
         public LibraryDbContext(DbContextOptions options) : base(options) { }
 
@@ -38,6 +39,7 @@ namespace LibraryApp.Infrastructure.DbContext
             modelBuilder.Entity<Book>().ToTable("Books");
             modelBuilder.Entity<Genre>().ToTable("Genres");
             modelBuilder.Entity<BookGenre>().ToTable("BookGenres");
+            modelBuilder.Entity<Review>().ToTable("Reviews");
 
 
             modelBuilder.Entity<User>()
@@ -125,6 +127,18 @@ namespace LibraryApp.Infrastructure.DbContext
                         .HasOne(bg => bg.Genre)
                         .WithMany(g => g.Books)
                         .HasForeignKey(bg => bg.GenreId);
+
+            modelBuilder.Entity<Review>()
+                        .HasOne(r => r.User)
+                        .WithMany(u => u.Reviews)
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Review>()
+                        .HasOne(r => r.Book)
+                        .WithMany(b => b.Reviews)
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

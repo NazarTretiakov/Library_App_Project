@@ -2,13 +2,9 @@
 using LibraryApp.Core.Domain.IdentityEntities;
 using LibraryApp.Core.DTO;
 using LibraryApp.Core.ServiceContracts;
-using LibraryApp.Core.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Hosting;
-using NuGet.Protocol.Core.Types;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace LibraryApp.UI.Controllers
 {
@@ -18,14 +14,16 @@ namespace LibraryApp.UI.Controllers
         private readonly IBooksGetterService _booksGetterService;
         private readonly IToggleSaveService _toggleSaveService;
         private readonly IIsBookSavedService _isBookSavedService;
+        private readonly IReviewsCreatorService _reviewsCreatorService;
 
         private readonly UserManager<User> _userManager;
 
-        public LibraryController(IBooksGetterService booksGetterService, IToggleSaveService toggleSaveService, IIsBookSavedService isBookSavedService, UserManager<User> userManager)
+        public LibraryController(IBooksGetterService booksGetterService, IToggleSaveService toggleSaveService, IIsBookSavedService isBookSavedService, IReviewsCreatorService reviewsCreatorService, UserManager<User> userManager)
         {
             _booksGetterService = booksGetterService;
             _toggleSaveService = toggleSaveService;
             _isBookSavedService = isBookSavedService;
+            _reviewsCreatorService = reviewsCreatorService;
             _userManager = userManager;
         }
 
@@ -91,6 +89,27 @@ namespace LibraryApp.UI.Controllers
             ViewBag.IsSaved = isBookSaved;
 
             return PartialView("_BookSave", book);
+        }
+
+        [Route("/library/book/leave-review")]
+        [HttpGet]
+        public IActionResult LeaveReview(string bookId)
+        {
+            return View();
+        }
+
+        [Route("/library/book/leave-review")]
+        [HttpPost]
+        public async Task<IActionResult> LeaveReview(ReviewDTO reviewDTO)
+        {
+            if (ModelState.IsValid == false)
+            {
+                return View(reviewDTO);
+            }
+
+            await _reviewsCreatorService.CreateReview(reviewDTO);
+
+            return RedirectToAction(nameof(LibraryController.Book), "Library", new { bookId = reviewDTO.BookId });
         }
     }
 }

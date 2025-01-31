@@ -2,7 +2,6 @@
 using LibraryApp.Core.Domain.RepositoryContracts;
 using LibraryApp.Infrastructure.DbContext;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Linq.Expressions;
 
 namespace LibraryApp.Infrastructure.Repositories
@@ -47,7 +46,7 @@ namespace LibraryApp.Infrastructure.Repositories
                                      .ToListAsync();
         }
 
-        public async Task<List<Comment>> GetFilteredCommentsByuser(string userId, Expression<Func<Comment, bool>> predicate)
+        public async Task<List<Comment>> GetFilteredCommentsByUser(string userId, Expression<Func<Comment, bool>> predicate)
         {
             return await _db.Comments.Include(c => c.User)
                                      .Include(c => c.Post)

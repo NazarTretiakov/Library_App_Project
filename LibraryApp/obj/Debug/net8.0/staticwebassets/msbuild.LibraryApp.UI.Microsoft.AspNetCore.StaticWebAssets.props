@@ -84,8 +84,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>3znvdugvyd</Fingerprint>
-      <Integrity>H7Aj3RUEhztiVFQCcUN+S4Isp4SQcJoXMI8XHHou5z4=</Integrity>
+      <Fingerprint>ibzhvtug71</Fingerprint>
+      <Integrity>8j8hjAMPO8bNVHk20E668S/EAoPBi0RbvYP/dnD1fuM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\book.css'))</OriginalItemSpec>
@@ -102,8 +102,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>f1dvb6m0d7</Fingerprint>
-      <Integrity>w3b0Daw4cLAhrPgAUMADyxkAduCB0LIgkCbpg9bn7r8=</Integrity>
+      <Fingerprint>le4f4m6ddg</Fingerprint>
+      <Integrity>8/+jOr9uXcvOPAJan8HJp1X4gQh/MYSGoE1hUhPPOMw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\book.css.map'))</OriginalItemSpec>
@@ -737,6 +737,78 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\user-profile-posts.css.map'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Book_Images\02611181-1c4f-45ff-ac3d-60998e6d08c5_history_book.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>Images/Book_Images/02611181-1c4f-45ff-ac3d-60998e6d08c5_history_book.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>1hrwk0ev70</Fingerprint>
+      <Integrity>FYeLcXK69RE29RhO0Hh2EYVaZI0vxugT5UCn36ckGxo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Book_Images\02611181-1c4f-45ff-ac3d-60998e6d08c5_history_book.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Book_Images\10babb4a-0c31-4a8d-ae21-9b3f65a83346_nature_book.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>Images/Book_Images/10babb4a-0c31-4a8d-ae21-9b3f65a83346_nature_book.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>87oujfygfa</Fingerprint>
+      <Integrity>/HrYvmf+7lbvBLGhtUP88PK/H7XgCYSzDcAfBQKQcRM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Book_Images\10babb4a-0c31-4a8d-ae21-9b3f65a83346_nature_book.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Book_Images\2e46c11a-51c5-43bf-b707-8abfbbf6cce3_classic_book.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>Images/Book_Images/2e46c11a-51c5-43bf-b707-8abfbbf6cce3_classic_book.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>9vk3v6mkg7</Fingerprint>
+      <Integrity>ZUPBDYfpSLsx6TZj8ZCvxqeWox++l8Vd6jk8GR26aSY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Book_Images\2e46c11a-51c5-43bf-b707-8abfbbf6cce3_classic_book.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Book_Images\44803fa3-d53f-4538-bdfa-4a1852493e99_finance_book.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>Images/Book_Images/44803fa3-d53f-4538-bdfa-4a1852493e99_finance_book.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>4f02jgbzic</Fingerprint>
+      <Integrity>YO5SuoeSOZmeyfC0JB0qhQOjvamt/SOHH6As9/3M0vY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Book_Images\44803fa3-d53f-4538-bdfa-4a1852493e99_finance_book.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\Book_Images\92e7e4cc-0cc0-40ee-968b-afd8066214d7_Clean_Code.jpg'))">
       <SourceType>Package</SourceType>
@@ -1637,6 +1709,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\create-post.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\leave-review.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>LibraryApp.UI</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/LibraryApp.UI</BasePath>
+      <RelativePath>js/leave-review.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>1s1n2dzh3h</Fingerprint>
+      <Integrity>P5FpYZYZBJDIYtR33S2KSlB9IB5HrJfP00OoxbZ3MG0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\leave-review.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\photo-settings.js'))">
       <SourceType>Package</SourceType>

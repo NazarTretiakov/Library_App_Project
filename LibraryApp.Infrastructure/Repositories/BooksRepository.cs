@@ -65,6 +65,8 @@ namespace LibraryApp.Infrastructure.Repositories
             return await _db.Books.Include(b => b.Author)
                                   .Include(b => b.Genres)
                                     .ThenInclude(bk => bk.Genre)
+                                  .Include(b => b.Reviews)
+                                    .ThenInclude(r => r.User)
                                   .ToListAsync();
         }
 
@@ -73,6 +75,8 @@ namespace LibraryApp.Infrastructure.Repositories
             return await _db.Books.Include(b => b.Author)
                                   .Include(b => b.Genres)
                                     .ThenInclude(bk => bk.Genre)
+                                  .Include(b => b.Reviews)
+                                    .ThenInclude(r => r.User)
                                   .FirstOrDefaultAsync(b => b.BookId == Guid.Parse(bookId));
         }
 
@@ -81,8 +85,26 @@ namespace LibraryApp.Infrastructure.Repositories
             return await _db.Books.Include(b => b.Author)
                                   .Include(b => b.Genres)
                                     .ThenInclude(bk => bk.Genre)
+                                  .Include(b => b.Reviews)
+                                    .ThenInclude(r => r.User)
                                   .Where(predicate)
                                   .ToListAsync();
+        }
+
+        public async Task UpdateRating(Book book)
+        {
+            int rating = 0;
+
+            foreach (Review review in book.Reviews)
+            {
+                rating = rating + review.Rating;
+            }
+
+            rating = (int)Math.Round((decimal)(rating / book.Reviews.Count), 0);
+
+            book.Rating = rating;
+
+            await _db.SaveChangesAsync();
         }
     }
 }

@@ -55,7 +55,7 @@
                     }
                 </li>
                 <li class="book-items_information-items_rating"><span class="book-items_information-items_rating-inscription">Rating: </span>
-                    @for (float i = 0; i <= Model.Rating; i++)
+                    @for (float i = 0; i < Model.Rating; i++)
                     {
                         <span>⭐</span>
                     }
@@ -77,66 +77,79 @@
 
     <section class="book-reviews">
         <ul class="book-reviews-items">
-            <li class="book-reviews-items-reviews"><h2 class="book-reviews-items-reviews-title">Reviews</h2><a class="book-reviews-items-reviews-leave-review-button-link" href=""><button class="book-reviews-items-reviews-leave-review-button"><img src="~/Images/Icons/Add_icon.svg" alt="Add icon">Leave review</button></a></li>
+            <li class="book-reviews-items-reviews"><h2 class="book-reviews-items-reviews-title">Reviews</h2><a class="book-reviews-items-reviews-leave-review-button-link" asp-controller="Library" asp-action="LeaveReview" asp-route-bookId="@Model.BookId"><button class="book-reviews-items-reviews-leave-review-button"><img src="~/Images/Icons/Add_icon.svg" alt="Add icon">Leave review</button></a></li>
+            
+            @foreach (Review review in Model.Reviews.OrderByDescending(r => r.DateOfPublication))
+            {
+                TimeSpan timeSincePostPublished = DateTime.Now - review.DateOfPublication;
 
-            <li class="book-reviews-items-review">
-                <ul class="book-reviews-items-review-items">
-                    <li class="book-reviews-items-review-items-header">
-                        <ul class="book-reviews-items-review-items-header-items">
-                            <li class="book-reviews-items-review-items-header-items-user">
-                                <a class="book-link" href=""><img class="book-reviews-items-review-items-header-items-user-picture" src="~/Images/Icons/User_Profile_Photo.svg" alt="User profile photo"></a>
-                                <a class="book-link" href=""><span class="book-reviews-items-review-items-header-items-user-username">SomeUser1236123</span></a>
-                            </li>
-                            <li class="book-reviews-items-review-items-header-items-time-of-publication"><span class="book-reviews-items-review-items-header-items-time-of-publication-element">1 day ago</span></li>
-                        </ul>
-                    </li>
-                    <li class="book-reviews-items-review-items-title"><h3 class="book-reviews-items-review-items-title-element">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</h3></li>
-                    <li class="book-reviews-items-review-items-rating"><span class="book-reviews-items-review-items-rating-element">⭐⭐⭐⭐⭐</span></li>
-                    <li class="book-reviews-items-review-items-content">
-                        <p class="book-reviews-items-review-items-content-element">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <div class="book-reviews-items-review-items-content-div-for-space-between-reviews"></div>
-                    </li>
-                </ul>
-            </li>
+                <li class="book-reviews-items-review">
+                    <ul class="book-reviews-items-review-items">
+                        <li class="book-reviews-items-review-items-header">
+                            <ul class="book-reviews-items-review-items-header-items">
+                                <li class="book-reviews-items-review-items-header-items-user">
+                                    <a class="book-link" asp-controller="UserProfile" asp-action="Posts" asp-route-userId="@review.User.Id"><img class="book-reviews-items-review-items-header-items-user-picture" src="@Url.Content(review.User.ProfilePhotoPath)" alt="User profile photo"></a>
+                                    <a class="book-link" asp-controller="UserProfile" asp-action="Posts" asp-route-userId="@review.User.Id"><span class="book-reviews-items-review-items-header-items-user-username">@review.User.UserName</span></a>
+                                </li>
+                                <li class="book-reviews-items-review-items-header-items-time-of-publication">
+                                    @if (timeSincePostPublished.TotalMinutes < 1)
+                                    {
+                                        <span class="book-reviews-items-review-items-header-items-time-of-publication-element">Just now</span>
+                                    }
+                                    else if (timeSincePostPublished.TotalHours < 1)
+                                    {
+                                        if (@timeSincePostPublished.Minutes == 1)
+                                        {
+                                            <span class="book-reviews-items-review-items-header-items-time-of-publication-element">@timeSincePostPublished.Minutes minute ago</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="book-reviews-items-review-items-header-items-time-of-publication-element">@timeSincePostPublished.Minutes minutes ago</span>
+                                        }
+                                    }
+                                    else if (timeSincePostPublished.TotalDays < 1)
+                                    {
+                                        if (@timeSincePostPublished.Hours == 1)
+                                        {
+                                            <span class="book-reviews-items-review-items-header-items-time-of-publication-element">@timeSincePostPublished.Hours hour ago</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="book-reviews-items-review-items-header-items-time-of-publication-element">@timeSincePostPublished.Hours hours ago</span>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        if (@timeSincePostPublished.Days == 1)
+                                        {
+                                            <span class="book-reviews-items-review-items-header-items-time-of-publication-element">@timeSincePostPublished.Days day ago</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="book-reviews-items-review-items-header-items-time-of-publication-element">@timeSincePostPublished.Days days ago</span>
+                                        }
+                                    }
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="book-reviews-items-review-items-title"><h3 class="book-reviews-items-review-items-title-element">@review.Title</h3></li>
+                        <li class="book-reviews-items-review-items-rating">
+                            @for (int i = 0; i < review.Rating; i++)
+                            {
+                                <span>⭐</span>
+                            }
+                        </li>
+                        <li class="book-reviews-items-review-items-content">
+                            <p class="book-reviews-items-review-items-content-element">@review.Content</p>
 
-            <li class="book-reviews-items-review">
-                <ul class="book-reviews-items-review-items">
-                    <li class="book-reviews-items-review-items-header">
-                        <ul class="book-reviews-items-review-items-header-items">
-                            <li class="book-reviews-items-review-items-header-items-user">
-                                <a class="book-link" href=""><img class="book-reviews-items-review-items-header-items-user-picture" src="~/Images/Icons/User_Profile_Photo.svg" alt="User profile photo"></a>
-                                <a class="book-link" href=""><span class="book-reviews-items-review-items-header-items-user-username">SomeUser1236123</span></a>
-                            </li>
-                            <li class="book-reviews-items-review-items-header-items-time-of-publication"><span class="book-reviews-items-review-items-header-items-time-of-publication-element">1 day ago</span></li>
-                        </ul>
-                    </li>
-                    <li class="book-reviews-items-review-items-title"><h3 class="book-reviews-items-review-items-title-element">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3></li>
-                    <li class="book-reviews-items-review-items-rating"><span class="book-reviews-items-review-items-rating-element">⭐⭐⭐⭐⭐</span></li>
-                    <li class="book-reviews-items-review-items-content">
-                        <p class="book-reviews-items-review-items-content-element">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        <div class="book-reviews-items-review-items-content-div-for-space-between-reviews"></div>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="book-reviews-items-review">
-                <ul class="book-reviews-items-review-items">
-                    <li class="book-reviews-items-review-items-header">
-                        <ul class="book-reviews-items-review-items-header-items">
-                            <li class="book-reviews-items-review-items-header-items-user">
-                                <a class="book-link" href=""><img class="book-reviews-items-review-items-header-items-user-picture" src="~/Images/Icons/User_Profile_Photo.svg" alt="User profile photo"></a>
-                                <a class="book-link" href=""><span class="book-reviews-items-review-items-header-items-user-username">SomeUser1236123</span></a>
-                            </li>
-                            <li class="book-reviews-items-review-items-header-items-time-of-publication"><span class="book-reviews-items-review-items-header-items-time-of-publication-element">1 day ago</span></li>
-                        </ul>
-                    </li>
-                    <li class="book-reviews-items-review-items-title"><h3 class="book-reviews-items-review-items-title-element">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3></li>
-                    <li class="book-reviews-items-review-items-rating"><span class="book-reviews-items-review-items-rating-element">⭐⭐⭐⭐⭐</span></li>
-                    <li class="book-reviews-items-review-items-content">
-                        <p class="book-reviews-items-review-items-content-element">Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum has been the industry's standard dummy text ever since the 1500sLorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </li>
-                </ul>
-            </li>
+                            @if (review != Model.Reviews.OrderByDescending(r => r.DateOfPublication).LastOrDefault())
+                            {
+                                <div class="book-reviews-items-review-items-content-div-for-space-between-reviews"></div>
+                            }
+                        </li>
+                    </ul>
+                </li>
+            }
 
         </ul>
     </section>
