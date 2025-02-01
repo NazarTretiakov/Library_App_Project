@@ -1,4 +1,5 @@
-﻿using LibraryApp.Core.Domain.IdentityEntities;
+﻿using LibraryApp.Core.Domain.Entities;
+using LibraryApp.Core.Domain.IdentityEntities;
 using LibraryApp.Core.DTO;
 using LibraryApp.Core.ServiceContracts;
 using LibraryApp.Core.Services;
@@ -15,14 +16,16 @@ namespace LibraryApp.UI.Controllers
         private readonly IChangeProfileInformationService _changeProfileInformationService;
         private readonly IChangeProfilePhotoService _changeProfilePhotoService;
         private readonly IUsersGetterService _usersGetterService;
+        private readonly ISavesGetterService _savesGetterService;
 
         private readonly UserManager<User> _userManager;
 
-        public MyAccountController(IChangeProfileInformationService changeProfileInformationService, IChangeProfilePhotoService changeProfilePhotoService, IUsersGetterService usersGetterService, UserManager<User> userManager)
+        public MyAccountController(IChangeProfileInformationService changeProfileInformationService, IChangeProfilePhotoService changeProfilePhotoService, IUsersGetterService usersGetterService, ISavesGetterService savesGetterService, UserManager<User> userManager)
         {
             _changeProfileInformationService = changeProfileInformationService;
             _changeProfilePhotoService = changeProfilePhotoService;
             _usersGetterService = usersGetterService;
+            _savesGetterService = savesGetterService;
             _userManager = userManager;
         }
 
@@ -144,6 +147,26 @@ namespace LibraryApp.UI.Controllers
 
                 return View();
             }
+        }
+
+        [Route("/my-account/saved")]
+        public async Task<IActionResult> Saved()
+        {
+            User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
+            ViewBag.CurrentWorkingUser = currentWorkingUser;
+
+            List<Save> saves = await _savesGetterService.GetSavesByUserId(currentWorkingUser.Id.ToString());
+
+            return View(saves);
+        }
+
+        [Route("/my-account/my-page")]
+        public async Task<IActionResult> MyPage()
+        {
+            User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
+            ViewBag.CurrentWorkingUser = currentWorkingUser;
+
+            return RedirectToAction(nameof(UserProfileController.Posts), "UserProfile", new { userId = currentWorkingUser.Id});
         }
     }
 }

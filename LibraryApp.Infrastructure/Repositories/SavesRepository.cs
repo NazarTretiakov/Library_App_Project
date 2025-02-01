@@ -53,12 +53,27 @@ namespace LibraryApp.Infrastructure.Repositories
             return save;
         }
 
-        public async Task<List<Save>> GetSaves(string objectId)
+        public async Task<List<Save>> GetSavesByObjectId(string objectId)
         {
             return await _db.Saves.Include(s => s.User)
                                   .Include(s => s.Post)
                                   .Include(s => s.Book)
                                   .Where(s => s.PostId == Guid.Parse(objectId) || s.BookId == Guid.Parse(objectId))
+                                  .ToListAsync();
+        }
+
+        public async Task<List<Save>> GetSavesByUserId(string userId)
+        {
+            return await _db.Saves.Include(s => s.User)
+                                  .Include(s => s.Post)
+                                    .ThenInclude(p => p.User)
+                                  .Include(s => s.Post.Topics)
+                                    .ThenInclude(pt => pt.Topic)
+                                  .Include(s => s.Book)
+                                    .ThenInclude(b => b.Author)
+                                  .Include(s => s.Book.Genres)
+                                    .ThenInclude(bg => bg.Genre)
+                                  .Where(s => s.UserId == Guid.Parse(userId))
                                   .ToListAsync();
         }
 

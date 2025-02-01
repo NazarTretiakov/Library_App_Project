@@ -205,6 +205,14 @@
       "PackagePath": "staticwebassets\\Images\\Profile_Photos\\eb5c9a29-9cd8-4e83-9863-bff740042b47_Luke_Skywalker_Profile_Photo.jpg"
     },
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\Saved.css",
+      "PackagePath": "staticwebassets\\css\\Saved.css"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\Saved.css.map",
+      "PackagePath": "staticwebassets\\css\\Saved.css.map"
+    },
+    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\add-book.css",
       "PackagePath": "staticwebassets\\css\\add-book.css"
     },

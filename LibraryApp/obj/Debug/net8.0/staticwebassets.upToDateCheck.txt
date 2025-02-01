@@ -33,6 +33,8 @@ wwwroot\css\profile-settings.css
 wwwroot\css\profile-settings.css.map
 wwwroot\css\registration.css
 wwwroot\css\registration.css.map
+wwwroot\css\Saved.css
+wwwroot\css\Saved.css.map
 wwwroot\css\subscribers.css
 wwwroot\css\subscribers.css.map
 wwwroot\css\user-profile-comments.css

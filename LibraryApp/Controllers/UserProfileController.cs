@@ -33,14 +33,24 @@ namespace LibraryApp.UI.Controllers
         }
 
         [Route("/user-profile")]
-        public IActionResult Index()
+        public IActionResult Index(string userId)
         {
-            return RedirectToAction("Posts");
+            if (!Guid.TryParse(userId, out Guid result))
+            {
+                return NotFound();  //TODO: create custom exception page for that type of situations (input postId is not in the correct format, or postId is not present in the query string)
+            }
+
+            return RedirectToAction(nameof(UserProfileController.Posts), "UserProfile", new { userId = userId});
         }
 
         [Route("/user-profile/posts")]
         public async Task<IActionResult> Posts(string userId, string searchString, string searchFilter = "all")
         {
+            if (!Guid.TryParse(userId, out Guid result))
+            {
+                return NotFound();  //TODO: create custom exception page for that type of situations (input postId is not in the correct format, or postId is not present in the query string)
+            }
+
             User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
             ViewBag.CurrentWorkingUser = currentWorkingUser;
 

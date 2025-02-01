@@ -20,6 +20,13 @@ namespace LibraryApp.Core.ServiceContracts
         /// </summary>
         /// <param name="objectId">The id of post or book which saves will be retrieved.</param>
         /// <returns>List of Save objects or null.</returns>
-        Task<List<Save>> GetSaves(string objectId);
+        Task<List<Save>> GetSavesByObjectId(string objectId);
+
+        /// <summary>
+        /// Retrieves all saves made by user from the system.
+        /// </summary>
+        /// <param name="userId">The id of the user which saves will be retrieved.</param>
+        /// <returns>List of Save objects or null.</returns>
+        Task<List<Save>> GetSavesByUserId(string userId);
     }
 }

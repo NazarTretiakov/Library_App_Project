@@ -119,7 +119,7 @@
                                     }
                                     else if (timeSincePostPublished.TotalHours < 1)
                                     {
-                                        if (@timeSincePostPublished.Minutes == 1)
+                                        if (timeSincePostPublished.Minutes == 1)
                                         {
                                             <span class="post-items-header-items-time-element">@timeSincePostPublished.Minutes minute ago</span>
                                         }
@@ -130,7 +130,7 @@
                                     }
                                     else if (timeSincePostPublished.TotalDays < 1)
                                     {
-                                        if (@timeSincePostPublished.Hours == 1)
+                                        if (timeSincePostPublished.Hours == 1)
                                         {
                                             <span class="post-items-header-items-time-element">@timeSincePostPublished.Hours hour ago</span>
                                         }
@@ -141,7 +141,7 @@
                                     }
                                     else
                                     {
-                                        if (@timeSincePostPublished.Days == 1)
+                                        if (timeSincePostPublished.Days == 1)
                                         {
                                             <span class="post-items-header-items-time-element">@timeSincePostPublished.Days day ago</span>
                                         }
