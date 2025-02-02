@@ -2,11 +2,9 @@
 using LibraryApp.Core.Domain.IdentityEntities;
 using LibraryApp.Core.DTO;
 using LibraryApp.Core.ServiceContracts;
-using LibraryApp.Core.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Hosting;
 
 namespace LibraryApp.UI.Controllers
 {
@@ -19,9 +17,10 @@ namespace LibraryApp.UI.Controllers
         private readonly IIsCurrentWorkingUserSubscribedService _isCurrentWorkingUserSubscribed;
         private readonly IPostsGetterService _postsGetterService;
         private readonly ICommentsGetterService _commentsGetterService;
+        private readonly IReviewsGetterService _reviewsGetterService;
         private readonly UserManager<User> _userManager;
 
-        public UserProfileController(IUsersGetterService usersGetterService, IToggleSubscriptionService toggleSubscriptionService, ISubscriptionsGetterService subscriptionsGetterService, IIsCurrentWorkingUserSubscribedService isCurrentWorkingUserSubscribed, IPostsGetterService postsGetterService, ICommentsGetterService commentsGetterService, UserManager<User> userManager)
+        public UserProfileController(IUsersGetterService usersGetterService, IToggleSubscriptionService toggleSubscriptionService, ISubscriptionsGetterService subscriptionsGetterService, IIsCurrentWorkingUserSubscribedService isCurrentWorkingUserSubscribed, IPostsGetterService postsGetterService, ICommentsGetterService commentsGetterService, IReviewsGetterService reviewsGetterService, UserManager<User> userManager)
         {
             _usersGetterService = usersGetterService;
             _toggleSubscriptionService = toggleSubscriptionService;
@@ -29,6 +28,7 @@ namespace LibraryApp.UI.Controllers
             _isCurrentWorkingUserSubscribed = isCurrentWorkingUserSubscribed;
             _postsGetterService = postsGetterService;
             _commentsGetterService = commentsGetterService;
+            _reviewsGetterService = reviewsGetterService;
             _userManager = userManager;
         }
 
@@ -78,6 +78,11 @@ namespace LibraryApp.UI.Controllers
         [Route("/user-profile/replies")]
         public async Task<IActionResult> Comments(string userId, string searchString, string searchFilter = "all")
         {
+            if (!Guid.TryParse(userId, out Guid result))
+            {
+                return NotFound();  //TODO: create custom exception page for that type of situations (input postId is not in the correct format, or postId is not present in the query string)
+            }
+
             User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
             ViewBag.CurrentWorkingUser = currentWorkingUser;
 
@@ -98,6 +103,38 @@ namespace LibraryApp.UI.Controllers
             }
 
             ViewBag.Comments = comments.OrderByDescending(p => p.DateOfPublication).ToList();
+
+            return View(user);  //TODO: create empty state of the page, for situation when user has no replies(comments)
+        }
+
+        [Route("/user-profile/reviews")]
+        public async Task<IActionResult> Reviews(string userId, string searchString, string searchFilter = "all")
+        {
+            if (!Guid.TryParse(userId, out Guid result))
+            {
+                return NotFound();  //TODO: create custom exception page for that type of situations (input postId is not in the correct format, or postId is not present in the query string)
+            }
+
+            User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
+            ViewBag.CurrentWorkingUser = currentWorkingUser;
+
+            User user = await _usersGetterService.GetUserByUserId(userId);
+            List<Review> reviews;
+
+            ViewBag.IsSubscribed = await _isCurrentWorkingUserSubscribed.IsCurrentWorkingUserSubscribed(userId);
+            ViewBag.SearchString = searchString;
+            ViewBag.SearchFilter = searchFilter;
+
+            if (searchString == null)
+            {
+                reviews = await _reviewsGetterService.GetUserReviews(userId);
+            }
+            else
+            {
+                reviews = await _reviewsGetterService.GetUserFilteredReviews(userId, searchFilter, searchString);
+            }
+
+            ViewBag.Reviews = reviews.OrderByDescending(p => p.DateOfPublication).ToList();
 
             return View(user);  //TODO: create empty state of the page, for situation when user has no replies(comments)
         }

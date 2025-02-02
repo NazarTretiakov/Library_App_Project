@@ -55,9 +55,16 @@
                     }
                 </li>
                 <li class="book-items_information-items_rating"><span class="book-items_information-items_rating-inscription">Rating: </span>
-                    @for (float i = 0; i < Model.Rating; i++)
+                    @if (Model.Rating >= 1)
                     {
-                        <span>⭐</span>
+                        @for (float i = 0; i < Model.Rating; i++)
+                        {
+                            <span>⭐</span>
+                        }
+                    }
+                    else
+                    {
+                        <span>-</span>
                     }
                 </li>
                 <li class="book-items_information-items_language"><span class="book-items_information-items_language-inscription">Language: </span>@Model.Language</li>

@@ -37,10 +37,13 @@ wwwroot\css\Saved.css
 wwwroot\css\Saved.css.map
 wwwroot\css\subscribers.css
 wwwroot\css\subscribers.css.map
+wwwroot\css\user-profile-comments - Copy.css.map
 wwwroot\css\user-profile-comments.css
 wwwroot\css\user-profile-comments.css.map
 wwwroot\css\user-profile-posts.css
 wwwroot\css\user-profile-posts.css.map
+wwwroot\css\user-profile-reviews.css
+wwwroot\css\user-profile-reviews.css.map
 wwwroot\Images\Book_Images\02611181-1c4f-45ff-ac3d-60998e6d08c5_history_book.jpg
 wwwroot\Images\Book_Images\10babb4a-0c31-4a8d-ae21-9b3f65a83346_nature_book.jpg
 wwwroot\Images\Book_Images\2e46c11a-51c5-43bf-b707-8abfbbf6cce3_classic_book.jpg

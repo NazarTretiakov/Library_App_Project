@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wphTgz7oEo2TSaF9ae8TOX08LeErummdkXmx4ebq/A8=",
+  "Hash": "0p81llHgC3NVkU+XN6qlWrDPegmGbzplSAWsnOrtmRA=",
   "Source": "LibraryApp.UI",
   "BasePath": "_content/LibraryApp.UI",
   "Mode": "Default",
@@ -836,6 +836,27 @@
       "OriginalItemSpec": "wwwroot\\css\\subscribers.css.map"
     },
     {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-comments - Copy.css.map",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "css/user-profile-comments - Copy.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dv326vip1p",
+      "Integrity": "531i0NbzB4fpLbB8pjsA877yubB1mxL5J6Xnch4Xt50=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\user-profile-comments - Copy.css.map"
+    },
+    {
       "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-comments.css",
       "SourceId": "LibraryApp.UI",
       "SourceType": "Discovered",
@@ -918,6 +939,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\user-profile-posts.css.map"
+    },
+    {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-reviews.css",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "css/user-profile-reviews#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "k9tvbjstep",
+      "Integrity": "GEMwNqVpRaDbEsMEzWY0igBSaTa8UsTYQ20eCHE7Wug=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\user-profile-reviews.css"
+    },
+    {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-reviews.css.map",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "css/user-profile-reviews.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bqfl6t8aeg",
+      "Integrity": "45xCsd+WNMhrRmIfTu+hzbSR/fCV4qBWMcJf0RuNvk4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\user-profile-reviews.css.map"
     },
     {
       "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Book_Images\\02611181-1c4f-45ff-ac3d-60998e6d08c5_history_book.jpg",
@@ -5401,6 +5464,88 @@
       ]
     },
     {
+      "Route": "css/user-profile-comments - Copy.css.dv326vip1p.map",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-comments - Copy.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2410"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"531i0NbzB4fpLbB8pjsA877yubB1mxL5J6Xnch4Xt50=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Feb 2025 08:17:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dv326vip1p"
+        },
+        {
+          "Name": "label",
+          "Value": "css/user-profile-comments - Copy.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-531i0NbzB4fpLbB8pjsA877yubB1mxL5J6Xnch4Xt50="
+        }
+      ]
+    },
+    {
+      "Route": "css/user-profile-comments - Copy.css.map",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-comments - Copy.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2410"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"531i0NbzB4fpLbB8pjsA877yubB1mxL5J6Xnch4Xt50=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Feb 2025 08:17:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-531i0NbzB4fpLbB8pjsA877yubB1mxL5J6Xnch4Xt50="
+        }
+      ]
+    },
+    {
       "Route": "css/user-profile-comments.css",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-comments.css",
       "Selectors": [],
@@ -5725,6 +5870,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-5SfRojpn1fv0j2Hvq99sAG2jbSe1MoBcJFHTg+w4qoY="
+        }
+      ]
+    },
+    {
+      "Route": "css/user-profile-reviews.css",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-reviews.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10330"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GEMwNqVpRaDbEsMEzWY0igBSaTa8UsTYQ20eCHE7Wug=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Feb 2025 08:42:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GEMwNqVpRaDbEsMEzWY0igBSaTa8UsTYQ20eCHE7Wug="
+        }
+      ]
+    },
+    {
+      "Route": "css/user-profile-reviews.css.bqfl6t8aeg.map",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-reviews.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2214"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"45xCsd+WNMhrRmIfTu+hzbSR/fCV4qBWMcJf0RuNvk4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Feb 2025 08:42:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bqfl6t8aeg"
+        },
+        {
+          "Name": "label",
+          "Value": "css/user-profile-reviews.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-45xCsd+WNMhrRmIfTu+hzbSR/fCV4qBWMcJf0RuNvk4="
+        }
+      ]
+    },
+    {
+      "Route": "css/user-profile-reviews.css.map",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-reviews.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2214"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"45xCsd+WNMhrRmIfTu+hzbSR/fCV4qBWMcJf0RuNvk4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Feb 2025 08:42:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-45xCsd+WNMhrRmIfTu+hzbSR/fCV4qBWMcJf0RuNvk4="
+        }
+      ]
+    },
+    {
+      "Route": "css/user-profile-reviews.k9tvbjstep.css",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-reviews.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10330"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GEMwNqVpRaDbEsMEzWY0igBSaTa8UsTYQ20eCHE7Wug=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Feb 2025 08:42:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k9tvbjstep"
+        },
+        {
+          "Name": "label",
+          "Value": "css/user-profile-reviews.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GEMwNqVpRaDbEsMEzWY0igBSaTa8UsTYQ20eCHE7Wug="
         }
       ]
     },

@@ -361,6 +361,10 @@
       "PackagePath": "staticwebassets\\css\\subscribers.css.map"
     },
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-comments - Copy.css.map",
+      "PackagePath": "staticwebassets\\css\\user-profile-comments - Copy.css.map"
+    },
+    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-comments.css",
       "PackagePath": "staticwebassets\\css\\user-profile-comments.css"
     },
@@ -375,6 +379,14 @@
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-posts.css.map",
       "PackagePath": "staticwebassets\\css\\user-profile-posts.css.map"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-reviews.css",
+      "PackagePath": "staticwebassets\\css\\user-profile-reviews.css"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-reviews.css.map",
+      "PackagePath": "staticwebassets\\css\\user-profile-reviews.css.map"
     },
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\add-book.js",
