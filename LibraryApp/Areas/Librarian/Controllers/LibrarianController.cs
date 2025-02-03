@@ -1,14 +1,8 @@
 ﻿using LibraryApp.Core.Domain.Entities;
-using LibraryApp.Core.Domain.IdentityEntities;
 using LibraryApp.Core.DTO;
 using LibraryApp.Core.ServiceContracts;
-using LibraryApp.Core.Services;
-using LibraryApp.UI.Controllers;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using NuGet.Protocol.Core.Types;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace LibraryApp.UI.Areas.Librarian.Controllers
 {
@@ -17,14 +11,18 @@ namespace LibraryApp.UI.Areas.Librarian.Controllers
     public class LibrarianController : Controller
     {
         private readonly IAuthorsGetterService _authorsGetterService;
+        private readonly IAuthorsAdderService _authorsAdderService;
+        private readonly IAuthorsRemoverService _authorsRemoverService;
         private readonly IBooksAdderService _booksAdderService;
         private readonly IBooksGetterService _booksGetterService;
         private readonly IChangeBookAmountService _changeBookAmountService;
         private readonly IBooksRemoverService _booksRemoverService;
 
-        public LibrarianController(IAuthorsGetterService authorsGetterService, IBooksAdderService booksAdderService, IBooksGetterService booksGetterService, IChangeBookAmountService changeBookAmountService, IBooksRemoverService booksRemoverService)
+        public LibrarianController(IAuthorsGetterService authorsGetterService, IAuthorsAdderService authorsAdderService, IAuthorsRemoverService authorsRemoverService, IBooksAdderService booksAdderService, IBooksGetterService booksGetterService, IChangeBookAmountService changeBookAmountService, IBooksRemoverService booksRemoverService)
         {
             _authorsGetterService = authorsGetterService;
+            _authorsAdderService = authorsAdderService;
+            _authorsRemoverService = authorsRemoverService;
             _booksAdderService = booksAdderService;
             _booksGetterService = booksGetterService;
             _changeBookAmountService = changeBookAmountService;
@@ -58,7 +56,7 @@ namespace LibraryApp.UI.Areas.Librarian.Controllers
                 books = await _booksGetterService.GetFilteredBooks(searchFilter, searchString);
             }
 
-            books = books.OrderByDescending(p => p.Title).ToList();
+            books = books.OrderByDescending(b => b.Title).ToList();
 
             return View(books);
         }
@@ -135,6 +133,68 @@ namespace LibraryApp.UI.Areas.Librarian.Controllers
             await _booksRemoverService.DeleteBook(book);
 
             return RedirectToAction(nameof(LibrarianController.ManageBooks), "Librarian");
+        }
+
+        [Route("/librarian-panel/manage-authors")]
+        public async Task<IActionResult> ManageAuthors(string searchString, string searchFilter = "all")
+        {
+            List<Author> authors;
+
+            ViewBag.SearchString = searchString;
+            ViewBag.SearchFilter = searchFilter;
+
+            if (searchString == null)
+            {
+                authors = await _authorsGetterService.GetAllAuthors();
+            }
+            else if (searchFilter != "all" && searchFilter != "firstname" && searchFilter != "lastname")
+            {
+                return NotFound();  //TODO: create custom exception page for that type of situations (input searchString is not correct)
+            }
+            else
+            {
+                authors = await _authorsGetterService.GetFilteredAuthors(searchFilter, searchString);
+            }
+
+            authors = authors.OrderByDescending(a => a.Firstname).ToList();
+
+            return View(authors);
+        }
+
+        [Route("/librarian-panel/manage-authors/add-author")]
+        [HttpGet]
+        public IActionResult AddAuthor()
+        {
+            return View();
+        }
+
+        [Route("/librarian-panel/manage-authors/add-author")]
+        [HttpPost]
+        public async Task<IActionResult> AddAuthor(AuthorDTO authorDTO)
+        {
+            if (ModelState.IsValid == false)
+            {
+                return View(authorDTO);
+            }
+
+            Author createdAuthor = await _authorsAdderService.AddAuthor(authorDTO);
+
+            return RedirectToAction(nameof(LibrarianController.ManageAuthors), "Librarian", new { searchString = createdAuthor.Firstname + " " + createdAuthor.Lastname });
+        }
+
+        [Route("/librarian-panel/manage-authors/manage-author/delete-author")]
+        public async Task<IActionResult> DeleteAuthor(string authorId)
+        {
+            if (!Guid.TryParse(authorId, out Guid result))
+            {
+                return NotFound();  //TODO: create custom exception page for that type of situations (input postId is not in the correct format, or postId is not present in the query string)
+            }
+
+            Author author = await _authorsGetterService.GetAuthorByAuthorId(authorId);
+
+            await _authorsRemoverService.DeleteAuthor(author);
+
+            return RedirectToAction(nameof(LibrarianController.ManageAuthors), "Librarian");
         }
     }
 }

@@ -19,8 +19,11 @@ wwwroot\css\librarian-panel.css
 wwwroot\css\librarian-panel.css.map
 wwwroot\css\library.css
 wwwroot\css\library.css.map
+wwwroot\css\manage-authors.css
+wwwroot\css\manage-authors.css.map
 wwwroot\css\manage-book.css
 wwwroot\css\manage-book.css.map
+wwwroot\css\manage-books - Copy.css.map
 wwwroot\css\manage-books.css
 wwwroot\css\manage-books.css.map
 wwwroot\css\my-account.css
@@ -95,6 +98,7 @@ wwwroot\Images\Profile_Photos\c468cd87-c280-4b26-ad63-e8b62607fd6e_Снимок 
 wwwroot\Images\Profile_Photos\c7010544-53c7-4790-bf09-dc08c1463273_Luke_Skywalker_Profile_Photo.jpg
 wwwroot\Images\Profile_Photos\e444a2e1-b028-4fbb-82fb-1d48d06356c3_Franklin_Profile_Photo.webp
 wwwroot\Images\Profile_Photos\eb5c9a29-9cd8-4e83-9863-bff740042b47_Luke_Skywalker_Profile_Photo.jpg
+wwwroot\js\add-author.js
 wwwroot\js\add-book.js
 wwwroot\js\create-comment.js
 wwwroot\js\create-post.js

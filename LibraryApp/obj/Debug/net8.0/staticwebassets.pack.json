@@ -297,12 +297,24 @@
       "PackagePath": "staticwebassets\\css\\library.css.map"
     },
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\manage-authors.css",
+      "PackagePath": "staticwebassets\\css\\manage-authors.css"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\manage-authors.css.map",
+      "PackagePath": "staticwebassets\\css\\manage-authors.css.map"
+    },
+    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\manage-book.css",
       "PackagePath": "staticwebassets\\css\\manage-book.css"
     },
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\manage-book.css.map",
       "PackagePath": "staticwebassets\\css\\manage-book.css.map"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\manage-books - Copy.css.map",
+      "PackagePath": "staticwebassets\\css\\manage-books - Copy.css.map"
     },
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\manage-books.css",
@@ -387,6 +399,10 @@
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\user-profile-reviews.css.map",
       "PackagePath": "staticwebassets\\css\\user-profile-reviews.css.map"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\add-author.js",
+      "PackagePath": "staticwebassets\\js\\add-author.js"
     },
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\add-book.js",

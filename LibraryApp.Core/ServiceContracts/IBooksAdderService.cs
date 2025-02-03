@@ -12,7 +12,7 @@ namespace LibraryApp.Core.ServiceContracts
         /// <summary>
         /// Adds a book to the system.
         /// </summary>
-        /// <param name="bookDTO">Data Transfer Object which contains data for creating the booksa.</param>
+        /// <param name="bookDTO">Data Transfer Object which contains data for creating the book.</param>
         /// <returns>True if book was added. Otherwise false.</returns>
         Task<Book> AddBook(BookDTO bookDTO);
     }

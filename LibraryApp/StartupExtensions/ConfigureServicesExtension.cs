@@ -54,6 +54,8 @@ namespace LibraryApp.UI.StartupExtensions
             services.AddScoped<IChangeProfileInformationService, ChangeProfileInformationService>();
             services.AddScoped<IChangeProfilePhotoService, ChangeProfilePhotoService>();
             services.AddScoped<IAuthorsGetterService, AuthorsGetterService>();
+            services.AddScoped<IAuthorsAdderService, AuthorsAdderService>();
+            services.AddScoped<IAuthorsRemoverService, AuthorsRemoverService>();
             services.AddScoped<IBooksAdderService, BooksAdderService>();
             services.AddScoped<IBooksGetterService, BooksGetterService>();
             services.AddScoped<IChangeBookAmountService, ChangeBookAmountService>();
