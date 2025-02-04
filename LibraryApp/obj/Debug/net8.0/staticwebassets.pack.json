@@ -325,6 +325,30 @@
       "PackagePath": "staticwebassets\\css\\manage-books.css.map"
     },
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\manage-user-orders.css",
+      "PackagePath": "staticwebassets\\css\\manage-user-orders.css"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\manage-user-orders.css.map",
+      "PackagePath": "staticwebassets\\css\\manage-user-orders.css.map"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\manage-user.css",
+      "PackagePath": "staticwebassets\\css\\manage-user.css"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\manage-user.css.map",
+      "PackagePath": "staticwebassets\\css\\manage-user.css.map"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\manage-users.css",
+      "PackagePath": "staticwebassets\\css\\manage-users.css"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\manage-users.css.map",
+      "PackagePath": "staticwebassets\\css\\manage-users.css.map"
+    },
+    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\my-account.css",
       "PackagePath": "staticwebassets\\css\\my-account.css"
     },

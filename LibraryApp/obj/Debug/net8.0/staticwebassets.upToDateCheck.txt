@@ -26,6 +26,12 @@ wwwroot\css\manage-book.css.map
 wwwroot\css\manage-books - Copy.css.map
 wwwroot\css\manage-books.css
 wwwroot\css\manage-books.css.map
+wwwroot\css\manage-user.css
+wwwroot\css\manage-user.css.map
+wwwroot\css\manage-user-orders.css
+wwwroot\css\manage-user-orders.css.map
+wwwroot\css\manage-users.css
+wwwroot\css\manage-users.css.map
 wwwroot\css\my-account.css
 wwwroot\css\my-account.css.map
 wwwroot\css\photo-settings.css

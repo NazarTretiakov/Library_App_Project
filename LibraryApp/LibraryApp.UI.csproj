@@ -10,6 +10,8 @@
     <Content Include="Styles\scss\config.scss" />
     <Content Include="Styles\scss\forum.scss" />
     <Content Include="Styles\scss\homepage.scss" />
+    <Content Include="Styles\scss\manage-user-orders.scss" />
+    <Content Include="Styles\scss\manage-users.scss" />
   </ItemGroup>
 
   <ItemGroup>

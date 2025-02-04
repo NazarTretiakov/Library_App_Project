@@ -35,6 +35,30 @@ namespace LibraryApp.UI.Areas.Librarian.Controllers
             return View();
         }
 
+        [Route("/librarian-panel/manage-users")]
+        public async Task<IActionResult> ManageUsers()
+        {
+            return View();
+        }
+
+        [Route("/librarian-panel/manage-users/manage-user")]
+        public async Task<IActionResult> ManageUser()
+        {
+            return View();
+        }
+
+        [Route("/librarian-panel/manage-users/manage-user/orders")]
+        public async Task<IActionResult> ManageUserOrders()
+        {
+            return View();
+        }
+
+        [Route("/librarian-panel/manage-users/manage-user/books")]
+        public async Task<IActionResult> ManageUserBooks()
+        {
+            return View();
+        }
+
         [Route("/librarian-panel/manage-books")]
         public async Task<IActionResult> ManageBooks(string searchString, string searchFilter = "all")
         {
