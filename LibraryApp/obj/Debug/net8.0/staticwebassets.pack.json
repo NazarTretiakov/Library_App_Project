@@ -357,6 +357,14 @@
       "PackagePath": "staticwebassets\\css\\my-account.css.map"
     },
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\orders.css",
+      "PackagePath": "staticwebassets\\css\\orders.css"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\orders.css.map",
+      "PackagePath": "staticwebassets\\css\\orders.css.map"
+    },
+    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\photo-settings.css",
       "PackagePath": "staticwebassets\\css\\photo-settings.css"
     },

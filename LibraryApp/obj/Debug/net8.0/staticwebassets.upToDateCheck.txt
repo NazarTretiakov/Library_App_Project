@@ -34,6 +34,8 @@ wwwroot\css\manage-users.css
 wwwroot\css\manage-users.css.map
 wwwroot\css\my-account.css
 wwwroot\css\my-account.css.map
+wwwroot\css\orders.css
+wwwroot\css\orders.css.map
 wwwroot\css\photo-settings.css
 wwwroot\css\photo-settings.css.map
 wwwroot\css\post.css

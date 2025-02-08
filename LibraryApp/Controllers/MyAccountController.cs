@@ -35,6 +35,12 @@ namespace LibraryApp.UI.Controllers
             return View();
         }
 
+        [Route("/my-account/orders")]
+        public IActionResult Orders()
+        {
+            return View();
+        }
+
         [Route("/my-account/settings")]
         public IActionResult Settings()
         {
