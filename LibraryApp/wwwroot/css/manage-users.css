@@ -201,7 +201,10 @@
 }
 .manage-books-items_books-items_book-items_image-element {
   width: 50px;
+  height: 50px;
+  overflow: hidden;
   border-radius: 50px;
+  object-fit: cover;
 }
 .manage-books-items_books-items_book-items_amount-available-amount {
   font-weight: bold;

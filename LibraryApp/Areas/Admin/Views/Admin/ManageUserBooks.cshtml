@@ -1,5 +1,7 @@
-﻿@{
-    ViewBag.Title = "NAMEOFUSER books";
+﻿@model List<Order>
+
+@{
+    ViewBag.Title = $"{ViewBag.User.UserName} books";
     ViewBag.StylesPath = "~/css/manage-user-orders.css";
 }
 
@@ -38,41 +40,21 @@
         <li class="manage-books-items_books">
             <ul class="manage-books-items_books-items">
                 <li class="manage-books-items_books-items_book"><h1 class="manage-books-items_books-items_book-title">Books that user43214_ currently reads</h1></li>
-                <li class="manage-books-items_books-items_book">
-                    <ul class="manage-books-items_books-items_book-items">
-                        <li class="manage-books-items_books-items_book-items_image"><img class="manage-books-items_books-items_book-items_image-element" src="~/Images/Book_Images/945920c8-3909-4eea-9826-3dd2601acb9c_Atomic_habits.jpg" alt="Image of the book"></li>
-                        <li class="manage-books-items_books-items_book-items_title"><span class="manage-books-items_books-items_book-items_title-element">Atomic Habits</span></li>
-                        <li class="manage-books-items_books-items_book-items_author">James Clear</li>
-                        <li class="manage-books-items_books-items_book-items_button"><a class="manage-user-items_actions-items-link" href=""><button class="manage-books-items_books-items_book-items_button-mark-as-finished-element">Mark order as "finished"</button></a></li>
-                    </ul>
-                    <div class="manage-books-items_books-items_book-div-for-space-between-books"></div>
-                </li>
-                <li class="manage-books-items_books-items_book">
-                    <ul class="manage-books-items_books-items_book-items">
-                        <li class="manage-books-items_books-items_book-items_image"><img class="manage-books-items_books-items_book-items_image-element" src="~/Images/Book_Images/945920c8-3909-4eea-9826-3dd2601acb9c_Atomic_habits.jpg" alt="Image of the book"></li>
-                        <li class="manage-books-items_books-items_book-items_title"><span class="manage-books-items_books-items_book-items_title-element">Atomic Habits</span></li>
-                        <li class="manage-books-items_books-items_book-items_author">James Clear</li>
-                        <li class="manage-books-items_books-items_book-items_button"><a class="manage-user-items_actions-items-link" href=""><button class="manage-books-items_books-items_book-items_button-mark-as-finished-element">Mark order as "finished"</button></a></li>
-                    </ul>
-                    <div class="manage-books-items_books-items_book-div-for-space-between-books"></div>
-                </li>
-                <li class="manage-books-items_books-items_book">
-                    <ul class="manage-books-items_books-items_book-items">
-                        <li class="manage-books-items_books-items_book-items_image"><img class="manage-books-items_books-items_book-items_image-element" src="~/Images/Book_Images/945920c8-3909-4eea-9826-3dd2601acb9c_Atomic_habits.jpg" alt="Image of the book"></li>
-                        <li class="manage-books-items_books-items_book-items_title"><span class="manage-books-items_books-items_book-items_title-element">Atomic Habits</span></li>
-                        <li class="manage-books-items_books-items_book-items_author">James Clear</li>
-                        <li class="manage-books-items_books-items_book-items_button"><a class="manage-user-items_actions-items-link" href=""><button class="manage-books-items_books-items_book-items_button-mark-as-finished-element">Mark order as "finished"</button></a></li>
-                    </ul>
-                    <div class="manage-books-items_books-items_book-div-for-space-between-books"></div>
-                </li>
-                <li class="manage-books-items_books-items_book">
-                    <ul class="manage-books-items_books-items_book-items">
-                        <li class="manage-books-items_books-items_book-items_image"><img class="manage-books-items_books-items_book-items_image-element" src="~/Images/Book_Images/945920c8-3909-4eea-9826-3dd2601acb9c_Atomic_habits.jpg" alt="Image of the book"></li>
-                        <li class="manage-books-items_books-items_book-items_title"><span class="manage-books-items_books-items_book-items_title-element">Atomic Habits</span></li>
-                        <li class="manage-books-items_books-items_book-items_author">James Clear</li>
-                        <li class="manage-books-items_books-items_book-items_button"><a class="manage-user-items_actions-items-link" href=""><button class="manage-books-items_books-items_book-items_button-mark-as-finished-element">Mark order as "finished"</button></a></li>
-                    </ul>
-                </li>
+                @foreach (Order order in Model)
+                {
+                    <li class="manage-books-items_books-items_book">
+                        <ul class="manage-books-items_books-items_book-items">
+                            <li class="manage-books-items_books-items_book-items_image"><img class="manage-books-items_books-items_book-items_image-element" src="@Url.Content(order.Book.ImagePath)" alt="Image of the book"></li>
+                            <li class="manage-books-items_books-items_book-items_title"><span class="manage-books-items_books-items_book-items_title-element">@order.Book.Title</span></li>
+                            <li class="manage-books-items_books-items_book-items_author">@order.Book.Author.Firstname @order.Book.Author.Lastname</li>
+                            <li class="manage-books-items_books-items_book-items_button"><a class="manage-user-items_actions-items-link" asp-controller="Admin" asp-action="ChangeOrderStatus" asp-route-orderId="@order.OrderId" asp-route-newStatus="Returned"><button class="manage-books-items_books-items_book-items_button-mark-as-finished-element">Mark order as "finished"</button></a></li>
+                        </ul>
+                        @if (order != Model.LastOrDefault())
+                        {
+                            <div class="manage-books-items_books-items_book-div-for-space-between-books"></div>
+                        }
+                    </li>
+                }
             </ul>
         </li>
     </ul>

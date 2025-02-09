@@ -1,8 +1,8 @@
 ﻿using LibraryApp.Core.Domain.Entities;
+using LibraryApp.Core.Domain.IdentityEntities;
 using LibraryApp.Core.DTO;
+using LibraryApp.Core.Enums;
 using LibraryApp.Core.ServiceContracts;
-using LibraryApp.Core.Services;
-using LibraryApp.UI.Areas.Admin.Controllers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -12,6 +12,7 @@ namespace LibraryApp.UI.Areas.Admin.Controllers
     [Authorize(Roles = "Admin")]
     public class AdminController : Controller
     {
+        private readonly IUsersGetterService _usersGetterService;
         private readonly IAuthorsGetterService _authorsGetterService;
         private readonly IAuthorsAdderService _authorsAdderService;
         private readonly IAuthorsRemoverService _authorsRemoverService;
@@ -19,9 +20,12 @@ namespace LibraryApp.UI.Areas.Admin.Controllers
         private readonly IBooksGetterService _booksGetterService;
         private readonly IChangeBookAmountService _changeBookAmountService;
         private readonly IBooksRemoverService _booksRemoverService;
+        private readonly IOrdersGetterService _ordersGetterService;
+        private readonly IOrderStatusChangerService _orderStatusChangerService;
 
-        public AdminController(IAuthorsGetterService authorsGetterService, IAuthorsAdderService authorsAdderService, IAuthorsRemoverService authorsRemoverService, IBooksAdderService booksAdderService, IBooksGetterService booksGetterService, IChangeBookAmountService changeBookAmountService, IBooksRemoverService booksRemoverService)
+        public AdminController(IUsersGetterService usersGetterService, IAuthorsGetterService authorsGetterService, IAuthorsAdderService authorsAdderService, IAuthorsRemoverService authorsRemoverService, IBooksAdderService booksAdderService, IBooksGetterService booksGetterService, IChangeBookAmountService changeBookAmountService, IBooksRemoverService booksRemoverService, IOrdersGetterService ordersGetterService, IOrderStatusChangerService orderStatusChangerService)
         {
+            _usersGetterService = usersGetterService;
             _authorsGetterService = authorsGetterService;
             _authorsAdderService = authorsAdderService;
             _authorsRemoverService = authorsRemoverService;
@@ -29,6 +33,8 @@ namespace LibraryApp.UI.Areas.Admin.Controllers
             _booksGetterService = booksGetterService;
             _changeBookAmountService = changeBookAmountService;
             _booksRemoverService = booksRemoverService;
+            _ordersGetterService = ordersGetterService;
+            _orderStatusChangerService = orderStatusChangerService;
         }
 
         [Route("/admin-panel")]
@@ -38,27 +44,82 @@ namespace LibraryApp.UI.Areas.Admin.Controllers
         }
 
         [Route("/admin-panel/manage-users")]
-        public async Task<IActionResult> ManageUsers()
+        public async Task<IActionResult> ManageUsers(string searchString, string searchFilter = "all")
         {
-            return View();
+            List<User> users = null;
+
+            ViewBag.SearchString = searchString;
+            ViewBag.SearchFilter = searchFilter;
+
+            if (searchString == null)
+            {
+                users = await _usersGetterService.GetAllUsers();
+            }
+            else
+            {
+                users = await _usersGetterService.GetFilteredUsers(searchFilter, searchString);
+            }
+
+            return View(users);
         }
 
         [Route("/admin-panel/manage-users/manage-user")]
-        public async Task<IActionResult> ManageUser()
+        public async Task<IActionResult> ManageUser(string userId)
         {
-            return View();
+            User user = await _usersGetterService.GetUserByUserId(userId);
+
+            return View(user);
         }
 
         [Route("/admin-panel/manage-users/manage-user/orders")]
-        public async Task<IActionResult> ManageUserOrders()
+        public async Task<IActionResult> ManageUserOrders(string userId)
         {
-            return View();
+            List<Order> orders = await _ordersGetterService.GetUserOrders(userId);
+            orders = orders.Where(o => o.Status != OrderStatusOptions.InRead.ToString() && o.Status != OrderStatusOptions.Returned.ToString()).ToList();
+
+            ViewBag.User = await _usersGetterService.GetUserByUserId(userId);
+
+            return View(orders);
         }
 
         [Route("/admin-panel/manage-users/manage-user/books")]
-        public async Task<IActionResult> ManageUserBooks()
+        public async Task<IActionResult> ManageUserBooks(string userId)
         {
-            return View();
+            List<Order> orders = await _ordersGetterService.GetUserOrders(userId, OrderStatusOptions.InRead);
+
+            ViewBag.User = await _usersGetterService.GetUserByUserId(userId);
+
+            return View(orders);
+        }
+
+        [Route("/admin-panel/manage-users/manage-user/orders/change-order-status")]
+        public async Task<IActionResult> ChangeOrderStatus(string orderId, string newStatus)
+        {
+            if (!Guid.TryParse(orderId, out Guid result))
+            {
+                return NotFound();  //TODO: create custom exception page for that type of situations (input postId is not in the correct format, or postId is not present in the query string)
+            }
+
+            Order order = await _ordersGetterService.GetOrderByOrderId(orderId);
+
+            await _orderStatusChangerService.ChangeStatus(order, newStatus);
+
+            if (newStatus == OrderStatusOptions.InRead.ToString())
+            {
+                return RedirectToAction(nameof(AdminController.ManageUserBooks), "Admin", new { userId = order.User.Id });
+            }
+            else if (newStatus == OrderStatusOptions.Delivered.ToString())
+            {
+                return RedirectToAction(nameof(AdminController.ManageUserOrders), "Admin", new { userId = order.User.Id });
+            }
+            else if (newStatus == OrderStatusOptions.Returned.ToString())
+            {
+                return RedirectToAction(nameof(AdminController.ManageUserBooks), "Admin", new { userId = order.User.Id });
+            }
+            else
+            {
+                throw new ArgumentException("Given new status is invalid.");
+            }
         }
 
         [Route("/admin-panel/manage-books")]

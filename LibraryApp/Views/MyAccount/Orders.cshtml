@@ -1,4 +1,6 @@
-﻿@{
+﻿@model List<Order>
+
+@{
     ViewBag.Title = "Orders";
     ViewBag.StylesPath = "~/css/orders.css";
 }
@@ -38,41 +40,21 @@
         <li class="manage-books-items_books">
             <ul class="manage-books-items_books-items">
                 <li class="manage-books-items_books-items_book"><h1 class="manage-books-items_books-items_book-title">Your ordered books</h1></li>
-                <li class="manage-books-items_books-items_book">
-                    <ul class="manage-books-items_books-items_book-items">
-                        <li class="manage-books-items_books-items_book-items_image"><img class="manage-books-items_books-items_book-items_image-element" src="~/Images/Book_Images/945920c8-3909-4eea-9826-3dd2601acb9c_Atomic_habits.jpg" alt="Image of the book"></li>
-                        <li class="manage-books-items_books-items_book-items_title"><span class="manage-books-items_books-items_book-items_title-element">Atomic Habits</span></li>
-                        <li class="manage-books-items_books-items_book-items_author">James Clear</li>
-                        <li class="manage-books-items_books-items_book-items_date-of-order"><span class="manage-books-items_books-items_book-items_date-of-order-element">08.02.2024</span></li>
-                    </ul>
-                    <div class="manage-books-items_books-items_book-div-for-space-between-books"></div>
-                </li>
-                <li class="manage-books-items_books-items_book">
-                    <ul class="manage-books-items_books-items_book-items">
-                        <li class="manage-books-items_books-items_book-items_image"><img class="manage-books-items_books-items_book-items_image-element" src="~/Images/Book_Images/945920c8-3909-4eea-9826-3dd2601acb9c_Atomic_habits.jpg" alt="Image of the book"></li>
-                        <li class="manage-books-items_books-items_book-items_title"><span class="manage-books-items_books-items_book-items_title-element">Atomic Habits</span></li>
-                        <li class="manage-books-items_books-items_book-items_author">James Clear</li>
-                        <li class="manage-books-items_books-items_book-items_date-of-order"><span class="manage-books-items_books-items_book-items_date-of-order-element">08.02.2024</span></li>
-                    </ul>
-                    <div class="manage-books-items_books-items_book-div-for-space-between-books"></div>
-                </li>
-                <li class="manage-books-items_books-items_book">
-                    <ul class="manage-books-items_books-items_book-items">
-                        <li class="manage-books-items_books-items_book-items_image"><img class="manage-books-items_books-items_book-items_image-element" src="~/Images/Book_Images/945920c8-3909-4eea-9826-3dd2601acb9c_Atomic_habits.jpg" alt="Image of the book"></li>
-                        <li class="manage-books-items_books-items_book-items_title"><span class="manage-books-items_books-items_book-items_title-element">Atomic Habits</span></li>
-                        <li class="manage-books-items_books-items_book-items_author">James Clear</li>
-                        <li class="manage-books-items_books-items_book-items_date-of-order"><span class="manage-books-items_books-items_book-items_date-of-order-element">08.02.2024</span></li>
-                    </ul>
-                    <div class="manage-books-items_books-items_book-div-for-space-between-books"></div>
-                </li>
-                <li class="manage-books-items_books-items_book">
-                    <ul class="manage-books-items_books-items_book-items">
-                        <li class="manage-books-items_books-items_book-items_image"><img class="manage-books-items_books-items_book-items_image-element" src="~/Images/Book_Images/945920c8-3909-4eea-9826-3dd2601acb9c_Atomic_habits.jpg" alt="Image of the book"></li>
-                        <li class="manage-books-items_books-items_book-items_title"><span class="manage-books-items_books-items_book-items_title-element">Atomic Habits</span></li>
-                        <li class="manage-books-items_books-items_book-items_author">James Clear</li>
-                        <li class="manage-books-items_books-items_book-items_date-of-order"><span class="manage-books-items_books-items_book-items_date-of-order-element">08.02.2024</span></li>
-                    </ul>
-                </li>
+                @foreach(Order order in Model)
+                {
+                    <li class="manage-books-items_books-items_book">
+                        <ul class="manage-books-items_books-items_book-items">
+                            <li class="manage-books-items_books-items_book-items_image"><img class="manage-books-items_books-items_book-items_image-element" src="@Url.Content(order.Book.ImagePath)" alt="Image of the book"></li>
+                            <li class="manage-books-items_books-items_book-items_title"><span class="manage-books-items_books-items_book-items_title-element">@order.Book.Author.Firstname @order.Book.Author.Lastname</span></li>
+                            <li class="manage-books-items_books-items_book-items_author">James Clear</li>
+                            <li class="manage-books-items_books-items_book-items_date-of-order"><span class="manage-books-items_books-items_book-items_date-of-order-element">@($"{order.DateOfOrder.Day}.{order.DateOfOrder.Month}.{order.DateOfOrder.Year}")</span></li>
+                        </ul>
+                        @if (order != Model.LastOrDefault())
+                        {
+                            <div class="manage-books-items_books-items_book-div-for-space-between-books"></div>
+                        }
+                    </li>
+                }
             </ul>
         </li>
     </ul>

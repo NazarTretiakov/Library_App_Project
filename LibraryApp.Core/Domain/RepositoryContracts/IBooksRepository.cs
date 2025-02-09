@@ -44,6 +44,14 @@ namespace LibraryApp.Core.Domain.RepositoryContracts
         Task<Book> ChangeBookAmount(Book book, int newAmount);
 
         /// <summary>
+        /// Changes book amount of users that currently read that book(holds) in the data store.
+        /// </summary>
+        /// <param name="book">The book object of which holds amount will be changed.</param>
+        /// <param name="newAmount">The new amount of holds the book.</param>
+        /// <returns>Book object.</returns>
+        Task<Book> ChangeBookHoldsAmount(Book book, int newAmount);
+
+        /// <summary>
         /// Deletes book from the data store.
         /// </summary>
         /// <param name="book">The book object which will be deleted.</param>

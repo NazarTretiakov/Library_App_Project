@@ -100,6 +100,10 @@
 }
 .manage-user-items_profile-photo-element {
   width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 80px;
+  object-fit: cover;
 }
 .manage-user-items_username {
   margin: 10px 0 60px 0;

@@ -47,5 +47,6 @@ namespace LibraryApp.Core.Domain.Entities
         public List<Save>? Saves { get; set; }
 
         public List<Review> Reviews { get; set; }
+        public List<Order>? Orders { get; set; }
     }
 }

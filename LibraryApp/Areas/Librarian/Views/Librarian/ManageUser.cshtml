@@ -1,5 +1,7 @@
-﻿@{
-    ViewBag.Title = "NAMEOFUSER";
+﻿@model User
+
+@{
+    ViewBag.Title = Model.UserName;
     ViewBag.StylesPath = "~/css/manage-user.css";
 }
 
@@ -35,12 +37,12 @@
 
 <section class="manage-user">
     <ul class="manage-user-items">
-        <li class="manage-user-items_profile-photo"><img class="manage-user-items_profile-photo-element" src="~/Images/Icons/User_Profile_Photo.svg" alt="Profile photo of the user"></li>
-        <li class="manage-user-items_username"><span class="manage-user-items_username-element">some_nameofuser1345</span></li>
+        <li class="manage-user-items_profile-photo"><img class="manage-user-items_profile-photo-element" src="@Url.Content(Model.ProfilePhotoPath)" alt="Profile photo of the user"></li>
+        <li class="manage-user-items_username"><span class="manage-user-items_username-element">@Model.UserName</span></li>
         <li class="manage-user-items_actions">
             <ul class="manage-user-items_actions-items">
-                <li class="manage-user-items_actions-items_orders"><a class="manage-user-items_actions-items-link" asp-controller="Librarian" asp-action="ManageUserOrders"><button class="manage-user-items_actions-items_orders-element">Orders</button></a></li>
-                <li class="manage-user-items_actions-items_books"><a class="manage-user-items_actions-items-link" asp-controller="Librarian" asp-action="ManageUserBooks"><button class="manage-user-items_actions-items_books-element">Books</button></a></li>
+                <li class="manage-user-items_actions-items_orders"><a class="manage-user-items_actions-items-link" asp-controller="Librarian" asp-action="ManageUserOrders" asp-route-userId="@Model.Id"><button class="manage-user-items_actions-items_orders-element">Orders</button></a></li>
+                <li class="manage-user-items_actions-items_books"><a class="manage-user-items_actions-items-link" asp-controller="Librarian" asp-action="ManageUserBooks" asp-route-userId="@Model.Id"><button class="manage-user-items_actions-items_books-element">Books</button></a></li>
                 <li class="manage-user-items_actions-items_send-custom-notification"><a class="manage-user-items_actions-items-link" href="manage-user-send-custom-notification.html"><button class="manage-user-items_actions-items_send-custom-notification-element">Send custom notification</button></a></li>
                 <li class="manage-user-items_actions-items_block-user"><a class="manage-user-items_actions-items-link" href="manage-user-block-user.html"><button class="manage-user-items_actions-items_block-user-element">Block user</button></a></li>
             </ul>

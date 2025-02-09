@@ -1,10 +1,12 @@
 ﻿using LibraryApp.Core.Domain.Entities;
 using LibraryApp.Core.Domain.IdentityEntities;
 using LibraryApp.Core.DTO;
+using LibraryApp.Core.Enums;
 using LibraryApp.Core.ServiceContracts;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace LibraryApp.UI.Controllers
 {
@@ -15,15 +17,19 @@ namespace LibraryApp.UI.Controllers
         private readonly IToggleSaveService _toggleSaveService;
         private readonly IIsBookSavedService _isBookSavedService;
         private readonly IReviewsCreatorService _reviewsCreatorService;
+        private readonly IOrdersCreatorService _ordersCreatorService;
+        private readonly IOrdersGetterService _ordersGetterService;
 
         private readonly UserManager<User> _userManager;
 
-        public LibraryController(IBooksGetterService booksGetterService, IToggleSaveService toggleSaveService, IIsBookSavedService isBookSavedService, IReviewsCreatorService reviewsCreatorService, UserManager<User> userManager)
+        public LibraryController(IBooksGetterService booksGetterService, IToggleSaveService toggleSaveService, IIsBookSavedService isBookSavedService, IReviewsCreatorService reviewsCreatorService, IOrdersCreatorService ordersCreatorService, IOrdersGetterService ordersGetterService, UserManager<User> userManager)
         {
             _booksGetterService = booksGetterService;
             _toggleSaveService = toggleSaveService;
             _isBookSavedService = isBookSavedService;
             _reviewsCreatorService = reviewsCreatorService;
+            _ordersCreatorService = ordersCreatorService;
+            _ordersGetterService = ordersGetterService;
             _userManager = userManager;
         }
 
@@ -57,7 +63,7 @@ namespace LibraryApp.UI.Controllers
         }
 
         [Route("/library/book")]
-        public async Task<IActionResult> Book(string bookId)   //  TODO: Fix the bug where the old user profile image is not removed when the user updates their profile image.The old image should be removed.
+        public async Task<IActionResult> Book(string bookId, bool? error)   //  TODO: Fix the bug where the old user profile image is not removed when the user updates their profile image.The old image should be removed.
         {
             if (!Guid.TryParse(bookId, out Guid result))
             {
@@ -76,6 +82,11 @@ namespace LibraryApp.UI.Controllers
 
             ViewBag.IsSaved = await _isBookSavedService.IsBookSaved(book.BookId.ToString());
 
+            if (error != null)
+            {
+                ViewBag.Error = true;
+            }
+
             return View(book);
         }
 
@@ -89,6 +100,41 @@ namespace LibraryApp.UI.Controllers
             ViewBag.IsSaved = isBookSaved;
 
             return PartialView("_BookSave", book);
+        }
+
+        [Route("/library/book/create-order")]
+        [HttpPost]
+        public async Task<IActionResult> CreateOrder(string bookId)
+        {
+            if (!Guid.TryParse(bookId, out Guid result))
+            {
+                return NotFound();  //TODO: create custom exception page for that type of situations (input postId is not in the correct format, or postId is not present in the query string)
+            }
+
+            Book book = await _booksGetterService.GetBookByBookId(bookId);
+
+            if (book == null)
+            {
+                return NotFound();  //TODO: create custom exception page for that type of situations (when the post is not found in db)
+            }
+
+            if (book.Amount - book.Holds <= 0)
+            {
+                return RedirectToAction(nameof(LibraryController.Book), "Library", new { bookId = bookId, error = true});
+            }
+
+            User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
+            ViewBag.CurrentWorkingUser = currentWorkingUser;
+
+            List<Order> userOrders = await _ordersGetterService.GetUserOrders(currentWorkingUser.Id.ToString());
+            if (userOrders.FirstOrDefault(o => o.User == currentWorkingUser && o.Book == book && o.Status != OrderStatusOptions.Returned.ToString()) != null)
+            {
+                return RedirectToAction(nameof(LibraryController.Book), "Library", new { bookId = bookId, error = true });
+            }
+
+            await _ordersCreatorService.CreateOrder(bookId);
+
+            return RedirectToAction(nameof(MyAccountController.Orders), "MyAccount");
         }
 
         [Route("/library/book/leave-review")]

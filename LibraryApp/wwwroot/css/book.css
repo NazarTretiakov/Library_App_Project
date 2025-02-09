@@ -188,6 +188,18 @@
 .book-items_information-items_holds-inscription {
   font-weight: bolder;
 }
+.book-items_information-items_order-button-validation-result {
+  color: #ff6452;
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+.book-items_information-items_order-button-validation-result > ul {
+  padding: 0;
+  list-style: none;
+}
+.book-items_information-items_order-button-validation-result > ul > li {
+  margin: 0 0 10px 0;
+}
 .book-items_information-items_order-button-element {
   height: 30px;
   width: 200px;

@@ -71,7 +71,19 @@
                 <li class="book-items_information-items_description"><span class="book-items_information-items_description-inscription">Description: </span><p class="book-items_information-items_description-element">@Model.Description</p></li>
                 <li class="book-items_information-items_available"><span class="book-items_information-items_available-inscription">Available: </span>@(Model.Amount - Model.Holds)</li>
                 <li class="book-items_information-items_holds"><span class="book-items_information-items_holds-inscription">Holds: </span>@Model.Holds</li>
-                <li class="book-items_information-items_order-button"><button class="book-items_information-items_order-button-element">Order book</button></li>
+                <li class="book-items_information-items_order-button">
+                    <form asp-controller="Library" asp-action="CreateOrder" asp-route-bookId="@Model.BookId" method="post">
+                        <button class="book-items_information-items_order-button-element">Order book</button>
+                        @if (ViewBag.Error != null)
+                        {
+                            <div class="book-items_information-items_order-button-validation-result" asp-validation-summary="All">
+                                <ul>
+                                    <li>Unfortunately, that book isn't available now.</li>
+                                </ul>
+                            </div>
+                        }
+                    </form>
+                </li>
             </ul>
         </li>
         <li class="book-items_save-icon">@await Html.PartialAsync("_BookSave", Model, ViewData)</li>

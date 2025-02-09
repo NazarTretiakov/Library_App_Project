@@ -1,18 +1,18 @@
 ﻿using LibraryApp.Core.Domain.Entities;
 using LibraryApp.Core.Domain.IdentityEntities;
 using LibraryApp.Core.DTO;
+using LibraryApp.Core.Enums;
 using LibraryApp.Core.ServiceContracts;
-using LibraryApp.Core.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace LibraryApp.UI.Controllers
 {
     [Authorize(Roles = "User")]
     public class MyAccountController : Controller
     {
+        private readonly IOrdersGetterService _ordersGetterService;
         private readonly IChangeProfileInformationService _changeProfileInformationService;
         private readonly IChangeProfilePhotoService _changeProfilePhotoService;
         private readonly IUsersGetterService _usersGetterService;
@@ -20,8 +20,9 @@ namespace LibraryApp.UI.Controllers
 
         private readonly UserManager<User> _userManager;
 
-        public MyAccountController(IChangeProfileInformationService changeProfileInformationService, IChangeProfilePhotoService changeProfilePhotoService, IUsersGetterService usersGetterService, ISavesGetterService savesGetterService, UserManager<User> userManager)
+        public MyAccountController(IOrdersGetterService ordersGetterService, IChangeProfileInformationService changeProfileInformationService, IChangeProfilePhotoService changeProfilePhotoService, IUsersGetterService usersGetterService, ISavesGetterService savesGetterService, UserManager<User> userManager)
         {
+            _ordersGetterService = ordersGetterService;
             _changeProfileInformationService = changeProfileInformationService;
             _changeProfilePhotoService = changeProfilePhotoService;
             _usersGetterService = usersGetterService;
@@ -36,9 +37,27 @@ namespace LibraryApp.UI.Controllers
         }
 
         [Route("/my-account/orders")]
-        public IActionResult Orders()
+        public async Task<IActionResult> Orders()
         {
-            return View();
+            User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
+            ViewBag.CurrentWorkingUser = currentWorkingUser;
+
+            List<Order> orders = await _ordersGetterService.GetUserOrders(currentWorkingUser.Id.ToString());
+            orders = orders.Where(o => o.Status != OrderStatusOptions.Returned.ToString() && o.Status != OrderStatusOptions.InRead.ToString()).ToList();
+
+            return View(orders);
+        }
+
+        [Route("/my-account/orders-history")]
+        public async Task<IActionResult> OrdersHistory()
+        {
+            User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
+            ViewBag.CurrentWorkingUser = currentWorkingUser;
+
+            List<Order> orders = await _ordersGetterService.GetUserOrders(currentWorkingUser.Id.ToString());
+            orders = orders.Where(o => o.Status == OrderStatusOptions.Returned.ToString()).ToList();
+
+            return View(orders);
         }
 
         [Route("/my-account/settings")]

@@ -1,4 +1,5 @@
-﻿using LibraryApp.Core.Domain.IdentityEntities;
+﻿using LibraryApp.Core.Domain.Entities;
+using LibraryApp.Core.Domain.IdentityEntities;
 using System.Linq.Expressions;
 
 namespace LibraryApp.Core.ServiceContracts
@@ -27,5 +28,13 @@ namespace LibraryApp.Core.ServiceContracts
         /// <param name="username">The username of user that will be retrieved.</param>
         /// <returns>User object or null.</returns>
         Task<User> GetUserByUsername(string username);
+
+        /// <summary>
+        /// Retrieves filtered users from the system.
+        /// </summary>
+        /// <param name="searchString">The phrase to be searched for.</param>
+        /// <param name="searchFilter">The name of the filter that will be used to search.</param>
+        /// <returns>The list of User objects or null.</returns>
+        Task<List<User>> GetFilteredUsers(string searchFilter, string searchString);
     }
 }

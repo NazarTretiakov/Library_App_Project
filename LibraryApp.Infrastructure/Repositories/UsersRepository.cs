@@ -3,7 +3,6 @@ using LibraryApp.Core.Domain.RepositoryContracts;
 using LibraryApp.Infrastructure.DbContext;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
-using System;
 using LibraryApp.Core.DTO;
 
 namespace LibraryApp.Infrastructure.Repositories
@@ -29,6 +28,7 @@ namespace LibraryApp.Infrastructure.Repositories
                                     .ThenInclude(s => s.Subscriber)
                                   .Include(u => u.Subscriptions)
                                     .ThenInclude(s => s.User)
+                                  .Include(u => u.Orders)
                                   .ToListAsync();
         }
 
@@ -80,6 +80,11 @@ namespace LibraryApp.Infrastructure.Repositories
                                   .Include(u => u.Subscriptions)
                                     .ThenInclude(s => s.User)
                                   .FirstOrDefaultAsync(u => u.UserName == username);
+        }
+
+        public async Task<List<User>> GetFilteredUsers(Expression<Func<User, bool>> predicate)
+        {
+            return await _db.Users.Include(u => u.Orders).Where(predicate).ToListAsync();
         }
     }
 }

@@ -187,6 +187,37 @@ namespace LibraryApp.Infrastructure.Migrations
                     b.ToTable("Likes", (string)null);
                 });
 
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Order", b =>
+                {
+                    b.Property<Guid>("OrderId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("BookId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("DateOfOrder")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsChecked")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("OrderId");
+
+                    b.HasIndex("BookId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Orders", (string)null);
+                });
+
             modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Post", b =>
                 {
                     b.Property<Guid>("PostId")
@@ -631,6 +662,25 @@ namespace LibraryApp.Infrastructure.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Order", b =>
+                {
+                    b.HasOne("LibraryApp.Core.Domain.Entities.Book", "Book")
+                        .WithMany("Orders")
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("LibraryApp.Core.Domain.IdentityEntities.User", "User")
+                        .WithMany("Orders")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Book");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Post", b =>
                 {
                     b.HasOne("LibraryApp.Core.Domain.IdentityEntities.User", "User")
@@ -786,6 +836,8 @@ namespace LibraryApp.Infrastructure.Migrations
                 {
                     b.Navigation("Genres");
 
+                    b.Navigation("Orders");
+
                     b.Navigation("Reviews");
 
                     b.Navigation("Saves");
@@ -817,6 +869,8 @@ namespace LibraryApp.Infrastructure.Migrations
                     b.Navigation("Comments");
 
                     b.Navigation("Likes");
+
+                    b.Navigation("Orders");
 
                     b.Navigation("Posts");
 

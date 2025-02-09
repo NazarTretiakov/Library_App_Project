@@ -40,6 +40,15 @@ namespace LibraryApp.Infrastructure.Repositories
             return book;
         }
 
+        public async Task<Book> ChangeBookHoldsAmount(Book book, int newAmount)
+        {
+            book.Holds = newAmount;
+
+            await _db.SaveChangesAsync();
+
+            return book;
+        }
+
         public async Task<bool> DeleteBook(Book book)
         {
             string imagePath = Path.Combine(_webHostEnvironment.WebRootPath, "Images", "Book_Images", Path.GetFileName(book.ImagePath));

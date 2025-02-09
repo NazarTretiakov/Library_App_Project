@@ -24,6 +24,13 @@ namespace LibraryApp.Core.Domain.RepositoryContracts
         Task<User> GetUser(string userId);
 
         /// <summary>
+        /// Retrieves filtered users from the data store.
+        /// </summary>
+        /// <param name="predicate">LINQ expression to filter users that will be retrieved.</param>
+        /// <returns>List of User objects or null.</returns>
+        Task<List<User>> GetFilteredUsers(Expression<Func<User, bool>> predicate);
+
+        /// <summary>
         /// Retrieves user from the data store.
         /// </summary>
         /// <param name="username">Username of the user that will be retrieved.</param>

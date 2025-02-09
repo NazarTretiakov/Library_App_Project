@@ -255,6 +255,21 @@
 
                 &_order-button {
 
+                    &-validation-result {
+                        color: $errorTextColor;
+                        margin: 10px 0 0 0;
+                        font-size: 14px;
+
+                        & > ul {
+                            padding: 0;
+                            list-style: none;
+
+                            & > li {
+                                margin: 0 0 10px 0;
+                            }
+                        }
+                    }
+
                     &-element {
                         height: 30px;
                         width: 200px;

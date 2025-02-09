@@ -1,4 +1,6 @@
-﻿@{
+﻿@model List<User>
+
+@{
     ViewBag.Title = "Manage users";
     ViewBag.StylesPath = "~/css/manage-users.css";
 }
@@ -32,7 +34,7 @@
     </header>
 
     <section class="search-panel">
-        <form class="search-panel-form" asp-controller="Librarian" asp-action="ManageBooks" method="get">
+        <form class="search-panel-form" asp-controller="Librarian" asp-action="ManageUsers" method="get">
             <ul class="search-panel-form-search">
                 <li class="search-panel-form-search-icon">
                     <div class="search-panel-form-search-icon-div"></div>
@@ -47,30 +49,30 @@
                         @if (ViewBag.SearchFilter == "all")
                         {
                             <option class="search-panel-form-dropdown-select-element-author" value="all" selected>All results</option>
-                            <option class="search-panel-form-dropdown-select-element-title" value="title">Title</option>
-                            <option class="search-panel-form-dropdown-select-element-author" value="authorName">Author name</option>
-                            <option class="search-panel-form-dropdown-select-element-genre" value="genre">Genre</option>
+                            <option class="search-panel-form-dropdown-select-element-title" value="username">Username</option>
+                            <option class="search-panel-form-dropdown-select-element-author" value="firstname">Firstname</option>
+                            <option class="search-panel-form-dropdown-select-element-genre" value="lastname">Lastname</option>
                         }
-                        else if (ViewBag.SearchFilter == "title")
+                        else if (ViewBag.SearchFilter == "username")
                         {
                             <option class="search-panel-form-dropdown-select-element-author" value="all">All results</option>
-                            <option class="search-panel-form-dropdown-select-element-title" value="title" selected>Title</option>
-                            <option class="search-panel-form-dropdown-select-element-author" value="authorName">Author name</option>
-                            <option class="search-panel-form-dropdown-select-element-genre" value="genre">Genre</option>
+                            <option class="search-panel-form-dropdown-select-element-title" value="username" selected>Username</option>
+                            <option class="search-panel-form-dropdown-select-element-author" value="firstname">Firstname</option>
+                            <option class="search-panel-form-dropdown-select-element-genre" value="lastname">Lastname</option>
                         }
-                        else if (ViewBag.SearchFilter == "authorName")
+                        else if (ViewBag.SearchFilter == "firstname")
                         {
                             <option class="search-panel-form-dropdown-select-element-author" value="all">All results</option>
-                            <option class="search-panel-form-dropdown-select-element-title" value="title">Title</option>
-                            <option class="search-panel-form-dropdown-select-element-author" value="authorName" selected>Author name</option>
-                            <option class="search-panel-form-dropdown-select-element-genre" value="genre">Genre</option>
+                            <option class="search-panel-form-dropdown-select-element-title" value="username">Username</option>
+                            <option class="search-panel-form-dropdown-select-element-author" value="firstname" selected>Firstname</option>
+                            <option class="search-panel-form-dropdown-select-element-genre" value="lastname">Lastname</option>
                         }
-                        else if (ViewBag.SearchFilter == "genre")
+                        else if (ViewBag.SearchFilter == "lastname")
                         {
                             <option class="search-panel-form-dropdown-select-element-author" value="all">All results</option>
-                            <option class="search-panel-form-dropdown-select-element-title" value="title">Title</option>
-                            <option class="search-panel-form-dropdown-select-element-author" value="authorName">Author name</option>
-                            <option class="search-panel-form-dropdown-select-element-genre" value="genre" selected>Genre</option>
+                            <option class="search-panel-form-dropdown-select-element-title" value="username">Username</option>
+                            <option class="search-panel-form-dropdown-select-element-author" value="firstname">Firstname</option>
+                            <option class="search-panel-form-dropdown-select-element-genre" value="lastname" selected>Lastname</option>
                         }
                     </select>
                 </li>
@@ -88,50 +90,23 @@
     <ul class="manage-books-items">
         <li class="manage-books-items_books">
             <ul class="manage-books-items_books-items">
-                <li class="manage-books-items_books-items_book">
-                    <a class="manage-books-items_books-items_book-link" asp-controller="Librarian" asp-action="ManageUser">
-                        <ul class="manage-books-items_books-items_book-items">
-                            <li class="manage-books-items_books-items_book-items_image"><img class="manage-books-items_books-items_book-items_image-element" src="~/Images/Icons/User_Profile_Photo.svg" alt="Image of the book"></li>
-                            <li class="manage-books-items_books-items_book-items_title"><span class="manage-books-items_books-items_book-items_title-element">user5678asd3_</span></li>
-                            <li class="manage-books-items_books-items_book-items_author"><span class="manage-books-items_books-items_book-items_amount-available-amount">5</span> books ordered</span></li>
-                            <li class="manage-books-items_books-items_book-items_amount_available"><span class="manage-books-items_books-items_book-items_amount-available-amount">5</span> books currently in read</li>
-                        </ul>
-                    </a>
-                    <div class="manage-books-items_books-items_book-div-for-space-between-books"></div>
-                </li>
-                <li class="manage-books-items_books-items_book">
-                    <a class="manage-books-items_books-items_book-link" href="manage-user.html">
-                        <ul class="manage-books-items_books-items_book-items">
-                            <li class="manage-books-items_books-items_book-items_image"><img class="manage-books-items_books-items_book-items_image-element" src="~/Images/Icons/User_Profile_Photo.svg" alt="Image of the book"></li>
-                            <li class="manage-books-items_books-items_book-items_title"><span class="manage-books-items_books-items_book-items_title-element">user5678asd3_</span></li>
-                            <li class="manage-books-items_books-items_book-items_author"><span class="manage-books-items_books-items_book-items_amount-available-amount">5</span> books ordered</span></li>
-                            <li class="manage-books-items_books-items_book-items_amount_available"><span class="manage-books-items_books-items_book-items_amount-available-amount">5</span> books currently in read</li>
-                        </ul>
-                    </a>
-                    <div class="manage-books-items_books-items_book-div-for-space-between-books"></div>
-                </li>
-                <li class="manage-books-items_books-items_book">
-                    <a class="manage-books-items_books-items_book-link" href="manage-user.html">
-                        <ul class="manage-books-items_books-items_book-items">
-                            <li class="manage-books-items_books-items_book-items_image"><img class="manage-books-items_books-items_book-items_image-element" src="~/Images/Icons/User_Profile_Photo.svg" alt="Image of the book"></li>
-                            <li class="manage-books-items_books-items_book-items_title"><span class="manage-books-items_books-items_book-items_title-element">user5678asd3_</span></li>
-                            <li class="manage-books-items_books-items_book-items_author"><span class="manage-books-items_books-items_book-items_amount-available-amount">5</span> books ordered</span></li>
-                            <li class="manage-books-items_books-items_book-items_amount_available"><span class="manage-books-items_books-items_book-items_amount-available-amount">5</span> books currently in read</li>
-                        </ul>
-                    </a>
-                    <div class="manage-books-items_books-items_book-div-for-space-between-books"></div>
-                </li>
-                <li class="manage-books-items_books-items_book">
-                    <a class="manage-books-items_books-items_book-link" href="manage-user.html">
-                        <ul class="manage-books-items_books-items_book-items">
-                            <li class="manage-books-items_books-items_book-items_image"><img class="manage-books-items_books-items_book-items_image-element" src="~/Images/Icons/User_Profile_Photo.svg" alt="Image of the book"></li>
-                            <li class="manage-books-items_books-items_book-items_title"><span class="manage-books-items_books-items_book-items_title-element">user5678asd3_</span></li>
-                            <li class="manage-books-items_books-items_book-items_author"><span class="manage-books-items_books-items_book-items_amount-available-amount">5</span> books ordered</span></li>
-                            <li class="manage-books-items_books-items_book-items_amount_available"><span class="manage-books-items_books-items_book-items_amount-available-amount">5</span> books currently in read</li>
-                        </ul>
-                    </a>
-                </li>
-
+                @foreach (User user in Model)
+                {
+                    <li class="manage-books-items_books-items_book">
+                        <a class="manage-books-items_books-items_book-link" asp-controller="Librarian" asp-action="ManageUser" asp-route-userId="@user.Id">
+                            <ul class="manage-books-items_books-items_book-items">
+                                <li class="manage-books-items_books-items_book-items_image"><img class="manage-books-items_books-items_book-items_image-element" src="@Url.Content(user.ProfilePhotoPath)" alt="Image of the book"></li>
+                                <li class="manage-books-items_books-items_book-items_title"><span class="manage-books-items_books-items_book-items_title-element">@user.UserName</span></li>
+                                <li class="manage-books-items_books-items_book-items_author"><span class="manage-books-items_books-items_book-items_amount-available-amount">@user.Orders.Where(o => o.Status != "Returned" && o.Status != "InRead").ToList().Count</span><span> books ordered</span></li>
+                                <li class="manage-books-items_books-items_book-items_amount_available"><span class="manage-books-items_books-items_book-items_amount-available-amount">@user.Orders.Where(o => o.Status == "InRead").ToList().Count</span> books currently in read</li>
+                            </ul>
+                        </a>
+                        @if (user != Model.LastOrDefault())
+                        {
+                            <div class="manage-books-items_books-items_book-div-for-space-between-books"></div>
+                        }
+                    </li>
+                }
             </ul>
         </li>
     </ul>
