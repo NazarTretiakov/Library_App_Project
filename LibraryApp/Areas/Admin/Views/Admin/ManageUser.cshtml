@@ -43,7 +43,7 @@
             <ul class="manage-user-items_actions-items">
                 <li class="manage-user-items_actions-items_orders"><a class="manage-user-items_actions-items-link" asp-controller="Admin" asp-action="ManageUserOrders" asp-route-userId="@Model.Id"><button class="manage-user-items_actions-items_orders-element">Orders</button></a></li>
                 <li class="manage-user-items_actions-items_books"><a class="manage-user-items_actions-items-link" asp-controller="Admin" asp-action="ManageUserBooks" asp-route-userId="@Model.Id"><button class="manage-user-items_actions-items_books-element">Books</button></a></li>
-                <li class="manage-user-items_actions-items_send-custom-notification"><a class="manage-user-items_actions-items-link" href="manage-user-send-custom-notification.html"><button class="manage-user-items_actions-items_send-custom-notification-element">Send custom notification</button></a></li>
+                <li class="manage-user-items_actions-items_send-custom-notification"><a class="manage-user-items_actions-items-link" asp-controller="Admin" asp-action="SendCustomNotification" asp-route-userId="@Model.Id"><button class="manage-user-items_actions-items_send-custom-notification-element">Send custom notification</button></a></li>
                 <li class="manage-user-items_actions-items_block-user"><a class="manage-user-items_actions-items-link" href="manage-user-block-user.html"><button class="manage-user-items_actions-items_block-user-element">Block user</button></a></li>
             </ul>
         </li>

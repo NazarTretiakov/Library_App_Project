@@ -122,6 +122,18 @@ namespace LibraryApp.UI.Areas.Admin.Controllers
             }
         }
 
+        [Route("/admin-panel/manage-users/manage-user/send-custom-notification")]
+        public IActionResult SendCustomNotification(string userId)
+        {
+            return View();
+        }
+
+        [Route("/admin-panel/notifications")]
+        public IActionResult Notifications()
+        {
+            return View();
+        }
+
         [Route("/admin-panel/manage-books")]
         public async Task<IActionResult> ManageBooks(string searchString, string searchFilter = "all")
         {

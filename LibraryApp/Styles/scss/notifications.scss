@@ -1,0 +1,340 @@
+﻿@use "config" as *;
+
+.container-for-header-panel {
+    position: sticky;
+    top: 0;
+}
+
+
+.header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 100px 0 100px;
+    margin: 0 0 50px 0;
+    background-color: white;
+
+    &-items {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        justify-content: space-between;
+
+        &-item {
+
+            &-logo {
+                display: flex;
+                align-items: center;
+
+                &-image {
+                    width: 120px;
+                    margin: 0 20px 0 0;
+                }
+
+                &-title {
+                    margin: 8px 0 0 0;
+                    padding: 10px 0 10px 20px;
+                    border-left: 3px $grayBackgroundColor solid;
+                    display: inline;
+                    font-size: 20px;
+                    align-self: center;
+                    font-weight: normal;
+                }
+            }
+        }
+
+        &-links {
+
+            &-list {
+                list-style: none;
+                padding: 0;
+
+                &-item {
+
+                    &-discussion {
+                        font-size: $headerFontSize;
+                    }
+
+                    &-register {
+
+                        &-span {
+                            font-size: $headerFontSize;
+                        }
+                    }
+
+                    &-profile {
+                        list-style: none;
+                        padding: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        &-link {
+                            text-decoration: none;
+                            color: black;
+                        }
+
+                        &-image {
+                            margin: 0 6px 0 0;
+
+                            &-element {
+                                width: 46px;
+                            }
+                        }
+
+                        &-inscription {
+                            font-size: 12px;
+
+                            &-items {
+                                list-style: none;
+                                padding: 0;
+
+                                &-logged-as {
+                                }
+
+                                &-username {
+                                    margin: 0 0 4px 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-link {
+        color: black;
+        text-decoration: none;
+
+        &-title {
+            color: black;
+            text-decoration: none;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+.manage-books {
+    margin: 0 180px 100px 180px;
+
+    &-items {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        &_books {
+
+            &-items {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+
+                &_book {
+
+                    &-title {
+                        font-size: 20px;
+                        margin: 0 0 50px 20px;
+                    }
+
+                    &-link {
+                        text-decoration: none;
+                        color: black;
+                    }
+
+                    &-items {
+                        display: flex;
+                        padding: 0;
+                        margin: 0 20px 0 20px;
+                        list-style: none;
+                        align-items: center;
+                        justify-content: space-between;
+                        font-size: 14px;
+                        height: 80px;
+
+                        &_image {
+
+                            &-book-element {
+                                width: 50px;
+                            }
+
+                            &-user-element {
+                                width: 50px;
+                                height: 50px;
+                                overflow: hidden;
+                                border-radius: 50px;
+                                object-fit: cover;
+                            }
+                        }
+
+                        &_title {
+                            width: 550px;
+                            line-height: 1.4;
+
+                            &-element {
+                            }
+                        }
+
+                        &_date-of-order {
+
+                            &-element {
+                                color: $grayBackgroundColor;
+                            }
+                        }
+                    }
+
+                    &-div-for-space-between-books {
+                        height: 20px;
+                        border-bottom: 3px $grayBackgroundColor solid;
+                        margin: 0 0 20px 0;
+                        padding: 0 20px 0 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.footer {
+    padding: 60px 100px 40px 100px;
+    margin: 50px 0 0 0;
+    background-color: $grayBackgroundColor;
+
+    &-items {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+
+        &-address {
+
+            &-items {
+                list-style: none;
+                padding: 0;
+                display: flex;
+
+                &-logo {
+
+                    &-element {
+                        width: 100px;
+                    }
+                }
+
+                &-description {
+                    font-size: 14px;
+                    line-height: 1.6;
+
+                    &-items {
+                        list-style: none;
+                        padding: 0;
+                        margin: 0 0 0 20px;
+
+                        &-1 {
+                            margin: 8px 0 0 0;
+                        }
+
+                        &-2 {
+                        }
+
+                        &-3 {
+                        }
+                    }
+                }
+            }
+        }
+
+        &-social-medias {
+
+            &-items {
+                list-style: none;
+                padding: 0;
+
+                &-about-us {
+                    font-size: 14px;
+                    margin: 0 0 40px 0;
+                }
+
+                &-icons {
+
+                    &-items {
+                        list-style: none;
+                        padding: 0;
+
+                        &-description {
+                            font-size: 14px;
+                            margin: 0 0 14px 0;
+                        }
+
+                        &-links {
+
+                            &-items {
+                                list-style: none;
+                                padding: 0;
+                                display: flex;
+
+                                &-facebook {
+                                    margin: 0 10px 0 0;
+
+                                    &-element {
+                                        width: 32px;
+                                    }
+                                }
+
+                                &-linkedin {
+                                    margin: 0 10px 0 0;
+
+                                    &-element {
+                                        width: 32px;
+                                    }
+                                }
+
+                                &-youtube {
+                                    margin: 0 10px 0 0;
+
+                                    &-element {
+                                        width: 32px;
+                                    }
+                                }
+
+                                &-instagram {
+                                    margin: 0 10px 0 0;
+
+                                    &-element {
+                                        width: 32px;
+                                    }
+                                }
+
+                                &-x {
+
+                                    &-element {
+                                        width: 32px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-link {
+        text-decoration: none;
+        color: $footerLinkColor;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

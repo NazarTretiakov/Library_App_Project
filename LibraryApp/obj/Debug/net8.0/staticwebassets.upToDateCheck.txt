@@ -34,6 +34,9 @@ wwwroot\css\manage-users.css
 wwwroot\css\manage-users.css.map
 wwwroot\css\my-account.css
 wwwroot\css\my-account.css.map
+wwwroot\css\notifications.css
+wwwroot\css\notifications.css.map
+wwwroot\css\orders - Copy.css.map
 wwwroot\css\orders.css
 wwwroot\css\orders.css.map
 wwwroot\css\photo-settings.css
@@ -62,6 +65,7 @@ wwwroot\Images\Book_Images\44803fa3-d53f-4538-bdfa-4a1852493e99_finance_book.jpg
 wwwroot\Images\Book_Images\92e7e4cc-0cc0-40ee-968b-afd8066214d7_Clean_Code.jpg
 wwwroot\Images\Book_Images\945920c8-3909-4eea-9826-3dd2601acb9c_Atomic_habits.jpg
 wwwroot\Images\Icons\Add_icon.svg
+wwwroot\Images\Icons\Admin_notification_icon.svg
 wwwroot\Images\Icons\Arrow_forward.svg
 wwwroot\Images\Icons\Author.svg
 wwwroot\Images\Icons\Create_comment.svg
@@ -113,6 +117,7 @@ wwwroot\js\create-post.js
 wwwroot\js\leave-review.js
 wwwroot\js\photo-settings.js
 wwwroot\js\profile-settings.js
+wwwroot\js\send-custom-notification.js
 wwwroot\js\toggle-book-save.js
 wwwroot\js\toggle-like.js
 wwwroot\js\toggle-post-save.js

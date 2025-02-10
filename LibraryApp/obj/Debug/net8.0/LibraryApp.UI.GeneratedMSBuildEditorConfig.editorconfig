@@ -68,6 +68,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cTWFuYWdlVXNlcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Studying/Library App Project/LibraryApp/LibraryApp/Areas/Admin/Views/Admin/Notifications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cTm90aWZpY2F0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Studying/Library App Project/LibraryApp/LibraryApp/Areas/Admin/Views/Admin/SendCustomNotification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cU2VuZEN1c3RvbU5vdGlmaWNhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Studying/Library App Project/LibraryApp/LibraryApp/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -118,6 +126,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Studying/Library App Project/LibraryApp/LibraryApp/Areas/Librarian/Views/Librarian/ManageUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGlicmFyaWFuXFZpZXdzXExpYnJhcmlhblxNYW5hZ2VVc2Vycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Studying/Library App Project/LibraryApp/LibraryApp/Areas/Librarian/Views/Librarian/Notifications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGlicmFyaWFuXFZpZXdzXExpYnJhcmlhblxOb3RpZmljYXRpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Studying/Library App Project/LibraryApp/LibraryApp/Areas/Librarian/Views/Librarian/SendCustomNotification.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTGlicmFyaWFuXFZpZXdzXExpYnJhcmlhblxTZW5kQ3VzdG9tTm90aWZpY2F0aW9uLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Studying/Library App Project/LibraryApp/LibraryApp/Areas/Librarian/Views/Shared/_Layout.cshtml]
@@ -182,6 +198,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Studying/Library App Project/LibraryApp/LibraryApp/Views/MyAccount/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlBY2NvdW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Studying/Library App Project/LibraryApp/LibraryApp/Views/MyAccount/Notifications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXlBY2NvdW50XE5vdGlmaWNhdGlvbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Studying/Library App Project/LibraryApp/LibraryApp/Views/MyAccount/Orders.cshtml]

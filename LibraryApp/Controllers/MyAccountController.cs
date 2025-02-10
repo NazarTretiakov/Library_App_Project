@@ -60,6 +60,12 @@ namespace LibraryApp.UI.Controllers
             return View(orders);
         }
 
+        [Route("/my-account/notifications")]
+        public IActionResult Notifications()
+        {
+            return View();
+        }
+
         [Route("/my-account/settings")]
         public IActionResult Settings()
         {

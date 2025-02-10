@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\Images\\Icons\\Add_icon.svg"
     },
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Admin_notification_icon.svg",
+      "PackagePath": "staticwebassets\\Images\\Icons\\Admin_notification_icon.svg"
+    },
+    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Arrow_forward.svg",
       "PackagePath": "staticwebassets\\Images\\Icons\\Arrow_forward.svg"
     },
@@ -357,6 +361,18 @@
       "PackagePath": "staticwebassets\\css\\my-account.css.map"
     },
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\notifications.css",
+      "PackagePath": "staticwebassets\\css\\notifications.css"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\notifications.css.map",
+      "PackagePath": "staticwebassets\\css\\notifications.css.map"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\orders - Copy.css.map",
+      "PackagePath": "staticwebassets\\css\\orders - Copy.css.map"
+    },
+    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\orders.css",
       "PackagePath": "staticwebassets\\css\\orders.css"
     },
@@ -459,6 +475,10 @@
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\profile-settings.js",
       "PackagePath": "staticwebassets\\js\\profile-settings.js"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\send-custom-notification.js",
+      "PackagePath": "staticwebassets\\js\\send-custom-notification.js"
     },
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\toggle-book-save.js",

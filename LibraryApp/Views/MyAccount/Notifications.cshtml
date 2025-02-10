@@ -1,8 +1,6 @@
-﻿@model User
-
-@{
-    ViewBag.Title = Model.UserName;
-    ViewBag.StylesPath = "~/css/manage-user.css";
+﻿@{
+    ViewBag.Title = "Notifications";
+    ViewBag.StylesPath = "~/css/notifications.css";
 }
 
 
@@ -10,8 +8,8 @@
     <header class="header">
         <ul class="header-items">
             <li class="header-items-item header-items-item-logo">
-                <a asp-controller="Librarian" asp-action="Index"><img class="header-items-item-logo-image" src="~/Images/Logo.jpg" alt="Logo of page"></a>
-                <a class="header-link-title" asp-controller="Librarian" asp-action="Index"><h1 class="header-items-item-logo-title">Librarian panel</h1></a>
+                <a asp-controller="Home" asp-action="Index"><img class="header-items-item-logo-image" src="/Images/Logo.jpg" alt="Logo of page"></a>
+                <a class="header-link-title" asp-controller="MyAccount" asp-action="Index"><h1 class="header-items-item-logo-title">My account</h1></a>
             </li>
             <li class="header-items-links">
                 <ul class="header-items-links-list">
@@ -35,16 +33,35 @@
 </div>
 
 
-<section class="manage-user">
-    <ul class="manage-user-items">
-        <li class="manage-user-items_profile-photo"><img class="manage-user-items_profile-photo-element" src="@Url.Content(Model.ProfilePhotoPath)" alt="Profile photo of the user"></li>
-        <li class="manage-user-items_username"><span class="manage-user-items_username-element">@Model.UserName</span></li>
-        <li class="manage-user-items_actions">
-            <ul class="manage-user-items_actions-items">
-                <li class="manage-user-items_actions-items_orders"><a class="manage-user-items_actions-items-link" asp-controller="Librarian" asp-action="ManageUserOrders" asp-route-userId="@Model.Id"><button class="manage-user-items_actions-items_orders-element">Orders</button></a></li>
-                <li class="manage-user-items_actions-items_books"><a class="manage-user-items_actions-items-link" asp-controller="Librarian" asp-action="ManageUserBooks" asp-route-userId="@Model.Id"><button class="manage-user-items_actions-items_books-element">Books</button></a></li>
-                <li class="manage-user-items_actions-items_send-custom-notification"><a class="manage-user-items_actions-items-link" asp-controller="Librarian" asp-action="SendCustomNotification" asp-route-userId="@Model.Id"><button class="manage-user-items_actions-items_send-custom-notification-element">Send custom notification</button></a></li>
-                <li class="manage-user-items_actions-items_block-user"><a class="manage-user-items_actions-items-link" href="manage-user-block-user.html"><button class="manage-user-items_actions-items_block-user-element">Block user</button></a></li>
+<section class="manage-books">
+    <ul class="manage-books-items">
+        <li class="manage-books-items_books">
+            <ul class="manage-books-items_books-items">
+                <li class="manage-books-items_books-items_book"><h1 class="manage-books-items_books-items_book-title">Your notifications</h1></li>
+                <li class="manage-books-items_books-items_book">
+                    <ul class="manage-books-items_books-items_book-items">
+                        <li class="manage-books-items_books-items_book-items_image"><img class="manage-books-items_books-items_book-items_image-book-element" src="~/Images/Book_Images/02611181-1c4f-45ff-ac3d-60998e6d08c5_history_book.jpg" alt="Image of the book"></li>
+                        <li class="manage-books-items_books-items_book-items_title"><span class="manage-books-items_books-items_book-items_title-element">Order of the book “Atomic Habits” has been completed. You can receive book in library.</span></li>
+                        <li class="manage-books-items_books-items_book-items_date-of-order"><span class="manage-books-items_books-items_book-items_date-of-order-element">14.12.2020</span></li>
+                    </ul>
+                    <div class="manage-books-items_books-items_book-div-for-space-between-books"></div>
+                </li>
+                <li class="manage-books-items_books-items_book">
+                    <ul class="manage-books-items_books-items_book-items">
+                        <li class="manage-books-items_books-items_book-items_image"><img class="manage-books-items_books-items_book-items_image-user-element" src="~/Images/Icons/User_Profile_Photo.svg" alt="Image of the book"></li>
+                        <li class="manage-books-items_books-items_book-items_title"><span class="manage-books-items_books-items_book-items_title-element">Order of the book “Atomic Habits” has been completed. You can receive book in library.</span></li>
+                        <li class="manage-books-items_books-items_book-items_date-of-order"><span class="manage-books-items_books-items_book-items_date-of-order-element">14.12.2020</span></li>
+                    </ul>
+                    <div class="manage-books-items_books-items_book-div-for-space-between-books"></div>
+                </li>
+                <li class="manage-books-items_books-items_book">
+                    <ul class="manage-books-items_books-items_book-items">
+                        <li class="manage-books-items_books-items_book-items_image"><img class="manage-books-items_books-items_book-items_image-book-element" src="~/Images/Icons/Admin_notification_icon.svg" alt="Image of the book"></li>
+                        <li class="manage-books-items_books-items_book-items_title"><span class="manage-books-items_books-items_book-items_title-element">Order of the book “Atomic Habits” has been completed. You can receive book in library. Order of the book “Atomic Habits” has been completed. You can receive book in library.</span></li>
+                        <li class="manage-books-items_books-items_book-items_date-of-order"><span class="manage-books-items_books-items_book-items_date-of-order-element">14.12.2020</span></li>
+                    </ul>
+                    <div class="manage-books-items_books-items_book-div-for-space-between-books"></div>
+                </li>
             </ul>
         </li>
     </ul>
