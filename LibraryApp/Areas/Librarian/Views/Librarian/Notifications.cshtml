@@ -1,4 +1,6 @@
-﻿@{
+﻿@model List<Notification>
+
+@{
     ViewBag.Title = "Notifications";
     ViewBag.StylesPath = "~/css/notifications.css";
 }
@@ -38,30 +40,43 @@
         <li class="manage-books-items_books">
             <ul class="manage-books-items_books-items">
                 <li class="manage-books-items_books-items_book"><h1 class="manage-books-items_books-items_book-title">Your notifications</h1></li>
-                <li class="manage-books-items_books-items_book">
-                    <ul class="manage-books-items_books-items_book-items">
-                        <li class="manage-books-items_books-items_book-items_image"><img class="manage-books-items_books-items_book-items_image-book-element" src="~/Images/Book_Images/02611181-1c4f-45ff-ac3d-60998e6d08c5_history_book.jpg" alt="Image of the book"></li>
-                        <li class="manage-books-items_books-items_book-items_title"><span class="manage-books-items_books-items_book-items_title-element">Order of the book “Atomic Habits” has been completed. You can receive book in library.</span></li>
-                        <li class="manage-books-items_books-items_book-items_date-of-order"><span class="manage-books-items_books-items_book-items_date-of-order-element">14.12.2020</span></li>
-                    </ul>
-                    <div class="manage-books-items_books-items_book-div-for-space-between-books"></div>
-                </li>
-                <li class="manage-books-items_books-items_book">
-                    <ul class="manage-books-items_books-items_book-items">
-                        <li class="manage-books-items_books-items_book-items_image"><img class="manage-books-items_books-items_book-items_image-user-element" src="~/Images/Icons/User_Profile_Photo.svg" alt="Image of the book"></li>
-                        <li class="manage-books-items_books-items_book-items_title"><span class="manage-books-items_books-items_book-items_title-element">Order of the book “Atomic Habits” has been completed. You can receive book in library.</span></li>
-                        <li class="manage-books-items_books-items_book-items_date-of-order"><span class="manage-books-items_books-items_book-items_date-of-order-element">14.12.2020</span></li>
-                    </ul>
-                    <div class="manage-books-items_books-items_book-div-for-space-between-books"></div>
-                </li>
-                <li class="manage-books-items_books-items_book">
-                    <ul class="manage-books-items_books-items_book-items">
-                        <li class="manage-books-items_books-items_book-items_image"><img class="manage-books-items_books-items_book-items_image-book-element" src="~/Images/Icons/Admin_notification_icon.svg" alt="Image of the book"></li>
-                        <li class="manage-books-items_books-items_book-items_title"><span class="manage-books-items_books-items_book-items_title-element">Order of the book “Atomic Habits” has been completed. You can receive book in library. Order of the book “Atomic Habits” has been completed. You can receive book in library.</span></li>
-                        <li class="manage-books-items_books-items_book-items_date-of-order"><span class="manage-books-items_books-items_book-items_date-of-order-element">14.12.2020</span></li>
-                    </ul>
-                    <div class="manage-books-items_books-items_book-div-for-space-between-books"></div>
-                </li>
+                @foreach (Notification notification in Model)
+                {
+                    if (notification.NotificationType == NotificationTypeOptions.User.ToString())
+                    {
+                        <li class="manage-books-items_books-items_book">
+                            <ul class="manage-books-items_books-items_book-items">
+                                <li class="manage-books-items_books-items_book-items_image"><img class="manage-books-items_books-items_book-items_image-user-element" src="@Url.Content(notification.User.ProfilePhotoPath)" alt="Image of the book"></li>
+                                <li class="manage-books-items_books-items_book-items_title"><span class="manage-books-items_books-items_book-items_title-element">@notification.Content</span></li>
+                                <li class="manage-books-items_books-items_book-items_date-of-order"><span class="manage-books-items_books-items_book-items_date-of-order-element">@($"{@notification.DateOfCreation.Day}.{@notification.DateOfCreation.Month}.{@notification.DateOfCreation.Year}")</span></li>
+                            </ul>
+                        </li>
+                    }
+                    else if (notification.NotificationType == NotificationTypeOptions.Book.ToString())
+                    {
+                        <li class="manage-books-items_books-items_book">
+                            <ul class="manage-books-items_books-items_book-items">
+                                <li class="manage-books-items_books-items_book-items_image"><img class="manage-books-items_books-items_book-items_image-book-element" src="@Url.Content(notification.Book.ImagePath)" alt="Image of the book"></li>
+                                <li class="manage-books-items_books-items_book-items_title"><span class="manage-books-items_books-items_book-items_title-element">@notification.Content</span></li>
+                                <li class="manage-books-items_books-items_book-items_date-of-order"><span class="manage-books-items_books-items_book-items_date-of-order-element">@($"{@notification.DateOfCreation.Day}.{@notification.DateOfCreation.Month}.{@notification.DateOfCreation.Year}")</span></li>
+                            </ul>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="manage-books-items_books-items_book">
+                            <ul class="manage-books-items_books-items_book-items">
+                                <li class="manage-books-items_books-items_book-items_image"><img class="manage-books-items_books-items_book-items_image-book-element" src="~/Images/Icons/Admin_notification_icon.svg" alt="Image of the book"></li>
+                                <li class="manage-books-items_books-items_book-items_title"><span class="manage-books-items_books-items_book-items_title-element">@notification.Content</span></li>
+                                <li class="manage-books-items_books-items_book-items_date-of-order"><span class="manage-books-items_books-items_book-items_date-of-order-element">@($"{@notification.DateOfCreation.Day}.{@notification.DateOfCreation.Month}.{@notification.DateOfCreation.Year}")</span></li>
+                            </ul>
+                        </li>
+                    }
+                    if (notification != Model.LastOrDefault())
+                    {
+                        <div class="manage-books-items_books-items_book-div-for-space-between-books"></div>
+                    }
+                }
             </ul>
         </li>
     </ul>

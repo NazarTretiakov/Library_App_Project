@@ -3,6 +3,7 @@ using LibraryApp.Core.Domain.IdentityEntities;
 using LibraryApp.Core.DTO;
 using LibraryApp.Core.Enums;
 using LibraryApp.Core.ServiceContracts;
+using LibraryApp.Core.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -17,16 +18,18 @@ namespace LibraryApp.UI.Controllers
         private readonly IChangeProfilePhotoService _changeProfilePhotoService;
         private readonly IUsersGetterService _usersGetterService;
         private readonly ISavesGetterService _savesGetterService;
+        private readonly INotificationsGetterService _notificationsGetterService;
 
         private readonly UserManager<User> _userManager;
 
-        public MyAccountController(IOrdersGetterService ordersGetterService, IChangeProfileInformationService changeProfileInformationService, IChangeProfilePhotoService changeProfilePhotoService, IUsersGetterService usersGetterService, ISavesGetterService savesGetterService, UserManager<User> userManager)
+        public MyAccountController(IOrdersGetterService ordersGetterService, IChangeProfileInformationService changeProfileInformationService, IChangeProfilePhotoService changeProfilePhotoService, IUsersGetterService usersGetterService, ISavesGetterService savesGetterService, INotificationsGetterService notificationsGetterService, UserManager<User> userManager)
         {
             _ordersGetterService = ordersGetterService;
             _changeProfileInformationService = changeProfileInformationService;
             _changeProfilePhotoService = changeProfilePhotoService;
             _usersGetterService = usersGetterService;
             _savesGetterService = savesGetterService;
+            _notificationsGetterService = notificationsGetterService;
             _userManager = userManager;
         }
 
@@ -61,9 +64,15 @@ namespace LibraryApp.UI.Controllers
         }
 
         [Route("/my-account/notifications")]
-        public IActionResult Notifications()
+        public async Task<IActionResult> Notifications()
         {
-            return View();
+            User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
+            ViewBag.CurrentWorkingUser = currentWorkingUser;
+
+            List<Notification> notifications = await _notificationsGetterService.GetUserNotifications(currentWorkingUser.Id.ToString());
+            notifications = notifications.OrderByDescending(n => n.DateOfCreation).ToList();
+
+            return View(notifications);
         }
 
         [Route("/my-account/settings")]

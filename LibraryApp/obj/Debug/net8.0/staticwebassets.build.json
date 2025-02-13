@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CKYjTZbNahP7xVdpD9yoWyxMZFOnCDCiLLLekU1KHMo=",
+  "Hash": "ISyxn+TR45j62Ed/q1/FlX0Rz0Q+GaMGgXFYbtfncCY=",
   "Source": "LibraryApp.UI",
   "BasePath": "_content/LibraryApp.UI",
   "Mode": "Default",
@@ -2159,6 +2159,27 @@
       "OriginalItemSpec": "wwwroot\\Images\\Photo_of_library_2.jpg"
     },
     {
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\0d70c40c-10a7-40cd-bf0f-f6051f9e7158_avocado.png",
+      "SourceId": "LibraryApp.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
+      "BasePath": "_content/LibraryApp.UI",
+      "RelativePath": "Images/Profile_Photos/0d70c40c-10a7-40cd-bf0f-f6051f9e7158_avocado#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zso9ag47i0",
+      "Integrity": "LZBc3hPlmZT5XhuTEht1/SwZRkPkQ5HoYUE9htZtB/w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Profile_Photos\\0d70c40c-10a7-40cd-bf0f-f6051f9e7158_avocado.png"
+    },
+    {
       "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\0e2dbb97-9a55-4f6b-a741-7ef2720245a5_leo_dicaprio.jpg",
       "SourceId": "LibraryApp.UI",
       "SourceType": "Discovered",
@@ -2285,27 +2306,6 @@
       "OriginalItemSpec": "wwwroot\\Images\\Profile_Photos\\bd635296-5086-4186-a062-7104b1534439_smile.jpg"
     },
     {
-      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\c468cd87-c280-4b26-ad63-e8b62607fd6e_Снимок экрана 2024-11-27 202926.png",
-      "SourceId": "LibraryApp.UI",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
-      "BasePath": "_content/LibraryApp.UI",
-      "RelativePath": "Images/Profile_Photos/c468cd87-c280-4b26-ad63-e8b62607fd6e_Снимок экрана 2024-11-27 202926#[.{fingerprint}]?.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "cjwkxdufdb",
-      "Integrity": "SGmmLZygk077mtP+5/FgwXYrVFaovd41ZHt7GverXAo=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Profile_Photos\\c468cd87-c280-4b26-ad63-e8b62607fd6e_Снимок экрана 2024-11-27 202926.png"
-    },
-    {
       "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\c7010544-53c7-4790-bf09-dc08c1463273_Luke_Skywalker_Profile_Photo.jpg",
       "SourceId": "LibraryApp.UI",
       "SourceType": "Discovered",
@@ -2327,12 +2327,12 @@
       "OriginalItemSpec": "wwwroot\\Images\\Profile_Photos\\c7010544-53c7-4790-bf09-dc08c1463273_Luke_Skywalker_Profile_Photo.jpg"
     },
     {
-      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\e444a2e1-b028-4fbb-82fb-1d48d06356c3_Franklin_Profile_Photo.webp",
+      "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\cf1a7585-451f-4f64-99fc-5c579b2b4195_leo_dicaprio.jpg",
       "SourceId": "LibraryApp.UI",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\",
       "BasePath": "_content/LibraryApp.UI",
-      "RelativePath": "Images/Profile_Photos/e444a2e1-b028-4fbb-82fb-1d48d06356c3_Franklin_Profile_Photo#[.{fingerprint}]?.webp",
+      "RelativePath": "Images/Profile_Photos/cf1a7585-451f-4f64-99fc-5c579b2b4195_leo_dicaprio#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2341,11 +2341,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "5h3nx54nnh",
-      "Integrity": "p5kdqWkZH6mi/DtcLtvsAJp6D4cr0w3+7afzrQ4hJU4=",
+      "Fingerprint": "yci9cvxlhs",
+      "Integrity": "zoJuDViO2PrGde1s7wXFgp8OYZ0dB0p909XoPMxrJkI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\Profile_Photos\\e444a2e1-b028-4fbb-82fb-1d48d06356c3_Franklin_Profile_Photo.webp"
+      "OriginalItemSpec": "wwwroot\\Images\\Profile_Photos\\cf1a7585-451f-4f64-99fc-5c579b2b4195_leo_dicaprio.jpg"
     },
     {
       "Identity": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\eb5c9a29-9cd8-4e83-9863-bff740042b47_Luke_Skywalker_Profile_Photo.jpg",
@@ -10987,6 +10987,88 @@
       ]
     },
     {
+      "Route": "Images/Profile_Photos/0d70c40c-10a7-40cd-bf0f-f6051f9e7158_avocado.png",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\0d70c40c-10a7-40cd-bf0f-f6051f9e7158_avocado.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5777"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LZBc3hPlmZT5XhuTEht1/SwZRkPkQ5HoYUE9htZtB/w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Feb 2025 15:46:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LZBc3hPlmZT5XhuTEht1/SwZRkPkQ5HoYUE9htZtB/w="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Profile_Photos/0d70c40c-10a7-40cd-bf0f-f6051f9e7158_avocado.zso9ag47i0.png",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\0d70c40c-10a7-40cd-bf0f-f6051f9e7158_avocado.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5777"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LZBc3hPlmZT5XhuTEht1/SwZRkPkQ5HoYUE9htZtB/w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Feb 2025 15:46:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zso9ag47i0"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Profile_Photos/0d70c40c-10a7-40cd-bf0f-f6051f9e7158_avocado.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LZBc3hPlmZT5XhuTEht1/SwZRkPkQ5HoYUE9htZtB/w="
+        }
+      ]
+    },
+    {
       "Route": "Images/Profile_Photos/0e2dbb97-9a55-4f6b-a741-7ef2720245a5_leo_dicaprio.jpg",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\0e2dbb97-9a55-4f6b-a741-7ef2720245a5_leo_dicaprio.jpg",
       "Selectors": [],
@@ -11479,88 +11561,6 @@
       ]
     },
     {
-      "Route": "Images/Profile_Photos/c468cd87-c280-4b26-ad63-e8b62607fd6e_Снимок экрана 2024-11-27 202926.cjwkxdufdb.png",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\c468cd87-c280-4b26-ad63-e8b62607fd6e_Снимок экрана 2024-11-27 202926.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "55250"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SGmmLZygk077mtP+5/FgwXYrVFaovd41ZHt7GverXAo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 08:17:11 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "cjwkxdufdb"
-        },
-        {
-          "Name": "label",
-          "Value": "Images/Profile_Photos/c468cd87-c280-4b26-ad63-e8b62607fd6e_Снимок экрана 2024-11-27 202926.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-SGmmLZygk077mtP+5/FgwXYrVFaovd41ZHt7GverXAo="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Profile_Photos/c468cd87-c280-4b26-ad63-e8b62607fd6e_Снимок экрана 2024-11-27 202926.png",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\c468cd87-c280-4b26-ad63-e8b62607fd6e_Снимок экрана 2024-11-27 202926.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "55250"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"SGmmLZygk077mtP+5/FgwXYrVFaovd41ZHt7GverXAo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 08:17:11 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-SGmmLZygk077mtP+5/FgwXYrVFaovd41ZHt7GverXAo="
-        }
-      ]
-    },
-    {
       "Route": "Images/Profile_Photos/c7010544-53c7-4790-bf09-dc08c1463273_Luke_Skywalker_Profile_Photo.5h5ipp3gkl.jpg",
       "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\c7010544-53c7-4790-bf09-dc08c1463273_Luke_Skywalker_Profile_Photo.jpg",
       "Selectors": [],
@@ -11643,8 +11643,8 @@
       ]
     },
     {
-      "Route": "Images/Profile_Photos/e444a2e1-b028-4fbb-82fb-1d48d06356c3_Franklin_Profile_Photo.5h3nx54nnh.webp",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\e444a2e1-b028-4fbb-82fb-1d48d06356c3_Franklin_Profile_Photo.webp",
+      "Route": "Images/Profile_Photos/cf1a7585-451f-4f64-99fc-5c579b2b4195_leo_dicaprio.jpg",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\cf1a7585-451f-4f64-99fc-5c579b2b4195_leo_dicaprio.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -11653,64 +11653,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "97124"
+          "Value": "19537"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/webp"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
-          "Value": "\"p5kdqWkZH6mi/DtcLtvsAJp6D4cr0w3+7afzrQ4hJU4=\""
+          "Value": "\"zoJuDViO2PrGde1s7wXFgp8OYZ0dB0p909XoPMxrJkI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 12:44:24 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "5h3nx54nnh"
-        },
-        {
-          "Name": "label",
-          "Value": "Images/Profile_Photos/e444a2e1-b028-4fbb-82fb-1d48d06356c3_Franklin_Profile_Photo.webp"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-p5kdqWkZH6mi/DtcLtvsAJp6D4cr0w3+7afzrQ4hJU4="
-        }
-      ]
-    },
-    {
-      "Route": "Images/Profile_Photos/e444a2e1-b028-4fbb-82fb-1d48d06356c3_Franklin_Profile_Photo.webp",
-      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\e444a2e1-b028-4fbb-82fb-1d48d06356c3_Franklin_Profile_Photo.webp",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "97124"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/webp"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"p5kdqWkZH6mi/DtcLtvsAJp6D4cr0w3+7afzrQ4hJU4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 17 Jan 2025 12:44:24 GMT"
+          "Value": "Thu, 13 Feb 2025 09:32:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11720,7 +11675,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-p5kdqWkZH6mi/DtcLtvsAJp6D4cr0w3+7afzrQ4hJU4="
+          "Value": "sha256-zoJuDViO2PrGde1s7wXFgp8OYZ0dB0p909XoPMxrJkI="
+        }
+      ]
+    },
+    {
+      "Route": "Images/Profile_Photos/cf1a7585-451f-4f64-99fc-5c579b2b4195_leo_dicaprio.yci9cvxlhs.jpg",
+      "AssetFile": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\cf1a7585-451f-4f64-99fc-5c579b2b4195_leo_dicaprio.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19537"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zoJuDViO2PrGde1s7wXFgp8OYZ0dB0p909XoPMxrJkI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 13 Feb 2025 09:32:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yci9cvxlhs"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/Profile_Photos/cf1a7585-451f-4f64-99fc-5c579b2b4195_leo_dicaprio.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zoJuDViO2PrGde1s7wXFgp8OYZ0dB0p909XoPMxrJkI="
         }
       ]
     },

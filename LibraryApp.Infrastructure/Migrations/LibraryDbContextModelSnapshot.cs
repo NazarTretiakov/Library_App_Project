@@ -187,6 +187,44 @@ namespace LibraryApp.Infrastructure.Migrations
                     b.ToTable("Likes", (string)null);
                 });
 
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Notification", b =>
+                {
+                    b.Property<Guid>("NotificationId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("BookId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<DateTime>("DateOfCreation")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("NotificationReceiverId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("NotificationType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid?>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("NotificationId");
+
+                    b.HasIndex("BookId");
+
+                    b.HasIndex("NotificationReceiverId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Notifications", (string)null);
+                });
+
             modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Order", b =>
                 {
                     b.Property<Guid>("OrderId")
@@ -662,6 +700,31 @@ namespace LibraryApp.Infrastructure.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Notification", b =>
+                {
+                    b.HasOne("LibraryApp.Core.Domain.Entities.Book", "Book")
+                        .WithMany()
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
+                    b.HasOne("LibraryApp.Core.Domain.IdentityEntities.User", "NotificationReceiver")
+                        .WithMany("Notifications")
+                        .HasForeignKey("NotificationReceiverId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("LibraryApp.Core.Domain.IdentityEntities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
+                    b.Navigation("Book");
+
+                    b.Navigation("NotificationReceiver");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Order", b =>
                 {
                     b.HasOne("LibraryApp.Core.Domain.Entities.Book", "Book")
@@ -869,6 +932,8 @@ namespace LibraryApp.Infrastructure.Migrations
                     b.Navigation("Comments");
 
                     b.Navigation("Likes");
+
+                    b.Navigation("Notifications");
 
                     b.Navigation("Orders");
 

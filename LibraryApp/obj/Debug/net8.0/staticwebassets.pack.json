@@ -169,6 +169,10 @@
       "PackagePath": "staticwebassets\\Images\\Photo_of_library_2.jpg"
     },
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\0d70c40c-10a7-40cd-bf0f-f6051f9e7158_avocado.png",
+      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\0d70c40c-10a7-40cd-bf0f-f6051f9e7158_avocado.png"
+    },
+    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\0e2dbb97-9a55-4f6b-a741-7ef2720245a5_leo_dicaprio.jpg",
       "PackagePath": "staticwebassets\\Images\\Profile_Photos\\0e2dbb97-9a55-4f6b-a741-7ef2720245a5_leo_dicaprio.jpg"
     },
@@ -193,16 +197,12 @@
       "PackagePath": "staticwebassets\\Images\\Profile_Photos\\bd635296-5086-4186-a062-7104b1534439_smile.jpg"
     },
     {
-      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\c468cd87-c280-4b26-ad63-e8b62607fd6e_Снимок экрана 2024-11-27 202926.png",
-      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\c468cd87-c280-4b26-ad63-e8b62607fd6e_Снимок экрана 2024-11-27 202926.png"
-    },
-    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\c7010544-53c7-4790-bf09-dc08c1463273_Luke_Skywalker_Profile_Photo.jpg",
       "PackagePath": "staticwebassets\\Images\\Profile_Photos\\c7010544-53c7-4790-bf09-dc08c1463273_Luke_Skywalker_Profile_Photo.jpg"
     },
     {
-      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\e444a2e1-b028-4fbb-82fb-1d48d06356c3_Franklin_Profile_Photo.webp",
-      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\e444a2e1-b028-4fbb-82fb-1d48d06356c3_Franklin_Profile_Photo.webp"
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\cf1a7585-451f-4f64-99fc-5c579b2b4195_leo_dicaprio.jpg",
+      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\cf1a7585-451f-4f64-99fc-5c579b2b4195_leo_dicaprio.jpg"
     },
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\eb5c9a29-9cd8-4e83-9863-bff740042b47_Luke_Skywalker_Profile_Photo.jpg",

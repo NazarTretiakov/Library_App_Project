@@ -20,6 +20,7 @@ namespace LibraryApp.Infrastructure.DbContext
         public DbSet<BookGenre> BookGenre { get; set; }
         public DbSet<Review> Reviews { get; set; }
         public DbSet<Order> Orders { get; set; }
+        public DbSet<Notification> Notifications { get; set; }
 
         public LibraryDbContext(DbContextOptions options) : base(options) { }
 
@@ -42,6 +43,7 @@ namespace LibraryApp.Infrastructure.DbContext
             modelBuilder.Entity<BookGenre>().ToTable("BookGenres");
             modelBuilder.Entity<Review>().ToTable("Reviews");
             modelBuilder.Entity<Order>().ToTable("Orders");
+            modelBuilder.Entity<Notification>().ToTable("Notifications");
 
 
             modelBuilder.Entity<User>()
@@ -153,6 +155,24 @@ namespace LibraryApp.Infrastructure.DbContext
                         .WithMany(b => b.Orders)
                         .HasForeignKey("BookId")
                         .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Notification>()
+                        .HasOne(n => n.User)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<Notification>()
+                        .HasOne(n => n.Book)
+                        .WithMany()
+                        .HasForeignKey("BookId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<Notification>()
+                        .HasOne(n => n.NotificationReceiver)
+                        .WithMany(nr => nr.Notifications)
+                        .HasForeignKey("NotificationReceiverId")
+                        .OnDelete(DeleteBehavior.NoAction);
         }
     }
 }

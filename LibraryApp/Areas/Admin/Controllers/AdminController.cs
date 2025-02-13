@@ -3,7 +3,10 @@ using LibraryApp.Core.Domain.IdentityEntities;
 using LibraryApp.Core.DTO;
 using LibraryApp.Core.Enums;
 using LibraryApp.Core.ServiceContracts;
+using LibraryApp.Core.Services;
+using LibraryApp.UI.Areas.Admin.Controllers;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LibraryApp.UI.Areas.Admin.Controllers
@@ -22,8 +25,11 @@ namespace LibraryApp.UI.Areas.Admin.Controllers
         private readonly IBooksRemoverService _booksRemoverService;
         private readonly IOrdersGetterService _ordersGetterService;
         private readonly IOrderStatusChangerService _orderStatusChangerService;
+        private readonly INotificationsCreatorService _notificationsCreatorService;
+        private readonly INotificationsGetterService _notificationsGetterService;
+        private readonly UserManager<User> _userManager;
 
-        public AdminController(IUsersGetterService usersGetterService, IAuthorsGetterService authorsGetterService, IAuthorsAdderService authorsAdderService, IAuthorsRemoverService authorsRemoverService, IBooksAdderService booksAdderService, IBooksGetterService booksGetterService, IChangeBookAmountService changeBookAmountService, IBooksRemoverService booksRemoverService, IOrdersGetterService ordersGetterService, IOrderStatusChangerService orderStatusChangerService)
+        public AdminController(IUsersGetterService usersGetterService, IAuthorsGetterService authorsGetterService, IAuthorsAdderService authorsAdderService, IAuthorsRemoverService authorsRemoverService, IBooksAdderService booksAdderService, IBooksGetterService booksGetterService, IChangeBookAmountService changeBookAmountService, IBooksRemoverService booksRemoverService, IOrdersGetterService ordersGetterService, IOrderStatusChangerService orderStatusChangerService, INotificationsCreatorService notificationsCreatorService, INotificationsGetterService notificationsGetterService, UserManager<User> userManager)
         {
             _usersGetterService = usersGetterService;
             _authorsGetterService = authorsGetterService;
@@ -35,6 +41,9 @@ namespace LibraryApp.UI.Areas.Admin.Controllers
             _booksRemoverService = booksRemoverService;
             _ordersGetterService = ordersGetterService;
             _orderStatusChangerService = orderStatusChangerService;
+            _notificationsCreatorService = notificationsCreatorService;
+            _notificationsGetterService = notificationsGetterService;
+            _userManager = userManager;
         }
 
         [Route("/admin-panel")]
@@ -123,15 +132,36 @@ namespace LibraryApp.UI.Areas.Admin.Controllers
         }
 
         [Route("/admin-panel/manage-users/manage-user/send-custom-notification")]
+        [HttpGet]
         public IActionResult SendCustomNotification(string userId)
         {
-            return View();
+            return View(new NotificationDTO() { ReceiverId = userId });
+        }
+
+        [Route("/admin-panel/manage-users/manage-user/send-custom-notification")]
+        [HttpPost]
+        public async Task<IActionResult> SendCustomNotification(NotificationDTO notificationDTO)
+        {
+            if (ModelState.IsValid == false)
+            {
+                return View(notificationDTO);
+            }
+
+            await _notificationsCreatorService.CreateNotification(notificationDTO);
+
+            return RedirectToAction(nameof(AdminController.ManageUser), "Admin", new { userId = notificationDTO.ReceiverId });
         }
 
         [Route("/admin-panel/notifications")]
-        public IActionResult Notifications()
+        public async Task<IActionResult> Notifications()
         {
-            return View();
+            User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
+            ViewBag.CurrentWorkingUser = currentWorkingUser;
+
+            List<Notification> notifications = await _notificationsGetterService.GetUserNotifications(currentWorkingUser.Id.ToString());
+            notifications = notifications.OrderByDescending(n => n.DateOfCreation).ToList();
+
+            return View(notifications);
         }
 
         [Route("/admin-panel/manage-books")]

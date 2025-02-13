@@ -1,4 +1,6 @@
-﻿@{
+﻿@model NotificationDTO
+
+@{
     ViewBag.Title = "Send custom notification";
     ViewBag.StylesPath = "~/css/add-book.css";
     ViewBag.ScriptPath = "~/js/send-custom-notification.js";
@@ -19,13 +21,14 @@
 <div class="container-for_create-book">
     <section class="create-book">
         <form class="create-book_form" asp-controller="Librarian" asp-action="SendCustomNotification" method="post">
+            <input asp-for="ReceiverId" hidden/>
             <ul class="create-book_form-items">
                 <li class="create-book_form-items-header"><h1 class="create-book_form-items-header-element">Send notification</h1></li>
-                <li class="create-book_form-items-input-content"><textarea class="create-book_form-items-input-content-element" placeholder="Content"></textarea><span class="create-book_form-items-input-content-element-number-of-signs"><span class="create-book_form-items-input-content-element-number-of-signs-entered">0</span><span class="create-book_form-items-input-content-element-number-of-signs-max">/200</span></span></li>
+                <li class="create-book_form-items-input-content"><textarea class="create-book_form-items-input-content-element" asp-for="Content" placeholder="Content"></textarea><span class="create-book_form-items-input-content-element-number-of-signs"><span class="create-book_form-items-input-content-element-number-of-signs-entered">0</span><span class="create-book_form-items-input-content-element-number-of-signs-max">/200</span></span></li>
                 <li class="create-book_form-items-validation-result">
                     <div asp-validation-summary="All"></div>
                 </li>
-                <li class="create-book_form-items-button"><button class="create-book_form-items-button-element" type="submit">Add</button></li>
+                <li class="create-book_form-items-button"><button class="create-book_form-items-button-element" type="submit">Send</button></li>
             </ul>
         </form>
     </section>

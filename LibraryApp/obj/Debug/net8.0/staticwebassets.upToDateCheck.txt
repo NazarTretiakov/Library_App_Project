@@ -100,15 +100,15 @@ wwwroot\Images\Logo_gray.jpg
 wwwroot\Images\Logo_icon.jpg
 wwwroot\Images\Photo_of_Library.jpg
 wwwroot\Images\Photo_of_library_2.jpg
+wwwroot\Images\Profile_Photos\0d70c40c-10a7-40cd-bf0f-f6051f9e7158_avocado.png
 wwwroot\Images\Profile_Photos\0e2dbb97-9a55-4f6b-a741-7ef2720245a5_leo_dicaprio.jpg
 wwwroot\Images\Profile_Photos\493e0aa9-496a-455b-a047-c35f89cd8a77_liljibob.jpg
 wwwroot\Images\Profile_Photos\555e1f59-9b3c-4a94-90e4-f40666d0f714_Luke_Skywalker_Profile_Photo.jpg
 wwwroot\Images\Profile_Photos\7fd75953-4257-438e-98f8-e260400ad310_first.webp
 wwwroot\Images\Profile_Photos\9828bdbc-d733-4fba-82ae-228e40d625f1_Luke_Skywalker_Profile_Photo.jpg
 wwwroot\Images\Profile_Photos\bd635296-5086-4186-a062-7104b1534439_smile.jpg
-wwwroot\Images\Profile_Photos\c468cd87-c280-4b26-ad63-e8b62607fd6e_Снимок экрана 2024-11-27 202926.png
 wwwroot\Images\Profile_Photos\c7010544-53c7-4790-bf09-dc08c1463273_Luke_Skywalker_Profile_Photo.jpg
-wwwroot\Images\Profile_Photos\e444a2e1-b028-4fbb-82fb-1d48d06356c3_Franklin_Profile_Photo.webp
+wwwroot\Images\Profile_Photos\cf1a7585-451f-4f64-99fc-5c579b2b4195_leo_dicaprio.jpg
 wwwroot\Images\Profile_Photos\eb5c9a29-9cd8-4e83-9863-bff740042b47_Luke_Skywalker_Profile_Photo.jpg
 wwwroot\js\add-author.js
 wwwroot\js\add-book.js

@@ -30,6 +30,7 @@ namespace LibraryApp.UI.StartupExtensions
             services.AddScoped<IGenresRepository, GenresRepository>();
             services.AddScoped<IReviewsRepository, ReviewsRepository>();
             services.AddScoped<IOrdersRepository, OrdersRepository>();
+            services.AddScoped<INotificationsRepository, NotificationsRepository>();
 
             services.AddScoped<IUsersGetterService, UsersGetterService>();
             services.AddScoped<IPostsCreatorService, PostsCreatorService>();
@@ -66,6 +67,8 @@ namespace LibraryApp.UI.StartupExtensions
             services.AddScoped<IOrdersCreatorService, OrdersCreatorService>();
             services.AddScoped<IOrdersGetterService, OrdersGetterService>();
             services.AddScoped<IOrderStatusChangerService, OrderStatusChangerService>();
+            services.AddScoped<INotificationsCreatorService, NotificationsCreatorService>();
+            services.AddScoped<INotificationsGetterService, NotificationsGetterService>();
 
 
             services.AddDbContext<LibraryDbContext>(options => 

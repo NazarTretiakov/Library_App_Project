@@ -30,5 +30,6 @@ namespace LibraryApp.Core.Domain.IdentityEntities
         public List<Order>? Orders { get; set; }
         public List<Subscription>? Subscribers { get; set; }
         public List<Subscription>? Subscriptions { get; set; }
+        public List<Notification>? Notifications { get; set; }
     }
 }

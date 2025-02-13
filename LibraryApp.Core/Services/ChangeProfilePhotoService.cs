@@ -29,6 +29,11 @@ namespace LibraryApp.Core.Services
             string profilePhotosFolder = Path.Combine(_webHostEnvironment.WebRootPath, "Images", "Profile_Photos");
             User currentUser = await _userManager.GetUserAsync(_httpContextAccessor.HttpContext.User);
 
+            if (File.Exists(Path.Combine(profilePhotosFolder, currentUser.ProfilePhotoPath.Substring(24))))
+            {
+                File.Delete(Path.Combine(profilePhotosFolder, currentUser.ProfilePhotoPath.Substring(24)));
+            }
+
             if (changeProfilePhotoDTO.Photo != null)
             {
                 string uniqueFileName = Guid.NewGuid().ToString() + "_" + changeProfilePhotoDTO.Photo.FileName;
