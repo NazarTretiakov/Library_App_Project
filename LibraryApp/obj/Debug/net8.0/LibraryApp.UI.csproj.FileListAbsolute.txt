@@ -24,7 +24,6 @@ D:\Studying\Library App Project\LibraryApp\LibraryApp\obj\Debug\net8.0\staticweb
 D:\Studying\Library App Project\LibraryApp\LibraryApp\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.LibraryApp.UI.props
 D:\Studying\Library App Project\LibraryApp\LibraryApp\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.LibraryApp.UI.props
 D:\Studying\Library App Project\LibraryApp\LibraryApp\obj\Debug\net8.0\staticwebassets.pack.json
-D:\Studying\Library App Project\LibraryApp\LibraryApp\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\Studying\Library App Project\LibraryApp\LibraryApp\obj\Debug\net8.0\LibraryApp.UI.dll
 D:\Studying\Library App Project\LibraryApp\LibraryApp\obj\Debug\net8.0\refint\LibraryApp.UI.dll
 D:\Studying\Library App Project\LibraryApp\LibraryApp\obj\Debug\net8.0\LibraryApp.UI.pdb
