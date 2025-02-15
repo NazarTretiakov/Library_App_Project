@@ -92,6 +92,7 @@ wwwroot\Images\Icons\Like_active.svg
 wwwroot\Images\Icons\Logout_icon.svg
 wwwroot\Images\Icons\Messages.svg
 wwwroot\Images\Icons\natural-product.png
+wwwroot\Images\Icons\No_results-founded_icon.svg
 wwwroot\Images\Icons\Notifications_icon.svg
 wwwroot\Images\Icons\Order_history.svg
 wwwroot\Images\Icons\Orders_icon.svg

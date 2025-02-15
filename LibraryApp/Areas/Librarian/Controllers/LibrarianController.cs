@@ -75,6 +75,11 @@ namespace LibraryApp.UI.Areas.Librarian.Controllers
         [Route("/librarian-panel/manage-users/manage-user")]
         public async Task<IActionResult> ManageUser(string userId)
         {
+            if (!Guid.TryParse(userId, out Guid result))
+            {
+                return NotFound();
+            }
+
             User user = await _usersGetterService.GetUserByUserId(userId);
 
             return View(user);
@@ -83,6 +88,11 @@ namespace LibraryApp.UI.Areas.Librarian.Controllers
         [Route("/librarian-panel/manage-users/manage-user/orders")]
         public async Task<IActionResult> ManageUserOrders(string userId)
         {
+            if (!Guid.TryParse(userId, out Guid result))
+            {
+                return NotFound();
+            }
+
             List<Order> orders = await _ordersGetterService.GetUserOrders(userId);
             orders = orders.Where(o => o.Status != OrderStatusOptions.InRead.ToString() && o.Status != OrderStatusOptions.Returned.ToString()).ToList();
 
@@ -94,6 +104,11 @@ namespace LibraryApp.UI.Areas.Librarian.Controllers
         [Route("/librarian-panel/manage-users/manage-user/books")]
         public async Task<IActionResult> ManageUserBooks(string userId)
         {
+            if (!Guid.TryParse(userId, out Guid result))
+            {
+                return NotFound();
+            }
+
             List<Order> orders = await _ordersGetterService.GetUserOrders(userId, OrderStatusOptions.InRead);
 
             ViewBag.User = await _usersGetterService.GetUserByUserId(userId);
@@ -106,7 +121,7 @@ namespace LibraryApp.UI.Areas.Librarian.Controllers
         {
             if (!Guid.TryParse(orderId, out Guid result))
             {
-                return NotFound();  //TODO: create custom exception page for that type of situations (input postId is not in the correct format, or postId is not present in the query string)
+                return NotFound(); 
             }
 
             Order order = await _ordersGetterService.GetOrderByOrderId(orderId);
@@ -135,6 +150,11 @@ namespace LibraryApp.UI.Areas.Librarian.Controllers
         [HttpGet]
         public IActionResult SendCustomNotification(string userId)
         {
+            if (!Guid.TryParse(userId, out Guid result))
+            {
+                return NotFound();
+            }
+
             return View(new NotificationDTO() { ReceiverId = userId });
         }
 

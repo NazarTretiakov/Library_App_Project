@@ -90,8 +90,8 @@
                     <li class="profile-items_user-information-items_full-name">
                         <h1 class="profile-items_user-information-items_full-name-element">
                             @(string.IsNullOrEmpty(Model.Firstname) && string.IsNullOrEmpty(Model.Lastname)
-                                    ? "Name isn't mentioned"
-                                    : $"{Model.Firstname} {Model.Lastname}")
+                                        ? "Name isn't mentioned"
+                                        : $"{Model.Firstname} {Model.Lastname}")
                         </h1>
                     </li>
                     <li class="profile-items_user-information-items_username"><span class="profile-items_user-information-items_username-element">@Model.UserName</span></li>
@@ -190,6 +190,16 @@
                     {
                         <div class="profile-posts-div-for-space-between-posts"></div>
                     }
+                </li>
+            }
+
+            @if (posts.Count == 0)
+            {
+                <li class="empty-state-container">
+                    <ul class="empty-state">
+                        <li class="empty-state-image"><img class="empty-state-image-element" src="~/Images/Icons/No_results-founded_icon.svg" alt="No result icon"></li>
+                        <li class="empty-state-inscription">The user has no posts yet</li>
+                    </ul>
                 </li>
             }
         </ul>

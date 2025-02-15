@@ -65,3 +65,11 @@
         </ul>
     </li>
 }
+
+@if (Model.Comments.Count == 0)
+{
+    <ul class="empty-state">
+        <li class="empty-state-image"><img class="empty-state-image-element" src="~/Images/Icons/No_results-founded_icon.svg" alt="No result icon"></li>
+        <li class="empty-state-inscription">The post has no comments yet. But you can be first, to comment it!</li>
+    </ul>
+}

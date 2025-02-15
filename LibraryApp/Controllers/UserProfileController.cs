@@ -37,7 +37,7 @@ namespace LibraryApp.UI.Controllers
         {
             if (!Guid.TryParse(userId, out Guid result))
             {
-                return NotFound();  //TODO: create custom exception page for that type of situations (input postId is not in the correct format, or postId is not present in the query string)
+                return NotFound(); 
             }
 
             return RedirectToAction(nameof(UserProfileController.Posts), "UserProfile", new { userId = userId});
@@ -48,7 +48,7 @@ namespace LibraryApp.UI.Controllers
         {
             if (!Guid.TryParse(userId, out Guid result))
             {
-                return NotFound();  //TODO: create custom exception page for that type of situations (input postId is not in the correct format, or postId is not present in the query string)
+                return NotFound(); 
             }
 
             User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
@@ -70,9 +70,9 @@ namespace LibraryApp.UI.Controllers
                 posts = await _postsGetterService.GetFilteredUserPosts(userId, searchFilter, searchString);
             }
 
-            ViewBag.Posts = posts.OrderByDescending(p => p.DateOfPublication).ToList();  //TODO: find out why I can't use here async version of query methods
+            ViewBag.Posts = posts.OrderByDescending(p => p.DateOfPublication).ToList();
 
-            return View(user);  //TODO: create empty state of the page, for situation when user has no posts
+            return View(user);
         }
 
         [Route("/user-profile/replies")]
@@ -80,7 +80,7 @@ namespace LibraryApp.UI.Controllers
         {
             if (!Guid.TryParse(userId, out Guid result))
             {
-                return NotFound();  //TODO: create custom exception page for that type of situations (input postId is not in the correct format, or postId is not present in the query string)
+                return NotFound();
             }
 
             User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
@@ -104,7 +104,7 @@ namespace LibraryApp.UI.Controllers
 
             ViewBag.Comments = comments.OrderByDescending(p => p.DateOfPublication).ToList();
 
-            return View(user);  //TODO: create empty state of the page, for situation when user has no replies(comments)
+            return View(user);
         }
 
         [Route("/user-profile/reviews")]
@@ -112,7 +112,7 @@ namespace LibraryApp.UI.Controllers
         {
             if (!Guid.TryParse(userId, out Guid result))
             {
-                return NotFound();  //TODO: create custom exception page for that type of situations (input postId is not in the correct format, or postId is not present in the query string)
+                return NotFound();
             }
 
             User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
@@ -136,7 +136,7 @@ namespace LibraryApp.UI.Controllers
 
             ViewBag.Reviews = reviews.OrderByDescending(p => p.DateOfPublication).ToList();
 
-            return View(user);  //TODO: create empty state of the page, for situation when user has no replies(comments)
+            return View(user);
         }
 
         [Route("/user-profile/toggle-subscription")]
@@ -154,6 +154,11 @@ namespace LibraryApp.UI.Controllers
         [Route("/user-profile/subscribers")]
         public async Task<IActionResult> Subscribers(string userId, string searchString, string searchFilter = "all")
         {
+            if (!Guid.TryParse(userId, out Guid result))
+            {
+                return NotFound();
+            }
+
             User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
             ViewBag.CurrentWorkingUser = currentWorkingUser;
 
@@ -174,12 +179,17 @@ namespace LibraryApp.UI.Controllers
 
             ViewBag.Subscribers = subscribers;
 
-            return View(user);  //TODO: create empty state of the page, for situation when user has no subscribers
+            return View(user);
         }
 
         [Route("/user-profile/subscriptions")]
         public async Task<IActionResult> Subscriptions(string userId, string searchString, string searchFilter = "all")
         {
+            if (!Guid.TryParse(userId, out Guid result))
+            {
+                return NotFound();
+            }
+
             User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
             ViewBag.CurrentWorkingUser = currentWorkingUser;
 
@@ -200,7 +210,7 @@ namespace LibraryApp.UI.Controllers
 
             ViewBag.Subscriptions = subscriptions;
 
-            return View(user);  //TODO: create empty state of the page, for situation when user has no subscriptions
+            return View(user);
         }
     }
 }

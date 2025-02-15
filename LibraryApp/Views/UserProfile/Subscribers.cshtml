@@ -157,12 +157,21 @@
                                     </a>
                                 </li>
                             }
-
                         </ul>
                     </li>
-
                 </ul>
             </li>
+
+
+            @if (subscribers.Count == 0)
+            {
+                <li class="empty-state-container">
+                    <ul class="empty-state">
+                        <li class="empty-state-image"><img class="empty-state-image-element" src="~/Images/Icons/No_results-founded_icon.svg" alt="No result icon"></li>
+                        <li class="empty-state-inscription">The subscribers list is empty</li>
+                    </ul>
+                </li>
+            }
         </ul>
     </section>
 </div>

@@ -52,24 +52,24 @@ namespace LibraryApp.UI.Controllers
             }
             else if (searchFilter != "all" && searchFilter != "username" && searchFilter != "topic" && searchFilter != "title")
             {
-                return NotFound();  //TODO: create custom exception page for that type of situations (input searchString is not correct)
+                return NotFound();
             }
             else
             {
                 posts = await _postsGetterService.GetFilteredPosts(searchFilter, searchString);
             }
 
-            posts = posts.OrderByDescending(p => p.DateOfPublication).ToList();  //TODO: find out why I can't use here async version of query methods
+            posts = posts.OrderByDescending(p => p.DateOfPublication).ToList();
 
-            return View(posts);  //TODO: create empty state of the page, for situation when posts with mentioned "searchString" weren't found
+            return View(posts);
         }
 
         [Route("/forum/post")]
-        public async Task<IActionResult> Post(string postId)  //TODO: create custom exception page for that type of situations (when the postId is not entered in the query string)
+        public async Task<IActionResult> Post(string postId)
         {
             if (!Guid.TryParse(postId, out Guid result))
             {
-                return NotFound();  //TODO: create custom exception page for that type of situations (input postId is not in the correct format, or postId is not present in the query string)
+                return NotFound();  
             }
 
             User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
@@ -79,7 +79,7 @@ namespace LibraryApp.UI.Controllers
 
             if (post == null)
             {
-                return NotFound();  //TODO: create custom exception page for that type of situations (when the post is not found in db)
+                return NotFound();
             }
 
             List<Like> likesOfPost = await _likesGetterService.GetPostLikes(postId);
@@ -88,7 +88,7 @@ namespace LibraryApp.UI.Controllers
             ViewBag.LikesCount = likesOfPost.Count;
             ViewBag.IsSaved = await _isPostSavedService.IsPostSaved(postId);
 
-            return View(post); //TODO: create empty state of the page, for situation when posts has no comments
+            return View(post);
         }
 
         [Route("/forum/post/toggle-like")]

@@ -50,7 +50,7 @@ namespace LibraryApp.UI.Controllers
             }
             else if (searchFilter != "all" && searchFilter != "authorName" && searchFilter != "title" && searchFilter != "genre")
             {
-                return NotFound();  //TODO: create custom exception page for that type of situations (input searchString is not correct)
+                return NotFound();
             }
             else
             {
@@ -63,11 +63,11 @@ namespace LibraryApp.UI.Controllers
         }
 
         [Route("/library/book")]
-        public async Task<IActionResult> Book(string bookId, bool? error)   //  TODO: Fix the bug where the old user profile image is not removed when the user updates their profile image.The old image should be removed.
+        public async Task<IActionResult> Book(string bookId, bool? error)
         {
             if (!Guid.TryParse(bookId, out Guid result))
             {
-                return NotFound();  //TODO: create custom exception page for that type of situations (input postId is not in the correct format, or postId is not present in the query string)
+                return NotFound();
             }
 
             User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
@@ -77,7 +77,7 @@ namespace LibraryApp.UI.Controllers
 
             if (book == null)
             {
-                return NotFound();  //TODO: create custom exception page for that type of situations (when the post is not found in db)
+                return NotFound();
             }
 
             ViewBag.IsSaved = await _isBookSavedService.IsBookSaved(book.BookId.ToString());
@@ -108,14 +108,14 @@ namespace LibraryApp.UI.Controllers
         {
             if (!Guid.TryParse(bookId, out Guid result))
             {
-                return NotFound();  //TODO: create custom exception page for that type of situations (input postId is not in the correct format, or postId is not present in the query string)
+                return NotFound(); 
             }
 
             Book book = await _booksGetterService.GetBookByBookId(bookId);
 
             if (book == null)
             {
-                return NotFound();  //TODO: create custom exception page for that type of situations (when the post is not found in db)
+                return NotFound();
             }
 
             if (book.Amount - book.Holds <= 0)
@@ -141,6 +141,11 @@ namespace LibraryApp.UI.Controllers
         [HttpGet]
         public IActionResult LeaveReview(string bookId)
         {
+            if (!Guid.TryParse(bookId, out Guid result))
+            {
+                return NotFound();
+            }
+
             return View();
         }
 

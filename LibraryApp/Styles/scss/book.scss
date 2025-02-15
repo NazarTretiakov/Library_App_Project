@@ -450,6 +450,28 @@
 }
 
 
+.empty-state {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 50px 0;
+    padding: 0;
+
+    &-image {
+
+        &-element {
+            width: 50px;
+        }
+    }
+
+    &-inscription {
+        font-size: 14px;
+    }
+}
+
+
 .footer {
     padding: 60px 100px 40px 100px;
     margin: 100px 0 0 0;

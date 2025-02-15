@@ -69,6 +69,10 @@
       "PackagePath": "staticwebassets\\Images\\Icons\\Messages.svg"
     },
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\No_results-founded_icon.svg",
+      "PackagePath": "staticwebassets\\Images\\Icons\\No_results-founded_icon.svg"
+    },
+    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Icons\\Notifications_icon.svg",
       "PackagePath": "staticwebassets\\Images\\Icons\\Notifications_icon.svg"
     },
