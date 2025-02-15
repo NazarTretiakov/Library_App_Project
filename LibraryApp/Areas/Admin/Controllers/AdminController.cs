@@ -3,8 +3,6 @@ using LibraryApp.Core.Domain.IdentityEntities;
 using LibraryApp.Core.DTO;
 using LibraryApp.Core.Enums;
 using LibraryApp.Core.ServiceContracts;
-using LibraryApp.Core.Services;
-using LibraryApp.UI.Areas.Admin.Controllers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -27,9 +25,10 @@ namespace LibraryApp.UI.Areas.Admin.Controllers
         private readonly IOrderStatusChangerService _orderStatusChangerService;
         private readonly INotificationsCreatorService _notificationsCreatorService;
         private readonly INotificationsGetterService _notificationsGetterService;
+        private readonly IMessagesGetterService _messagesGetterService;
         private readonly UserManager<User> _userManager;
 
-        public AdminController(IUsersGetterService usersGetterService, IAuthorsGetterService authorsGetterService, IAuthorsAdderService authorsAdderService, IAuthorsRemoverService authorsRemoverService, IBooksAdderService booksAdderService, IBooksGetterService booksGetterService, IChangeBookAmountService changeBookAmountService, IBooksRemoverService booksRemoverService, IOrdersGetterService ordersGetterService, IOrderStatusChangerService orderStatusChangerService, INotificationsCreatorService notificationsCreatorService, INotificationsGetterService notificationsGetterService, UserManager<User> userManager)
+        public AdminController(IUsersGetterService usersGetterService, IAuthorsGetterService authorsGetterService, IAuthorsAdderService authorsAdderService, IAuthorsRemoverService authorsRemoverService, IBooksAdderService booksAdderService, IBooksGetterService booksGetterService, IChangeBookAmountService changeBookAmountService, IBooksRemoverService booksRemoverService, IOrdersGetterService ordersGetterService, IOrderStatusChangerService orderStatusChangerService, INotificationsCreatorService notificationsCreatorService, INotificationsGetterService notificationsGetterService, IMessagesGetterService messagesGetterService, UserManager<User> userManager)
         {
             _usersGetterService = usersGetterService;
             _authorsGetterService = authorsGetterService;
@@ -43,6 +42,7 @@ namespace LibraryApp.UI.Areas.Admin.Controllers
             _orderStatusChangerService = orderStatusChangerService;
             _notificationsCreatorService = notificationsCreatorService;
             _notificationsGetterService = notificationsGetterService;
+            _messagesGetterService = messagesGetterService;
             _userManager = userManager;
         }
 
@@ -323,6 +323,14 @@ namespace LibraryApp.UI.Areas.Admin.Controllers
             await _authorsRemoverService.DeleteAuthor(author);
 
             return RedirectToAction(nameof(AdminController.ManageAuthors), "Admin");
+        }
+
+        [Route("/admin-panel/messages")]
+        public async Task<IActionResult> Messages()
+        {
+            List<Message> messages = await _messagesGetterService.GetAllMessages();
+
+            return View(messages);
         }
     }
 }

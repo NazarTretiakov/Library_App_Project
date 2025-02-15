@@ -1,10 +1,101 @@
 ﻿@{
     ViewBag.Title = "AboutUs";
-    ViewBag.StylesPath = "~/css/forum.css";
+    ViewBag.StylesPath = "~/css/about-us.css";
 }
 
 
 
-<section class="registration">
-    <h1>About us</h1>
+<div class="container-for-header-panel">
+    <header class="header">
+        <ul class="header-items">
+            <li class="header-items-item header-items-item-logo"><a asp-controller="Home" asp-action="Index"><img class="header-items-item-logo-image" src="/Images/Logo.jpg" alt="Logo of page"></a></li>
+            <li class="header-items-links">
+                <ul class="header-items-links-list">
+                    <li class="header-items-links-list-item header-items-links-list-item-discussion"><span class="header-items-links-list-item-discussion-span"><a class="header-link" asp-controller="Forum" asp-action="Index">Forum</a></span></li>
+                    @if (!User.Identity.IsAuthenticated)
+                    {
+                        <li class="header-items-links-list-item header-items-links-list-register"><span class="header-items-links-list-item-register-span"><a class="header-link" asp-controller="Account" asp-action="SignIn">Sign in</a></span></li>
+                    }
+                    else
+                    {
+                        <li class="header-items-links-list-item header-items-links-list-register">
+                            <a class="header-items-links-list-item-profile-link" asp-controller="MyAccount" asp-action="Index">
+                                <ul class="header-items-links-list-item-profile">
+                                    <li class="header-items-links-list-item-profile-image"><img class="header-items-links-list-item-profile-image-element" src="@Url.Content(ViewBag.CurrentWorkingUser.ProfilePhotoPath)" alt="Profile picture of user"></li>
+                                    <li class="header-items-links-list-item-profile-inscription">
+                                        <ul class="header-items-links-list-item-profile-inscription-items">
+                                            <li class="header-items-links-list-item-profile-inscription-items-logged-as">Logged as</li>
+                                            <li class="header-items-links-list-item-profile-inscription-items-username">@User.Identity.Name</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                    }
+                </ul>
+            </li>
+        </ul>
+    </header>
+</div>
+
+
+<section class="about-us">
+    <h1 class="about-us_title">About Us</h1>
+    <p class="about-us-paragraph">Welcome to Public Library, a modern and user-friendly application designed for book lovers, students, and anyone passionate about reading. Our mission is to simplify the way you manage your library, track your reading progress, and discover new books that inspire and educate.</p>
+    <p class="about-us-paragraph">We understand that books are more than just pages filled with words—they are a gateway to knowledge, imagination, and endless possibilities. That’s why we created this app to help you organize your personal library with ease, whether you have a small collection or an extensive archive of books.</p>
+    <p class="about-us-paragraph">With Public Library, you can:</p>
+    <ul class="about-us-list">
+        <li class="about-us-list-item">Catalog and manage your book collection efficiently</li>
+        <li class="about-us-list-item">Keep track of books you have read or are currently reading</li>
+        <li class="about-us-list-item">Search for and explore new titles across different genres</li>
+        <li class="about-us-list-item">Save your favorite books</li>
+        <li class="about-us-list-item">Sharing the emotions of reading on our forum</li>
+    </ul>
+    <p class="about-us-paragraph">Our team is committed to providing a seamless and enjoyable reading experience through technology. We continuously work on improving the app, adding new features, and ensuring that it meets the needs of all book enthusiasts.</p>
+    <p class="about-us-paragraph">Thank you for being a part of our community. We hope Public Library becomes your trusted companion in your reading journey.</p>
+    <p class="about-us-paragraph about-us-paragraph-last">If you have any suggestions, feedback, or questions, feel free to reach out to us. Happy reading!</p>
+
+    <h1 class="about-us_gallery-title">Our gallery</h1>
+
+    <img class="about-us-image" src="~/Images/Photo_of_library_4.jpg" alt="The photo of library from outside.">
+    <img class="about-us-image" src="~/Images/Photo_of_Library.jpg" alt="The photo of library.">
+    <img class="about-us-image" src="~/Images/Photo_of_library_2.jpg" alt="The photo of library.">
+    <img class="about-us-image" src="~/Images/Photo_of_library_3.jpg" alt="The photo of library.">
 </section>
+
+
+<footer class="footer">
+    <ul class="footer-items">
+        <li class="footer-items-address">
+            <ul class="footer-items-address-items">
+                <li class="footer-items-address-items-logo"><a asp-controller="Home" asp-action="Index"><img class="footer-items-address-items-logo-element" src="~/Images/Logo_gray.jpg" alt="Logo of webpage"></a></li>
+                <li class="footer-items-address-items-description">
+                    <ul class="footer-items-address-items-description-items">
+                        <li class="footer-items-address-items-description-items-1">1000 Forth Ave.</li>
+                        <li class="footer-items-address-items-description-items-2">CityName, WA 34104-1105</li>
+                        <li class="footer-items-address-items-description-items-3">206-386-4636 or <a class="footer-link" asp-controller="Home" asp-action="AskUs">Ask us</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="footer-items-social-medias">
+            <ul class="footer-items-social-medias-items">
+                <li class="footer-items-social-medias-items-about-us"><a class="footer-link" asp-controller="Home" asp-action="AboutUs">About us</a></li>
+                <li class="footer-items-social-medias-items-icons">
+                    <ul class="footer-items-social-medias-items-icons-items">
+                        <li class="footer-items-social-medias-items-icons-items-description">Find us on:</li>
+                        <li class="footer-items-social-medias-items-icons-items-links">
+                            <ul class="footer-items-social-medias-items-icons-items-links-items">
+                                <li class="footer-items-social-medias-items-icons-items-links-items-facebook"><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img class="footer-items-social-medias-items-icons-items-links-items-facebook-element" src="~/Images/Icons/icons8-facebook-50.png" alt="Icon of facebook"></a></li>
+                                <li class="footer-items-social-medias-items-icons-items-links-items-linkedin"><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><img class="footer-items-social-medias-items-icons-items-links-items-linkedin-element" src="~/Images/Icons/icons8-linkedin-50.png" alt="Icon of linkedin"></a></li>
+                                <li class="footer-items-social-medias-items-icons-items-links-items-youtube"><a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"><img class="footer-items-social-medias-items-icons-items-links-items-youtube-element" src="~/Images/Icons/icons8-youtube-50.png" alt="Icon of youtube"></a></li>
+                                <li class="footer-items-social-medias-items-icons-items-links-items-instagram"><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img class="footer-items-social-medias-items-icons-items-links-items-instagram-element" src="~/Images/Icons/icons8-instagram-50.png" alt="Icon of instagram"></a></li>
+                                <li class="footer-items-social-medias-items-icons-items-links-items-x"><a href="https://www.x.com" target="_blank" rel="noopener noreferrer"><img class="footer-items-social-medias-items-icons-items-links-items-x-element" src="~/Images/Icons/icons8-twitterx-50.png" alt="Icon of twitterx"></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</footer>

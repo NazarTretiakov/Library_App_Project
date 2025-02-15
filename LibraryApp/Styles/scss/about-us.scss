@@ -1,0 +1,268 @@
+﻿@use "config" as *;
+
+.container-for-header-panel {
+  position: sticky;
+  top: 0;
+}
+
+
+.header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 100px 0 100px;
+  background-color: white;
+
+  &-items {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    justify-content: space-between;
+
+    &-item {
+
+      &-logo {
+
+        &-image {
+          width: 120px;
+        }
+      }
+    }
+    &-links {
+
+      &-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        width: 240px;
+        justify-content: space-between;
+
+        &-item {
+
+          &-discussion {
+            font-size: $headerFontSize;
+          }
+          &-register {
+
+            &-span {
+              font-size: $headerFontSize;
+            }
+          }
+          &-profile {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &-link {
+              text-decoration: none;
+              color: black;
+            }
+            &-image {
+              margin: 0 6px 0 0;
+
+              &-element {
+                width: 46px;
+              }
+            }
+            &-inscription {
+              font-size: 12px;
+
+              &-items {
+                list-style: none;
+                padding: 0;
+
+                &-logged-as {
+                  color: $grayBackgroundColor;
+                }
+                &-username {
+                  margin: 0 0 4px 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &-link {
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+.about-us {
+  margin: 50px 200px 50px 200px;
+  &_title {
+    font-size: 24px;
+    margin: 0 0 50px 0;
+  }
+  &-paragraph {
+    line-height: 1.4;
+    margin: 0 0 30px 0;
+
+    &-last {
+      margin: 0 0 100px 0;
+    }
+  }
+  &-list{
+    margin: 0 0 30px 0;
+
+    &-item {
+      margin: 0 0 10px 0;
+    }
+  }
+
+  &_gallery-title {
+    font-size: 24px;
+    margin: 0 0 100px 0;
+  }
+  &-image {
+    width: 800px;
+    display: flex;
+    justify-self: center;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+    margin: 0 0 80px 0;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+
+.footer {
+  padding: 60px 100px 40px 100px;
+  margin: 100px 0 0 0;
+  background-color: $grayBackgroundColor;
+
+  &-items {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+    &-address {
+
+      &-items {
+        list-style: none;
+        padding: 0;
+        display: flex;
+
+        &-logo{
+
+          &-element {
+            width: 100px;
+          }
+        }
+        &-description {
+          font-size: 14px;
+          line-height: 1.6;
+
+          &-items {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 0 20px;
+
+            &-1 {
+              margin: 8px 0 0 0;
+            }
+            &-2 {
+
+            }
+            &-3 {
+
+            }
+          }
+        }
+      }
+    }
+
+    &-social-medias {
+
+      &-items {
+        list-style: none;
+        padding: 0;
+
+        &-about-us {
+          font-size: 14px;
+          margin: 0 0 40px 0;
+        }
+        &-icons {
+
+          &-items{
+            list-style: none;
+            padding: 0;
+
+            &-description {
+              font-size: 14px;
+              margin: 0 0 14px 0;
+            }
+            &-links {
+
+              &-items {
+                list-style: none;
+                padding: 0;
+                display: flex;
+
+                &-facebook {
+                  margin: 0 10px 0 0;
+
+                  &-element {
+                    width: 32px;
+                  }
+                }
+                &-linkedin {
+                  margin: 0 10px 0 0;
+
+                  &-element {
+                    width: 32px;
+                  }
+                }
+                &-youtube {
+                  margin: 0 10px 0 0;
+
+                  &-element {
+                    width: 32px;
+                  }
+                }
+                &-instagram {
+                  margin: 0 10px 0 0;
+
+                  &-element {
+                    width: 32px;
+                  }
+                }
+                &-x {
+
+                  &-element {
+                    width: 32px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &-link {
+    text-decoration: none;
+    color: $footerLinkColor;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

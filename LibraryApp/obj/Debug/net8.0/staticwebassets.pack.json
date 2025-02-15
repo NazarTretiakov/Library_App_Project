@@ -169,8 +169,12 @@
       "PackagePath": "staticwebassets\\Images\\Photo_of_library_2.jpg"
     },
     {
-      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\0d70c40c-10a7-40cd-bf0f-f6051f9e7158_avocado.png",
-      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\0d70c40c-10a7-40cd-bf0f-f6051f9e7158_avocado.png"
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Photo_of_library_3.jpg",
+      "PackagePath": "staticwebassets\\Images\\Photo_of_library_3.jpg"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Photo_of_library_4.jpg",
+      "PackagePath": "staticwebassets\\Images\\Photo_of_library_4.jpg"
     },
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\0e2dbb97-9a55-4f6b-a741-7ef2720245a5_leo_dicaprio.jpg",
@@ -193,16 +197,16 @@
       "PackagePath": "staticwebassets\\Images\\Profile_Photos\\9828bdbc-d733-4fba-82ae-228e40d625f1_Luke_Skywalker_Profile_Photo.jpg"
     },
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\ad155ea2-e03e-4dbb-9e54-4cd316b6f6fe_Franklin_Profile_Photo.webp",
+      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\ad155ea2-e03e-4dbb-9e54-4cd316b6f6fe_Franklin_Profile_Photo.webp"
+    },
+    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\bd635296-5086-4186-a062-7104b1534439_smile.jpg",
       "PackagePath": "staticwebassets\\Images\\Profile_Photos\\bd635296-5086-4186-a062-7104b1534439_smile.jpg"
     },
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\c7010544-53c7-4790-bf09-dc08c1463273_Luke_Skywalker_Profile_Photo.jpg",
       "PackagePath": "staticwebassets\\Images\\Profile_Photos\\c7010544-53c7-4790-bf09-dc08c1463273_Luke_Skywalker_Profile_Photo.jpg"
-    },
-    {
-      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\cf1a7585-451f-4f64-99fc-5c579b2b4195_leo_dicaprio.jpg",
-      "PackagePath": "staticwebassets\\Images\\Profile_Photos\\cf1a7585-451f-4f64-99fc-5c579b2b4195_leo_dicaprio.jpg"
     },
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\Images\\Profile_Photos\\eb5c9a29-9cd8-4e83-9863-bff740042b47_Luke_Skywalker_Profile_Photo.jpg",
@@ -217,12 +221,28 @@
       "PackagePath": "staticwebassets\\css\\Saved.css.map"
     },
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\about-us.css",
+      "PackagePath": "staticwebassets\\css\\about-us.css"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\about-us.css.map",
+      "PackagePath": "staticwebassets\\css\\about-us.css.map"
+    },
+    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\add-book.css",
       "PackagePath": "staticwebassets\\css\\add-book.css"
     },
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\add-book.css.map",
       "PackagePath": "staticwebassets\\css\\add-book.css.map"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\ask-us.css",
+      "PackagePath": "staticwebassets\\css\\ask-us.css"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\ask-us.css.map",
+      "PackagePath": "staticwebassets\\css\\ask-us.css.map"
     },
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\basic.css",
@@ -353,6 +373,14 @@
       "PackagePath": "staticwebassets\\css\\manage-users.css.map"
     },
     {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\messages.css",
+      "PackagePath": "staticwebassets\\css\\messages.css"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\messages.css.map",
+      "PackagePath": "staticwebassets\\css\\messages.css.map"
+    },
+    {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\css\\my-account.css",
       "PackagePath": "staticwebassets\\css\\my-account.css"
     },
@@ -455,6 +483,10 @@
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\add-book.js",
       "PackagePath": "staticwebassets\\js\\add-book.js"
+    },
+    {
+      "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\ask-us.js",
+      "PackagePath": "staticwebassets\\js\\ask-us.js"
     },
     {
       "Id": "D:\\Studying\\Library App Project\\LibraryApp\\LibraryApp\\wwwroot\\js\\create-comment.js",

@@ -21,6 +21,7 @@ namespace LibraryApp.Infrastructure.DbContext
         public DbSet<Review> Reviews { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Notification> Notifications { get; set; }
+        public DbSet<Message> Messages { get; set; }
 
         public LibraryDbContext(DbContextOptions options) : base(options) { }
 
@@ -44,6 +45,7 @@ namespace LibraryApp.Infrastructure.DbContext
             modelBuilder.Entity<Review>().ToTable("Reviews");
             modelBuilder.Entity<Order>().ToTable("Orders");
             modelBuilder.Entity<Notification>().ToTable("Notifications");
+            modelBuilder.Entity<Message>().ToTable("Messages");
 
 
             modelBuilder.Entity<User>()
@@ -172,6 +174,12 @@ namespace LibraryApp.Infrastructure.DbContext
                         .HasOne(n => n.NotificationReceiver)
                         .WithMany(nr => nr.Notifications)
                         .HasForeignKey("NotificationReceiverId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<Message>()
+                        .HasOne(m => m.User)
+                        .WithMany()
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.NoAction);
         }
     }

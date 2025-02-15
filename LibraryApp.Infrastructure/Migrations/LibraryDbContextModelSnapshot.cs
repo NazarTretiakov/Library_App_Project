@@ -187,6 +187,30 @@ namespace LibraryApp.Infrastructure.Migrations
                     b.ToTable("Likes", (string)null);
                 });
 
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Message", b =>
+                {
+                    b.Property<Guid>("MessageId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<DateTime>("DateOfPublication")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("MessageId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Messages", (string)null);
+                });
+
             modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Notification", b =>
                 {
                     b.Property<Guid>("NotificationId")
@@ -696,6 +720,16 @@ namespace LibraryApp.Infrastructure.Migrations
                         .HasForeignKey("UserId1");
 
                     b.Navigation("Post");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("LibraryApp.Core.Domain.Entities.Message", b =>
+                {
+                    b.HasOne("LibraryApp.Core.Domain.IdentityEntities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.NoAction);
 
                     b.Navigation("User");
                 });

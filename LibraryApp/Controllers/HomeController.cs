@@ -1,5 +1,6 @@
 ﻿using LibraryApp.Core.Domain.IdentityEntities;
 using LibraryApp.Core.DTO;
+using LibraryApp.Core.ServiceContracts;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -9,10 +10,12 @@ namespace LibraryApp.UI.Controllers
     public class HomeController : Controller
     {
         private readonly UserManager<User> _userManager;
+        private readonly IMessagesCreatorService _messagesCreatorService;
 
-        public HomeController(UserManager<User> userManager)
+        public HomeController(UserManager<User> userManager, IMessagesCreatorService messagesCreatorService)
         {
             _userManager = userManager;
+            _messagesCreatorService = messagesCreatorService;
         }
 
         [Route("/")]
@@ -80,7 +83,7 @@ namespace LibraryApp.UI.Controllers
         }
 
         [Route("/home/ask-us")]
-        [AllowAnonymous]
+        [HttpGet]
         public async Task<IActionResult> AskUs()
         {
             User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
@@ -98,6 +101,35 @@ namespace LibraryApp.UI.Controllers
                 }
             }
             return View();
+        }
+
+        [Route("/home/ask-us")]
+        [HttpPost]
+        public async Task<IActionResult> AskUs(MessageDTO messageDTO)
+        {
+            User currentWorkingUser = await _userManager.GetUserAsync(HttpContext.User);
+            ViewBag.CurrentWorkingUser = currentWorkingUser;
+
+            if (currentWorkingUser != null)
+            {
+                if (await _userManager.IsInRoleAsync(currentWorkingUser, "Librarian"))
+                {
+                    return RedirectToAction("Index", "Librarian", new { area = "Librarian" });
+                }
+                else if (await _userManager.IsInRoleAsync(currentWorkingUser, "Admin"))
+                {
+                    return RedirectToAction("Index", "Admin", new { area = "Admin" });
+                }
+            }
+
+            if (ModelState.IsValid == false)
+            {
+                return View(messageDTO);
+            }
+
+            await _messagesCreatorService.CreateMessage(messageDTO);
+
+            return RedirectToAction("Index", "Home");
         }
     }
 }
