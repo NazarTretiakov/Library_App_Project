@@ -7,97 +7,108 @@
 
 
 .header {
-  height: 100px;
-  display: flex;
-  align-items: center;
-  padding: 0 100px 0 100px;
-  background-color: white;
-
-  &-items {
-    width: 100%;
-    list-style: none;
+    height: 100px;
     display: flex;
     align-items: center;
-    padding: 0;
-    justify-content: space-between;
+    padding: 0 100px 0 100px;
+    background-color: white;
 
-    &-item {
-
-      &-logo {
-
-        &-image {
-          width: 120px;
-        }
-      }
-    }
-    &-links {
-
-      &-list {
+    &-items {
+        width: 100%;
         list-style: none;
-        padding: 0;
         display: flex;
         align-items: center;
-        width: 240px;
+        padding: 0;
         justify-content: space-between;
 
         &-item {
 
-          &-discussion {
-            font-size: $headerFontSize;
-          }
-          &-register {
+            &-logo {
 
-            &-span {
-              font-size: $headerFontSize;
+                &-image {
+                    width: 120px;
+                }
             }
-          }
-          &-profile {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        }
 
-            &-link {
-              text-decoration: none;
-              color: black;
-            }
-            &-image {
-              margin: 0 6px 0 0;
+        &-links {
 
-              &-element {
-                width: 46px;
-              }
-            }
-            &-inscription {
-              font-size: 12px;
-
-              &-items {
+            &-list {
                 list-style: none;
                 padding: 0;
+                display: flex;
+                align-items: center;
+                width: 240px;
+                justify-content: space-between;
 
-                &-logged-as {
-                  color: $grayBackgroundColor;
+                &-item {
+
+                    &-discussion {
+                        font-size: $headerFontSize;
+                    }
+
+                    &-register {
+
+                        &-span {
+                            font-size: $headerFontSize;
+                        }
+                    }
+
+                    &-profile {
+                        list-style: none;
+                        padding: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        &-link {
+                            text-decoration: none;
+                            color: black;
+                        }
+
+                        &-image {
+                            margin: 0 6px 0 0;
+
+                            &-element {
+                                width: 46px;
+                                height: 46px;
+                                overflow: hidden;
+                                position: relative;
+                                border-radius: 46px;
+                                object-fit: cover;
+                            }
+                        }
+
+                        &-inscription {
+                            font-size: 12px;
+
+                            &-items {
+                                list-style: none;
+                                padding: 0;
+
+                                &-logged-as {
+                                    color: $grayBackgroundColor;
+                                }
+
+                                &-username {
+                                    margin: 0 0 4px 0;
+                                }
+                            }
+                        }
+                    }
                 }
-                &-username {
-                  margin: 0 0 4px 0;
-                }
-              }
             }
-          }
         }
-      }
     }
-  }
 
-  &-link {
-    color: black;
-    text-decoration: none;
+    &-link {
+        color: black;
+        text-decoration: none;
 
-    &:hover {
-      text-decoration: underline;
+        &:hover {
+            text-decoration: underline;
+        }
     }
-  }
 }
 
 
